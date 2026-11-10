@@ -1,0 +1,53 @@
+{
+ "text": "이후 비슷한 이력의 신발은 10만 달러(약 1.4억)에 낙찰됐다고",
+ "words": [
+  {
+   "word": "이후",
+   "start": 0.04,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "비슷한",
+   "start": 0.342,
+   "end": 0.644,
+   "aligned": true
+  },
+  {
+   "word": "이력의",
+   "start": 0.684,
+   "end": 0.905,
+   "aligned": true
+  },
+  {
+   "word": "신발은",
+   "start": 0.986,
+   "end": 1.308,
+   "aligned": true
+  },
+  {
+   "word": "10만",
+   "start": 1.328,
+   "end": 1.851,
+   "aligned": true
+  },
+  {
+   "word": "달러(약",
+   "start": 1.931,
+   "end": 2.213,
+   "aligned": true
+  },
+  {
+   "word": "1.4억)에",
+   "start": 2.233,
+   "end": 2.877,
+   "aligned": true
+  },
+  {
+   "word": "낙찰됐다고",
+   "start": 2.917,
+   "end": 3.44,
+   "aligned": true
+  }
+ ]
+}

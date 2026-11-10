@@ -1,0 +1,41 @@
+{
+ "text": "이 신발이 결국 얼마에 팔렸는지는 고정댓글에",
+ "words": [
+  {
+   "word": "이",
+   "start": 0.04,
+   "end": 0.121,
+   "aligned": true
+  },
+  {
+   "word": "신발이",
+   "start": 0.242,
+   "end": 0.625,
+   "aligned": true
+  },
+  {
+   "word": "결국",
+   "start": 0.726,
+   "end": 0.968,
+   "aligned": true
+  },
+  {
+   "word": "얼마에",
+   "start": 1.069,
+   "end": 1.331,
+   "aligned": true
+  },
+  {
+   "word": "팔렸는지는",
+   "start": 1.432,
+   "end": 1.996,
+   "aligned": true
+  },
+  {
+   "word": "고정댓글에",
+   "start": 2.097,
+   "end": 2.601,
+   "aligned": true
+  }
+ ]
+}

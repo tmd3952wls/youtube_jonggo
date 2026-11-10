@@ -1,0 +1,53 @@
+{
+ "text": "그런데 올해 비슷한 이력의 조던 신발이 경매에 나왔는데",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.02,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "올해",
+   "start": 0.362,
+   "end": 0.603,
+   "aligned": true
+  },
+  {
+   "word": "비슷한",
+   "start": 0.905,
+   "end": 1.227,
+   "aligned": true
+  },
+  {
+   "word": "이력의",
+   "start": 1.267,
+   "end": 1.508,
+   "aligned": true
+  },
+  {
+   "word": "조던",
+   "start": 1.589,
+   "end": 1.79,
+   "aligned": true
+  },
+  {
+   "word": "신발이",
+   "start": 1.87,
+   "end": 2.152,
+   "aligned": true
+  },
+  {
+   "word": "경매에",
+   "start": 2.212,
+   "end": 2.534,
+   "aligned": true
+  },
+  {
+   "word": "나왔는데",
+   "start": 2.574,
+   "end": 2.936,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,842 @@
+[
+  {
+    "id": 0,
+    "start": 0.02,
+    "end": 1.22,
+    "text": "How's it going, man?"
+  },
+  {
+    "id": 1,
+    "start": 1.22,
+    "end": 2.02,
+    "text": "Good."
+  },
+  {
+    "id": 2,
+    "start": 2.02,
+    "end": 3.02,
+    "text": "What do you got here?"
+  },
+  {
+    "id": 3,
+    "start": 3.02,
+    "end": 4.82,
+    "text": "Well, I've got some basketball shoes here"
+  },
+  {
+    "id": 4,
+    "start": 4.82,
+    "end": 7.82,
+    "text": "that were worn by Michael Jordan in the 1998 World"
+  },
+  {
+    "id": 5,
+    "start": 7.82,
+    "end": 9.42,
+    "text": "Championship first half."
+  },
+  {
+    "id": 6,
+    "start": 9.42,
+    "end": 10.54,
+    "text": "OK."
+  },
+  {
+    "id": 7,
+    "start": 10.54,
+    "end": 12.42,
+    "text": "By MJ himself, huh?"
+  },
+  {
+    "id": 8,
+    "start": 12.42,
+    "end": 15.91,
+    "text": "Michael Jordan, yeah."
+  },
+  {
+    "id": 9,
+    "start": 15.91,
+    "end": 17.43,
+    "text": "Not my size."
+  },
+  {
+    "id": 10,
+    "start": 17.43,
+    "end": 18.23,
+    "text": "That's all I got."
+  },
+  {
+    "id": 11,
+    "start": 20.63,
+    "end": 23.67,
+    "text": "Today, I'm here to sell a collectible Michael Jordan"
+  },
+  {
+    "id": 12,
+    "start": 23.67,
+    "end": 25.47,
+    "text": "pair of basketball shoes."
+  },
+  {
+    "id": 13,
+    "start": 25.47,
+    "end": 27.03,
+    "text": "Michael Jordan wore these shoes"
+  },
+  {
+    "id": 14,
+    "start": 27.03,
+    "end": 31.43,
+    "text": "and gained two of the 1998 World Championship in Utah."
+  },
+  {
+    "id": 15,
+    "start": 31.43,
+    "end": 33.39,
+    "text": "I bought these from acquaintance"
+  },
+  {
+    "id": 16,
+    "start": 33.39,
+    "end": 36.35,
+    "text": "that I met here in town years ago."
+  },
+  {
+    "id": 17,
+    "start": 36.35,
+    "end": 38.07,
+    "text": "These shoes are in excellent condition."
+  },
+  {
+    "id": 18,
+    "start": 38.07,
+    "end": 40.55,
+    "text": "They were only worn the first half of the game"
+  },
+  {
+    "id": 19,
+    "start": 40.55,
+    "end": 43.67,
+    "text": "and since that point have been very well taken care of."
+  },
+  {
+    "id": 20,
+    "start": 43.67,
+    "end": 48.31,
+    "text": "I am asking $250,000 for these shoes."
+  },
+  {
+    "id": 21,
+    "start": 48.31,
+    "end": 49.51,
+    "text": "This is cool."
+  },
+  {
+    "id": 22,
+    "start": 49.51,
+    "end": 50.35,
+    "text": "It was Michael Jordan."
+  },
+  {
+    "id": 23,
+    "start": 50.35,
+    "end": 51.59,
+    "text": "It was like God-like status."
+  },
+  {
+    "id": 24,
+    "start": 51.59,
+    "end": 53.59,
+    "text": "I mean, like, how did he do what he did?"
+  },
+  {
+    "id": 25,
+    "start": 53.59,
+    "end": 55.67,
+    "text": "Because then no other athlete had done it before."
+  },
+  {
+    "id": 26,
+    "start": 55.67,
+    "end": 58.19,
+    "text": "You could honestly say he changed basketball."
+  },
+  {
+    "id": 27,
+    "start": 58.19,
+    "end": 61.91,
+    "text": "I mean, like, in the 1990s, he had to at least double"
+  },
+  {
+    "id": 28,
+    "start": 61.91,
+    "end": 63.23,
+    "text": "the popularity."
+  },
+  {
+    "id": 29,
+    "start": 63.23,
+    "end": 65.47,
+    "text": "I mean, he also changed the shoe industry."
+  },
+  {
+    "id": 30,
+    "start": 65.47,
+    "end": 67.55,
+    "text": "You know, you would have Adidas and other companies,"
+  },
+  {
+    "id": 31,
+    "start": 67.55,
+    "end": 68.75,
+    "text": "you know, they'd get an athlete."
+  },
+  {
+    "id": 32,
+    "start": 68.75,
+    "end": 69.87,
+    "text": "They sold a million shoes."
+  },
+  {
+    "id": 33,
+    "start": 69.87,
+    "end": 72.03,
+    "text": "They thought it was an incredible run."
+  },
+  {
+    "id": 34,
+    "start": 72.03,
+    "end": 73.51,
+    "text": "And then, Air Jordan's come out,"
+  },
+  {
+    "id": 35,
+    "start": 73.51,
+    "end": 76.83,
+    "text": "and it's millions upon millions upon millions."
+  },
+  {
+    "id": 36,
+    "start": 76.83,
+    "end": 78.39,
+    "text": "You're saying this is from 1998?"
+  },
+  {
+    "id": 37,
+    "start": 78.39,
+    "end": 79.79,
+    "text": "1998, yes."
+  },
+  {
+    "id": 38,
+    "start": 79.79,
+    "end": 83.03,
+    "text": "98 finals, his last with the Bulls."
+  },
+  {
+    "id": 39,
+    "start": 83.03,
+    "end": 84.43,
+    "text": "So which game did he wear these in?"
+  },
+  {
+    "id": 40,
+    "start": 84.43,
+    "end": 86.51,
+    "text": "Well, those were a game, too, in the first half."
+  },
+  {
+    "id": 41,
+    "start": 86.51,
+    "end": 87.51,
+    "text": "And he won that game."
+  },
+  {
+    "id": 42,
+    "start": 87.51,
+    "end": 90.63,
+    "text": "They did win that game, and they went on to win the series."
+  },
+  {
+    "id": 43,
+    "start": 90.63,
+    "end": 91.95,
+    "text": "I'm kind of in awe."
+  },
+  {
+    "id": 44,
+    "start": 91.95,
+    "end": 93.15,
+    "text": "This is the paperwork on them?"
+  },
+  {
+    "id": 45,
+    "start": 93.15,
+    "end": 95.27,
+    "text": "Yes, I have a letter of authenticity."
+  },
+  {
+    "id": 46,
+    "start": 95.27,
+    "end": 96.91,
+    "text": "I have a letter from the Chicago Bulls."
+  },
+  {
+    "id": 47,
+    "start": 96.91,
+    "end": 101.31,
+    "text": "And then I also have a game photo of those shoes being worn."
+  },
+  {
+    "id": 48,
+    "start": 101.31,
+    "end": 102.27,
+    "text": "OK."
+  },
+  {
+    "id": 49,
+    "start": 102.27,
+    "end": 103.43,
+    "text": "I think they're really, really cool."
+  },
+  {
+    "id": 50,
+    "start": 103.43,
+    "end": 104.87,
+    "text": "I really, really do."
+  },
+  {
+    "id": 51,
+    "start": 104.87,
+    "end": 106.43,
+    "text": "How much do you want for these?"
+  },
+  {
+    "id": 52,
+    "start": 106.43,
+    "end": 110.27,
+    "text": "Well, today I'm asking $250,000 for these shoes."
+  },
+  {
+    "id": 53,
+    "start": 110.27,
+    "end": 113.03,
+    "text": "OK."
+  },
+  {
+    "id": 54,
+    "start": 113.03,
+    "end": 114.19,
+    "text": "We all got to start somewhere."
+  },
+  {
+    "id": 55,
+    "start": 114.19,
+    "end": 116.19,
+    "text": "Right."
+  },
+  {
+    "id": 56,
+    "start": 116.19,
+    "end": 117.31,
+    "text": "Let me call a buddy of mine in,"
+  },
+  {
+    "id": 57,
+    "start": 117.31,
+    "end": 118.95,
+    "text": "who will know a lot more than I do about these."
+  },
+  {
+    "id": 58,
+    "start": 118.95,
+    "end": 119.79,
+    "text": "Great."
+  },
+  {
+    "id": 59,
+    "start": 119.79,
+    "end": 120.75,
+    "text": "I'm definitely interested."
+  },
+  {
+    "id": 60,
+    "start": 120.75,
+    "end": 123.39,
+    "text": "I just, I need a lot more info."
+  },
+  {
+    "id": 61,
+    "start": 123.39,
+    "end": 124.35,
+    "text": "Sounds great."
+  },
+  {
+    "id": 62,
+    "start": 124.35,
+    "end": 125.59,
+    "text": "Okay, I'll be right back."
+  },
+  {
+    "id": 63,
+    "start": 126.71,
+    "end": 127.75,
+    "text": "How we doing, Rick?"
+  },
+  {
+    "id": 64,
+    "start": 127.75,
+    "end": 129.03,
+    "text": "Fabulous."
+  },
+  {
+    "id": 65,
+    "start": 129.03,
+    "end": 131.23,
+    "text": "This gentleman has these shoes"
+  },
+  {
+    "id": 66,
+    "start": 131.23,
+    "end": 133.87,
+    "text": "that were supposedly worn by the big guy himself,"
+  },
+  {
+    "id": 67,
+    "start": 133.87,
+    "end": 134.75,
+    "text": "Michael Jordan."
+  },
+  {
+    "id": 68,
+    "start": 134.75,
+    "end": 137.91,
+    "text": "Second game, NBA finals, 1998."
+  },
+  {
+    "id": 69,
+    "start": 137.91,
+    "end": 139.75,
+    "text": "His last season with the Bulls."
+  },
+  {
+    "id": 70,
+    "start": 139.75,
+    "end": 141.23,
+    "text": "Was this first half or second half?"
+  },
+  {
+    "id": 71,
+    "start": 141.23,
+    "end": 142.07,
+    "text": "First half."
+  },
+  {
+    "id": 72,
+    "start": 142.07,
+    "end": 143.51,
+    "text": "Okay, what do you think?"
+  },
+  {
+    "id": 73,
+    "start": 143.51,
+    "end": 145.59,
+    "text": "Actually, the shoes that were worn"
+  },
+  {
+    "id": 74,
+    "start": 145.59,
+    "end": 147.67,
+    "text": "on the second half of the game."
+  },
+  {
+    "id": 75,
+    "start": 147.67,
+    "end": 148.95,
+    "text": "Those were documented."
+  },
+  {
+    "id": 76,
+    "start": 148.95,
+    "end": 151.23,
+    "text": "He signed those and gave them to the Utah ball boy"
+  },
+  {
+    "id": 77,
+    "start": 151.23,
+    "end": 152.31,
+    "text": "that night."
+  },
+  {
+    "id": 78,
+    "start": 152.31,
+    "end": 156.23,
+    "text": "Years later, those actually sold for $2.2 million"
+  },
+  {
+    "id": 79,
+    "start": 156.23,
+    "end": 157.39,
+    "text": "at auction."
+  },
+  {
+    "id": 80,
+    "start": 157.39,
+    "end": 158.19,
+    "text": "OK."
+  },
+  {
+    "id": 81,
+    "start": 158.19,
+    "end": 159.59,
+    "text": "All right, that's a lot of money."
+  },
+  {
+    "id": 82,
+    "start": 159.59,
+    "end": 159.99,
+    "text": "Yeah."
+  },
+  {
+    "id": 83,
+    "start": 159.99,
+    "end": 162.39,
+    "text": "That's why I'm very excited about these shoes."
+  },
+  {
+    "id": 84,
+    "start": 162.39,
+    "end": 164.27,
+    "text": "Michael Jordan game worn."
+  },
+  {
+    "id": 85,
+    "start": 164.27,
+    "end": 166.99,
+    "text": "This would be an unbelievable piece if, again,"
+  },
+  {
+    "id": 86,
+    "start": 166.99,
+    "end": 169.71,
+    "text": "it has proper paperwork and all that type of thing."
+  },
+  {
+    "id": 87,
+    "start": 169.71,
+    "end": 171.23,
+    "text": "These are called the Jordan 13."
+  },
+  {
+    "id": 88,
+    "start": 171.23,
+    "end": 174.23,
+    "text": "So this style was made for store models, too."
+  },
+  {
+    "id": 89,
+    "start": 174.23,
+    "end": 177.99,
+    "text": "what this color pattern right here was only made for Jordan,"
+  },
+  {
+    "id": 90,
+    "start": 177.99,
+    "end": 180.35,
+    "text": "like they never sold this in the stores."
+  },
+  {
+    "id": 91,
+    "start": 180.35,
+    "end": 182.15,
+    "text": "I'm going to look at the tagging in here"
+  },
+  {
+    "id": 92,
+    "start": 182.15,
+    "end": 185.47,
+    "text": "to see where these made specifically for the player."
+  },
+  {
+    "id": 93,
+    "start": 185.47,
+    "end": 188.43,
+    "text": "And I look here, size 13 and 1 half."
+  },
+  {
+    "id": 94,
+    "start": 188.43,
+    "end": 189.79,
+    "text": "That was Jordan's size."
+  },
+  {
+    "id": 95,
+    "start": 189.79,
+    "end": 190.59,
+    "text": "And this is great."
+  },
+  {
+    "id": 96,
+    "start": 190.59,
+    "end": 193.47,
+    "text": "It says 9805."
+  },
+  {
+    "id": 97,
+    "start": 193.47,
+    "end": 196.87,
+    "text": "That means these shoes were made in 1998 in May."
+  },
+  {
+    "id": 98,
+    "start": 196.87,
+    "end": 200.59,
+    "text": "And they went into playoffs in May of 98."
+  },
+  {
+    "id": 99,
+    "start": 200.59,
+    "end": 203.07,
+    "text": "This tagging was only done for professional players"
+  },
+  {
+    "id": 100,
+    "start": 203.07,
+    "end": 203.83,
+    "text": "back then."
+  },
+  {
+    "id": 101,
+    "start": 203.83,
+    "end": 206.95,
+    "text": "Absolutely, these were made for Michael Jordan."
+  },
+  {
+    "id": 102,
+    "start": 206.95,
+    "end": 209.11,
+    "text": "All right, here's the paperwork he's got."
+  },
+  {
+    "id": 103,
+    "start": 209.11,
+    "end": 211.27,
+    "text": "Well, one of the first things that strikes me, Dean,"
+  },
+  {
+    "id": 104,
+    "start": 211.27,
+    "end": 216.11,
+    "text": "is this is the Chicago Bulls Charity Bulls letter from 2006."
+  },
+  {
+    "id": 105,
+    "start": 216.11,
+    "end": 218.95,
+    "text": "This is fantastic that this letter is with these shoes."
+  },
+  {
+    "id": 106,
+    "start": 218.95,
+    "end": 221.29,
+    "text": "And then you have a more updated letter of authenticity"
+  },
+  {
+    "id": 107,
+    "start": 221.29,
+    "end": 224.03,
+    "text": "from SIA talking about these specific shoes."
+  },
+  {
+    "id": 108,
+    "start": 224.03,
+    "end": 224.95,
+    "text": "This is key."
+  },
+  {
+    "id": 109,
+    "start": 224.95,
+    "end": 226.95,
+    "text": "And of course, then we can go look at photos."
+  },
+  {
+    "id": 110,
+    "start": 226.95,
+    "end": 228.11,
+    "text": "One, you see the shoes, but you"
+  },
+  {
+    "id": 111,
+    "start": 228.11,
+    "end": 230.23,
+    "text": "can see the bottom here also, right?"
+  },
+  {
+    "id": 112,
+    "start": 230.23,
+    "end": 230.79,
+    "text": "Yeah."
+  },
+  {
+    "id": 113,
+    "start": 230.79,
+    "end": 232.59,
+    "text": "And there you go."
+  },
+  {
+    "id": 114,
+    "start": 232.59,
+    "end": 239.95,
+    "text": "So what do you think they're worth with this whole package here? I estimate these at about $250,000"
+  },
+  {
+    "id": 115,
+    "start": 241.01,
+    "end": 243.01,
+    "text": "Okay, yeah, no, they're fantastic"
+  },
+  {
+    "id": 116,
+    "start": 243.87,
+    "end": 248.55,
+    "text": "All right. Thanks, man. I appreciate it Rick. Thank you Dean. Thank you. I'll see you"
+  },
+  {
+    "id": 117,
+    "start": 250.15,
+    "end": 254.42,
+    "text": "All right"
+  },
+  {
+    "id": 118,
+    "start": 254.42,
+    "end": 256.42,
+    "text": "140 grand I"
+  },
+  {
+    "id": 119,
+    "start": 257.58,
+    "end": 261.96,
+    "text": "Don't think I can go that low. What's your best price? I could probably do"
+  },
+  {
+    "id": 120,
+    "start": 261.96,
+    "end": 265.4,
+    "text": "I would do about $175."
+  },
+  {
+    "id": 121,
+    "start": 265.4,
+    "end": 267.24,
+    "text": "I would go $150."
+  },
+  {
+    "id": 122,
+    "start": 267.24,
+    "end": 268.68,
+    "text": "I mean, it's rarefied air."
+  },
+  {
+    "id": 123,
+    "start": 268.68,
+    "end": 270.92,
+    "text": "I don't know how long I'm going to have them."
+  },
+  {
+    "id": 124,
+    "start": 270.92,
+    "end": 272.44,
+    "text": "They make a great display."
+  },
+  {
+    "id": 125,
+    "start": 272.44,
+    "end": 274.12,
+    "text": "They would be amazing in my store."
+  },
+  {
+    "id": 126,
+    "start": 274.12,
+    "end": 275.08,
+    "text": "I'll give you that."
+  },
+  {
+    "id": 127,
+    "start": 275.08,
+    "end": 277.64,
+    "text": "But $150, I know I'll make money."
+  },
+  {
+    "id": 128,
+    "start": 277.64,
+    "end": 280.28,
+    "text": "Any more than that, it starts becoming a gray area."
+  },
+  {
+    "id": 129,
+    "start": 280.28,
+    "end": 281.92,
+    "text": "$175, as long as I can go."
+  },
+  {
+    "id": 130,
+    "start": 281.92,
+    "end": 283.2,
+    "text": "That's my bottom."
+  },
+  {
+    "id": 131,
+    "start": 283.2,
+    "end": 284.0,
+    "text": "I'd go $160."
+  },
+  {
+    "id": 132,
+    "start": 284.0,
+    "end": 287.14,
+    "text": "There's no more."
+  },
+  {
+    "id": 133,
+    "start": 287.14,
+    "end": 288.22,
+    "text": "I just don't think I can do that."
+  },
+  {
+    "id": 134,
+    "start": 288.22,
+    "end": 289.38,
+    "text": "OK."
+  },
+  {
+    "id": 135,
+    "start": 289.38,
+    "end": 290.22,
+    "text": "You change your mind."
+  },
+  {
+    "id": 136,
+    "start": 290.22,
+    "end": 290.82,
+    "text": "Let me know."
+  },
+  {
+    "id": 137,
+    "start": 290.82,
+    "end": 291.22,
+    "text": "Thanks."
+  },
+  {
+    "id": 138,
+    "start": 291.22,
+    "end": 291.74,
+    "text": "Nice meeting you."
+  },
+  {
+    "id": 139,
+    "start": 291.74,
+    "end": 292.62,
+    "text": "Thanks, man."
+  }
+]

@@ -69,11 +69,11 @@ def call_claude_cli(prompt, cfg):
     return r.stdout
 
 
-RESEARCH_PROMPT = """아래는 해외 방송(샤크탱크 등) 한 장면의 영어 전사 일부와 메모다.
-1) 이 장면에 나온 회사명/제품명/출연자를 파악하고
-2) 웹 검색으로 '방송 이후' 이야기를 찾아라: 방송 후 실제 계약이 성사/파기됐는지, 매출 변화, 현재 상태(성장·인수·폐업·생산중단 등).
+RESEARCH_PROMPT = """아래는 미국 방송 전당포 사나이들(Pawn Stars) 한 장면의 영어 전사 일부와 메모다.
+1) 이 장면에 나온 물건(정확한 이름·연도·제작자)과 손님을 파악하고
+2) 웹 검색으로 '방송 이후' 이야기를 찾아라: 그 물건이 실제로 팔렸는지, 같은 물건(또는 같은 종류의 진품)이 이후 경매에서 얼마에 낙찰됐는지, 물건에 얽힌 실제 역사.
 신뢰할 만한 출처의 사실만, 각 사실에 출처 URL. 못 찾으면 facts 를 비워라. 추측 금지.
-JSON 하나만 출력: {"company": "...", "product": "...", "facts": [{"fact": "한국어 한 문장 (연도·숫자 포함)", "source": "URL"}]}
+JSON 하나만 출력: {"company": "물건 이름", "product": "물건 설명", "facts": [{"fact": "한국어 한 문장 (연도·숫자 포함)", "source": "URL"}]}
 
 메모: {context}
 전사(앞부분):
@@ -149,7 +149,7 @@ def generate(job: Path, cfg, context=""):
                 call_claude(p, cfg["script"]["claude_model"]) if mode == "claude" else \
                 call_openai(p, cfg["script"]["openai_model"])
             (job / "llm_raw.txt").write_text(text, encoding="utf-8")
-            plan = validate(parse_json(text), transcript)
+            plan = validate(parse_json(text), transcript, cfg["script"].get("krw_rate", KRW_RATE))
             best = plan
             problems = check_structure(plan, transcript, cfg, words)
             if problems:
@@ -169,16 +169,75 @@ def generate(job: Path, cfg, context=""):
     return False
 
 
-def validate(plan, transcript):
-    """대본 형식 점검. 고칠 수 있는 건 고치고, 치명적이면 예외."""
+
+KRW_RATE = 1400  # config.json → script.krw_rate 로 덮어씀
+_AMT = re.compile(r"((?:\d[\d,]*(?:\.\d+)?\s*(?:억|만|천)\s*)*(?:\d[\d,]*(?:\.\d+)?)?)\s*달러(\]?)")
+
+
+def _usd(txt):
+    """'17만 5천' → 175000, '102,000' → 102000."""
+    total, found = 0.0, False
+    for num, unit in re.findall(r"(\d[\d,]*(?:\.\d+)?)\s*(억|만|천)?", txt):
+        total += float(num.replace(",", "")) * {"억": 1e8, "만": 1e4, "천": 1e3, "": 1}[unit]
+        found = True
+    return total if found else None
+
+
+def krw_text(usd, rate):
+    """달러 → 읽기 쉬운 원화: 3억 5천만 원 / 31억 원 / 7천만 원 / 700만 원."""
+    won = usd * rate
+    round = lambda x: int(x + 0.5)  # 반올림 (파이썬 기본은 짝수 쪽으로 반올림)
+    if won >= 1e9:
+        return f"{round(won / 1e8)}억 원"
+    if won >= 1e8:
+        eok, cm = divmod(round(won / 1e7), 10)
+        return f"{eok}억" + (f" {cm}천만" if cm else "") + " 원"
+    man = round(won / 1e4)
+    if man >= 1000:
+        cheon, baek = divmod(round(man / 100), 10)
+        return f"{cheon}천" + (f"{baek}백" if baek else "") + "만 원"
+    return f"{max(1, man)}만 원"
+
+
+# '원'(받침 있음) 뒤에 맞게 조사 고치기: 달러를 → 원을, 달러요 → 원이요
+_JOSA = {"를": "을", "가": "이", "는": "은", "로": "으로", "와": "과", "요": "이요", "면": "이면",
+         "라고": "이라고", "라는": "이라는", "예요": "이에요", "야": "이야", "죠": "이죠"}
+
+
+def add_krw(text, rate=KRW_RATE):
+    """달러 금액을 원화로 바꿈 (달러 표기는 지움). 예전 '25만 달러 (약 3.5억)' 형식도 정리."""
+    text = re.sub(r"\s*\(약 [^)]*(?:억|원)\)", "", text)  # 예전 병기 형식 제거
+
+    def repl(m):
+        usd = _usd(m.group(1))
+        if not usd:
+            return m.group(0)
+        return krw_text(usd, rate) + m.group(2)
+    text = _AMT.sub(repl, text)
+    # 원 뒤 조사 정리 (대괄호 강조가 사이에 있어도)
+    return re.sub(r"(원\]?)(라고|라는|예요|를|가|는|로|와|요|면|야|죠)(?![가-힣])",
+                  lambda m: m.group(1) + _JOSA[m.group(2)], text)
+
+
+def validate(plan, transcript, rate=KRW_RATE):
+    """대본 형식 점검. 고칠 수 있는 건 고치고(달러 금액 → 원화로 변환), 치명적이면 예외."""
     from .sfxlib import CATEGORIES
     ids = {t["id"] for t in transcript}
     assert len(plan.get("title_lines", [])) >= 1, "title_lines 가 비어 있음"
+    if plan.get("pinned_comment"):
+        plan["pinned_comment"] = add_krw(plan["pinned_comment"], rate)
+    for ln in plan["title_lines"]:
+        ln["text"] = add_krw(ln["text"], rate)
+    up = plan.get("upload", {})
+    for k in ("title", "description"):
+        if up.get(k):
+            up[k] = add_krw(up[k], rate)
     for i, s in enumerate(plan["segments"]):
         if s.get("sfx") and s["sfx"] not in CATEGORIES and s["sfx"] != "boom":
             s["sfx"] = None  # 모르는 효과음 이름은 무시
         if s["type"] == "narration":
             assert s.get("text"), f"segment {i}: 내레이션 text 없음"
+            s["text"] = add_krw(s["text"], rate)
             if s.get("broll_id") not in ids:
                 s["broll_id"] = min(ids)
         elif s["type"] == "clip":
@@ -186,7 +245,7 @@ def validate(plan, transcript):
                 f"segment {i}: clip id 범위 오류 {s['from_id']}~{s['to_id']}"
             n = s["to_id"] - s["from_id"] + 1
             subs = s.get("subs", [])
-            s["subs"] = (subs + [""] * n)[:n]
+            s["subs"] = [add_krw(x, rate) for x in (subs + [""] * n)[:n]]
         else:
             raise ValueError(f"segment {i}: 알 수 없는 type {s['type']}")
     return plan
@@ -229,6 +288,11 @@ def check_structure(plan, transcript, cfg, words=None):
         if i > 0 and first_deal is None and DEAL_WORDS.search(txt):
             first_deal = (t, clean[:30])
         t += d
+    # 질문과 대답이 한 자막에 붙어 있는지 ("얼마예요? 25만 달러요" → '//' 로 나눠야 함)
+    for s in plan["segments"]:
+        for x in s.get("subs", []) if s["type"] == "clip" else []:
+            if any(re.search(r"\?\s*\S", part) for part in x.split("//")):
+                problems.append(f"자막 '{x[:30]}' 에 질문과 대답이 한 자막에 붙어 있음 → ' // ' 로 나눠라.")
     if first_deal and first_deal[0] < T["intro_sec"]:
         need = T["intro_sec"] - first_deal[0]
         problems.append(

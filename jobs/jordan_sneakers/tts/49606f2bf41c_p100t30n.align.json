@@ -1,0 +1,53 @@
+{
+ "text": "2026년 여름 경매에 '2차전 착용 추정' 조던 13이",
+ "words": [
+  {
+   "word": "2026년",
+   "start": 0.241,
+   "end": 0.742,
+   "aligned": true
+  },
+  {
+   "word": "여름",
+   "start": 0.782,
+   "end": 0.962,
+   "aligned": true
+  },
+  {
+   "word": "경매에",
+   "start": 1.042,
+   "end": 1.403,
+   "aligned": true
+  },
+  {
+   "word": "'2차전",
+   "start": 1.423,
+   "end": 2.005,
+   "aligned": true
+  },
+  {
+   "word": "착용",
+   "start": 2.085,
+   "end": 2.285,
+   "aligned": true
+  },
+  {
+   "word": "추정'",
+   "start": 2.365,
+   "end": 2.546,
+   "aligned": true
+  },
+  {
+   "word": "조던",
+   "start": 2.606,
+   "end": 2.766,
+   "aligned": true
+  },
+  {
+   "word": "13이",
+   "start": 2.786,
+   "end": 2.887,
+   "aligned": true
+  }
+ ]
+}

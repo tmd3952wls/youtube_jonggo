@@ -1,0 +1,47 @@
+{
+ "text": "그 신발이 220만 달러 (약 31억)에 팔렸다고",
+ "words": [
+  {
+   "word": "그",
+   "start": 0.04,
+   "end": 0.101,
+   "aligned": true
+  },
+  {
+   "word": "신발이",
+   "start": 0.181,
+   "end": 0.766,
+   "aligned": true
+  },
+  {
+   "word": "220만",
+   "start": 0.806,
+   "end": 1.089,
+   "aligned": true
+  },
+  {
+   "word": "달러",
+   "start": 1.169,
+   "end": 1.391,
+   "aligned": true
+  },
+  {
+   "word": "(약",
+   "start": 1.411,
+   "end": 1.734,
+   "aligned": true
+  },
+  {
+   "word": "31억)에",
+   "start": 1.996,
+   "end": 2.318,
+   "aligned": true
+  },
+  {
+   "word": "팔렸다고",
+   "start": 2.379,
+   "end": 2.762,
+   "aligned": true
+  }
+ ]
+}

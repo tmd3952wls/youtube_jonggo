@@ -1,0 +1,59 @@
+{
+ "text": "이 신발 하나로 25만 달러 (약 3.5억)을 부른 남자",
+ "words": [
+  {
+   "word": "이",
+   "start": 0.04,
+   "end": 0.101,
+   "aligned": true
+  },
+  {
+   "word": "신발",
+   "start": 0.181,
+   "end": 0.383,
+   "aligned": true
+  },
+  {
+   "word": "하나로",
+   "start": 0.443,
+   "end": 0.725,
+   "aligned": true
+  },
+  {
+   "word": "25만",
+   "start": 0.987,
+   "end": 1.209,
+   "aligned": true
+  },
+  {
+   "word": "달러",
+   "start": 1.289,
+   "end": 1.511,
+   "aligned": true
+  },
+  {
+   "word": "(약",
+   "start": 1.531,
+   "end": 1.833,
+   "aligned": true
+  },
+  {
+   "word": "3.5억)을",
+   "start": 1.853,
+   "end": 2.478,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 2.578,
+   "end": 2.699,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 2.739,
+   "end": 2.921,
+   "aligned": true
+  }
+ ]
+}

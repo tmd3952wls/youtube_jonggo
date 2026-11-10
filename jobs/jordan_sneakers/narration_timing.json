@@ -1,0 +1,101 @@
+[
+  {
+    "text": "이 신발 하나로",
+    "start": 0.0,
+    "end": 0.778,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.333
+  },
+  {
+    "text": "3억 5천만 원을 부른 남자",
+    "start": 0.778,
+    "end": 2.333,
+    "method": "whisperx",
+    "prop_start": 0.594,
+    "seg_start": 0.0,
+    "seg_end": 2.333
+  },
+  {
+    "text": "이에 릭이 전문가를 부르는데",
+    "start": 21.693,
+    "end": 23.226,
+    "method": "whisperx",
+    "prop_start": 21.693,
+    "seg_start": 21.693,
+    "seg_end": 23.226
+  },
+  {
+    "text": "그 신발이 31억 원에 팔렸다고",
+    "start": 30.564,
+    "end": 32.404,
+    "method": "whisperx",
+    "prop_start": 30.564,
+    "seg_start": 30.564,
+    "seg_end": 32.404
+  },
+  {
+    "text": "서류까지 확인한 뒤",
+    "start": 34.604,
+    "end": 35.477,
+    "method": "whisperx",
+    "prop_start": 34.604,
+    "seg_start": 34.604,
+    "seg_end": 36.216
+  },
+  {
+    "text": "가치를 묻자",
+    "start": 35.477,
+    "end": 36.216,
+    "method": "whisperx",
+    "prop_start": 35.607,
+    "seg_start": 34.604,
+    "seg_end": 36.216
+  },
+  {
+    "text": "이에 릭이 흥정을",
+    "start": 37.583,
+    "end": 38.385,
+    "method": "whisperx",
+    "prop_start": 37.583,
+    "seg_start": 37.583,
+    "seg_end": 39.116
+  },
+  {
+    "text": "시작하는데",
+    "start": 38.385,
+    "end": 39.116,
+    "method": "whisperx",
+    "prop_start": 38.562,
+    "seg_start": 37.583,
+    "seg_end": 39.116
+  },
+  {
+    "text": "결국 거래는 불발됐는데",
+    "start": 50.85,
+    "end": 52.35,
+    "method": "whisperx",
+    "prop_start": 50.85,
+    "seg_start": 50.85,
+    "seg_end": 52.35
+  },
+  {
+    "text": "이 신발이 결국 얼마에",
+    "start": 52.35,
+    "end": 53.732,
+    "method": "whisperx",
+    "prop_start": 52.35,
+    "seg_start": 52.35,
+    "seg_end": 55.116
+  },
+  {
+    "text": "팔렸는지는 고정댓글에",
+    "start": 53.732,
+    "end": 55.116,
+    "method": "whisperx",
+    "prop_start": 53.386,
+    "seg_start": 52.35,
+    "seg_end": 55.116
+  }
+]

@@ -387,7 +387,7 @@ def build_draft(exp, cfg, shots, voices, sfx, name, folder):
             cy = exp["sub_pos"][1]
         d.add_text(st, spans, x["a"], x["b"] - x["a"], nsize, cy, render_index=14000 + k)
 
-    # 워터마크 (2026-11-10): 렌더러와 같은 자리 — 영상 패널 바로 아래 검은 띠에 흐린 흰색 "60초쇼츠"
+    # 워터마크 (2026-11-10): 렌더러와 같은 자리 — 영상 패널 바로 아래 검은 띠에 흐린 흰색 워터마크(config.json → watermark.text)
     wm = cfg.get("watermark", {})
     if wm.get("text"):
         wt = d.track("text", "워터마크")

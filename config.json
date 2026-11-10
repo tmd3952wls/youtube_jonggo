@@ -10,11 +10,12 @@
     "retries": 3,
     "research": true,
     "structure": {
-      "intro_sec": 25,
+      "intro_sec": 0,
       "chars_per_sec": 10.0,
-      "min_total": 40,
-      "max_total": 56
-    }
+      "min_total": 45,
+      "max_total": 57
+    },
+    "krw_rate": 1400
   },
   "tts": {
     "provider": "typecast",
@@ -49,7 +50,7 @@
     "crop_top": 0.0
   },
   "subtitle": {
-    "font": "Cafe24 Ohsquare",
+    "font": "카페24 아네모네",
     "title_size": 128,
     "title_outline": 0,
     "title_bottom_margin": 30,
@@ -82,12 +83,16 @@
     "shadow_blur": 10,
     "shadow_alpha": "&H60&",
     "title_weight": 0,
-    "zoom_in_ms": 200,
-    "zoom_from": 0,
+    "zoom_in_ms": 1,
+    "zoom_from": 100,
     "zoom_accel": 0.6,
     "font_bold": false,
     "glow_alpha_white": "&H90&",
-    "sub_anchor": "center"
+    "sub_anchor": "bottom",
+    "bottom_margin": 120,
+    "narr_max_em": 11.0,
+    "dial_max_em": 11.5,
+    "min_line_sec": 0.7
   },
   "render": {
     "clip_pad_before": 0.1,
@@ -100,17 +105,21 @@
     "loudness_lufs": -10,
     "voice_lufs": -16,
     "voice_gain_max": 18,
-    "min_shot_sec": 0.7,
-    "max_inner_gap": 0.25,
+    "min_shot_sec": 1.2,
+    "max_inner_gap": 0.2,
     "word_pad_before": 0.04,
     "word_pad_after": 0.06,
     "sfx_min_gap": 2.5,
     "piece_min_sec": 0.6,
-    "broll_shot_min": 0.9,
-    "broll_shot_max": 1.6,
-    "ramp_max_gap": 0.6,
+    "broll_shot_min": 1.8,
+    "broll_shot_max": 3.2,
+    "ramp_max_gap": 0.0,
     "ramp_frames": 2,
-    "narration_dim": 0.72
+    "narration_dim": 0.72,
+    "min_visual_shot": 1.0,
+    "show_credit": false,
+    "jump_merge_gap": 1.2,
+    "cross_cut_gap": 1.5
   },
   "align": {
     "enabled": true,
@@ -144,7 +153,7 @@
     }
   },
   "watermark": {
-    "text": "60초쇼츠",
+    "text": "1분냠냠",
     "size": 40,
     "gap": 22,
     "alpha": "&HB3&"
@@ -154,13 +163,16 @@
     "max_zoom": 1.6,
     "target_face_h": 0.4,
     "face_y": 0.36,
-    "jump_zoom": 1.15
+    "jump_zoom": 1.15,
+    "zoom_narration": false,
+    "fit_wide": true,
+    "wide_face_h": 0.28
   },
   "marks": {
-    "enabled": true,
-    "max_per_video": 3,
-    "min_gap_sec": 8,
-    "auto_on_keyword": true,
+    "enabled": false,
+    "max_per_video": 2,
+    "min_gap_sec": 4,
+    "auto_on_keyword": false,
     "hold_sec": 1.4,
     "size_x": 1.5,
     "size_y": 1.45,

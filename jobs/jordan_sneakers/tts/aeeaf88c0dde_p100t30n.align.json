@@ -1,0 +1,47 @@
+{
+ "text": "전문가는 같은 경기 후반전 신발 얘기를 꺼내는데",
+ "words": [
+  {
+   "word": "전문가는",
+   "start": 0.04,
+   "end": 0.544,
+   "aligned": true
+  },
+  {
+   "word": "같은",
+   "start": 0.645,
+   "end": 0.866,
+   "aligned": true
+  },
+  {
+   "word": "경기",
+   "start": 0.927,
+   "end": 1.108,
+   "aligned": true
+  },
+  {
+   "word": "후반전",
+   "start": 1.168,
+   "end": 1.511,
+   "aligned": true
+  },
+  {
+   "word": "신발",
+   "start": 1.591,
+   "end": 1.813,
+   "aligned": true
+  },
+  {
+   "word": "얘기를",
+   "start": 1.873,
+   "end": 2.095,
+   "aligned": true
+  },
+  {
+   "word": "꺼내는데",
+   "start": 2.155,
+   "end": 2.518,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "text": "수수료 포함 10만 2천 달러(약 1.4억)에 낙찰됐는데",
+ "words": [
+  {
+   "word": "수수료",
+   "start": 0.08,
+   "end": 0.321,
+   "aligned": true
+  },
+  {
+   "word": "포함",
+   "start": 0.401,
+   "end": 0.561,
+   "aligned": true
+  },
+  {
+   "word": "10만",
+   "start": 0.661,
+   "end": 0.901,
+   "aligned": true
+  },
+  {
+   "word": "2천",
+   "start": 0.942,
+   "end": 1.122,
+   "aligned": true
+  },
+  {
+   "word": "달러(약",
+   "start": 1.202,
+   "end": 1.783,
+   "aligned": true
+  },
+  {
+   "word": "1.4억)에",
+   "start": 2.063,
+   "end": 2.424,
+   "aligned": true
+  },
+  {
+   "word": "낙찰됐는데",
+   "start": 2.464,
+   "end": 2.985,
+   "aligned": true
+  }
+ ]
+}

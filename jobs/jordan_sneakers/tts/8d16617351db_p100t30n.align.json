@@ -1,0 +1,41 @@
+{
+ "text": "같은 경기 다른 신발은 31억에 팔렸다는데",
+ "words": [
+  {
+   "word": "같은",
+   "start": 0.04,
+   "end": 0.281,
+   "aligned": true
+  },
+  {
+   "word": "경기",
+   "start": 0.361,
+   "end": 0.602,
+   "aligned": true
+  },
+  {
+   "word": "다른",
+   "start": 0.662,
+   "end": 0.863,
+   "aligned": true
+  },
+  {
+   "word": "신발은",
+   "start": 0.943,
+   "end": 1.324,
+   "aligned": true
+  },
+  {
+   "word": "31억에",
+   "start": 1.344,
+   "end": 2.047,
+   "aligned": true
+  },
+  {
+   "word": "팔렸다는데",
+   "start": 2.147,
+   "end": 2.849,
+   "aligned": true
+  }
+ ]
+}

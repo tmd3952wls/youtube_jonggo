@@ -1,0 +1,29 @@
+{
+ "text": "이어 신발 색깔을 살펴보는데",
+ "words": [
+  {
+   "word": "이어",
+   "start": 0.06,
+   "end": 0.222,
+   "aligned": true
+  },
+  {
+   "word": "신발",
+   "start": 0.343,
+   "end": 0.585,
+   "aligned": true
+  },
+  {
+   "word": "색깔을",
+   "start": 0.625,
+   "end": 0.907,
+   "aligned": true
+  },
+  {
+   "word": "살펴보는데",
+   "start": 0.967,
+   "end": 1.512,
+   "aligned": true
+  }
+ ]
+}

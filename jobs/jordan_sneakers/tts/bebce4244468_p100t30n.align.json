@@ -1,0 +1,41 @@
+{
+ "text": "희망가 그대로 나오자 릭이 흥정을 시작하는데",
+ "words": [
+  {
+   "word": "희망가",
+   "start": 0.061,
+   "end": 0.383,
+   "aligned": true
+  },
+  {
+   "word": "그대로",
+   "start": 0.464,
+   "end": 0.726,
+   "aligned": true
+  },
+  {
+   "word": "나오자",
+   "start": 0.787,
+   "end": 1.15,
+   "aligned": true
+  },
+  {
+   "word": "릭이",
+   "start": 1.412,
+   "end": 1.594,
+   "aligned": true
+  },
+  {
+   "word": "흥정을",
+   "start": 1.695,
+   "end": 1.977,
+   "aligned": true
+  },
+  {
+   "word": "시작하는데",
+   "start": 2.038,
+   "end": 2.482,
+   "aligned": true
+  }
+ ]
+}

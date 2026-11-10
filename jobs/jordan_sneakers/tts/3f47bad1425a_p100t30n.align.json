@@ -1,0 +1,41 @@
+{
+ "text": "한 남자가 전당포에 조던 운동화를 가져왔는데",
+ "words": [
+  {
+   "word": "한",
+   "start": 0.06,
+   "end": 0.161,
+   "aligned": true
+  },
+  {
+   "word": "남자가",
+   "start": 0.221,
+   "end": 0.562,
+   "aligned": true
+  },
+  {
+   "word": "전당포에",
+   "start": 0.602,
+   "end": 1.084,
+   "aligned": true
+  },
+  {
+   "word": "조던",
+   "start": 1.144,
+   "end": 1.345,
+   "aligned": true
+  },
+  {
+   "word": "운동화를",
+   "start": 1.385,
+   "end": 1.726,
+   "aligned": true
+  },
+  {
+   "word": "가져왔는데",
+   "start": 1.786,
+   "end": 2.409,
+   "aligned": true
+  }
+ ]
+}

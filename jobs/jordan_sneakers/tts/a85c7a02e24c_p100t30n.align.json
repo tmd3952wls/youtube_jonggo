@@ -1,0 +1,41 @@
+{
+ "text": "2006년 불스 편지에 SIA 인증서까지 확인하는데",
+ "words": [
+  {
+   "word": "2006년",
+   "start": 0.161,
+   "end": 0.603,
+   "aligned": true
+  },
+  {
+   "word": "불스",
+   "start": 0.724,
+   "end": 0.925,
+   "aligned": true
+  },
+  {
+   "word": "편지에",
+   "start": 1.005,
+   "end": 1.387,
+   "aligned": true
+  },
+  {
+   "word": "SIA",
+   "start": 1.849,
+   "end": 2.191,
+   "aligned": true
+  },
+  {
+   "word": "인증서까지",
+   "start": 2.271,
+   "end": 2.814,
+   "aligned": true
+  },
+  {
+   "word": "확인하는데",
+   "start": 2.894,
+   "end": 3.357,
+   "aligned": true
+  }
+ ]
+}

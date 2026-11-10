@@ -31,6 +31,7 @@ def _faces(img):
     out = []
     for casc, flip in ((_front, False), (_prof, False), (_prof, True)):
         im = cv2.flip(img, 1) if flip else img
+        # 오검출은 face_in_shot 에서 여러 프레임 일치로 거름
         for (x, y, fw, fh) in casc.detectMultiScale(im, 1.1, 6, minSize=mins):
             if flip:
                 x = w - x - fw
@@ -43,18 +44,29 @@ def face_in_shot(src, a, b, cache):
     key = f"{a:.2f}-{b:.2f}"
     if key in cache:
         return cache[key]
-    boxes = []
-    for f in (0.25, 0.5, 0.75):
+    # 프레임 5장에서 잡힌 얼굴을 모두 모아 자리별로 묶음 → 여러 프레임에서 같은 자리에 잡힌 얼굴만 인정.
+    # (벽 그림 같은 오검출은 한두 프레임에만 튀어서 걸러지고, 화면 가장자리에 선 사람도 놓치지 않게) 2026-11-11
+    dets = []
+    for fi, f in enumerate((0.1, 0.3, 0.5, 0.7, 0.9)):
         img = _frame(src, a + (b - a) * f)
         if img is None:
             continue
-        fs = _faces(img)
-        if fs:
-            x, y, w, h = max(fs, key=lambda r: r[2] * r[3])
-            boxes.append((x + w / 2, y + h / 2, w, h))
+        for x, y, w, h in _faces(img):
+            dets.append((fi, x + w / 2, y + h / 2, w, h))
+    clusters = []
+    for d in dets:
+        for c in clusters:
+            if abs(c[0][1] - d[1]) < 0.08 and abs(c[0][2] - d[2]) < 0.1:
+                c.append(d)
+                break
+        else:
+            clusters.append([d])
+    good = [c for c in clusters if len({d[0] for d in c}) >= 2]
     res = None
-    if len(boxes) >= 2 or (boxes and b - a < 1.0):
-        res = tuple(float(np.median([bx[i] for bx in boxes])) for i in range(4))
+    if good:
+        # 가장 많은 프레임에서 잡힌 얼굴, 같으면 더 큰 얼굴
+        c = max(good, key=lambda c: (len({d[0] for d in c}), np.median([d[4] for d in c])))
+        res = tuple(float(np.median([d[i] for d in c])) for i in range(1, 5))
     cache[key] = res
     return res
 

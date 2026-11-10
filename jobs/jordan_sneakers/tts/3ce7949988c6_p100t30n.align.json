@@ -1,0 +1,41 @@
+{
+ "text": "몇 년 전 동네 지인에게 샀다는데",
+ "words": [
+  {
+   "word": "몇",
+   "start": 0.08,
+   "end": 0.161,
+   "aligned": true
+  },
+  {
+   "word": "년",
+   "start": 0.221,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "전",
+   "start": 0.381,
+   "end": 0.502,
+   "aligned": true
+  },
+  {
+   "word": "동네",
+   "start": 0.602,
+   "end": 0.843,
+   "aligned": true
+  },
+  {
+   "word": "지인에게",
+   "start": 0.924,
+   "end": 1.285,
+   "aligned": true
+  },
+  {
+   "word": "샀다는데",
+   "start": 1.345,
+   "end": 1.767,
+   "aligned": true
+  }
+ ]
+}

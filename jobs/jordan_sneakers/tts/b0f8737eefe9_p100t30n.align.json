@@ -1,0 +1,35 @@
+{
+ "text": "서류까지 확인한 뒤 가치를 묻자",
+ "words": [
+  {
+   "word": "서류까지",
+   "start": 0.06,
+   "end": 0.421,
+   "aligned": true
+  },
+  {
+   "word": "확인한",
+   "start": 0.482,
+   "end": 0.722,
+   "aligned": true
+  },
+  {
+   "word": "뒤",
+   "start": 0.782,
+   "end": 0.863,
+   "aligned": true
+  },
+  {
+   "word": "가치를",
+   "start": 0.923,
+   "end": 1.204,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 1.264,
+   "end": 1.424,
+   "aligned": true
+  }
+ ]
+}

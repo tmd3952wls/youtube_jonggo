@@ -1,0 +1,205 @@
+{
+  "title_lines": [
+    {
+      "text": "조던이 파이널에서 신은",
+      "color": "yellow"
+    },
+    {
+      "text": "운동화의 충격적인 가치",
+      "color": "cyan"
+    }
+  ],
+  "credit": "© History Channel",
+  "upload": {
+    "title": "조던이 신은 운동화를 25만 달러에 판다고?!",
+    "description": "1998년 NBA 파이널에서 마이클 조던이 신었다는 운동화, 전문가의 감정 결과는? #전당포사나이들 #마이클조던 #에어조던 #농구화",
+    "tags": [
+      "전당포사나이들",
+      "Pawn Stars",
+      "마이클조던",
+      "에어조던13",
+      "NBA파이널",
+      "릭해리슨"
+    ]
+  },
+  "segments": [
+    {
+      "type": "narration",
+      "text": "한 남자가 전당포에 [yellow:조던 운동화]를 가져왔는데",
+      "broll_id": 3,
+      "sfx": "whoosh"
+    },
+    {
+      "type": "narration",
+      "text": "같은 경기 다른 신발은 [yellow:31억]에 팔렸다는데",
+      "broll_id": 17,
+      "sfx": "impact"
+    },
+    {
+      "type": "clip",
+      "from_id": 4,
+      "to_id": 5,
+      "subs": [
+        "[cyan:마이클 조던]이 1998년 파이널에서",
+        "전반전에 신었던 농구화예요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "릭이 얼마를 원하냐고 묻자",
+      "broll_id": 47,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 52,
+      "to_id": 52,
+      "subs": [
+        "오늘은 [yellow:25만 달러](약 3.5억)를 원해요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 54,
+      "to_id": 54,
+      "subs": [
+        "뭐, 시작은 다 그렇게 하죠 (황당)"
+      ],
+      "sfx": "question",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "전문가는 같은 경기 [cyan:후반전] 신발 얘기를 꺼내는데",
+      "broll_id": 73,
+      "sfx": "pop"
+    },
+    {
+      "type": "clip",
+      "from_id": 78,
+      "to_id": 79,
+      "subs": [
+        "몇 년 뒤 그 신발은 [yellow:220만 달러](약 31억)에",
+        "경매에서 팔렸어요"
+      ],
+      "sfx": "surprise",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 81,
+      "to_id": 81,
+      "subs": [
+        "와, 엄청난 돈이네요 (헉)"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "이어 신발 색깔을 살펴보는데",
+      "broll_id": 87,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 89,
+      "to_id": 89,
+      "subs": [
+        "이 색 조합은 [cyan:조던 전용]으로만 만들었어요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "안쪽 [cyan:태그]를 확인하자",
+      "broll_id": 91,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 96,
+      "to_id": 97,
+      "subs": [
+        "[orange:9805]라고 적혀 있네요",
+        "1998년 5월에 만들었다는 뜻이에요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 101,
+      "to_id": 101,
+      "subs": [
+        "확실히 [red:조던을 위해] 만든 신발이에요"
+      ],
+      "sfx": null,
+      "mark": true
+    },
+    {
+      "type": "narration",
+      "text": "2006년 불스 편지에 [cyan:SIA 인증서]까지 확인하는데",
+      "broll_id": 104,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 114,
+      "to_id": 114,
+      "subs": [
+        "다 합치면 얼마로 보세요? 약 [yellow:25만 달러]로 봅니다"
+      ],
+      "sfx": "ding",
+      "mark": true
+    },
+    {
+      "type": "narration",
+      "text": "희망가 그대로 나오자 릭이 [pink:흥정]을 시작하는데",
+      "broll_id": 117,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 118,
+      "to_id": 121,
+      "subs": [
+        "[yellow:14만 달러] 드릴게요",
+        "그렇게까진 못 내려요. 최선은요? 글쎄요...",
+        "[yellow:17만 5천 달러] 정도요",
+        "전 [green:15만 달러]요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 129,
+      "to_id": 131,
+      "subs": [
+        "17만 5천이 최대한이에요",
+        "그게 [red:마지노선]이에요",
+        "[green:16만 달러]까지 할게요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "결국 거래는 [red:불발]됐고",
+      "broll_id": 134,
+      "sfx": "fail"
+    },
+    {
+      "type": "narration",
+      "text": "이후 비슷한 이력의 신발은 [green:10만 달러](약 1.4억)에 낙찰됐다고",
+      "broll_id": 110,
+      "sfx": null
+    }
+  ]
+}

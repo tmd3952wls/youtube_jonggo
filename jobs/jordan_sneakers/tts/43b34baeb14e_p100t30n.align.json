@@ -1,0 +1,29 @@
+{
+ "text": "결국 릭이 전문가를 부르는데",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "릭이",
+   "start": 0.403,
+   "end": 0.585,
+   "aligned": true
+  },
+  {
+   "word": "전문가를",
+   "start": 0.625,
+   "end": 1.069,
+   "aligned": true
+  },
+  {
+   "word": "부르는데",
+   "start": 1.15,
+   "end": 1.735,
+   "aligned": true
+  }
+ ]
+}

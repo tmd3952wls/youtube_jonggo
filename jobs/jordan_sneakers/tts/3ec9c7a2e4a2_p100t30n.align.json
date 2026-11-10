@@ -1,0 +1,29 @@
+{
+ "text": "릭이 얼마를 원하냐고 묻자",
+ "words": [
+  {
+   "word": "릭이",
+   "start": 0.061,
+   "end": 0.263,
+   "aligned": true
+  },
+  {
+   "word": "얼마를",
+   "start": 0.324,
+   "end": 0.607,
+   "aligned": true
+  },
+  {
+   "word": "원하냐고",
+   "start": 0.667,
+   "end": 0.991,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 1.051,
+   "end": 1.395,
+   "aligned": true
+  }
+ ]
+}

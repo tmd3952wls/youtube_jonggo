@@ -1,0 +1,41 @@
+{
+ "text": "한 남자가 조던이 신은 농구화를 가져왔는데",
+ "words": [
+  {
+   "word": "한",
+   "start": 0.06,
+   "end": 0.181,
+   "aligned": true
+  },
+  {
+   "word": "남자가",
+   "start": 0.262,
+   "end": 0.664,
+   "aligned": true
+  },
+  {
+   "word": "조던이",
+   "start": 0.946,
+   "end": 1.227,
+   "aligned": true
+  },
+  {
+   "word": "신은",
+   "start": 1.288,
+   "end": 1.448,
+   "aligned": true
+  },
+  {
+   "word": "농구화를",
+   "start": 1.509,
+   "end": 1.871,
+   "aligned": true
+  },
+  {
+   "word": "가져왔는데",
+   "start": 1.951,
+   "end": 2.575,
+   "aligned": true
+  }
+ ]
+}

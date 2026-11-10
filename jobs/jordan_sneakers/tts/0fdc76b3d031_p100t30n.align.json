@@ -1,0 +1,23 @@
+{
+ "text": "그 낙찰가는 고정댓글에",
+ "words": [
+  {
+   "word": "그",
+   "start": 0.04,
+   "end": 0.12,
+   "aligned": true
+  },
+  {
+   "word": "낙찰가는",
+   "start": 0.181,
+   "end": 0.762,
+   "aligned": true
+  },
+  {
+   "word": "고정댓글에",
+   "start": 0.903,
+   "end": 1.425,
+   "aligned": true
+  }
+ ]
+}

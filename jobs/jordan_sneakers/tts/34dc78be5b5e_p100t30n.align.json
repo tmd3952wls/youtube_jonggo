@@ -1,0 +1,29 @@
+{
+ "text": "이에 릭이 전문가를 부르는데",
+ "words": [
+  {
+   "word": "이에",
+   "start": 0.061,
+   "end": 0.243,
+   "aligned": true
+  },
+  {
+   "word": "릭이",
+   "start": 0.304,
+   "end": 0.466,
+   "aligned": true
+  },
+  {
+   "word": "전문가를",
+   "start": 0.527,
+   "end": 0.912,
+   "aligned": true
+  },
+  {
+   "word": "부르는데",
+   "start": 0.993,
+   "end": 1.52,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "text": "이 신발 하나로 3억 5천만 원을 부른 남자",
+ "words": [
+  {
+   "word": "이",
+   "start": 0.04,
+   "end": 0.121,
+   "aligned": true
+  },
+  {
+   "word": "신발",
+   "start": 0.222,
+   "end": 0.424,
+   "aligned": true
+  },
+  {
+   "word": "하나로",
+   "start": 0.485,
+   "end": 0.808,
+   "aligned": true
+  },
+  {
+   "word": "3억",
+   "start": 0.828,
+   "end": 1.151,
+   "aligned": true
+  },
+  {
+   "word": "5천만",
+   "start": 1.191,
+   "end": 1.494,
+   "aligned": true
+  },
+  {
+   "word": "원을",
+   "start": 1.575,
+   "end": 1.716,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 1.797,
+   "end": 1.939,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 1.999,
+   "end": 2.181,
+   "aligned": true
+  }
+ ]
+}

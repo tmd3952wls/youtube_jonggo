@@ -1,0 +1,29 @@
+{
+ "text": "이어서 안쪽 태그를 확인하자",
+ "words": [
+  {
+   "word": "이어서",
+   "start": 0.04,
+   "end": 0.342,
+   "aligned": true
+  },
+  {
+   "word": "안쪽",
+   "start": 0.382,
+   "end": 0.623,
+   "aligned": true
+  },
+  {
+   "word": "태그를",
+   "start": 0.723,
+   "end": 0.944,
+   "aligned": true
+  },
+  {
+   "word": "확인하자",
+   "start": 1.005,
+   "end": 1.487,
+   "aligned": true
+  }
+ ]
+}

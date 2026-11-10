@@ -34,7 +34,7 @@ API 키가 없으면 **수동 모드**로 멈춥니다.
 ## EDL 편집 규칙 (2026-11-10, jobs/polygons 기준)
 - 렌더: `python editor/render_worker.py --job 이름 --edl v1_edl.json --out full_v1.mp4 --preset 해외쇼쇼`
 - 자막 글자 외곽선: `config.json` → `subtitle.text_outline` (검은색, 3)
-- 워터마크: `config.json` → `watermark` (영상 바로 아래 검은 띠에 흐린 흰색 "60초쇼츠")
+- 워터마크: `config.json` → `watermark` (영상 바로 아래 검은 띠에 흐린 흰색 워터마크 "1분냠냠")
 - 제품 매출 금액 자막에 `"icon": "money"` → `assets/money_icon.png` 지폐 그림 + 금전등록기 소리. 영상당 한 번만
 - `audio_end` 는 다음 대사 첫 단어 전까지만. 숫자로 끝나는 대사는 정렬기가 짧게 잡으니 실제 목소리 끝까지 늘리기
 - 끝에 무음 `tail` 대신 원본 소리를 이어서(`audio_end`)

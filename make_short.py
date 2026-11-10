@@ -37,7 +37,10 @@ def cmd_new(a, cfg):
 
 def do_render(job, cfg):
     from shorts.common import read_json
-    S.validate(read_json(job / "plan.json"), read_json(job / "transcript.json"))
+    plan = S.validate(read_json(job / "plan.json"), read_json(job / "transcript.json"),
+                      cfg["script"].get("krw_rate", S.KRW_RATE))
+    from shorts.common import write_json
+    write_json(job / "plan.json", plan)  # 원화 병기 등 자동 수정 반영
     print(f"[4/4] TTS({cfg['tts']['provider']}) + 렌더")
     out, total = R.render(job, cfg)
     warn = "  ⚠ 60초 초과 — plan.json 에서 clip/내레이션을 줄이세요" if total > 59.5 else ""

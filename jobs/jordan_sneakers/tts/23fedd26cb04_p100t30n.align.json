@@ -1,0 +1,53 @@
+{
+ "text": "그런데 올해 같은 경기 전반전 신발이 경매에 나왔는데",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.02,
+   "end": 0.403,
+   "aligned": true
+  },
+  {
+   "word": "올해",
+   "start": 0.644,
+   "end": 0.826,
+   "aligned": true
+  },
+  {
+   "word": "같은",
+   "start": 0.886,
+   "end": 1.128,
+   "aligned": true
+  },
+  {
+   "word": "경기",
+   "start": 1.208,
+   "end": 1.41,
+   "aligned": true
+  },
+  {
+   "word": "전반전",
+   "start": 1.47,
+   "end": 1.873,
+   "aligned": true
+  },
+  {
+   "word": "신발이",
+   "start": 1.954,
+   "end": 2.256,
+   "aligned": true
+  },
+  {
+   "word": "경매에",
+   "start": 2.336,
+   "end": 2.638,
+   "aligned": true
+  },
+  {
+   "word": "나왔는데",
+   "start": 2.699,
+   "end": 3.222,
+   "aligned": true
+  }
+ ]
+}
