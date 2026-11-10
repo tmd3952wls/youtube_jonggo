@@ -11,7 +11,7 @@ import re
 import subprocess
 from pathlib import Path
 
-from .common import ASSETS, duration, ffmpeg, filter_path, read_json, run, write_json
+from .common import ASSETS, ROOT, duration, ffmpeg, filter_path, read_json, run, write_json
 from .align import align_all, chunk_times, proportional_times
 from .sfx import ensure_sfx, sfx_path
 from .align import ensure_words
@@ -309,7 +309,7 @@ def split_shots(a, b, cuts, ws, R):
     return shots
 
 
-def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_gain=0.0, fit_all=False):
+def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_gain=0.0, fit_all=False, asrc=None):
     """샷 조각들을 얼굴 확대 크롭해 이어 붙여 세그먼트 파일 하나로.
     반환: [{src_a, src_b, out_a, out_b, face_out}]  (자막·동그라미 위치 계산용)"""
     L = cfg["layout"]
@@ -340,6 +340,7 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
         print(f"  [shots] {Path(f).name} {seg_kind}: " + " ".join(
             f"{a_:.2f}-{b_:.2f}({b_ - a_:.2f})" for a_, b_, kk in shots))
     prev_crop, face, prev_fit = None, None, False
+    nin = 0  # ffmpeg 입력 번호
     for k, (a, b, kind) in enumerate(shots):
         cut_at = any(abs(c - a) < 0.06 for c in cuts)
         prev = shots[k - 1] if k else None
@@ -363,23 +364,29 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
                 (face is None or face[3] < cfg["face"].get("wide_face_h", 0.28))
         prev_crop, prev_fit = (x, y, w, h), fit
         inputs += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(src)]
+        vk, nin = nin, nin + 1
+        if asrc:  # 원본 대사 소리는 Demucs 로 분리한 목소리만 (원본 방송 배경음악 제거)
+            inputs += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(asrc)]
+            ak, nin = nin, nin + 1
+        else:
+            ak = vk
         if kind == "ramp":  # 침묵 구간 영상을 ramp_frames 프레임으로 빨리감기
             d = cfg["render"]["ramp_frames"] / 30
-            fc.append(f"[{k}:v]crop={w}:{h}:{x}:{y},scale={W}:{VH},setsar=1,"
+            fc.append(f"[{vk}:v]crop={w}:{h}:{x}:{y},scale={W}:{VH},setsar=1,"
                       f"setpts=(PTS-STARTPTS)*{d / (b - a):.4f},fps=30,format=yuv420p,trim=duration={d:.3f}[v{k}]")
-            fc.append(f"[{k}:a]aresample=48000,aformat=channel_layouts=stereo,volume={audio_gain_db:.2f}dB,"
+            fc.append(f"[{ak}:a]aresample=48000,aformat=channel_layouts=stereo,volume={audio_gain_db:.2f}dB,"
                       f"atrim=duration={d:.3f},asetpts=PTS-STARTPTS[a{k}]")
         else:
             d = b - a
             if fit:  # 원본 전체(16:9)를 가로폭에 맞추고, 위아래 빈 곳은 같은 화면을 흐리고 어둡게 깔아 채움
-                fc.append(f"[{k}:v]fps=30,trim=duration={d:.3f},setsar=1,split[f{k}a][f{k}b];"
+                fc.append(f"[{vk}:v]fps=30,trim=duration={d:.3f},setsar=1,split[f{k}a][f{k}b];"
                           f"[f{k}a]scale={W}:{VH}:force_original_aspect_ratio=increase,crop={W}:{VH},"
                           f"boxblur=20:2,colorchannelmixer=rr=0.5:gg=0.5:bb=0.5[f{k}g];"
                           f"[f{k}b]scale={W}:-2[f{k}f];[f{k}g][f{k}f]overlay=0:(H-h)/2,setsar=1,format=yuv420p[v{k}]")
             else:
-                fc.append(f"[{k}:v]crop={w}:{h}:{x}:{y},scale={W}:{VH},setsar=1,fps=30,"
+                fc.append(f"[{vk}:v]crop={w}:{h}:{x}:{y},scale={W}:{VH},setsar=1,fps=30,"
                           f"trim=duration={d:.3f},format=yuv420p[v{k}]")
-            fc.append(f"[{k}:a]aresample=48000,aformat=channel_layouts=stereo,volume={audio_gain_db:.2f}dB,"
+            fc.append(f"[{ak}:a]aresample=48000,aformat=channel_layouts=stereo,volume={audio_gain_db:.2f}dB,"
                       f"atrim=duration={d:.3f},afade=t=in:d=0.01,afade=t=out:st={max(0, d - 0.015):.3f}:d=0.015[a{k}]")
         fo = None
         if face:
@@ -394,7 +401,7 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
     fc.append(f"[vc]{dim_f}{motion_filter(cfg, t, seg_kind)}[v]")
     if tts:  # 내레이션: 원본 소리 대신 TTS
         inputs += ["-i", str(tts)]
-        fc.append(f"[{n}:a]volume={tts_gain:.2f}dB,apad[tt];[ac]volume={cfg['render']['narration_original_volume']}[bg];"
+        fc.append(f"[{nin}:a]volume={tts_gain:.2f}dB,apad[tt];[ac]volume={cfg['render']['narration_original_volume']}[bg];"
                   f"[bg][tt]amix=inputs=2:normalize=0:duration=first[a]")
     else:
         fc.append("[ac]anull[a]")
@@ -472,6 +479,27 @@ def smooth_clip_shots(shots, cuts, ws, src_dur, R):
     return shots
 
 
+def ensure_vocals(job: Path, cfg):
+    """원본 방송 배경음악 제거용: Demucs 로 대사(목소리)만 분리한 source_vocals.wav 를 만들어 둠 (없을 때만, 약 1~2분)."""
+    out = job / "source_vocals.wav"
+    if out.exists() or not cfg["render"].get("clip_vocals_only", True):
+        return out if out.exists() else None
+    py = ROOT / cfg.get("align", {}).get("python", ".venv-whisperx/Scripts/python.exe")
+    if not py.exists():
+        print("  ⚠ Demucs 환경 없음 → 원본 소리 그대로 사용 (배경음악이 섞일 수 있음)")
+        return None
+    tmp = job / "_source_44k.wav"
+    print("  원본 배경음악 제거: Demucs 로 목소리만 분리 중...")
+    ffmpeg("-i", job / "source.mp4", "-vn", "-ac", "2", "-ar", "44100", tmp)
+    r = subprocess.run([str(py), "-I", str(ROOT / "tools" / "separate_vocals.py"), str(tmp), str(out)],
+                       capture_output=True, text=True, encoding="utf-8", errors="replace")
+    tmp.unlink(missing_ok=True)
+    if r.returncode != 0 or not out.exists():
+        print("  ⚠ 목소리 분리 실패 → 원본 소리 그대로 사용\n" + r.stderr[-800:])
+        return None
+    return out
+
+
 def build_segments(job: Path, plan, cfg):
     src = job / "source.mp4"
     src_dur = duration(src)
@@ -480,6 +508,7 @@ def build_segments(job: Path, plan, cfg):
     iw, ih = (int(v) for v in run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries",
                                     "stream=width,height", "-of", "csv=p=0", src]).strip().split(",")[:2])
     cuts = detect_cuts(src)
+    ensure_vocals(job, cfg)
     cfg = {**cfg, "layout": {**cfg["layout"], "src_w": iw, "src_h": ih}, "_cuts": cuts}
     seg_dir = job / "segments"
     seg_dir.mkdir(exist_ok=True)
@@ -496,8 +525,10 @@ def build_segments(job: Path, plan, cfg):
             pieces, ws = speech_pieces(wds, ids, tr, R)
             shots = smooth_clip_shots(pieces_to_shots(pieces, cuts, ws, R), cuts, ws, src_dur, R)
             # 원본 대사 음량을 TTS 와 같은 목표 음량으로 (말하는 구간만 측정)
-            g = voice_gain(lufs_of(src, shots[0][0], shots[-1][1] - shots[0][0]), R)
-            mapping = render_shots(src, shots, cfg, fcache, f, "clip", g)
+            vocals = job / "source_vocals.wav"
+            asrc = vocals if R.get("clip_vocals_only", True) and vocals.exists() else None
+            g = voice_gain(lufs_of(asrc or src, shots[0][0], shots[-1][1] - shots[0][0]), R)
+            mapping = render_shots(src, shots, cfg, fcache, f, "clip", g, asrc=asrc)
             info = {"kind": "clip", "seg": s, "map": mapping, "gain_db": round(g, 1),
                     "words": {str(k): wds.get(str(k), []) for k in ids}}
         else:
@@ -648,10 +679,11 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
         s = sg["seg"]
         # 효과음 위치 (참고 영상 분석): 내레이션은 컷 지점, 원본 대사는 말 시작에 겹치지 않게
         # → 강조어 자막이 뜰 때로 옮기고, 없으면 생략
+        REVEAL = ("ding", "surprise", "impact", "success", "question", "fail", "cash")
         if s.get("sfx"):
-            if sg["kind"] == "narration":
+            if s["sfx"] not in REVEAL:  # 휙·팝 = 장면 전환 순간 (내레이션·대사 모두 구간 시작)
                 sfx_events.append((max(0.0, t + SFX_OFFSET.get(s["sfx"], 0.0)), s["sfx"]))
-            else:
+            else:  # 띵·쿵·놀람 = 금액/강조어 자막이 뜨는 순간 (없으면 첫 자막)
                 pending_clip_sfx[0] = s["sfx"]
         if sg["kind"] == "narration":
             chunks = split_chunks(s["text"], S.get("narr_max_em", 11.5))
@@ -666,6 +698,10 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
             accent = next_accent()
             merged = merge_short([(a_, b_, c_) for (a_, b_), c_ in zip(times, carry_color(chunks))],
                                  S.get("min_line_sec", 0.7))
+            if pending_clip_sfx[0]:  # 내레이션의 '띵' 등은 강조어([ ])가 든 자막 덩어리가 뜰 때
+                hit = next((a_ for a_, _, c_ in merged if "[" in c_), merged[0][0] if merged else 0.0)
+                sfx_events.append((t + hit, pending_clip_sfx[0]))
+                pending_clip_sfx[0] = None
             for (a, b, cc), (pa, _) in zip(merged, prop):
                 c = plain(cc.replace(NL, " "))
                 a, b = t + a, t + b
@@ -738,7 +774,7 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
             for n, (st, txt, grp) in enumerate(evs_):
                 a = max(t, st - 0.03)
                 b = max(a + 0.4, evs_[n + 1][0] - 0.03) if n + 1 < len(evs_) else t + sg["dur"]
-                if pending_clip_sfx[0] and "[" in txt and a - t > 0.3:
+                if pending_clip_sfx[0] and pending_clip_sfx[0] != "fail" and "[" in txt:
                     sfx_events.append((a, pending_clip_sfx[0]))
                     pending_clip_sfx[0] = None
                 # 동그라미는 클립의 마지막 자막(결정적 대답·판정)을 말하는 사람에게만
@@ -762,7 +798,11 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
                 add(a, b, "Dial", "{" + ENTER + "}" + body, 3)
             if s.get("tag") and S.get("show_tags", True):
                 add(t, t + sg["dur"], "Tag", rf"{{\pos(60,{top + 40})}}" + pop + s["tag"], 2)
-        pending_clip_sfx[0] = None  # 클립 안에서 못 쓴 효과음은 버림
+        if pending_clip_sfx[0] and sg["kind"] == "clip" and evs_:
+            # 강조어 자막이 없는 클립: '실패'는 마지막 자막(거절하는 말), 나머지는 첫 자막에
+            k_ = -1 if pending_clip_sfx[0] == "fail" else 0
+            sfx_events.append((max(t, evs_[k_][0]), pending_clip_sfx[0]))
+        pending_clip_sfx[0] = None
         t += sg["dur"]
     if boxcut:  # 자막 사이 빈틈(깜빡임) 없이 다음 자막으로 바로 교체
         subq.sort(key=lambda x: x[0])
@@ -774,12 +814,14 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
                 add(a, b, "Narr" if kind_ == "narr" else "Dial", body, ly)
     (job / "subs.ass").write_text("\n".join(head + ev) + "\n", encoding="utf-8-sig")
     # 밀도 제한: 효과음끼리 min_gap 이상 (참고 영상 ≈ 10초에 2~3개)
+    # 너무 붙은 효과음은 하나만: 먼저 나온 것이 아니라 '중요한 것'을 남김 (쿵 > 실패 > 정답 > 놀람 > 띵 > 띠용 > 휙)
     gap = cfg["render"]["sfx_min_gap"]
+    prio = {"impact": 0, "fail": 1, "success": 2, "surprise": 3, "ding": 4, "cash": 4, "question": 5, "whoosh": 6, "pop": 7}
     kept = []
-    for e in sorted(sfx_events):
-        if not kept or e[0] - kept[-1][0] >= gap:
+    for e in sorted(sfx_events, key=lambda e: (prio.get(LEGACY_SFX.get(e[1], e[1]).split("/")[0], 8), e[0])):
+        if all(abs(e[0] - k[0]) >= gap for k in kept):
             kept.append(e)
-    return kept
+    return sorted(kept)
 
 
 def pick_bgm(cfg):
@@ -827,6 +869,12 @@ def render(job: Path, cfg):
     else:
         fc.append("[0:a]anull[voice]")
     used_sfx = []
+    level_ev = []
+    if R.get("sfx_engine", "level") == "level":
+        # 깃허브 edl.py 와 같은 효과음 엔진(sfx_level): 참고 쇼츠 15편 팔레트에서 고르고,
+        # 그 순간 목소리 크기에 맞춰 음량을 정하고, 소리의 가장 센 지점을 사건 시각에 맞춤 → 아래 ffmpeg 에선 목소리만
+        level_ev = [(t, LEGACY_SFX.get(name, name)) for t, name in sfx_events]
+        sfx_events = []
     for n, (t, name) in enumerate(sfx_events):
         cat = LEGACY_SFX.get(name, name)
         item = pick_sfx(cat, f"{job.name}-{n}")  # 사용자 효과음 라이브러리 우선
@@ -857,6 +905,14 @@ def render(job: Path, cfg):
            "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", "-r", "30",
            "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-t", f"{total:.3f}",
            out.name, cwd=job)
+    if level_ev:
+        from . import sfx_level
+        tmp_out = job / "_lvl_final.mp4"
+        _, _, mlog = sfx_level.render(job, body, out, tmp_out, level_ev, total, job / "sfx_level_tmp",
+                                      cfg.get("sfx_mix", {}).get("master_lufs", -11.0))
+        tmp_out.replace(out)
+        (job / "sfx_level.log").write_text("\n".join(mlog), encoding="utf-8")
+        print("\n".join("  " + x for x in mlog))
 
     up = plan.get("upload", {})
     (job / "upload.txt").write_text(

@@ -219,13 +219,26 @@ def add_krw(text, rate=KRW_RATE):
                   lambda m: m.group(1) + _JOSA[m.group(2)], text)
 
 
+def add_krw_paren(text, rate=KRW_RATE):
+    """고정댓글용: 달러 금액 뒤에 '(약 3억 5천만 원)' 을 붙임 (달러는 남김). 이미 있으면 그대로."""
+    out, pos = [], 0
+    for m in _AMT.finditer(text):
+        end = m.end()
+        usd = _usd(m.group(1))
+        if not usd or re.match(r"\s*\(약", text[end:]):
+            continue
+        out.append(text[pos:end] + f"(약 {krw_text(usd, rate)})")
+        pos = end
+    return "".join(out) + text[pos:]
+
+
 def validate(plan, transcript, rate=KRW_RATE):
     """대본 형식 점검. 고칠 수 있는 건 고치고(달러 금액 → 원화로 변환), 치명적이면 예외."""
     from .sfxlib import CATEGORIES
     ids = {t["id"] for t in transcript}
     assert len(plan.get("title_lines", [])) >= 1, "title_lines 가 비어 있음"
-    if plan.get("pinned_comment"):
-        plan["pinned_comment"] = add_krw(plan["pinned_comment"], rate)
+    if plan.get("pinned_comment"):  # 고정댓글은 '10만 달러(약 1억 4천만 원)' 처럼 달러 + 원화 병기 (사용자 예시 형식)
+        plan["pinned_comment"] = add_krw_paren(plan["pinned_comment"], rate)
     for ln in plan["title_lines"]:
         ln["text"] = add_krw(ln["text"], rate)
     up = plan.get("upload", {})

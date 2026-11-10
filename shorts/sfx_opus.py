@@ -40,12 +40,13 @@ FAMILY = {
                "whoosh/fs-60004-fast-sword-swing-sound-1", "whoosh/fs-449992-whoosh-short-low-wav-1",
                "whoosh/fs-60011-whoosh-24-2"],
     "swell": ["riser/fs-503802-reverse-fx-4-wav-1", "riser/fs-503799-reverse-fx-9-wav-1", _p("087_스르륵 효과음.mp3")],
-    "impact": ["boom/fs-81145-sub-oceano-a-wav-1", "boom/fs-236956-boom-mp3-1"],
+    "impact": ["boom/fs-81145-sub-oceano-a-wav-1", "boom/fs-236956-boom-mp3-1",
+               _p("084_폭발 -b묵직.mp3"), _p("007_쿵 효과음.mp3")],  # earshot z 4.4 / 3.7
     "pop": [_p("002_뿅.mp3")],
-    "question": [_p("015_띠동띠동(물음표).mp3")],
+    "question": [_p("171_먼가 이상할때 띠용.mp3"), _p("015_띠동띠동(물음표).mp3")],  # earshot z 4.4 / 3.1
     "success": [_p("468_또잉(정답소리).mp3"), _p("379_Correct.mp3")],
     "surprise": [_p("042_마법봉.mp3"), "riser/fs-503799-reverse-fx-9-wav-1"],
-    "fail": ["boom/fs-81149-sub-oceano-g-sharp-wav-1"],
+    "fail": ["boom/fs-81149-sub-oceano-g-sharp-wav-1", _p("412_Wah Wah Wah.mp3")],  # earshot z 6.9
     "tension": ["tick/fs-403001-clock-tick-tik-tak-2", "tick/fs-130388-clock-ticking-1"],
     "caption": [_p("267_캡션 사운드 타탁.mp3"), "key/fs-194795-vintage-keyboard-1-1"],
     "camera": [_p("502_카메라 플래시 셔터.mp3"), "click/kenney-ui-audio-switch16"],
