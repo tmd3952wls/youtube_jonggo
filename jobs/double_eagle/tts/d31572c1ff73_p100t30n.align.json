@@ -1,0 +1,41 @@
+{
+ "text": "결국 70억 원 넘는 차이로 불발됐다",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.262,
+   "aligned": true
+  },
+  {
+   "word": "70억",
+   "start": 0.423,
+   "end": 0.665,
+   "aligned": true
+  },
+  {
+   "word": "원",
+   "start": 0.786,
+   "end": 0.866,
+   "aligned": true
+  },
+  {
+   "word": "넘는",
+   "start": 0.907,
+   "end": 1.108,
+   "aligned": true
+  },
+  {
+   "word": "차이로",
+   "start": 1.189,
+   "end": 1.41,
+   "aligned": true
+  },
+  {
+   "word": "불발됐다",
+   "start": 1.511,
+   "end": 2.095,
+   "aligned": true
+  }
+ ]
+}

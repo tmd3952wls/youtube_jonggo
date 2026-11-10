@@ -1,0 +1,35 @@
+{
+ "text": "40년 사라졌다 미국에 다시 나타났는데",
+ "words": [
+  {
+   "word": "40년",
+   "start": 0.202,
+   "end": 0.424,
+   "aligned": true
+  },
+  {
+   "word": "사라졌다",
+   "start": 0.465,
+   "end": 0.929,
+   "aligned": true
+  },
+  {
+   "word": "미국에",
+   "start": 1.192,
+   "end": 1.435,
+   "aligned": true
+  },
+  {
+   "word": "다시",
+   "start": 1.495,
+   "end": 1.677,
+   "aligned": true
+  },
+  {
+   "word": "나타났는데",
+   "start": 1.697,
+   "end": 2.162,
+   "aligned": true
+  }
+ ]
+}

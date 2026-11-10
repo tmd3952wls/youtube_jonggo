@@ -1,0 +1,29 @@
+{
+ "text": "그럼 얼마를 원하냐고 묻자",
+ "words": [
+  {
+   "word": "그럼",
+   "start": 0.02,
+   "end": 0.201,
+   "aligned": true
+  },
+  {
+   "word": "얼마를",
+   "start": 0.282,
+   "end": 0.625,
+   "aligned": true
+  },
+  {
+   "word": "원하냐고",
+   "start": 0.685,
+   "end": 1.007,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 1.088,
+   "end": 1.451,
+   "aligned": true
+  }
+ ]
+}

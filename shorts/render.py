@@ -255,11 +255,48 @@ ENC = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-c:a", "aac", "-
        "-ar", "48000", "-ac", "2"]
 
 
-def speech_pieces(words, ids, tr, R):
+def voiced_islands(vocals, a, b, min_len=0.2, bridge=0.15):
+    """목소리 트랙(source_vocals.wav)에서 [a,b] 안의 실제로 말하는 구간들."""
+    import numpy as np
+    import soundfile as sf
+    info = sf.info(str(vocals))
+    sr = info.samplerate
+    x, _ = sf.read(str(vocals), start=max(0, int(a * sr)), stop=int(b * sr), always_2d=True)
+    if len(x) == 0:
+        return []
+    x = x.mean(1)
+    h = int(0.02 * sr)
+    n = len(x) // h
+    if n == 0:
+        return []
+    db = 20 * np.log10(np.sqrt((x[:n * h].reshape(n, h) ** 2).mean(1)) + 1e-9)
+    thr = max(-45.0, db.max() - 30.0)
+    out = []
+    for k in np.flatnonzero(db > thr):
+        t0, t1 = a + k * 0.02, a + (k + 1) * 0.02
+        if out and t0 - out[-1][1] <= bridge:
+            out[-1][1] = t1
+        else:
+            out.append([t0, t1])
+    return [(x0, x1) for x0, x1 in out if x1 - x0 >= min_len]
+
+
+def speech_pieces(words, ids, tr, R, vocals=None):
     """대사 클립 → 실제 말하는 구간들. 단어 사이가 max_inner_gap 보다 벌어지면 그 침묵은 잘라냄(점프컷)."""
     ws = [w for i in ids for w in words.get(str(i), [])]
     if not ws:  # 어절 정렬이 없으면 줄 단위
         ws = [{"s": tr[i]["start"], "e": tr[i]["end"]} for i in ids]
+    # WhisperX 는 숫자("$25 million")를 0.1초로 뭉개 정렬하는 일이 있음 → 그 뒤의 실제 말이 잘려 나감.
+    # 목소리 트랙에서 말하는 구간을 찾아, 단어로 안 덮인 말소리도 대사로 포함 (다음 줄 시작 전까지만)
+    if vocals is not None and Path(vocals).exists():
+        lo = min(w["s"] for w in ws)
+        nxt = tr.get(ids[-1] + 1)
+        hi = max(max(w["e"] for w in ws), tr[ids[-1]]["end"])
+        if nxt:
+            hi = min(hi, nxt["start"] - 0.05)
+        hi = max(hi, max(w["e"] for w in ws))
+        for x0, x1 in voiced_islands(vocals, lo, hi):
+            ws = ws + [{"w": "", "s": x0, "e": x1}]  # 단어와 겹치면 합쳐져 말끝이 잘리지 않음
     ps = []
     for w in sorted(ws, key=lambda w: w["s"]):
         if ps and w["s"] - ps[-1][1] <= R["max_inner_gap"]:
@@ -522,7 +559,7 @@ def build_segments(job: Path, plan, cfg):
             wds = words
             if s.get("skip_words"):  # 첫 줄 앞 단어 몇 개(예: 같은 줄의 질문)는 빼고 시작
                 wds = {**words, str(ids[0]): words.get(str(ids[0]), [])[s["skip_words"]:]}
-            pieces, ws = speech_pieces(wds, ids, tr, R)
+            pieces, ws = speech_pieces(wds, ids, tr, R, vocals=job / "source_vocals.wav")
             shots = smooth_clip_shots(pieces_to_shots(pieces, cuts, ws, R), cuts, ws, src_dur, R)
             # 원본 대사 음량을 TTS 와 같은 목표 음량으로 (말하는 구간만 측정)
             vocals = job / "source_vocals.wav"
@@ -534,8 +571,10 @@ def build_segments(job: Path, plan, cfg):
         else:
             wav = synth(plain(s["text"]), job / "tts", cfg)
             L = duration(wav) + R["narration_gap"]
+            if i == len(plan["segments"]) - 1:  # 마지막 줄 뒤에 원본 화면을 조금 더 이어 붙임 (말끝·효과음이 잘리지 않게, 정지화면 아님)
+                L += R.get("end_tail", 1.2)
             # 내레이션 그림은 소리와 무관 → 0.x초 조각이 생기지 않는 자리를 원하는 장면 근처에서 찾음
-            st0 = tr[s["broll_id"]]["start"]
+            st0 = float(s["broll_t"]) if s.get("broll_t") is not None else tr[s["broll_id"]]["start"]  # broll_t: 원본 초 단위로 장면 직접 지정
             minv = R.get("min_visual_shot", 1.0)
             shots = None
             for off in (0, -0.5, 0.5, -1.0, 1.0, -1.5, 1.5, -2.0, 2.0, -3.0, 3.0, -4.0, 4.0):

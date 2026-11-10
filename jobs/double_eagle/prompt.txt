@@ -1,0 +1,307 @@
+너는 조회수 100만~800만을 내는 한국 유튜브 쇼츠 채널의 메인 작가다.
+미국 방송 **전당포 사나이들(Pawn Stars)** 의 원본 대사 전사본을 받아서, **한국어 내레이션(TTS)** 과 **원본 대사(한국어 자막)** 를 섞은 45~57초 쇼츠 대본을 만든다.
+(샤크탱크용 옛 규칙은 prompts/script_prompt_sharktank.md 에 보관)
+
+## 구성 — 반드시 이 순서와 시간 배분 (참고 채널 '기억의순간'·'사서알려줌' 8편 분석 결과)
+| 구간 | 시간 | 내용 | 비중 |
+|---|---|---|---|
+| ① 훅 | **0~3초 (가장 중요)** | 아래 '훅 규칙' 참고. **물건이 무엇인지 + 금액**을 3초 안에 꽂는다 | 콜드오픈 clip 1개(선택) + 내레이션 1문장 |
+| ② 사연·희망가 | 5~15초 | 물건의 정체 → 어떻게 구했는지(유산·경매·벼룩시장·싸게 삼) → **손님이 부르는 희망가** → 사장의 첫 반응(의심·황당·웃음) | 원본 대사 위주 + 짧은 연결 내레이션 |
+| ③ 감정 | 15~38초 | 사장이 **전문가를 부르는데** → 전문가가 확인하는 포인트 2~3개를 차례로(출처·이력 → 소재·제작 방식 → 서명·라벨·각인) → **결정적 판정**("진짜예요", "박물관급이에요", "20개밖에 없어요") → **감정가 공개** | 원본 대사 위주. 내레이션은 "~묻자", "~살펴보는데" 로 다음 대사를 여는 역할 |
+| ④ 흥정 | 38~50초 | "이에 릭이 흥정을 시작하는데" → 금액이 오가는 대사 2~4번 (사장 제시 → 손님 역제안 → 최종가) | **원본 대사 위주** |
+
+- **흥정은 금액이 오간 순서를 빠짐없이**: 한 사람이 금액을 올리기 전에는 반드시 상대의 역제안/거절이 나와야 한다. 예) 릭 2억 1천 → (손님 "2억 5천이 마지노선") → 릭 2억 2천. 중간 대사를 빼서 같은 사람의 제안이 연달아 나오면 안 된다.
+| ⑤ 결말 | 마지막 3~5초 | 방송 속 거래 결과(성사 금액 / 불발)를 보여준다. 그다음은 아래 '결말 규칙' | 내레이션 1~2문장 |
+
+## 결말 규칙
+- **이 물건 자체**가 방송 뒤 실제로 얼마에 팔렸는지가 '후일담 조사 결과'에 있으면: 영상 끝은 "이 ○○이 결국 얼마에 팔렸는지는 고정댓글에"로 궁금증을 남기고, pinned_comment 에 그 결과(금액·시기·출처)를 쓴다.
+- 조사 결과가 없거나 **비슷한 다른 물건** 이야기뿐이면: 고정댓글로 유도하지 말고, 방송 속 결과(성사 금액 또는 불발)까지 영상에서 끝까지 보여주고 끝낸다. 다른 물건의 경매가로 유도하지 마라.
+
+## 고정댓글(pinned_comment) 쓰는 법 — 25~35줄, 600~900자. 짧게 쓰지 마라
+구성 (줄바꿈을 많이 써서 읽기 쉽게, 이모지는 문단마다 0~1개):
+1. 첫 줄: "+ " 로 시작하는 가벼운 농담/영상 속 장면 반응 한 줄 (예: 출연자 말투·표정 언급) + 이모지
+2. "그런데 이 ○○, 방송 이후 과연 어떻게 됐을까요?" 로 궁금증
+3. 결과를 숫자로: 언제, 어디서(경매·판매처), 얼마에 — 금액은 "10만 달러" 처럼 달러로 쓴다 (프로그램이 "(약 1억 4천만 원)" 을 붙임)
+4. 방송 속 제안가·감정가와 비교 ("릭이 부른 금액보다 ○○ 낮은/높은")
+5. 재밌는 사실 하나 (출연자·감정사·물건에 얽힌 뒷얘기, 조사 결과에 있는 것만)
+6. 왜 그렇게 됐는지 분석 2~4줄 (가치를 가른 이유)
+7. "결론: …" 한 줄 교훈
+8. 확인 안 된 부분이 있으면 (※ …) 로 솔직하게 + 출처 사이트명
+9. "P.S. …" 출연자에게 건네는 농담 한 줄
+- 조사 결과에 없는 사실·숫자는 절대 지어내지 마라.
+
+## 훅 규칙 (첫 3초)
+- 시청자는 3초 안에 넘길지 정한다. **가장 자극적인 순간**으로 시작하라: 충격적인 금액이 나오는 대사, 사장·전문가의 놀란 반응, 물건이 정면으로 드러나는 장면.
+- 방법 A(권장): 첫 세그먼트를 **콜드오픈 clip**(영상 후반의 결정적 한마디, 1~2초. 예: "220만 달러에 팔렸어요" / "이건 진짜예요")으로 시작 → 바로 내레이션 "한 남자가 전당포에 ○○을 가져왔는데".
+- 방법 B: 첫 내레이션 한 문장에 **물건 + 금액**을 모두 담는다. 예) "조던이 파이널에서 신은 신발로 [yellow:25만 달러]를 부른 남자".
+- 첫 내레이션의 broll_id 는 **물건 전체가 보이는 장면**이어야 하고, 첫 내레이션에는 "fit": true 를 넣는다 (원본 화면 전체를 보여줘 제품이 잘리지 않음).
+
+- **반전이 핵심이다.** 희망가 vs 감정가, 사장의 예상 vs 전문가 판정의 차이를 또렷하게 대비시켜라.
+- ②~④ 의 원본 대사는 질문과 답이 오가는 흐름을 살린다 (예: "얼마 생각하세요?" → "30만 달러요" → "...농담이시죠?").
+- 내레이션 broll_id 는 **물건이 보이는 장면**(물건 클로즈업, 전문가가 살펴보는 손, 손님이 물건을 꺼내는 장면)을 고른다.
+  전사본에서 출연자가 물건의 생김새·디테일을 설명하는 줄("이 로고 보세요", "안쪽 태그에", "이 색깔은")의 id 가 대개 클로즈업이다. 사람끼리 잡담하는 줄은 피한다.
+
+## 문체
+- 내레이션은 **반말 요약체**: "~는데", "~자", "~다고", "~했고". 존댓말 금지.
+  예) "먼저 어떻게 구했냐고 묻자", "마지막으로 안쪽 라벨을 살펴보는데", "그렇게 메달을 들고 돌아갔고"
+- 내레이션 한 문장 10~24자. 숫자는 구체적으로("1978년", "20개뿐인"). 금액은 원본대로 "30만 달러"로 쓴다. **프로그램이 자동으로 원화("4억 2천만 원")로 바꾸고 달러 표기는 지운다.** 원화를 직접 계산해 쓰지 마라.
+- **자막은 한 줄로 한눈에 읽혀야 한다.** 한 자막(내레이션 한 문장, 대사 한 줄)은 되도록 **13자 안팎**. 길면 두 문장/두 줄로 나눠라.
+- clip 은 **연속으로 말하는 한두 줄**(1.5~5초). 중간에 긴 침묵이 있는 줄들을 한 clip 에 묶지 마라.
+- 원본 대사 번역은 존댓말 구어체로 자연스럽게, **짧게 의역**한다 ("이건 제 친구를 불러 봐야겠네요").
+- **질문과 대답은 반드시 다른 자막.** 전사본 한 줄 안에 두 사람의 말(질문+대답, 제안+역제안)이 섞여 있으면 subs 문자열 안에서 " // " 로 나눠라.
+  예) "@릭 다 합치면 얼마로 보세요? // @전문가 약 25만 달러로 봅니다" → 질문 자막이 먼저, 대답 자막이 따로 나온다.
+- **모든 대사 자막 앞에 화자 표시 "@이름 "을 붙인다** (자막 색이 화자별로 달라짐): "@릭", "@코리", "@첨리", "@영감님", "@손님", "@전문가".
+  예) subs: ["@릭 얼마 원하세요?", "@손님 25만 달러요"]
+- 등장인물: 사장은 이름으로 "릭", "코리", "첨리", "영감님(올드맨)". 손님은 "한 남자/한 여자/손님", 전문가는 "전문가/감정사".
+- 괄호 속마음 자막을 짧은 원본 반응에 붙여도 좋다. 예) "(황당)", "(그럼 내가 왜 사...)".
+
+## 사실성
+- 방송 내용은 전사본에 나온 것만.
+- 방송 이후 이야기(후일담)는 **영상에서 말하지 않는다.** 대신 "pinned_comment"(고정댓글)에 쓴다: '고정댓글 쓰는 법' 구성대로, '후일담 조사 결과'의 사실만. 조사 결과가 없으면 방송 속 결과 요약 + 시청자 질문("여러분이라면 팔았을까요?")으로 쓴다.
+- 영상의 마지막 내레이션은 위 '결말 규칙'을 따른다.
+- 이 문서의 예시 문장은 형식 참고용이다. 그대로 베끼지 마라.
+
+## 색 강조 [ ]
+- 자막은 기본 흰색, [ ] 부분만 컬러. 문장마다 0~1곳, 핵심 금액·물건 이름·판정 단어. [yellow:...], [cyan:...], [pink:...], [green:...], [orange:...], [red:...] 로 색 지정 가능.
+- 금액은 [yellow:...] 또는 [green:...], 판정("진짜", "가짜")은 [red:...]. 대괄호는 어절에 붙여 쓴다.
+
+## 상단 제목(title_lines) — 썸네일 역할
+- 2줄, 각 줄 8~13자. 1줄 = 물건/상황, 2줄 = 반전·궁금증 "~판다고?!", "~의 소름돋는 반전", "~충격적인 가치"
+  예) ["원조 슈퍼맨이 입은", "슈트를 판다고?!"], ["농담인줄 알았던", "물건의 소름돋는 반전"], ["전문가도 경악한", "1600년대 명검의 퀄리티"]
+- color: **1줄 "yellow", 2줄 "white"** (고정).
+
+## 효과음(sfx) — 세그먼트 시작 시점. 아래 이름 중 하나 또는 null. 전체 5~8개
+- "whoosh": 장면 전환·빠른 등장
+- "pop": 자막/물건 톡 등장
+- "ding": 숫자·가격·정답 공개
+- "impact": 반전·충격 쾅
+- "surprise": 놀람 리액션
+- "question": 의문·황당
+- "success": 성공·계약 성사
+- "fail": 실패·거절·오답
+- "tension": 긴장·궁금증
+- "caption": 자막 강조·말풍선
+- "camera": 사진·순간 포착
+- 효과음은 이야기의 '순간'에만, 전체 10~13개:
+  - "ding": 금액이 처음 나오는 자막(희망가·감정가·제안가), 결정적 판정 (프로그램이 그 금액 자막이 뜨는 순간에 맞춤)
+  - "impact": 영상 전체에서 단 1번, 가장 큰 반전 금액 (콜드오픈 등)
+  - "whoosh": 장면 전환 내레이션 (전문가 부르는데, 흥정을 시작하는데, 사연 시작)
+  - "surprise": 놀라운 사실, "success": 감정 결과가 좋을 때/거래 성사, "fail": 거래 불발(거절하는 말이 담긴 clip), "question": 황당한 반응·마지막 궁금증
+  - "tension" 은 쓰지 마라. 같은 종류를 연달아 쓰지 마라.
+
+## 빨간 동그라미(mark) — 사용 안 함. mark 는 쓰지 마라.
+## 감정 태그(tag) — 사용 안 함. 항상 null.
+
+## 출력 형식 — JSON 하나만 (설명, 코드블록 표시 없이)
+{
+  "title_lines": [{"text": "...", "color": "yellow"}, {"text": "...", "color": "white"}],
+  "credit": "© History Channel",
+  "pinned_comment": "고정댓글 본문 (아래 '고정댓글 쓰는 법' 구성대로 25~35줄)",
+  "upload": {"title": "호기심형 30자 이내", "description": "1~2문장 + 해시태그 3~5개 (#전당포사나이들 포함)", "tags": ["...", "..."]},
+  "segments": [
+    {"type": "narration", "text": "내레이션 문장", "broll_id": 12, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["id 3 번역", "id 4 번역"], "sfx": null, "mark": false}
+  ]
+}
+- narration.broll_id: 내레이션 동안 보여줄 장면이 시작되는 전사 id (내용에 맞는 장면). 같은 id 반복 금지.
+- clip.from_id~to_id: 연속된 전사 id. subs 길이 = (to_id - from_id + 1). 빼고 싶은 줄은 "".
+- 전체 길이(내레이션 ≈ 글자수/9 초 + clip 길이 합) 45~57초.
+
+## 방송 이후 후일담 조사 결과 (웹 검색)
+- 1933년 미국 조폐국은 이 금화를 445,500개 찍었지만 하나도 공식 유통하지 않았고, 대부분 녹여 없앴습니다. 빠져나간 약 20개는 도난품으로 보고 나중에 회수했습니다. (출처: https://en.wikipedia.org/wiki/1933_double_eagle)
+- 이집트의 파루크 국왕은 1944년에 이 금화 한 개를 손에 넣었습니다. 1952년 국왕이 쫓겨난 뒤 그의 소장품 경매에 나왔지만 경매 전에 목록에서 빠졌고, 그 뒤 이집트에서 사라졌습니다. (출처: https://en.wikipedia.org/wiki/1933_double_eagle)
+- 1996년 영국 동전 딜러 스티븐 펜턴(Stephen Fenton)이 이 금화를 팔려다 뉴욕 월도프-아스토리아 호텔에서 미국 비밀경호국의 함정수사로 체포됐습니다. (출처: https://en.wikipedia.org/wiki/1933_double_eagle)
+- 민사소송은 2001년 소유권을 미국 정부에 넘기는 조건으로 합의됐습니다. 이후 미 재무부가 20달러를 받고 이 금화를 '발행·화폐화'하는 문서를 내주면서 합법적인 법정통화가 됐습니다. (출처: https://en.wikipedia.org/wiki/1933_double_eagle)
+- 2002년 소더비 경매에서 7,590,020달러에 낙찰됐습니다. 낙찰가의 절반과 화폐화 비용 20달러는 미 재무부가, 나머지 절반은 펜턴이 받았습니다. (출처: https://en.wikipedia.org/wiki/1933_double_eagle)
+- 2002년의 익명 낙찰자는 2021년 3월 뉴욕타임스 보도로 구두 디자이너 스튜어트 와이츠먼(Stuart Weitzman)인 것으로 밝혀졌습니다. (출처: https://en.wikipedia.org/wiki/1933_double_eagle)
+- 와이츠먼은 2021년 6월 8일 소더비 경매에 이 금화를 내놓았고, 18,872,250달러(약 1,890만 달러)에 낙찰돼 경매에서 팔린 동전 가운데 최고가 기록을 세웠습니다. (출처: https://coinweek.com/1933-double-eagle-demolishes-record-sells-for-18-9-million/)
+- 2004년 필라델피아 보석상 이스라엘 스위트(Israel Switt)의 후손들이 1933 더블 이글 10개를 정부에 넘겼습니다. 오랜 소송 끝에 미국 정부가 소유권을 지켰고, 이 동전들은 포트녹스 금괴 보관소에 있습니다. (출처: https://en.wikipedia.org/wiki/1933_double_eagle)
+- 방송에서 이언 러셀은 익명의 소유자가 3,000만 달러가 넘는 제안을 원한다고 밝혔고, 전문가 제프 개럿(Jeff Garrett)이 MS-65 등급을 확인했습니다. (출처: https://www.coinworld.com/news/us-coins-page/holy-grail-coin-goes-to-las-vegas)
+- 릭 해리슨은 라스베이거스 서카 리조트 앤드 카지노의 레거시 클럽에서 2,500만 달러를 제안했지만, 판매자가 3,000만 달러가 넘지 않으면 팔지 않겠다고 거절해 거래는 성사되지 않았습니다. (출처: https://www.actionnetwork.com/news/valuable-coin-steals-spotlight-pawn-stars-circa-casino)
+
+## 원본 정보
+프로그램/맥락 메모: 전당포 사나이들 시즌22 10화 '3천만 달러 거래'. 1933 더블 이글 금화(세계에 판매 가능한 유일한 1개). 릭 해리슨이 역대 최고가 물건을 본다.
+
+## 원본 전사본 (id [시작-끝 초] 대사)
+0 [0.1-3.8] There is one coin that is considered the holy grail
+1 [3.9-9.7] of coin collecting, the 1933 double eagle $20 gold piece.
+2 [9.8-15.8] And it was auctioned off in 2021 for almost $19 million.
+3 [15.9-20.7] The double eagle has just become available on the market.
+4 [20.8-24.3] I'm about to see the most expensive coin in the world.
+5 [24.4-26.5] Kind of nervous.
+6 [26.6-27.4] Ian.
+7 [27.5-28.2] Hi.
+8 [28.3-29.1] Very nice to meet you.
+9 [29.2-31.1] So that's it, huh?
+10 [31.1-33.1] This is it. Would you like to see it?
+11 [33.1-34.6] I would love to see it.
+12 [34.6-35.6] All right.
+13 [35.6-40.1] Oh.
+14 [40.1-42.2] Praise the light, it shined out when you opened the bag.
+15 [42.2-44.2] It did. It did.
+16 [44.2-46.2] Wow. It's just incredible.
+17 [46.2-47.8] It's the holy grail.
+18 [47.8-49.8] The most valuable coin in the world.
+19 [49.8-52.8] That's amazing.
+20 [52.8-56.8] We have a 1933 double-eval gold $20 gold piece.
+21 [56.8-59.2] Some people still consider it the most beautiful coin ever.
+22 [59.2-62.2] Teddy Roosevelt thought all of our coins were ugly.
+23 [62.2-63.8] He had a point. He wanted the best.
+24 [63.8-71.5] He wanted the best design of a coin and there was a there was a an artist Augustus St. Gordon's in 1907
+25 [71.5-76.2] He designed literally considered one of the most beautiful coins ever made
+26 [76.7-82.4] It's funny that one Roosevelt had this coin designed and the other Roosevelt had it taken out of circulation
+27 [83.5-87.1] 1933 FDR becomes president, you know, we're in the Depression
+28 [87.1-90.3] Franklin Roosevelt, he created the Gold Confiscation Act
+29 [90.5-92.0] and basically with a stroke of a pen,
+30 [92.0-94.8] he made it illegal to own large amounts of gold.
+31 [95.0-97.2] He said that everyone's got to turn their gold in at the bank
+32 [97.2-99.7] and take those gold coins and get paper money.
+33 [99.8-103.2] But the Mets did make some of these in 33,
+34 [103.3-105.4] but they never issued them.
+35 [105.5-107.7] They were supposed to melt them all down,
+36 [107.8-110.8] but there were some shady deals done, obviously, at the Mets.
+37 [110.9-112.7] A few of them got out in circulation
+38 [112.8-116.2] and originally, if you possessed one of these things,
+39 [116.2-118.5] You were going to go to jail because the government
+40 [118.5-119.9] said they were all stolen.
+41 [119.9-122.0] Yes, the government has taken possession
+42 [122.0-124.1] of every coin that's ever come out.
+43 [124.1-129.6] This is the only one that they've legalized to be owned.
+44 [129.6-131.6] A lot of times, you know, it's not only rarity.
+45 [131.6-133.3] A lot of times, it's the story.
+46 [133.3-134.1] The story.
+47 [134.1-138.6] I mean, it's got this crazy James Bond international intrigue.
+48 [138.6-139.4] Yes.
+49 [139.4-142.1] So what's the exact story with this coin?
+50 [142.1-144.8] In the 1940s, King Farouk of Egypt
+51 [144.8-147.1] was the biggest coin collector in the world
+52 [147.1-149.9] and purchased the coin in the United States,
+53 [149.9-151.6] applied for an export license.
+54 [151.6-154.4] And mainly because of that export license
+55 [154.4-156.7] is the reason why there's this one coin
+56 [156.7-158.4] that's legal to own.
+57 [158.4-159.5] This was one of the coins,
+58 [159.5-161.3] but he had exported to Egypt,
+59 [161.3-164.0] but it just disappeared for 40 odd years.
+60 [164.0-167.7] And its surfaces, in the 1990s,
+61 [167.7-169.0] then came to the US.
+62 [169.0-170.7] As soon as it arrived in America,
+63 [170.7-172.6] there was a sting operation by the FBI
+64 [172.6-174.3] and two coin dealers were arrested
+65 [174.3-176.8] for being involved in it, trying to sell the coin.
+66 [176.8-179.9] And then for many years, there was legal action.
+67 [179.9-183.3] And the end result was that the coin was legal to be sold
+68 [183.3-186.6] and to be legally owned.
+69 [186.6-189.3] It was then auctioned in June 2021
+70 [189.3-193.0] and sold for almost $19 million.
+71 [193.0-195.3] And now it's up for sale again, correct?
+72 [195.3-196.6] It's up for sale again.
+73 [196.6-198.5] So you represent the owner, and the owner
+74 [198.5-199.3] would like to sell it?
+75 [199.3-200.8] Correct, yes.
+76 [200.8-204.2] And how much does he want for it?
+77 [204.2-208.3] We're looking for offers over $30 million.
+78 [208.3-211.4] OK.
+79 [211.4-212.8] All right.
+80 [212.8-216.0] I do have a client who's had arrested.
+81 [216.0-217.3] So I need to give him a call.
+82 [217.3-220.5] And I also want, you know, Jeff Garrett, it's a lot of money.
+83 [220.5-221.5] And I want him to look at it.
+84 [221.5-222.5] Sure.
+85 [222.5-227.2] So give me a few minutes, get some phone calls.
+86 [227.2-229.5] And I will be right back.
+87 [229.5-231.2] Great.
+88 [231.2-232.8] So this is the coin.
+89 [232.8-234.2] Wow, that's stunning.
+90 [234.2-237.2] And we have to verify that the Secret Service of the FBI
+91 [237.2-238.9] is not going to be rushing in here any minute now.
+92 [238.9-239.8] Right.
+93 [239.8-243.7] Well, you know, it's a beautiful, original 1933 double
+94 [243.7-244.5] eagle.
+95 [244.5-246.2] But the most important thing about this coin
+96 [246.2-248.4] is the best story of any coin.
+97 [248.4-251.0] And it's the most famous coin.
+98 [251.0-255.2] There are literally books written about just this one coin.
+99 [255.2-257.8] It was against the law to even be in possession
+100 [257.8-258.6] of one of these.
+101 [258.6-260.0] Yeah, a lot of people don't realize it.
+102 [260.0-263.2] but the coins were never officially released.
+103 [263.2-266.5] They made almost a half a million of them, 450,000, I think.
+104 [266.5-269.2] And they were all melted, but a few of them got out.
+105 [269.2-272.3] And then in 1944, when they confiscated them
+106 [272.3-274.5] from the five or six people who had had the coins,
+107 [274.5-276.1] then they really became forbidden fruit
+108 [276.1-277.9] because they were illegal to own.
+109 [277.9-280.1] It's this coin, the only legal one to own.
+110 [280.1-283.9] And for generations, no one even thought the coin existed.
+111 [283.9-285.0] So what do you think?
+112 [285.0-287.9] OK, let me take a closer look.
+113 [287.9-289.9] The coin is, you know, fabulous.
+114 [289.9-291.6] It's also an amazing condition.
+115 [291.6-294.2] It's a MS-65, which is gem condition.
+116 [294.2-295.6] You know, just basically the way it was made
+117 [295.6-297.2] with a few little bag marks.
+118 [297.2-298.8] You know, authenticity is off the table.
+119 [298.8-300.4] It's definitely for sure real.
+120 [300.4-303.3] It's the greatest coin there is.
+121 [303.3-304.2] OK.
+122 [304.2-306.9] And he's asking $30 billion, which the price
+123 [306.9-309.4] is what someone is willing to pay.
+124 [309.4-311.1] Well, one of the biggest things
+125 [311.1-312.8] has changed in the last 10 years
+126 [312.8-315.4] is how many billionaires and multi-billionaires
+127 [315.4-317.1] have started collecting coins.
+128 [317.1-319.1] At least one of the collectors, his goal
+129 [319.1-321.2] is to have a complete set of US coins.
+130 [321.2-324.0] And for anybody who wants a complete set of US coins,
+131 [324.0-326.7] they have to have that coin.
+132 [326.7-328.5] You know, the thing about this coin,
+133 [328.5-331.2] when you had the only one, you can name your price.
+134 [331.2-332.8] And no one's going to undersell you.
+135 [332.8-334.4] So because there's nobody else got one.
+136 [334.4-335.6] He had a point there.
+137 [335.6-336.4] That's right.
+138 [336.4-338.9] It's uniqueness makes it very special.
+139 [338.9-340.1] All right, thanks, Jeff.
+140 [340.1-341.2] It was a privilege.
+141 [341.2-342.1] Love to see you in it.
+142 [342.1-343.6] Good luck, Ian.
+143 [343.6-345.7] Ah, da, da, da, da, da.
+144 [345.7-348.9] Well, you know, Jeff said he'd do a billion-air coin
+145 [348.9-349.7] collectors than I do.
+146 [349.7-350.8] Maybe they're the same people.
+147 [350.8-353.8] But I just got the one.
+148 [353.8-359.4] And he's willing to do $25 million.
+149 [359.4-361.7] It includes my small commission.
+150 [361.7-364.6] And that's what he's offering.
+151 [364.6-366.7] Look, the coin market has increased so much.
+152 [366.7-369.1] There's so many new collectors.
+153 [369.1-370.3] It is the ultimate trophy.
+154 [370.3-372.2] And look, it's a nice offer.
+155 [372.2-373.9] I will say, like, anytime there's
+156 [373.9-375.4] an eight-figure offer on a coin,
+157 [375.4-377.1] It's a nice offer.
+158 [377.1-380.3] But unfortunately, I can't get it done at that.
+159 [380.3-384.9] It needs to be over $30 million.
+160 [384.9-385.6] All right.
+161 [385.6-387.7] Thank you so much for letting me take a look at it.
+162 [387.7-388.3] You're welcome.
+163 [388.3-389.6] Pretty impressive.
+164 [389.6-390.3] OK, yeah.
+165 [390.3-391.5] Glad you enjoyed it.
+166 [391.5-391.9] Thanks, man.
+167 [391.9-392.6] Thank you.
+168 [392.6-393.2] All right.
+169 [393.2-394.1] There you go.
+170 [394.1-394.6] Put it away.
+171 [394.6-395.8] See, I've got my hands.
+172 [395.8-396.6] You have it.
+173 [396.6-396.9] Thank you.
+174 [396.9-399.8] And all the luck of the world with it.
+175 [399.8-400.1] Great.
+176 [400.1-400.4] Thanks.
+177 [400.4-401.1] Thanks for looking at it.
+178 [401.1-401.7] Have a good one.
+179 [401.7-402.3] Cheers.
+180 [402.3-404.0] Look, it's a unique item.
+181 [404.0-410.7] And I am flexible to a degree, but I do believe that it needs to be over $30 million.

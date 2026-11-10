@@ -1,0 +1,35 @@
+{
+ "text": "릭이 고객과 통화하고 흥정에 나서는데",
+ "words": [
+  {
+   "word": "릭이",
+   "start": 0.06,
+   "end": 0.262,
+   "aligned": true
+  },
+  {
+   "word": "고객과",
+   "start": 0.323,
+   "end": 0.625,
+   "aligned": true
+  },
+  {
+   "word": "통화하고",
+   "start": 0.706,
+   "end": 1.069,
+   "aligned": true
+  },
+  {
+   "word": "흥정에",
+   "start": 1.149,
+   "end": 1.432,
+   "aligned": true
+  },
+  {
+   "word": "나서는데",
+   "start": 1.472,
+   "end": 1.835,
+   "aligned": true
+  }
+ ]
+}

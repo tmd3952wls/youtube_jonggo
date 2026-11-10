@@ -1,0 +1,41 @@
+{
+ "text": "266억 원에 팔렸던 금화가 전당포에 왔는데",
+ "words": [
+  {
+   "word": "266억",
+   "start": 0.181,
+   "end": 0.784,
+   "aligned": true
+  },
+  {
+   "word": "원에",
+   "start": 0.945,
+   "end": 1.126,
+   "aligned": true
+  },
+  {
+   "word": "팔렸던",
+   "start": 1.186,
+   "end": 1.588,
+   "aligned": true
+  },
+  {
+   "word": "금화가",
+   "start": 1.689,
+   "end": 2.031,
+   "aligned": true
+  },
+  {
+   "word": "전당포에",
+   "start": 2.292,
+   "end": 2.775,
+   "aligned": true
+  },
+  {
+   "word": "왔는데",
+   "start": 2.835,
+   "end": 3.157,
+   "aligned": true
+  }
+ ]
+}

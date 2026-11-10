@@ -171,16 +171,28 @@ def generate(job: Path, cfg, context=""):
 
 
 KRW_RATE = 1400  # config.json → script.krw_rate 로 덮어씀
-_AMT = re.compile(r"((?:\d[\d,]*(?:\.\d+)?\s*(?:억|만|천)\s*)*(?:\d[\d,]*(?:\.\d+)?)?)\s*달러(\]?)")
+_AMT = re.compile(r"((?:\d[\d,]*(?:\.\d+)?\s*(?:천만|백만|억|만|천|백)\s*)*(?:\d[\d,]*(?:\.\d+)?)?)\s*달러(\]?)")
 
 
 def _usd(txt):
-    """'17만 5천' → 175000, '102,000' → 102000."""
-    total, found = 0.0, False
-    for num, unit in re.findall(r"(\d[\d,]*(?:\.\d+)?)\s*(억|만|천)?", txt):
-        total += float(num.replace(",", "")) * {"억": 1e8, "만": 1e4, "천": 1e3, "": 1}[unit]
-        found = True
-    return total if found else None
+    """'17만 5천' → 175000, '3천만' → 30000000, '102,000' → 102000."""
+    total, group, found = 0.0, 0.0, False
+    for num, unit in re.findall(r"(\d[\d,]*(?:\.\d+)?)?\s*(천만|백만|억|만|천|백)?", txt):
+        if not num and not unit:
+            continue
+        v = float(num.replace(",", "")) if num else 1.0
+        found = found or bool(num)
+        if unit in ("천만", "백만"):
+            total += v * {"천만": 1e7, "백만": 1e6}[unit]
+        elif unit == "억":
+            total += (group + v) * 1e8
+            group = 0.0
+        elif unit == "만":
+            total += (group + v) * 1e4
+            group = 0.0
+        else:
+            group += v * {"천": 1e3, "백": 1e2, "": 1}[unit]
+    return total + group if found else None
 
 
 def krw_text(usd, rate):

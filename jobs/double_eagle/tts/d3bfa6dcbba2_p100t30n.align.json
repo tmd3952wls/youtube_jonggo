@@ -1,0 +1,35 @@
+{
+ "text": "1933년에 찍고 전부 녹인 금화인데",
+ "words": [
+  {
+   "word": "1933년에",
+   "start": 0.141,
+   "end": 1.048,
+   "aligned": true
+  },
+  {
+   "word": "찍고",
+   "start": 1.129,
+   "end": 1.451,
+   "aligned": true
+  },
+  {
+   "word": "전부",
+   "start": 1.693,
+   "end": 1.975,
+   "aligned": true
+  },
+  {
+   "word": "녹인",
+   "start": 2.036,
+   "end": 2.217,
+   "aligned": true
+  },
+  {
+   "word": "금화인데",
+   "start": 2.277,
+   "end": 2.761,
+   "aligned": true
+  }
+ ]
+}

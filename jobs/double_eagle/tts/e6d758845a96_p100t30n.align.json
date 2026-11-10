@@ -1,0 +1,47 @@
+{
+ "text": "420억 원 넘게 달라는 금화가 전당포에 왔다",
+ "words": [
+  {
+   "word": "420억",
+   "start": 0.362,
+   "end": 0.744,
+   "aligned": true
+  },
+  {
+   "word": "원",
+   "start": 0.804,
+   "end": 0.905,
+   "aligned": true
+  },
+  {
+   "word": "넘게",
+   "start": 0.965,
+   "end": 1.206,
+   "aligned": true
+  },
+  {
+   "word": "달라는",
+   "start": 1.266,
+   "end": 1.508,
+   "aligned": true
+  },
+  {
+   "word": "금화가",
+   "start": 1.608,
+   "end": 1.93,
+   "aligned": true
+  },
+  {
+   "word": "전당포에",
+   "start": 2.191,
+   "end": 2.633,
+   "aligned": true
+  },
+  {
+   "word": "왔다",
+   "start": 2.673,
+   "end": 2.975,
+   "aligned": true
+  }
+ ]
+}

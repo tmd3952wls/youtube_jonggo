@@ -1,0 +1,41 @@
+{
+ "text": "이 금화의 자세한 뒷이야기는 고정댓글에 있다",
+ "words": [
+  {
+   "word": "이",
+   "start": 0.061,
+   "end": 0.162,
+   "aligned": true
+  },
+  {
+   "word": "금화의",
+   "start": 0.242,
+   "end": 0.485,
+   "aligned": true
+  },
+  {
+   "word": "자세한",
+   "start": 0.565,
+   "end": 0.868,
+   "aligned": true
+  },
+  {
+   "word": "뒷이야기는",
+   "start": 0.949,
+   "end": 1.474,
+   "aligned": true
+  },
+  {
+   "word": "고정댓글에",
+   "start": 1.635,
+   "end": 2.1,
+   "aligned": true
+  },
+  {
+   "word": "있다",
+   "start": 2.14,
+   "end": 2.383,
+   "aligned": true
+  }
+ ]
+}

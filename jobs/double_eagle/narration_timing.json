@@ -1,0 +1,110 @@
+[
+  {
+    "text": "420억 원 넘게 달라는",
+    "start": 0.0,
+    "end": 1.558,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 3.0
+  },
+  {
+    "text": "금화가 전당포에 왔다",
+    "start": 1.558,
+    "end": 3.0,
+    "method": "whisperx",
+    "prop_start": 1.983,
+    "seg_start": 0.0,
+    "seg_end": 3.0
+  },
+  {
+    "text": "1933년에 찍고 전부",
+    "start": 6.133,
+    "end": 8.119,
+    "method": "whisperx",
+    "prop_start": 6.133,
+    "seg_start": 6.133,
+    "seg_end": 8.933
+  },
+  {
+    "text": "녹인 금화인데",
+    "start": 8.119,
+    "end": 8.933,
+    "method": "whisperx",
+    "prop_start": 7.89,
+    "seg_start": 6.133,
+    "seg_end": 8.933
+  },
+  {
+    "text": "그럼 얼마를 원하냐고 묻자",
+    "start": 15.633,
+    "end": 17.1,
+    "method": "whisperx",
+    "prop_start": 15.633,
+    "seg_start": 15.633,
+    "seg_end": 17.1
+  },
+  {
+    "text": "릭은 전문가를 불렀는데",
+    "start": 19.6,
+    "end": 21.067,
+    "method": "whisperx",
+    "prop_start": 19.6,
+    "seg_start": 19.6,
+    "seg_end": 21.067
+  },
+  {
+    "text": "릭이 고객과 통화하고",
+    "start": 30.5,
+    "end": 31.599,
+    "method": "whisperx",
+    "prop_start": 30.5,
+    "seg_start": 30.5,
+    "seg_end": 32.567
+  },
+  {
+    "text": "흥정에 나서는데",
+    "start": 31.599,
+    "end": 32.567,
+    "method": "whisperx",
+    "prop_start": 31.679,
+    "seg_start": 30.5,
+    "seg_end": 32.567
+  },
+  {
+    "text": "결국 70억 원 넘는",
+    "start": 47.596,
+    "end": 48.735,
+    "method": "whisperx",
+    "prop_start": 47.596,
+    "seg_start": 47.596,
+    "seg_end": 49.698
+  },
+  {
+    "text": "차이로 불발됐다",
+    "start": 48.735,
+    "end": 49.698,
+    "method": "whisperx",
+    "prop_start": 49.092,
+    "seg_start": 47.596,
+    "seg_end": 49.698
+  },
+  {
+    "text": "이 금화의 자세한 뒷이야기는",
+    "start": 49.698,
+    "end": 51.283,
+    "method": "whisperx",
+    "prop_start": 49.698,
+    "seg_start": 49.698,
+    "seg_end": 53.264
+  },
+  {
+    "text": "고정댓글에 있다",
+    "start": 51.283,
+    "end": 53.264,
+    "method": "whisperx",
+    "prop_start": 50.672,
+    "seg_start": 49.698,
+    "seg_end": 53.264
+  }
+]

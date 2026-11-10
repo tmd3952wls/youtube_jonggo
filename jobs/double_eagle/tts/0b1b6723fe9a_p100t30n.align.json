@@ -1,0 +1,47 @@
+{
+ "text": "과연 그 값을 받을 수 있냐고 묻자",
+ "words": [
+  {
+   "word": "과연",
+   "start": 0.061,
+   "end": 0.283,
+   "aligned": true
+  },
+  {
+   "word": "그",
+   "start": 0.385,
+   "end": 0.466,
+   "aligned": true
+  },
+  {
+   "word": "값을",
+   "start": 0.506,
+   "end": 0.749,
+   "aligned": true
+  },
+  {
+   "word": "받을",
+   "start": 0.81,
+   "end": 1.012,
+   "aligned": true
+  },
+  {
+   "word": "수",
+   "start": 1.093,
+   "end": 1.134,
+   "aligned": true
+  },
+  {
+   "word": "있냐고",
+   "start": 1.174,
+   "end": 1.458,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 1.518,
+   "end": 1.863,
+   "aligned": true
+  }
+ ]
+}

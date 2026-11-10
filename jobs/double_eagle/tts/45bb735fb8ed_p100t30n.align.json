@@ -1,0 +1,23 @@
+{
+ "text": "릭은 전문가를 불렀는데",
+ "words": [
+  {
+   "word": "릭은",
+   "start": 0.06,
+   "end": 0.281,
+   "aligned": true
+  },
+  {
+   "word": "전문가를",
+   "start": 0.362,
+   "end": 0.764,
+   "aligned": true
+  },
+  {
+   "word": "불렀는데",
+   "start": 0.844,
+   "end": 1.427,
+   "aligned": true
+  }
+ ]
+}
