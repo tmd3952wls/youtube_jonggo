@@ -1,0 +1,185 @@
+{
+  "title_lines": [
+    {
+      "text": "조던이 파이널에서 신은",
+      "color": "white"
+    },
+    {
+      "text": "신발의 충격적인 가치",
+      "color": "cyan"
+    }
+  ],
+  "credit": "© History Channel",
+  "pinned_comment": "📌 이 조던 신발, 결국 얼마에 팔렸을까?\n2026년 7월 SCP Auctions 여름 경매에 '1998 파이널 2차전 전반전 착용' 에어 조던 13이 나왔어요. 방송 속 신발과 사이즈(13.5), 2006년 시카고 불스 편지, SIA 진품 증명서까지 똑같은 신발인데, 수수료 포함 1억 4천만 원에 낙찰됐습니다. 릭이 마지막에 부른 2억 2천만 원보다 훨씬 낮은 금액이에요. (경매 설명에 방송 이야기는 없어서 같은 신발이라고 공식 확인된 건 아니에요. 출처: SCP Auctions 경매 페이지)\n여러분이라면 릭의 제안을 받았을까요?",
+  "upload": {
+    "title": "조던 신발 3억 5천만 원? 전문가가 꺼낸 반전",
+    "description": "마이클 조던이 1998년 파이널에서 신었다는 농구화, 전문가의 감정 결과와 릭의 흥정은? #전당포사나이들 #마이클조던 #에어조던 #쇼츠",
+    "tags": [
+      "전당포사나이들",
+      "Pawn Stars",
+      "마이클조던",
+      "에어조던13",
+      "조던 신발",
+      "NBA 파이널",
+      "릭 해리슨"
+    ]
+  },
+  "segments": [
+    {
+      "type": "narration",
+      "text": "이 신발 하나로 [yellow:3억 5천만 원]을 부른 남자",
+      "broll_id": 21,
+      "sfx": "whoosh",
+      "fit": true
+    },
+    {
+      "type": "clip",
+      "from_id": 78,
+      "to_id": 79,
+      "subs": [
+        "@전문가 몇 년 뒤 [yellow:31억 원]에",
+        "@전문가 경매에서 팔렸어요"
+      ],
+      "sfx": "impact"
+    },
+    {
+      "type": "clip",
+      "from_id": 3,
+      "to_id": 5,
+      "subs": [
+        "@손님 농구화를 가져왔는데요",
+        "@손님 조던이 1998년 [cyan:파이널]",
+        "@손님 전반전에 신은 거예요"
+      ],
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 44,
+      "to_id": 46,
+      "subs": [
+        "@릭 이게 서류인가요?",
+        "@손님 네, 진품 증명서가 있고",
+        "@손님 시카고 [cyan:불스] 편지도 있어요"
+      ],
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 51,
+      "to_id": 52,
+      "subs": [
+        "@릭 얼마 원하세요?",
+        "@손님 [yellow:3억 5천만 원]이요"
+      ],
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 54,
+      "to_id": 54,
+      "subs": [
+        "@릭 다들 시작은 그렇죠 (황당)"
+      ],
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "이에 릭이 [cyan:전문가]를 부르는데",
+      "broll_id": 65,
+      "sfx": "pop"
+    },
+    {
+      "type": "clip",
+      "from_id": 73,
+      "to_id": 76,
+      "subs": [
+        "@전문가 사실 그 경기 후반전에",
+        "@전문가 신은 신발은",
+        "@전문가 기록이 남아 있어요",
+        "@전문가 사인해서 볼보이에게 줬죠"
+      ],
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "그 신발이 [yellow:31억 원]에 팔렸다고",
+      "broll_id": 88,
+      "sfx": "surprise"
+    },
+    {
+      "type": "clip",
+      "from_id": 101,
+      "to_id": 101,
+      "subs": [
+        "@전문가 [red:조던 전용]이 확실해요"
+      ],
+      "sfx": "ding"
+    },
+    {
+      "type": "narration",
+      "text": "서류까지 확인한 뒤 가치를 묻자",
+      "broll_id": 104,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 114,
+      "to_id": 114,
+      "subs": [
+        "@전문가 약 [yellow:3억 5천만 원]으로 봅니다"
+      ],
+      "sfx": "ding",
+      "skip_words": 12
+    },
+    {
+      "type": "narration",
+      "text": "이에 릭이 흥정을 시작하는데",
+      "broll_id": 110,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 118,
+      "to_id": 118,
+      "subs": [
+        "@릭 [yellow:2억 원] 줄게요"
+      ],
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 119,
+      "to_id": 121,
+      "subs": [
+        "@손님 그렇게 낮게는 못 해요 // @릭 최선은 얼마예요?",
+        "@손님 [yellow:2억 5천만 원]이요",
+        "@릭 [green:2억 1천만 원]까지 할게요"
+      ],
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 131,
+      "to_id": 133,
+      "subs": [
+        "@릭 [yellow:2억 2천만 원]까지 갈게요",
+        "@릭 그 이상은 없어요",
+        "@손님 그건 못 하겠어요"
+      ],
+      "sfx": "fail"
+    },
+    {
+      "type": "narration",
+      "text": "결국 [red:거래는 불발]됐는데",
+      "broll_id": 135,
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "이 신발이 결국 얼마에 팔렸는지는 [yellow:고정댓글]에",
+      "broll_id": 99,
+      "sfx": "tension"
+    }
+  ]
+}

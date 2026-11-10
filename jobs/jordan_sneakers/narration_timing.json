@@ -73,29 +73,29 @@
   },
   {
     "text": "결국 거래는 불발됐는데",
-    "start": 50.85,
-    "end": 52.35,
+    "start": 53.683,
+    "end": 55.183,
     "method": "whisperx",
-    "prop_start": 50.85,
-    "seg_start": 50.85,
-    "seg_end": 52.35
+    "prop_start": 53.683,
+    "seg_start": 53.683,
+    "seg_end": 55.183
   },
   {
     "text": "이 신발이 결국 얼마에",
-    "start": 52.35,
-    "end": 53.732,
+    "start": 55.183,
+    "end": 56.565,
     "method": "whisperx",
-    "prop_start": 52.35,
-    "seg_start": 52.35,
-    "seg_end": 55.116
+    "prop_start": 55.183,
+    "seg_start": 55.183,
+    "seg_end": 57.95
   },
   {
     "text": "팔렸는지는 고정댓글에",
-    "start": 53.732,
-    "end": 55.116,
+    "start": 56.565,
+    "end": 57.95,
     "method": "whisperx",
-    "prop_start": 53.386,
-    "seg_start": 52.35,
-    "seg_end": 55.116
+    "prop_start": 56.219,
+    "seg_start": 55.183,
+    "seg_end": 57.95
   }
 ]

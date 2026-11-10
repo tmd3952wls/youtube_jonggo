@@ -89,7 +89,7 @@
     "font_bold": false,
     "glow_alpha_white": "&H90&",
     "sub_anchor": "bottom",
-    "bottom_margin": 120,
+    "bottom_margin": 50,
     "narr_max_em": 11.0,
     "dial_max_em": 11.5,
     "min_line_sec": 0.7

@@ -2,11 +2,11 @@
   "title_lines": [
     {
       "text": "조던이 파이널에서 신은",
-      "color": "white"
+      "color": "yellow"
     },
     {
       "text": "신발의 충격적인 가치",
-      "color": "cyan"
+      "color": "white"
     }
   ],
   "credit": "© History Channel",
@@ -160,9 +160,11 @@
     },
     {
       "type": "clip",
-      "from_id": 131,
+      "from_id": 129,
       "to_id": 133,
       "subs": [
+        "@손님 [yellow:2억 5천만 원]이 최대한이에요",
+        "@손님 그게 마지노선이에요",
         "@릭 [yellow:2억 2천만 원]까지 갈게요",
         "@릭 그 이상은 없어요",
         "@손님 그건 못 하겠어요"

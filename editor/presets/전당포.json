@@ -6,7 +6,7 @@
    "narr_size": 88,
    "min_sub_sec": 0.75,
    "sub_anchor": "bottom",
-   "bottom_margin": 120
+   "bottom_margin": 50
   },
   "render": {
    "narration_dim": 0.72
