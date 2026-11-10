@@ -32,3 +32,7 @@ assets/bgm/*
 
 # Playwright MCP 스냅샷
 .playwright-mcp/
+
+# 효과음 믹스 중간 파일
+jobs/**/sfx_level_tmp/
+*.f32
