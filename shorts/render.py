@@ -865,7 +865,8 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
 
 def pick_bgm(cfg):
     if cfg["render"].get("bgm_file"):
-        return Path(cfg["render"]["bgm_file"])
+        p = Path(cfg["render"]["bgm_file"])
+        return p if p.is_absolute() else ROOT / p
     files = [p for p in (ASSETS / "bgm").glob("*") if p.suffix.lower() in (".mp3", ".wav", ".m4a", ".ogg")]
     return random.choice(files) if files else None
 
@@ -897,7 +898,8 @@ def render(job: Path, cfg):
     mix = ["[voice]"]
     idx = 1
     bgm = pick_bgm(cfg)
-    if bgm:
+    level = R.get("sfx_engine", "level") == "level"
+    if bgm and not level:  # level 엔진이면 BGM 은 sfx_level 에서 목소리 대비 음량으로 섞음
         inputs += ["-stream_loop", "-1", "-i", bgm]
         fc.append("[0:a]asplit[voice][sc]")
         fc.append(f"[{idx}:a]aresample=48000,aformat=channel_layouts=stereo,volume={R['bgm_volume']},"
@@ -944,11 +946,13 @@ def render(job: Path, cfg):
            "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", "-r", "30",
            "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-t", f"{total:.3f}",
            out.name, cwd=job)
-    if level_ev:
+    if level_ev or (level and bgm):
         from . import sfx_level
         tmp_out = job / "_lvl_final.mp4"
+        bgm_cfg = {"file": str(bgm), "start": R.get("bgm_start", 0.0), "rel_lu": R.get("bgm_rel_lu", -7.0),
+                   "fade_out": R.get("bgm_fade_out", 0.05)} if bgm else None
         _, _, mlog = sfx_level.render(job, body, out, tmp_out, level_ev, total, job / "sfx_level_tmp",
-                                      cfg.get("sfx_mix", {}).get("master_lufs", -11.0))
+                                      cfg.get("sfx_mix", {}).get("master_lufs", -11.0), bgm=bgm_cfg)
         tmp_out.replace(out)
         (job / "sfx_level.log").write_text("\n".join(mlog), encoding="utf-8")
         print("\n".join("  " + x for x in mlog))

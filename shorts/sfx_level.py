@@ -89,12 +89,23 @@ def _prep(sound):
     return y, p - a, a / SR
 
 
-def render(job, body, video, out, sfx_ev, total, work, master_lufs=-14.0):
-    """목소리만 든 body + 효과음 (시각, 종류) → 믹스 → video 그림에 붙여 out.
+def _load_bgm(path, start, n):
+    """BGM 을 start 초부터 n 샘플만큼 (짧으면 뒤를 무음으로)."""
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{start:.3f}", "-i", str(path), "-vn", "-ac", "2",
+                          "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
+    y = np.frombuffer(raw, np.float32).reshape(-1, 2).astype(np.float64)[:n]
+    if len(y) < n:
+        y = np.vstack([y, np.zeros((n - len(y), 2))])
+    return y
+
+
+def render(job, body, video, out, sfx_ev, total, work, master_lufs=-14.0, bgm=None):
+    """목소리만 든 body + 효과음 (시각, 종류) [+ BGM] → 믹스 → video 그림에 붙여 out.
+    bgm = {"file", "start"(곡 시작 지점 초), "rel_lu"(목소리 대비 음량, 기본 -7.0), "fade_out"(끝 페이드 초)}
     돌려줌: (CapCut 용 효과음 목록, 목소리 최종 음량 dB, 로그 줄들)"""
     work = Path(work)
     work.mkdir(parents=True, exist_ok=True)
-    voice = _read(body)
+    voice = _read(body)[:int(round(total * SR))]  # 소리를 영상 길이에 딱 맞춤 (BGM 끝이 영상 끝과 같게)
     N = len(voice)
     vt, vm = _momentary(voice)
     v_int = _integrated(voice)
@@ -122,6 +133,18 @@ def render(job, body, video, out, sfx_ev, total, work, master_lufs=-14.0):
                        "lead": head_cut + max(0.0, -start / SR), "gain_db": float(g),
                        "max_dur": float((a1 - a0) / SR)})
     mix = voice + sfx
+    if bgm and bgm.get("file") and Path(bgm["file"]).exists():
+        # 사용자 CapCut 기준(coconut_cocotaps_v16, 2026-11-11): 곡을 영상 처음부터 일정한 크기로 깔고(덕킹 없음)
+        # 목소리보다 7 LU 작게, 영상이 끝나는 지점에서 같이 끊김
+        b = _load_bgm(bgm["file"], float(bgm.get("start", 0.0)), N)
+        g = v_int + float(bgm.get("rel_lu", -7.0)) - _integrated(b)
+        b *= 10 ** (g / 20)
+        nf = int(float(bgm.get("fade_out", 0.05)) * SR)
+        if nf > 0:
+            b[-nf:] *= np.linspace(1.0, 0.0, nf)[:, None]
+        mix = mix + b
+        log.append(f"  BGM {Path(bgm['file']).stem[:30]} (곡 {float(bgm.get('start', 0)):.2f}초부터) "
+                   f"목소리 대비 {float(bgm.get('rel_lu', -7.0)):+.1f} LU, 영상 끝({N / SR:.2f}초)에서 끊음")
     M = master_lufs - _integrated(mix)
     mix_path = work / "mix.wav"
     (mix * 10 ** (M / 20)).astype(np.float32).tofile(work / "mix.f32")
