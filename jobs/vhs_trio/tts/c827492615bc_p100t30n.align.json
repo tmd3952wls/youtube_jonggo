@@ -1,0 +1,47 @@
+{
+ "text": "스타워즈, 할로윈, 백 투 더 퓨처 초기판이다",
+ "words": [
+  {
+   "word": "스타워즈,",
+   "start": 0.061,
+   "end": 0.504,
+   "aligned": true
+  },
+  {
+   "word": "할로윈,",
+   "start": 0.726,
+   "end": 1.09,
+   "aligned": true
+  },
+  {
+   "word": "백",
+   "start": 1.332,
+   "end": 1.433,
+   "aligned": true
+  },
+  {
+   "word": "투",
+   "start": 1.493,
+   "end": 1.513,
+   "aligned": true
+  },
+  {
+   "word": "더",
+   "start": 1.594,
+   "end": 1.655,
+   "aligned": true
+  },
+  {
+   "word": "퓨처",
+   "start": 1.715,
+   "end": 1.917,
+   "aligned": true
+  },
+  {
+   "word": "초기판이다",
+   "start": 1.998,
+   "end": 2.522,
+   "aligned": true
+  }
+ ]
+}

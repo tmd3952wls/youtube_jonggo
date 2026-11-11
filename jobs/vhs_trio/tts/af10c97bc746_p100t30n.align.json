@@ -1,0 +1,35 @@
+{
+ "text": "이 테이프들의 뒷이야기는 고정댓글에 있다",
+ "words": [
+  {
+   "word": "이",
+   "start": 0.06,
+   "end": 0.141,
+   "aligned": true
+  },
+  {
+   "word": "테이프들의",
+   "start": 0.221,
+   "end": 0.684,
+   "aligned": true
+  },
+  {
+   "word": "뒷이야기는",
+   "start": 0.764,
+   "end": 1.307,
+   "aligned": true
+  },
+  {
+   "word": "고정댓글에",
+   "start": 1.508,
+   "end": 1.991,
+   "aligned": true
+  },
+  {
+   "word": "있다",
+   "start": 2.031,
+   "end": 2.293,
+   "aligned": true
+  }
+ ]
+}

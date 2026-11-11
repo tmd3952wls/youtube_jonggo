@@ -1,0 +1,29 @@
+{
+ "text": "등급 없는 스타워즈를 살펴보는데",
+ "words": [
+  {
+   "word": "등급",
+   "start": 0.041,
+   "end": 0.243,
+   "aligned": true
+  },
+  {
+   "word": "없는",
+   "start": 0.284,
+   "end": 0.467,
+   "aligned": true
+  },
+  {
+   "word": "스타워즈를",
+   "start": 0.528,
+   "end": 0.913,
+   "aligned": true
+  },
+  {
+   "word": "살펴보는데",
+   "start": 0.974,
+   "end": 1.461,
+   "aligned": true
+  }
+ ]
+}

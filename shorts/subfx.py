@@ -212,6 +212,8 @@ def neon_events(spans, t0, t1, cfg, layer_base=3, pos=None, an=5):
     - 빛: 크게 번지지 않는 '글자색 네온' + 가독성용 '어두운 그림자'. 등장 후엔 고정
     """
     S = cfg["subtitle"]
+    if S.get("look") == "capcut_v16":
+        return capcut_events(spans, t0, t1, S, layer_base, pos, an)
     head = (rf"\an{an}\pos({pos[0]},{pos[1]})" if pos else "")
     # 캡컷 [애니메이션 > 인 > 확대]: 0% → 100% 로 커지며 등장 (zoom_in_ms, 끝으로 갈수록 감속)
     zi = S["zoom_in_ms"]
@@ -238,3 +240,30 @@ def neon_events(spans, t0, t1, cfg, layer_base=3, pos=None, an=5):
             + typed("&H00&", (lambda c: rf"\1c{bgr(c)}\3c&H000000&") if ol else (lambda c: rf"\1c{bgr(c)}\3c{bgr(c)}")))
     return [(layer_base, t0, t1, shadow), (layer_base + 1, t0, t1, glow),
             (layer_base + 2, t0, t1, text)]
+
+
+# 사용자가 CapCut coconut_cocotaps_v16 에서 직접 맞춘 자막 스타일 (2026-11-11, 이후 고정)
+#  - 글씨체 배달의민족 주아(BM JUA), 크기 13 (CapCut) = em 67.6px → libass 74
+#  - 외곽선 없음. 그림자: 검정 90%, 거리 5, 각도 -45°(오른쪽 아래), 흐림 0.45
+#  - 애니메이션 [인 > 블러 입장] 0.133초. 색: 노랑 #FFDC00, 돈 초록 #2CFF23 (사용자 프로젝트 값)
+CAPCUT_COLORS = {"yellow": "FFDC00", "green": "2CFF23"}
+
+
+def capcut_events(spans, t0, t1, S, layer_base=3, pos=None, an=5):
+    size = S.get("look_size", 74)
+    ms = S.get("look_in_ms", 133)
+    blur_in = S.get("look_blur_from", 14)
+    x, y = pos if pos else (540, 960)
+
+    def line(color_of, alpha_end, dx, dy, blur_end):
+        head = (rf"{{\an{an}\pos({x + dx},{y + dy})\fn{S.get('look_font', 'BM JUA')}\b0\bord0\shad0"
+                rf"\alpha&HFF&\blur{blur_in}\t(0,{ms},\alpha{alpha_end}\blur{blur_end})}}")
+        out = []
+        for txt, col in spans:
+            out.append("{" + color_of(col) + _fs(col, size) + "}" + txt.replace("\n", r"\N"))
+        return head + "".join(out)
+
+    shadow = line(lambda c: r"\1c&H000000&", S.get("look_shadow_alpha", "&H1A&"),
+                  S.get("look_shadow_dx", 4), S.get("look_shadow_dy", 4), S.get("look_shadow_blur", 5))
+    text = line(lambda c: rf"\1c{bgr(CAPCUT_COLORS.get(c.removesuffix('_s'), c))}", "&H00&", 0, 0, 0.4)
+    return [(layer_base, t0, t1, shadow), (layer_base + 2, t0, t1, text)]

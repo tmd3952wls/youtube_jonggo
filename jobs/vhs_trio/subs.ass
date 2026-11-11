@@ -1,0 +1,90 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,카페24 아네모네,128,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+Style: Narr,카페24 아네모네,88,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Dial,카페24 아네모네,84,&H001AE8FF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Tag,카페24 아네모네,70,&H00FFE035,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,0,7,40,40,525,1
+Style: Credit,카페24 아네모네,30,&H009A9A9A,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:55.34,Title,,0,0,0,,{\pos(540,197)\fs128\c&H001AE8FF\3c&H001AE8FF\bord0\shad3\4c&H000000&\4a&H40&}뜯지도 않은 비디오
+Dialogue: 1,0:00:00.00,0:00:55.34,Title,,0,0,0,,{\pos(540,336)\fs125\c&H00FFFFFF\3c&H00FFFFFF\bord0\shad3\4c&H000000&\4a&H40&}테이프의 충격적인 가치
+Dialogue: 20,0:00:00.00,0:00:55.34,Credit,,0,0,0,,{\an8\pos(540,1507)\fs40\1c&HFFFFFF&\alpha&HB3&\bord0\shad0\blur0.5}1분냠냠
+Dialogue: 3,0:00:00.00,0:00:01.61,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}뜯지도 않은\N비디오테이프 3개에
+Dialogue: 5,0:00:00.00,0:00:01.61,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}뜯지도 않은\N비디오테이프 3개에
+Dialogue: 3,0:00:01.61,0:00:02.43,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}5억 6천만 원{\1c&H000000&\fs74}?
+Dialogue: 5,0:00:01.61,0:00:02.43,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs74}5억 6천만 원{\1c&HFFFFFF&\fs74}?
+Dialogue: 3,0:00:02.43,0:00:03.88,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}스타워즈, 할로윈, 백
+Dialogue: 5,0:00:02.43,0:00:03.88,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}스타워즈, 할로윈, 백
+Dialogue: 3,0:00:03.88,0:00:04.97,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}투 더 퓨처 초기판이다
+Dialogue: 5,0:00:03.88,0:00:04.97,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}투 더 퓨처 초기판이다
+Dialogue: 3,0:00:04.97,0:00:06.71,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}그 시절 집집마다\N비디오로 보던
+Dialogue: 5,0:00:04.97,0:00:06.71,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}그 시절 집집마다\N비디오로 보던
+Dialogue: 3,0:00:06.71,0:00:07.55,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}바로 그 영화들
+Dialogue: 5,0:00:06.71,0:00:07.55,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}바로 그 영화들
+Dialogue: 3,0:00:07.55,0:00:09.59,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}얼마 원하세요?
+Dialogue: 5,0:00:07.55,0:00:09.59,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}얼마 원하세요?
+Dialogue: 3,0:00:09.59,0:00:12.32,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}셋 합쳐 {\1c&H000000&\fs74}5억 6천만 원{\1c&H000000&\fs74}이요
+Dialogue: 5,0:00:09.59,0:00:12.32,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}셋 합쳐 {\1c&H23FF2C&\fs74}5억 6천만 원{\1c&HFFFFFF&\fs74}이요
+Dialogue: 3,0:00:12.32,0:00:14.62,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}솔직히 너무 세네요
+Dialogue: 5,0:00:12.32,0:00:14.62,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}솔직히 너무 세네요
+Dialogue: 3,0:00:14.62,0:00:16.21,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}첨리가 VHS 감정사
+Dialogue: 5,0:00:14.62,0:00:16.21,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}첨리가 VHS 감정사
+Dialogue: 3,0:00:16.21,0:00:17.22,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}루크{\1c&H000000&\fs74}를 부르는데
+Dialogue: 5,0:00:16.21,0:00:17.22,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFF04D&\fs74}루크{\1c&HFFFFFF&\fs74}를 부르는데
+Dialogue: 3,0:00:17.22,0:00:19.62,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}전부 {\1c&H000000&\fs74}진짜{\1c&H000000&\fs74}예요
+Dialogue: 5,0:00:17.22,0:00:19.62,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}전부 {\1c&H5E4DFF&\fs74}진짜{\1c&HFFFFFF&\fs74}예요
+Dialogue: 3,0:00:19.62,0:00:20.52,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}워터마크도 좋고
+Dialogue: 5,0:00:19.62,0:00:20.52,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}워터마크도 좋고
+Dialogue: 3,0:00:20.52,0:00:21.83,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}백 투 더 퓨처는
+Dialogue: 5,0:00:20.52,0:00:21.83,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}백 투 더 퓨처는
+Dialogue: 3,0:00:21.83,0:00:24.06,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}얼마로 보세요?
+Dialogue: 5,0:00:21.83,0:00:24.06,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}얼마로 보세요?
+Dialogue: 3,0:00:24.06,0:00:26.05,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}1억 1천만 원{\1c&H000000&\fs74}이요
+Dialogue: 5,0:00:24.06,0:00:26.05,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs74}1억 1천만 원{\1c&HFFFFFF&\fs74}이요
+Dialogue: 3,0:00:26.05,0:00:27.34,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}할로윈은 85점
+Dialogue: 5,0:00:26.05,0:00:27.34,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}할로윈은 85점
+Dialogue: 3,0:00:27.34,0:00:28.53,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}넘는 고등급인데
+Dialogue: 5,0:00:27.34,0:00:28.53,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}넘는 고등급인데
+Dialogue: 3,0:00:28.53,0:00:30.22,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}얼마로 보세요?
+Dialogue: 5,0:00:28.53,0:00:30.22,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}얼마로 보세요?
+Dialogue: 3,0:00:30.22,0:00:30.92,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}1억 3천만 원{\1c&H000000&\fs74}이요
+Dialogue: 5,0:00:30.22,0:00:30.92,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs74}1억 3천만 원{\1c&HFFFFFF&\fs74}이요
+Dialogue: 3,0:00:30.92,0:00:32.09,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}스타워즈 감정가는
+Dialogue: 5,0:00:30.92,0:00:32.09,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}스타워즈 감정가는
+Dialogue: 3,0:00:32.09,0:00:34.48,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}2억 1천만 원{\1c&H000000&\fs74} 정도로 봐요
+Dialogue: 5,0:00:32.09,0:00:34.48,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs74}2억 1천만 원{\1c&HFFFFFF&\fs74} 정도로 봐요
+Dialogue: 3,0:00:34.48,0:00:36.94,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}총 {\1c&H000000&\fs74}4억 4천만 원{\1c&H000000&\fs74}이네요
+Dialogue: 5,0:00:34.48,0:00:36.94,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}총 {\1c&H23FF2C&\fs74}4억 4천만 원{\1c&HFFFFFF&\fs74}이네요
+Dialogue: 3,0:00:36.94,0:00:37.88,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}맞아요
+Dialogue: 5,0:00:36.94,0:00:37.88,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}맞아요
+Dialogue: 3,0:00:37.88,0:00:39.44,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}스타워즈엔 {\1c&H000000&\fs74}1억 1천만 원
+Dialogue: 5,0:00:37.88,0:00:39.44,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}스타워즈엔 {\1c&H23FF2C&\fs74}1억 1천만 원
+Dialogue: 3,0:00:39.44,0:00:41.48,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}셋 합쳐 {\1c&H000000&\fs74}2억 7천만 원{\1c&H000000&\fs74}이요
+Dialogue: 5,0:00:39.44,0:00:41.48,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}셋 합쳐 {\1c&H23FF2C&\fs74}2억 7천만 원{\1c&HFFFFFF&\fs74}이요
+Dialogue: 3,0:00:41.48,0:00:44.05,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}2억 7천만 원{\1c&H000000&\fs74}이요?
+Dialogue: 5,0:00:41.48,0:00:44.05,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs74}2억 7천만 원{\1c&HFFFFFF&\fs74}이요?
+Dialogue: 3,0:00:44.05,0:00:45.28,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}더 안 되나요?
+Dialogue: 5,0:00:44.05,0:00:45.28,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}더 안 되나요?
+Dialogue: 3,0:00:45.28,0:00:46.62,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}그렇게 낮게는 못 팔아요
+Dialogue: 5,0:00:45.28,0:00:46.62,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}그렇게 낮게는 못 팔아요
+Dialogue: 3,0:00:46.62,0:00:47.92,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}저도 더 드리고 싶네요
+Dialogue: 5,0:00:46.62,0:00:47.92,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}저도 더 드리고 싶네요
+Dialogue: 3,0:00:47.92,0:00:50.22,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}거기까진 못 내려가요
+Dialogue: 5,0:00:47.92,0:00:50.22,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}거기까진 못 내려가요
+Dialogue: 3,0:00:50.22,0:00:51.82,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}결국 {\1c&H000000&\fs74}거래는\N{\1c&H000000&\fs74}불발{\1c&H000000&\fs74}로 끝났다
+Dialogue: 5,0:00:50.22,0:00:51.82,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}결국 {\1c&H5E4DFF&\fs74}거래는\N{\1c&H5E4DFF&\fs74}불발{\1c&HFFFFFF&\fs74}로 끝났다
+Dialogue: 3,0:00:51.82,0:00:52.53,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}이 테이프들의
+Dialogue: 5,0:00:51.82,0:00:52.53,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}이 테이프들의
+Dialogue: 3,0:00:52.53,0:00:53.28,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}뒷이야기는
+Dialogue: 5,0:00:52.53,0:00:53.28,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}뒷이야기는
+Dialogue: 3,0:00:53.28,0:00:55.32,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}고정댓글에 있다
+Dialogue: 5,0:00:53.28,0:00:55.32,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}고정댓글에 있다

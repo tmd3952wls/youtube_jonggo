@@ -1,0 +1,47 @@
+{
+ "text": "뜯지도 않은 비디오테이프 3개에 5억 6천만 원?",
+ "words": [
+  {
+   "word": "뜯지도",
+   "start": 0.04,
+   "end": 0.323,
+   "aligned": true
+  },
+  {
+   "word": "않은",
+   "start": 0.364,
+   "end": 0.485,
+   "aligned": true
+  },
+  {
+   "word": "비디오테이프",
+   "start": 0.586,
+   "end": 1.131,
+   "aligned": true
+  },
+  {
+   "word": "3개에",
+   "start": 1.232,
+   "end": 1.576,
+   "aligned": true
+  },
+  {
+   "word": "5억",
+   "start": 1.656,
+   "end": 1.838,
+   "aligned": true
+  },
+  {
+   "word": "6천만",
+   "start": 1.899,
+   "end": 2.262,
+   "aligned": true
+  },
+  {
+   "word": "원?",
+   "start": 2.283,
+   "end": 2.323,
+   "aligned": true
+  }
+ ]
+}

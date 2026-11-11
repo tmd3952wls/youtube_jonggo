@@ -1,0 +1,23 @@
+{
+ "text": "밀봉된 빅박스판은 5~6개뿐이라는데",
+ "words": [
+  {
+   "word": "밀봉된",
+   "start": 0.08,
+   "end": 0.462,
+   "aligned": true
+  },
+  {
+   "word": "빅박스판은",
+   "start": 0.562,
+   "end": 1.165,
+   "aligned": true
+  },
+  {
+   "word": "5~6개뿐이라는데",
+   "start": 1.185,
+   "end": 2.49,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "text": "그 시절 집집마다 비디오로 보던 바로 그 영화들",
+ "words": [
+  {
+   "word": "그",
+   "start": 0.04,
+   "end": 0.101,
+   "aligned": true
+  },
+  {
+   "word": "시절",
+   "start": 0.182,
+   "end": 0.404,
+   "aligned": true
+  },
+  {
+   "word": "집집마다",
+   "start": 0.505,
+   "end": 0.989,
+   "aligned": true
+  },
+  {
+   "word": "비디오로",
+   "start": 1.11,
+   "end": 1.433,
+   "aligned": true
+  },
+  {
+   "word": "보던",
+   "start": 1.514,
+   "end": 1.675,
+   "aligned": true
+  },
+  {
+   "word": "바로",
+   "start": 1.797,
+   "end": 1.978,
+   "aligned": true
+  },
+  {
+   "word": "그",
+   "start": 2.079,
+   "end": 2.16,
+   "aligned": true
+  },
+  {
+   "word": "영화들",
+   "start": 2.2,
+   "end": 2.463,
+   "aligned": true
+  }
+ ]
+}

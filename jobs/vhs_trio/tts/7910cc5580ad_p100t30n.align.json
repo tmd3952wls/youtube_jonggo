@@ -1,0 +1,35 @@
+{
+ "text": "첨리가 VHS 감정사 루크를 부르는데",
+ "words": [
+  {
+   "word": "첨리가",
+   "start": 0.04,
+   "end": 0.401,
+   "aligned": true
+  },
+  {
+   "word": "VHS",
+   "start": 0.421,
+   "end": 1.143,
+   "aligned": true
+  },
+  {
+   "word": "감정사",
+   "start": 1.203,
+   "end": 1.584,
+   "aligned": true
+  },
+  {
+   "word": "루크를",
+   "start": 1.644,
+   "end": 1.925,
+   "aligned": true
+  },
+  {
+   "word": "부르는데",
+   "start": 2.005,
+   "end": 2.366,
+   "aligned": true
+  }
+ ]
+}

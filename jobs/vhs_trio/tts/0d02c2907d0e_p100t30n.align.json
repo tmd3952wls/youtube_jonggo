@@ -1,0 +1,23 @@
+{
+ "text": "이제 감정가를 묻자",
+ "words": [
+  {
+   "word": "이제",
+   "start": 0.04,
+   "end": 0.182,
+   "aligned": true
+  },
+  {
+   "word": "감정가를",
+   "start": 0.263,
+   "end": 0.688,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 0.749,
+   "end": 0.911,
+   "aligned": true
+  }
+ ]
+}

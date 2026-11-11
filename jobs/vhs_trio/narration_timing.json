@@ -1,0 +1,110 @@
+[
+  {
+    "text": "뜯지도 않은 비디오테이프 3개에",
+    "start": 0.0,
+    "end": 1.606,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.433
+  },
+  {
+    "text": "5억 6천만 원?",
+    "start": 1.606,
+    "end": 2.433,
+    "method": "whisperx",
+    "prop_start": 0.438,
+    "seg_start": 0.0,
+    "seg_end": 2.433
+  },
+  {
+    "text": "스타워즈, 할로윈, 백",
+    "start": 2.433,
+    "end": 3.876,
+    "method": "whisperx",
+    "prop_start": 2.433,
+    "seg_start": 2.433,
+    "seg_end": 4.967
+  },
+  {
+    "text": "투 더 퓨처 초기판이다",
+    "start": 3.876,
+    "end": 4.967,
+    "method": "whisperx",
+    "prop_start": 3.694,
+    "seg_start": 2.433,
+    "seg_end": 4.967
+  },
+  {
+    "text": "그 시절 집집마다 비디오로 보던",
+    "start": 4.967,
+    "end": 6.714,
+    "method": "whisperx",
+    "prop_start": 4.967,
+    "seg_start": 4.967,
+    "seg_end": 7.551
+  },
+  {
+    "text": "바로 그 영화들",
+    "start": 6.714,
+    "end": 7.551,
+    "method": "whisperx",
+    "prop_start": 5.936,
+    "seg_start": 4.967,
+    "seg_end": 7.551
+  },
+  {
+    "text": "첨리가 VHS 감정사",
+    "start": 14.618,
+    "end": 16.212,
+    "method": "whisperx",
+    "prop_start": 14.618,
+    "seg_start": 14.618,
+    "seg_end": 17.218
+  },
+  {
+    "text": "루크를 부르는데",
+    "start": 16.212,
+    "end": 17.218,
+    "method": "whisperx",
+    "prop_start": 15.704,
+    "seg_start": 14.618,
+    "seg_end": 17.218
+  },
+  {
+    "text": "결국 거래는 불발로 끝났다",
+    "start": 50.218,
+    "end": 51.818,
+    "method": "whisperx",
+    "prop_start": 50.218,
+    "seg_start": 50.218,
+    "seg_end": 51.818
+  },
+  {
+    "text": "이 테이프들의",
+    "start": 51.818,
+    "end": 52.532,
+    "method": "whisperx",
+    "prop_start": 51.818,
+    "seg_start": 51.818,
+    "seg_end": 55.318
+  },
+  {
+    "text": "뒷이야기는",
+    "start": 52.532,
+    "end": 53.276,
+    "method": "whisperx",
+    "prop_start": 52.62,
+    "seg_start": 51.818,
+    "seg_end": 55.318
+  },
+  {
+    "text": "고정댓글에 있다",
+    "start": 53.276,
+    "end": 55.318,
+    "method": "whisperx",
+    "prop_start": 53.193,
+    "seg_start": 51.818,
+    "seg_end": 55.318
+  }
+]

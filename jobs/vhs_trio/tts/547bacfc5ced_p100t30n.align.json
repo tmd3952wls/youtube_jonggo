@@ -1,0 +1,29 @@
+{
+ "text": "1978년 영화 할로윈도 있는데",
+ "words": [
+  {
+   "word": "1978년",
+   "start": 0.14,
+   "end": 0.963,
+   "aligned": true
+  },
+  {
+   "word": "영화",
+   "start": 1.024,
+   "end": 1.204,
+   "aligned": true
+  },
+  {
+   "word": "할로윈도",
+   "start": 1.285,
+   "end": 1.666,
+   "aligned": true
+  },
+  {
+   "word": "있는데",
+   "start": 1.686,
+   "end": 1.907,
+   "aligned": true
+  }
+ ]
+}

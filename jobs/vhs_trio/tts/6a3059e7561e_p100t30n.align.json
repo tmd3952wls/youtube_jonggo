@@ -1,0 +1,35 @@
+{
+ "text": "할로윈 밀봉본이 또 있냐 묻자",
+ "words": [
+  {
+   "word": "할로윈",
+   "start": 0.06,
+   "end": 0.361,
+   "aligned": true
+  },
+  {
+   "word": "밀봉본이",
+   "start": 0.422,
+   "end": 0.863,
+   "aligned": true
+  },
+  {
+   "word": "또",
+   "start": 0.964,
+   "end": 1.004,
+   "aligned": true
+  },
+  {
+   "word": "있냐",
+   "start": 1.044,
+   "end": 1.225,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 1.265,
+   "end": 1.445,
+   "aligned": true
+  }
+ ]
+}

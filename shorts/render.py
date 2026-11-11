@@ -356,31 +356,46 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
     cuts = cfg["_cuts"]
     alt = False
     seg_kind = kind
-    shots = [s if len(s) == 3 else (s[0], s[1], "speech") for s in shots]
+    # 4번째 값: 바깥(무료 스톡) 영상 파일 — 내레이션 중 일반인이 실제로 쓰는 모습 등 (kind "ext")
+    shots = [tuple(s) + (None,) * (4 - len(s)) if len(s) >= 3 else (s[0], s[1], "speech", None) for s in shots]
     # 영상과 소리는 항상 원본 그대로 함께 재생 (정지 화면·화면만 늘리기 없음 → 싱크 그대로).
     # 컷 감지 시각이 1~3프레임 어긋나 다음/이전 샷 프레임이 번쩍 끼는 것만 막기 위해,
     # 조각 끝이 컷 근처면 조각 자체(소리 포함)를 컷 안쪽으로 1프레임 맞춤.
     F1 = 1 / 30
     snapped = []
-    for a_, b_, kk in shots:
-        if kk != "ramp":
+    for a_, b_, kk, xf in shots:
+        if kk not in ("ramp", "ext"):
             for c in cuts:
                 if a_ - 0.1 < c < a_ + 0.12:
                     a_ = c + F1
                 if b_ - 0.12 < c < b_ + 0.1:
                     b_ = c - F1
         if b_ - a_ > 0.05:
-            snapped.append((a_, b_, kk))
+            snapped.append((a_, b_, kk, xf))
     shots = snapped or shots
     n = len(shots)
     if os.environ.get("SHOTS_DEBUG"):
         print(f"  [shots] {Path(f).name} {seg_kind}: " + " ".join(
-            f"{a_:.2f}-{b_:.2f}({b_ - a_:.2f})" for a_, b_, kk in shots))
+            f"{a_:.2f}-{b_:.2f}({b_ - a_:.2f}){'*' if kk == 'ext' else ''}" for a_, b_, kk, _x in shots))
     prev_crop, face, prev_fit = None, None, False
     nin = 0  # ffmpeg 입력 번호
-    for k, (a, b, kind) in enumerate(shots):
+    for k, (a, b, kind, xfile) in enumerate(shots):
+        if kind == "ext":  # 바깥 영상: 패널 비율로 채워 자르고(세로 위치 fy, 0=위·0.5=가운데·1=아래), 소리는 무음
+            xfile, fx, fy = xfile if isinstance(xfile, tuple) else (xfile, 0.5, 0.5)
+            d = b - a
+            inputs += ["-ss", f"{a:.3f}", "-t", f"{d:.3f}", "-i", str(xfile)]
+            vk, nin = nin, nin + 1
+            fc.append(f"[{vk}:v]fps=30,trim=duration={d:.3f},setpts=PTS-STARTPTS,scale={W}:{VH}:force_original_aspect_ratio=increase,"
+                      f"crop={W}:{VH}:(iw-ow)*{fx:.3f}:(ih-oh)*{fy:.3f},setsar=1,format=yuv420p[v{k}]")
+            fc.append(f"anullsrc=r=48000:cl=stereo,atrim=duration={d:.3f}[a{k}]")
+            mapping.append({"src_a": -1e6, "src_b": -1e6, "out_a": t, "out_b": t + d, "face_out": None, "ext": str(xfile[0] if isinstance(xfile, tuple) else xfile)})
+            prev_crop, face = None, None
+            t += d
+            continue
         cut_at = any(abs(c - a) < 0.06 for c in cuts)
         prev = shots[k - 1] if k else None
+        if prev is not None and prev[2] == "ext":
+            prev = None
         continuous = prev is not None and prev_crop is not None and not cut_at and \
             (kind == "ramp" or prev[2] == "ramp" or abs(a - prev[1]) < 0.02)
         if continuous:  # 같은 샷이 이어짐 → 같은 크롭 유지
@@ -574,15 +589,28 @@ def build_segments(job: Path, plan, cfg):
             if i == len(plan["segments"]) - 1:  # 마지막 줄 뒤에 원본 화면을 조금 더 이어 붙임 (말끝·효과음이 잘리지 않게, 정지화면 아님)
                 L += R.get("end_tail", 1.2)
             # 내레이션 그림은 소리와 무관 → 0.x초 조각이 생기지 않는 자리를 원하는 장면 근처에서 찾음
+            # ext: 내레이션 앞부분에 바깥(무료 스톡) 영상을 잠깐씩 — [{"file": "ext/x.mp4", "t": 원본초, "dur": 초}]
+            ext = [(float(e["t"]), float(e["t"]) + float(e["dur"]), "ext", (job / e["file"], float(e.get("fx", 0.5)), float(e.get("fy", 0.5)))) for e in s.get("ext", [])]
+            ext_len = sum(b_ - a_ for a_, b_, _k, _f in ext)
+            if ext and L - ext_len < 1.0:  # 남는 시간이 1초 미만이면 마지막 바깥 영상을 끝까지 늘림 (0.x초 조각 금지)
+                a_, b_, k_, f_ = ext[-1]
+                ext[-1] = (a_, b_ + (L - ext_len), k_, f_)
+                ext_len = L
+            Lfull, L = L, L - ext_len
             st0 = float(s["broll_t"]) if s.get("broll_t") is not None else tr[s["broll_id"]]["start"]  # broll_t: 원본 초 단위로 장면 직접 지정
             minv = R.get("min_visual_shot", 1.0)
             shots = None
-            for off in (0, -0.5, 0.5, -1.0, 1.0, -1.5, 1.5, -2.0, 2.0, -3.0, 3.0, -4.0, 4.0):
-                cand = broll_shots(cuts, max(0.0, st0 + off), L, src_dur, R["broll_shot_min"], R["broll_shot_max"])
-                if all(b_ - a_ >= minv for a_, b_ in cand) or len(cand) == 1 and cand[0][1] - cand[0][0] >= L - 0.05:
+            for off in (0, -0.5, 0.5, -1.0, 1.0, -1.5, 1.5, -2.0, 2.0, -3.0, 3.0, -4.0, 4.0) if L > 0.05 else ():
+                smin = min(R["broll_shot_min"], minv) if s.get("broll_t") is not None else R["broll_shot_min"]  # 직접 지정한 장면은 짧아도 씀
+                cand = broll_shots(cuts, max(0.0, st0 + off), L, src_dur, smin, R["broll_shot_max"])
+                mv = minv * 0.9 if off == 0 and s.get("broll_t") is not None else minv  # 장면을 직접 지정했으면 0.9초까지 허용
+                if all(b_ - a_ >= mv for a_, b_ in cand) or len(cand) == 1 and cand[0][1] - cand[0][0] >= L - 0.05:
                     shots = cand
                     break
-            shots = shots or broll_shots(cuts, st0, L, src_dur, R["broll_shot_min"], R["broll_shot_max"])
+            shots = shots or (broll_shots(cuts, st0, L, src_dur, R["broll_shot_min"], R["broll_shot_max"]) if L > 0.05 else [])
+            if ext:
+                shots = ext + (list(shots) if L > 0.05 else [])
+            L = Lfull
             g = voice_gain(lufs_of(wav), R)
             mapping = render_shots(src, shots, cfg, fcache, f, "narration", 0.0, tts=wav, tts_gain=g,
                                    fit_all=bool(s.get("fit")))

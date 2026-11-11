@@ -1,0 +1,35 @@
+{
+ "text": "뜯지도 않은 비디오테이프 3개를 가져왔는데",
+ "words": [
+  {
+   "word": "뜯지도",
+   "start": 0.04,
+   "end": 0.322,
+   "aligned": true
+  },
+  {
+   "word": "않은",
+   "start": 0.362,
+   "end": 0.523,
+   "aligned": true
+  },
+  {
+   "word": "비디오테이프",
+   "start": 0.624,
+   "end": 1.147,
+   "aligned": true
+  },
+  {
+   "word": "3개를",
+   "start": 1.188,
+   "end": 1.429,
+   "aligned": true
+  },
+  {
+   "word": "가져왔는데",
+   "start": 1.49,
+   "end": 1.832,
+   "aligned": true
+  }
+ ]
+}

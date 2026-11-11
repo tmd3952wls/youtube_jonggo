@@ -1,0 +1,35 @@
+{
+ "text": "희망가보다 1억 2천만 원 낮았고",
+ "words": [
+  {
+   "word": "희망가보다",
+   "start": 0.061,
+   "end": 0.565,
+   "aligned": true
+  },
+  {
+   "word": "1억",
+   "start": 0.625,
+   "end": 0.807,
+   "aligned": true
+  },
+  {
+   "word": "2천만",
+   "start": 0.847,
+   "end": 1.19,
+   "aligned": true
+  },
+  {
+   "word": "원",
+   "start": 1.23,
+   "end": 1.311,
+   "aligned": true
+  },
+  {
+   "word": "낮았고",
+   "start": 1.351,
+   "end": 1.654,
+   "aligned": true
+  }
+ ]
+}

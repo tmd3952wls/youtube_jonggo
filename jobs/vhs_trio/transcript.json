@@ -1,0 +1,686 @@
+[
+  {
+    "id": 0,
+    "start": 0.0,
+    "end": 1.0,
+    "text": "How you doing?"
+  },
+  {
+    "id": 1,
+    "start": 1.0,
+    "end": 2.0,
+    "text": "I'm good."
+  },
+  {
+    "id": 2,
+    "start": 2.0,
+    "end": 3.0,
+    "text": "How you doing?"
+  },
+  {
+    "id": 3,
+    "start": 3.0,
+    "end": 4.0,
+    "text": "I got something new and exciting to show you."
+  },
+  {
+    "id": 4,
+    "start": 4.0,
+    "end": 5.0,
+    "text": "All right."
+  },
+  {
+    "id": 5,
+    "start": 5.0,
+    "end": 6.0,
+    "text": "It's a VHS."
+  },
+  {
+    "id": 6,
+    "start": 6.0,
+    "end": 7.0,
+    "text": "Oh, yeah."
+  },
+  {
+    "id": 7,
+    "start": 7.0,
+    "end": 8.0,
+    "text": "And you have a couple graded VHS here."
+  },
+  {
+    "id": 8,
+    "start": 8.0,
+    "end": 9.0,
+    "text": "I do."
+  },
+  {
+    "id": 9,
+    "start": 9.0,
+    "end": 11.28,
+    "text": "So tell me what you have here."
+  },
+  {
+    "id": 10,
+    "start": 11.28,
+    "end": 15.52,
+    "text": "This right here is a 1982 big box version of Star Wars."
+  },
+  {
+    "id": 11,
+    "start": 15.52,
+    "end": 16.52,
+    "text": "Yeah."
+  },
+  {
+    "id": 12,
+    "start": 16.52,
+    "end": 17.52,
+    "text": "And this is the first one."
+  },
+  {
+    "id": 13,
+    "start": 17.52,
+    "end": 18.52,
+    "text": "Star Wars, New Hope."
+  },
+  {
+    "id": 14,
+    "start": 18.52,
+    "end": 19.52,
+    "text": "Yeah."
+  },
+  {
+    "id": 15,
+    "start": 19.52,
+    "end": 25.64,
+    "text": "Came out in 1977 and did like over $775 million at the box office."
+  },
+  {
+    "id": 16,
+    "start": 25.64,
+    "end": 30.12,
+    "text": "Disney owns the Star Wars franchise and they're just doing all kinds of stuff with it."
+  },
+  {
+    "id": 17,
+    "start": 30.12,
+    "end": 35.34,
+    "text": "It's not often you see VHS from this time period still sealed most of the time they get opened up"
+  },
+  {
+    "id": 18,
+    "start": 35.5,
+    "end": 41.24,
+    "text": "What can you tell me about this? I believe there are less than five maybe six known big box copies"
+  },
+  {
+    "id": 19,
+    "start": 41.56,
+    "end": 47.06,
+    "text": "Actually out there in existence that are still sealed. Okay, and then I see another cool one here as well Halloween"
+  },
+  {
+    "id": 20,
+    "start": 47.06,
+    "end": 52.98,
+    "text": "Which came out the next year in 1978. This is actually a very very early print"
+  },
+  {
+    "id": 21,
+    "start": 52.98,
+    "end": 57.98,
+    "text": "It came out in 1979, and it's the only sealed version"
+  },
+  {
+    "id": 22,
+    "start": 57.98,
+    "end": 59.48,
+    "text": "of VHS out there."
+  },
+  {
+    "id": 23,
+    "start": 59.48,
+    "end": 61.48,
+    "text": "I can see that being pretty desirable."
+  },
+  {
+    "id": 24,
+    "start": 61.48,
+    "end": 64.98,
+    "text": "I mean, Halloween is probably one of the top cult classic,"
+  },
+  {
+    "id": 25,
+    "start": 64.98,
+    "end": 66.48,
+    "text": "you know, horror flicks."
+  },
+  {
+    "id": 26,
+    "start": 66.48,
+    "end": 67.48,
+    "text": "Oh, yeah."
+  },
+  {
+    "id": 27,
+    "start": 67.48,
+    "end": 69.48,
+    "text": "And then over here, I see Back to the Future."
+  },
+  {
+    "id": 28,
+    "start": 69.48,
+    "end": 70.98,
+    "text": "This is probably my favorite one."
+  },
+  {
+    "id": 29,
+    "start": 70.98,
+    "end": 74.48,
+    "text": "It came out in 1985, but I remember watching this movie"
+  },
+  {
+    "id": 30,
+    "start": 74.48,
+    "end": 75.48,
+    "text": "so many times."
+  },
+  {
+    "id": 31,
+    "start": 75.48,
+    "end": 76.98,
+    "text": "I still watch it today, you know?"
+  },
+  {
+    "id": 32,
+    "start": 76.98,
+    "end": 78.48,
+    "text": "Just classic movie."
+  },
+  {
+    "id": 33,
+    "start": 78.48,
+    "end": 80.48,
+    "text": "Yeah, Marty would get into all kinds of trouble."
+  },
+  {
+    "id": 34,
+    "start": 80.48,
+    "end": 81.98,
+    "text": "Great theme music in it."
+  },
+  {
+    "id": 35,
+    "start": 81.98,
+    "end": 84.38,
+    "text": "I'm a little bit older than you, but I was 10 at the time,"
+  },
+  {
+    "id": 36,
+    "start": 84.48,
+    "end": 85.78,
+    "text": "and we all walked out of the theater"
+  },
+  {
+    "id": 37,
+    "start": 85.88,
+    "end": 88.32,
+    "text": "and were whistling the theme music."
+  },
+  {
+    "id": 38,
+    "start": 88.42,
+    "end": 90.32,
+    "text": "This is pretty cool stuff here."
+  },
+  {
+    "id": 39,
+    "start": 90.42,
+    "end": 91.58,
+    "text": "How much are you looking to get?"
+  },
+  {
+    "id": 40,
+    "start": 91.68,
+    "end": 95.46,
+    "text": "For the three of them, I'd like $400,000."
+  },
+  {
+    "id": 41,
+    "start": 95.56,
+    "end": 98.32,
+    "text": "I'm not going to lie, $400,000 sounds like a lot,"
+  },
+  {
+    "id": 42,
+    "start": 98.42,
+    "end": 103.2,
+    "text": "but I actually have my guy here who helps me evaluate VHSs."
+  },
+  {
+    "id": 43,
+    "start": 103.3,
+    "end": 105.9,
+    "text": "I'm especially interested in the Star Wars one"
+  },
+  {
+    "id": 44,
+    "start": 106.0,
+    "end": 107.7,
+    "text": "because it's not graded, so I think"
+  },
+  {
+    "id": 45,
+    "start": 107.8,
+    "end": 110.1,
+    "text": "he'll be able to shed some light on how much he thinks"
+  },
+  {
+    "id": 46,
+    "start": 110.2,
+    "end": 111.1,
+    "text": "it's worth."
+  },
+  {
+    "id": 47,
+    "start": 111.1,
+    "end": 115.14,
+    "text": "Let's talk to him all right. Give me just a few minutes. I'm gonna go grab them sounds like a plan"
+  },
+  {
+    "id": 48,
+    "start": 117.4,
+    "end": 121.6,
+    "text": "Here's Luke. Hey, Luke. How you doing doing well? How about you? I'm awesome. Thank you"
+  },
+  {
+    "id": 49,
+    "start": 121.6,
+    "end": 124.6,
+    "text": "Hopefully he can tell me everything I need to know about these VHS"
+  },
+  {
+    "id": 50,
+    "start": 124.88,
+    "end": 128.44,
+    "text": "Let's start with back to the future there. Nine's a really good grade in this"
+  },
+  {
+    "id": 51,
+    "start": 128.44,
+    "end": 132.92,
+    "text": "Do you see examples graded higher than that? Um of this particular variant?"
+  },
+  {
+    "id": 52,
+    "start": 132.92,
+    "end": 135.48,
+    "text": "I only know of a handful that exists and"
+  },
+  {
+    "id": 53,
+    "start": 136.36,
+    "end": 140.32,
+    "text": "This is one of the highest graded examples that I've seen now"
+  },
+  {
+    "id": 54,
+    "start": 140.32,
+    "end": 142.46,
+    "text": "Now, he says this one's a little bit special,"
+  },
+  {
+    "id": 55,
+    "start": 142.46,
+    "end": 144.36,
+    "text": "the Halloween one here."
+  },
+  {
+    "id": 56,
+    "start": 144.36,
+    "end": 147.36,
+    "text": "He says it's the only one known sealed."
+  },
+  {
+    "id": 57,
+    "start": 147.36,
+    "end": 149.6,
+    "text": "Have you seen any other sealed copies of it?"
+  },
+  {
+    "id": 58,
+    "start": 149.6,
+    "end": 154.2,
+    "text": "I've actually only seen this copy on VHS that's still sealed."
+  },
+  {
+    "id": 59,
+    "start": 154.2,
+    "end": 155.04,
+    "text": "OK."
+  },
+  {
+    "id": 60,
+    "start": 155.04,
+    "end": 157.12,
+    "text": "And then we have Star Wars here."
+  },
+  {
+    "id": 61,
+    "start": 157.12,
+    "end": 158.8,
+    "text": "I mean, tell me what you're seeing."
+  },
+  {
+    "id": 62,
+    "start": 158.8,
+    "end": 159.84,
+    "text": "That would be great."
+  },
+  {
+    "id": 63,
+    "start": 159.84,
+    "end": 161.4,
+    "text": "Of course, it's a recent pickup."
+  },
+  {
+    "id": 64,
+    "start": 161.4,
+    "end": 165.0,
+    "text": "And I was going to be sending it to Beckett soon, too."
+  },
+  {
+    "id": 65,
+    "start": 165.0,
+    "end": 167.52,
+    "text": "This is probably the movie of all movies."
+  },
+  {
+    "id": 66,
+    "start": 167.52,
+    "end": 169.48,
+    "text": "It's not great."
+  },
+  {
+    "id": 67,
+    "start": 169.48,
+    "end": 170.98,
+    "text": "This is a very clean copy."
+  },
+  {
+    "id": 68,
+    "start": 170.98,
+    "end": 173.68,
+    "text": "This was the first commercial release that you could buy."
+  },
+  {
+    "id": 69,
+    "start": 173.68,
+    "end": 176.32,
+    "text": "And everything checks out."
+  },
+  {
+    "id": 70,
+    "start": 176.32,
+    "end": 177.32,
+    "text": "The watermarks look good."
+  },
+  {
+    "id": 71,
+    "start": 177.32,
+    "end": 178.56,
+    "text": "The seals look good."
+  },
+  {
+    "id": 72,
+    "start": 178.56,
+    "end": 180.72,
+    "text": "I mean, honestly, if you're looking to get this collection,"
+  },
+  {
+    "id": 73,
+    "start": 180.72,
+    "end": 184.72,
+    "text": "this is kind of the creme de la creme of VHS."
+  },
+  {
+    "id": 74,
+    "start": 184.72,
+    "end": 186.76,
+    "text": "All right, now the important part."
+  },
+  {
+    "id": 75,
+    "start": 186.76,
+    "end": 189.84,
+    "text": "He's asking $400,000 for this whole lot."
+  },
+  {
+    "id": 76,
+    "start": 189.84,
+    "end": 191.16,
+    "text": "How much do you think back to the future"
+  },
+  {
+    "id": 77,
+    "start": 191.16,
+    "end": 193.44,
+    "text": "is worth in this grade nine?"
+  },
+  {
+    "id": 78,
+    "start": 193.44,
+    "end": 195.64,
+    "text": "I'd say $75,000."
+  },
+  {
+    "id": 79,
+    "start": 195.64,
+    "end": 196.88,
+    "text": "$75,000?"
+  },
+  {
+    "id": 80,
+    "start": 196.88,
+    "end": 200.32,
+    "text": "And so what about this Halloween with a high grade of 85 plus?"
+  },
+  {
+    "id": 81,
+    "start": 200.32,
+    "end": 201.32,
+    "text": "90,000."
+  },
+  {
+    "id": 82,
+    "start": 201.32,
+    "end": 204.4,
+    "text": "All right, well, Star Wars, what do you"
+  },
+  {
+    "id": 83,
+    "start": 204.4,
+    "end": 207.68,
+    "text": "put on the value of this just raw, not graded like this?"
+  },
+  {
+    "id": 84,
+    "start": 207.68,
+    "end": 211.28,
+    "text": "This one here, I'd say it's around an 8,5."
+  },
+  {
+    "id": 85,
+    "start": 211.28,
+    "end": 215.28,
+    "text": "So I put the value at about $150,000 for that tape."
+  },
+  {
+    "id": 86,
+    "start": 215.28,
+    "end": 216.76,
+    "text": "OK."
+  },
+  {
+    "id": 87,
+    "start": 216.76,
+    "end": 219.32,
+    "text": "So total value of $315,000."
+  },
+  {
+    "id": 88,
+    "start": 219.32,
+    "end": 220.56,
+    "text": "That's correct, Chum."
+  },
+  {
+    "id": 89,
+    "start": 220.56,
+    "end": 221.72,
+    "text": "All right, thanks for coming."
+  },
+  {
+    "id": 90,
+    "start": 221.72,
+    "end": 222.48,
+    "text": "Good to see you."
+  },
+  {
+    "id": 91,
+    "start": 222.48,
+    "end": 223.4,
+    "text": "Congrats on your collection."
+  },
+  {
+    "id": 92,
+    "start": 223.4,
+    "end": 224.12,
+    "text": "Thank you."
+  },
+  {
+    "id": 93,
+    "start": 224.12,
+    "end": 225.2,
+    "text": "Appreciate it."
+  },
+  {
+    "id": 94,
+    "start": 225.2,
+    "end": 229.28,
+    "text": "All right, well, that is a lot of money."
+  },
+  {
+    "id": 95,
+    "start": 229.28,
+    "end": 234.44,
+    "text": "I'd offer $50 on Back to the Future, $60 on Halloween,"
+  },
+  {
+    "id": 96,
+    "start": 234.44,
+    "end": 238.32,
+    "text": "and $80 on Star Wars, so $190,000."
+  },
+  {
+    "id": 97,
+    "start": 238.32,
+    "end": 240.68,
+    "text": "$190,000?"
+  },
+  {
+    "id": 98,
+    "start": 240.68,
+    "end": 242.0,
+    "text": "Can you come up any more?"
+  },
+  {
+    "id": 99,
+    "start": 242.0,
+    "end": 243.4,
+    "text": "I just can't go that low."
+  },
+  {
+    "id": 100,
+    "start": 243.4,
+    "end": 244.88,
+    "text": "Yeah, you know, I don't blame you."
+  },
+  {
+    "id": 101,
+    "start": 244.88,
+    "end": 246.48,
+    "text": "I wish I could come up more."
+  },
+  {
+    "id": 102,
+    "start": 246.48,
+    "end": 248.44,
+    "text": "No one I have to put these in auction"
+  },
+  {
+    "id": 103,
+    "start": 248.44,
+    "end": 250.56,
+    "text": "and hoping that they go over what I paid"
+  },
+  {
+    "id": 104,
+    "start": 250.56,
+    "end": 252.04,
+    "text": "and also covering fees."
+  },
+  {
+    "id": 105,
+    "start": 252.04,
+    "end": 254.16,
+    "text": "I just got to leave a lot of wiggle room in there."
+  },
+  {
+    "id": 106,
+    "start": 254.16,
+    "end": 256.6,
+    "text": "I understand, I just, I can't go down there."
+  },
+  {
+    "id": 107,
+    "start": 256.7,
+    "end": 257.84,
+    "text": "This was a really cool collection."
+  },
+  {
+    "id": 108,
+    "start": 257.94,
+    "end": 258.84,
+    "text": "I loved looking at it."
+  },
+  {
+    "id": 109,
+    "start": 258.94,
+    "end": 261.24,
+    "text": "I appreciate it, and it was awesome talking to you."
+  },
+  {
+    "id": 110,
+    "start": 261.34,
+    "end": 262.24,
+    "text": "All right, have a good day."
+  },
+  {
+    "id": 111,
+    "start": 262.34,
+    "end": 262.74,
+    "text": "Thank you."
+  },
+  {
+    "id": 112,
+    "start": 262.84,
+    "end": 263.34,
+    "text": "Thanks."
+  },
+  {
+    "id": 113,
+    "start": 263.44,
+    "end": 264.34,
+    "text": "Next."
+  }
+]

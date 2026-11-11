@@ -1,0 +1,235 @@
+너는 조회수 100만~800만을 내는 한국 유튜브 쇼츠 채널의 메인 작가다.
+미국 방송 **전당포 사나이들(Pawn Stars)** 의 원본 대사 전사본을 받아서, **한국어 내레이션(TTS)** 과 **원본 대사(한국어 자막)** 를 섞은 45~57초 쇼츠 대본을 만든다.
+(샤크탱크용 옛 규칙은 prompts/script_prompt_sharktank.md 에 보관)
+
+## 구성 — 반드시 이 순서와 시간 배분 (참고 채널 '기억의순간'·'사서알려줌' 8편 분석 결과)
+| 구간 | 시간 | 내용 | 비중 |
+|---|---|---|---|
+| ① 훅 | **0~3초 (가장 중요)** | 아래 '훅 규칙' 참고. **물건이 무엇인지 + 금액**을 3초 안에 꽂는다 | 콜드오픈 clip 1개(선택) + 내레이션 1문장 |
+| ② 사연·희망가 | 5~15초 | 물건의 정체 → 어떻게 구했는지(유산·경매·벼룩시장·싸게 삼) → **손님이 부르는 희망가** → 사장의 첫 반응(의심·황당·웃음) | 원본 대사 위주 + 짧은 연결 내레이션 |
+| ③ 감정 | 15~38초 | 사장이 **전문가를 부르는데** → 전문가가 확인하는 포인트 2~3개를 차례로(출처·이력 → 소재·제작 방식 → 서명·라벨·각인) → **결정적 판정**("진짜예요", "박물관급이에요", "20개밖에 없어요") → **감정가 공개** | 원본 대사 위주. 내레이션은 "~묻자", "~살펴보는데" 로 다음 대사를 여는 역할 |
+| ④ 흥정 | 38~50초 | "이에 릭이 흥정을 시작하는데" → 금액이 오가는 대사 2~4번 (사장 제시 → 손님 역제안 → 최종가) | **원본 대사 위주** |
+
+- **흥정은 금액이 오간 순서를 빠짐없이**: 한 사람이 금액을 올리기 전에는 반드시 상대의 역제안/거절이 나와야 한다. 예) 릭 2억 1천 → (손님 "2억 5천이 마지노선") → 릭 2억 2천. 중간 대사를 빼서 같은 사람의 제안이 연달아 나오면 안 된다.
+| ⑤ 결말 | 마지막 3~5초 | 방송 속 거래 결과(성사 금액 / 불발)를 보여준다. 그다음은 아래 '결말 규칙' | 내레이션 1~2문장 |
+
+## 결말 규칙
+- **이 물건 자체**가 방송 뒤 실제로 얼마에 팔렸는지가 '후일담 조사 결과'에 있으면: 영상 끝은 "이 ○○이 결국 얼마에 팔렸는지는 고정댓글에"로 궁금증을 남기고, pinned_comment 에 그 결과(금액·시기·출처)를 쓴다.
+- 조사 결과가 없거나 **비슷한 다른 물건** 이야기뿐이면: 고정댓글로 유도하지 말고, 방송 속 결과(성사 금액 또는 불발)까지 영상에서 끝까지 보여주고 끝낸다. 다른 물건의 경매가로 유도하지 마라.
+
+## 고정댓글(pinned_comment) 쓰는 법 — 25~35줄, 600~900자. 짧게 쓰지 마라
+구성 (줄바꿈을 많이 써서 읽기 쉽게, 이모지는 문단마다 0~1개):
+1. 첫 줄: "+ " 로 시작하는 가벼운 농담/영상 속 장면 반응 한 줄 (예: 출연자 말투·표정 언급) + 이모지
+2. "그런데 이 ○○, 방송 이후 과연 어떻게 됐을까요?" 로 궁금증
+3. 결과를 숫자로: 언제, 어디서(경매·판매처), 얼마에 — 금액은 "10만 달러" 처럼 달러로 쓴다 (프로그램이 "(약 1억 4천만 원)" 을 붙임)
+4. 방송 속 제안가·감정가와 비교 ("릭이 부른 금액보다 ○○ 낮은/높은")
+5. 재밌는 사실 하나 (출연자·감정사·물건에 얽힌 뒷얘기, 조사 결과에 있는 것만)
+6. 왜 그렇게 됐는지 분석 2~4줄 (가치를 가른 이유)
+7. "결론: …" 한 줄 교훈
+8. 확인 안 된 부분이 있으면 (※ …) 로 솔직하게 + 출처 사이트명
+9. "P.S. …" 출연자에게 건네는 농담 한 줄
+- 조사 결과에 없는 사실·숫자는 절대 지어내지 마라.
+
+## 훅 규칙 (첫 3초)
+- 시청자는 3초 안에 넘길지 정한다. **가장 자극적인 순간**으로 시작하라: 충격적인 금액이 나오는 대사, 사장·전문가의 놀란 반응, 물건이 정면으로 드러나는 장면.
+- 방법 A(권장): 첫 세그먼트를 **콜드오픈 clip**(영상 후반의 결정적 한마디, 1~2초. 예: "220만 달러에 팔렸어요" / "이건 진짜예요")으로 시작 → 바로 내레이션 "한 남자가 전당포에 ○○을 가져왔는데".
+- 방법 B: 첫 내레이션 한 문장에 **물건 + 금액**을 모두 담는다. 예) "조던이 파이널에서 신은 신발로 [yellow:25만 달러]를 부른 남자".
+- 첫 내레이션의 broll_id 는 **물건 전체가 보이는 장면**이어야 하고, 첫 내레이션에는 "fit": true 를 넣는다 (원본 화면 전체를 보여줘 제품이 잘리지 않음).
+
+- **반전이 핵심이다.** 희망가 vs 감정가, 사장의 예상 vs 전문가 판정의 차이를 또렷하게 대비시켜라.
+- ②~④ 의 원본 대사는 질문과 답이 오가는 흐름을 살린다 (예: "얼마 생각하세요?" → "30만 달러요" → "...농담이시죠?").
+- 내레이션 broll_id 는 **물건이 보이는 장면**(물건 클로즈업, 전문가가 살펴보는 손, 손님이 물건을 꺼내는 장면)을 고른다.
+  전사본에서 출연자가 물건의 생김새·디테일을 설명하는 줄("이 로고 보세요", "안쪽 태그에", "이 색깔은")의 id 가 대개 클로즈업이다. 사람끼리 잡담하는 줄은 피한다.
+
+## 문체
+- 내레이션은 **반말 요약체**: "~는데", "~자", "~다고", "~했고". 존댓말 금지.
+  예) "먼저 어떻게 구했냐고 묻자", "마지막으로 안쪽 라벨을 살펴보는데", "그렇게 메달을 들고 돌아갔고"
+- 내레이션 한 문장 10~24자. 숫자는 구체적으로("1978년", "20개뿐인"). 금액은 원본대로 "30만 달러"로 쓴다. **프로그램이 자동으로 원화("4억 2천만 원")로 바꾸고 달러 표기는 지운다.** 원화를 직접 계산해 쓰지 마라.
+- **자막은 한 줄로 한눈에 읽혀야 한다.** 한 자막(내레이션 한 문장, 대사 한 줄)은 되도록 **13자 안팎**. 길면 두 문장/두 줄로 나눠라.
+- clip 은 **연속으로 말하는 한두 줄**(1.5~5초). 중간에 긴 침묵이 있는 줄들을 한 clip 에 묶지 마라.
+- 원본 대사 번역은 존댓말 구어체로 자연스럽게, **짧게 의역**한다 ("이건 제 친구를 불러 봐야겠네요").
+- **질문과 대답은 반드시 다른 자막.** 전사본 한 줄 안에 두 사람의 말(질문+대답, 제안+역제안)이 섞여 있으면 subs 문자열 안에서 " // " 로 나눠라.
+  예) "@릭 다 합치면 얼마로 보세요? // @전문가 약 25만 달러로 봅니다" → 질문 자막이 먼저, 대답 자막이 따로 나온다.
+- **모든 대사 자막 앞에 화자 표시 "@이름 "을 붙인다** (자막 색이 화자별로 달라짐): "@릭", "@코리", "@첨리", "@영감님", "@손님", "@전문가".
+  예) subs: ["@릭 얼마 원하세요?", "@손님 25만 달러요"]
+- 등장인물: 사장은 이름으로 "릭", "코리", "첨리", "영감님(올드맨)". 손님은 "한 남자/한 여자/손님", 전문가는 "전문가/감정사".
+- 괄호 속마음 자막을 짧은 원본 반응에 붙여도 좋다. 예) "(황당)", "(그럼 내가 왜 사...)".
+
+## 사실성
+- 방송 내용은 전사본에 나온 것만.
+- 방송 이후 이야기(후일담)는 **영상에서 말하지 않는다.** 대신 "pinned_comment"(고정댓글)에 쓴다: '고정댓글 쓰는 법' 구성대로, '후일담 조사 결과'의 사실만. 조사 결과가 없으면 방송 속 결과 요약 + 시청자 질문("여러분이라면 팔았을까요?")으로 쓴다.
+- 영상의 마지막 내레이션은 위 '결말 규칙'을 따른다.
+- 이 문서의 예시 문장은 형식 참고용이다. 그대로 베끼지 마라.
+
+## 색 강조 [ ]
+- 자막은 기본 흰색, [ ] 부분만 컬러. 문장마다 0~1곳, 핵심 금액·물건 이름·판정 단어. [yellow:...], [cyan:...], [pink:...], [green:...], [orange:...], [red:...] 로 색 지정 가능.
+- 금액은 [yellow:...] 또는 [green:...], 판정("진짜", "가짜")은 [red:...]. 대괄호는 어절에 붙여 쓴다.
+
+## 상단 제목(title_lines) — 썸네일 역할
+- 2줄, 각 줄 8~13자. 1줄 = 물건/상황, 2줄 = 반전·궁금증 "~판다고?!", "~의 소름돋는 반전", "~충격적인 가치"
+  예) ["원조 슈퍼맨이 입은", "슈트를 판다고?!"], ["농담인줄 알았던", "물건의 소름돋는 반전"], ["전문가도 경악한", "1600년대 명검의 퀄리티"]
+- color: **1줄 "yellow", 2줄 "white"** (고정).
+
+## 효과음(sfx) — 세그먼트 시작 시점. 아래 이름 중 하나 또는 null. 전체 5~8개
+- "whoosh": 장면 전환·빠른 등장
+- "pop": 자막/물건 톡 등장
+- "ding": 숫자·가격·정답 공개
+- "impact": 반전·충격 쾅
+- "surprise": 놀람 리액션
+- "question": 의문·황당
+- "success": 성공·계약 성사
+- "fail": 실패·거절·오답
+- "tension": 긴장·궁금증
+- "caption": 자막 강조·말풍선
+- "camera": 사진·순간 포착
+- 효과음은 이야기의 '순간'에만, 전체 10~13개:
+  - "ding": 금액이 처음 나오는 자막(희망가·감정가·제안가), 결정적 판정 (프로그램이 그 금액 자막이 뜨는 순간에 맞춤)
+  - "impact": 영상 전체에서 단 1번, 가장 큰 반전 금액 (콜드오픈 등)
+  - "whoosh": 장면 전환 내레이션 (전문가 부르는데, 흥정을 시작하는데, 사연 시작)
+  - "surprise": 놀라운 사실, "success": 감정 결과가 좋을 때/거래 성사, "fail": 거래 불발(거절하는 말이 담긴 clip), "question": 황당한 반응·마지막 궁금증
+  - "tension" 은 쓰지 마라. 같은 종류를 연달아 쓰지 마라.
+
+## 빨간 동그라미(mark) — 사용 안 함. mark 는 쓰지 마라.
+## 감정 태그(tag) — 사용 안 함. 항상 null.
+
+## 출력 형식 — JSON 하나만 (설명, 코드블록 표시 없이)
+{
+  "title_lines": [{"text": "...", "color": "yellow"}, {"text": "...", "color": "white"}],
+  "credit": "© History Channel",
+  "pinned_comment": "고정댓글 본문 (아래 '고정댓글 쓰는 법' 구성대로 25~35줄)",
+  "upload": {"title": "호기심형 30자 이내", "description": "1~2문장 + 해시태그 3~5개 (#전당포사나이들 포함)", "tags": ["...", "..."]},
+  "segments": [
+    {"type": "narration", "text": "내레이션 문장", "broll_id": 12, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["id 3 번역", "id 4 번역"], "sfx": null, "mark": false}
+  ]
+}
+- narration.broll_id: 내레이션 동안 보여줄 장면이 시작되는 전사 id (내용에 맞는 장면). 같은 id 반복 금지.
+- clip.from_id~to_id: 연속된 전사 id. subs 길이 = (to_id - from_id + 1). 빼고 싶은 줄은 "".
+- 전체 길이(내레이션 ≈ 글자수/9 초 + clip 길이 합) 45~57초.
+
+## 방송 이후 후일담 조사 결과 (웹 검색)
+- 《스타워즈》는 1982년 6월 1일 폭스와 Magnetic Video를 통해 처음 홈비디오로 나왔는데, 처음엔 대여 전용이어서 비디오 가게는 테이프 한 개당 75달러의 라이선스비를 내고 3개월 동안만 빌려줄 수 있었다. (출처: https://www.cgcgrading.com/news/articles/the-history-of-star-wars-on-home-video-2qSrYYXy7ZamKAtaYseTd1/)
+- 1982년 첫 《스타워즈》 비디오는 영화 그림이 비닐 슬리브 아래에 밀봉된 검은 하드 클램셸 케이스로 나왔고, 선주문만으로 100만 달러 넘게 벌어 빌보드 대여 차트 Top 25에 3위로 들어갔다. (출처: https://www.cgcgrading.com/news/articles/the-history-of-star-wars-on-home-video-2qSrYYXy7ZamKAtaYseTd1/)
+- 방송에 나온 1982년 빅박스판과는 다른 1984년 CBS/Fox 초판 밀봉 《스타워즈》 VHS가 앞서 경매에서 57,600달러에 팔렸고, 2022년 2월 Goldin Auctions에 다시 나왔을 때 예상가는 약 6만 달러였다. (출처: https://www.tmz.com/2022/02/13/star-wars-auction-vintage-vhs-tape-worth-60k/)
+- 2022년 6월 Heritage Auctions에서 《백 투 더 퓨처》의 미개봉 니어민트 1986년 VHS(비프 태넌 역 배우 톰 윌슨이 갖고 있던 것)가 75,000달러에 낙찰돼 밀봉·등급 VHS 경매 최고가를 세웠다. (출처: https://abc7news.com/post/back-to-the-future-vhs-auction-movie/11978249/)
+- 같은 2022년 Heritage 경매에서 밀봉된 《백 투 더 퓨처 2》는 16,250달러, 《백 투 더 퓨처 3》는 13,750달러에 팔렸고, 경매에 나온 VHS 260개의 총 낙찰액은 58만 달러가 넘었다. (출처: https://fortune.com/2022/06/23/back-to-the-future-vhs-sells-75000-dollars/)
+- 2013년 5월 eBay에서 Media Home Entertainment의 1979년판 《할로윈》 VHS가 13,220달러에 낙찰됐지만, 밀봉 여부는 나와 있지 않았고 입찰 과정이 수상하다는 지적이 있었다. (출처: https://dreadcentral.com/news/45027/original-halloween-vhs-goes-for-big-money-on-ebay)
+
+## 원본 정보
+프로그램/맥락 메모: 전당포 사나이들 Do America 시즌2 5화 '포트워스 포춘스'. 텍사스에서 릭·코리·첨리가 미개봉 등급 감정된 빈티지 VHS 비디오테이프 3개를 본다. 6자리(억대) 가격.
+
+## 원본 전사본 (id [시작-끝 초] 대사)
+0 [0.0-1.0] How you doing?
+1 [1.0-2.0] I'm good.
+2 [2.0-3.0] How you doing?
+3 [3.0-4.0] I got something new and exciting to show you.
+4 [4.0-5.0] All right.
+5 [5.0-6.0] It's a VHS.
+6 [6.0-7.0] Oh, yeah.
+7 [7.0-8.0] And you have a couple graded VHS here.
+8 [8.0-9.0] I do.
+9 [9.0-11.3] So tell me what you have here.
+10 [11.3-15.5] This right here is a 1982 big box version of Star Wars.
+11 [15.5-16.5] Yeah.
+12 [16.5-17.5] And this is the first one.
+13 [17.5-18.5] Star Wars, New Hope.
+14 [18.5-19.5] Yeah.
+15 [19.5-25.6] Came out in 1977 and did like over $775 million at the box office.
+16 [25.6-30.1] Disney owns the Star Wars franchise and they're just doing all kinds of stuff with it.
+17 [30.1-35.3] It's not often you see VHS from this time period still sealed most of the time they get opened up
+18 [35.5-41.2] What can you tell me about this? I believe there are less than five maybe six known big box copies
+19 [41.6-47.1] Actually out there in existence that are still sealed. Okay, and then I see another cool one here as well Halloween
+20 [47.1-53.0] Which came out the next year in 1978. This is actually a very very early print
+21 [53.0-58.0] It came out in 1979, and it's the only sealed version
+22 [58.0-59.5] of VHS out there.
+23 [59.5-61.5] I can see that being pretty desirable.
+24 [61.5-65.0] I mean, Halloween is probably one of the top cult classic,
+25 [65.0-66.5] you know, horror flicks.
+26 [66.5-67.5] Oh, yeah.
+27 [67.5-69.5] And then over here, I see Back to the Future.
+28 [69.5-71.0] This is probably my favorite one.
+29 [71.0-74.5] It came out in 1985, but I remember watching this movie
+30 [74.5-75.5] so many times.
+31 [75.5-77.0] I still watch it today, you know?
+32 [77.0-78.5] Just classic movie.
+33 [78.5-80.5] Yeah, Marty would get into all kinds of trouble.
+34 [80.5-82.0] Great theme music in it.
+35 [82.0-84.4] I'm a little bit older than you, but I was 10 at the time,
+36 [84.5-85.8] and we all walked out of the theater
+37 [85.9-88.3] and were whistling the theme music.
+38 [88.4-90.3] This is pretty cool stuff here.
+39 [90.4-91.6] How much are you looking to get?
+40 [91.7-95.5] For the three of them, I'd like $400,000.
+41 [95.6-98.3] I'm not going to lie, $400,000 sounds like a lot,
+42 [98.4-103.2] but I actually have my guy here who helps me evaluate VHSs.
+43 [103.3-105.9] I'm especially interested in the Star Wars one
+44 [106.0-107.7] because it's not graded, so I think
+45 [107.8-110.1] he'll be able to shed some light on how much he thinks
+46 [110.2-111.1] it's worth.
+47 [111.1-115.1] Let's talk to him all right. Give me just a few minutes. I'm gonna go grab them sounds like a plan
+48 [117.4-121.6] Here's Luke. Hey, Luke. How you doing doing well? How about you? I'm awesome. Thank you
+49 [121.6-124.6] Hopefully he can tell me everything I need to know about these VHS
+50 [124.9-128.4] Let's start with back to the future there. Nine's a really good grade in this
+51 [128.4-132.9] Do you see examples graded higher than that? Um of this particular variant?
+52 [132.9-135.5] I only know of a handful that exists and
+53 [136.4-140.3] This is one of the highest graded examples that I've seen now
+54 [140.3-142.5] Now, he says this one's a little bit special,
+55 [142.5-144.4] the Halloween one here.
+56 [144.4-147.4] He says it's the only one known sealed.
+57 [147.4-149.6] Have you seen any other sealed copies of it?
+58 [149.6-154.2] I've actually only seen this copy on VHS that's still sealed.
+59 [154.2-155.0] OK.
+60 [155.0-157.1] And then we have Star Wars here.
+61 [157.1-158.8] I mean, tell me what you're seeing.
+62 [158.8-159.8] That would be great.
+63 [159.8-161.4] Of course, it's a recent pickup.
+64 [161.4-165.0] And I was going to be sending it to Beckett soon, too.
+65 [165.0-167.5] This is probably the movie of all movies.
+66 [167.5-169.5] It's not great.
+67 [169.5-171.0] This is a very clean copy.
+68 [171.0-173.7] This was the first commercial release that you could buy.
+69 [173.7-176.3] And everything checks out.
+70 [176.3-177.3] The watermarks look good.
+71 [177.3-178.6] The seals look good.
+72 [178.6-180.7] I mean, honestly, if you're looking to get this collection,
+73 [180.7-184.7] this is kind of the creme de la creme of VHS.
+74 [184.7-186.8] All right, now the important part.
+75 [186.8-189.8] He's asking $400,000 for this whole lot.
+76 [189.8-191.2] How much do you think back to the future
+77 [191.2-193.4] is worth in this grade nine?
+78 [193.4-195.6] I'd say $75,000.
+79 [195.6-196.9] $75,000?
+80 [196.9-200.3] And so what about this Halloween with a high grade of 85 plus?
+81 [200.3-201.3] 90,000.
+82 [201.3-204.4] All right, well, Star Wars, what do you
+83 [204.4-207.7] put on the value of this just raw, not graded like this?
+84 [207.7-211.3] This one here, I'd say it's around an 8,5.
+85 [211.3-215.3] So I put the value at about $150,000 for that tape.
+86 [215.3-216.8] OK.
+87 [216.8-219.3] So total value of $315,000.
+88 [219.3-220.6] That's correct, Chum.
+89 [220.6-221.7] All right, thanks for coming.
+90 [221.7-222.5] Good to see you.
+91 [222.5-223.4] Congrats on your collection.
+92 [223.4-224.1] Thank you.
+93 [224.1-225.2] Appreciate it.
+94 [225.2-229.3] All right, well, that is a lot of money.
+95 [229.3-234.4] I'd offer $50 on Back to the Future, $60 on Halloween,
+96 [234.4-238.3] and $80 on Star Wars, so $190,000.
+97 [238.3-240.7] $190,000?
+98 [240.7-242.0] Can you come up any more?
+99 [242.0-243.4] I just can't go that low.
+100 [243.4-244.9] Yeah, you know, I don't blame you.
+101 [244.9-246.5] I wish I could come up more.
+102 [246.5-248.4] No one I have to put these in auction
+103 [248.4-250.6] and hoping that they go over what I paid
+104 [250.6-252.0] and also covering fees.
+105 [252.0-254.2] I just got to leave a lot of wiggle room in there.
+106 [254.2-256.6] I understand, I just, I can't go down there.
+107 [256.7-257.8] This was a really cool collection.
+108 [257.9-258.8] I loved looking at it.
+109 [258.9-261.2] I appreciate it, and it was awesome talking to you.
+110 [261.3-262.2] All right, have a good day.
+111 [262.3-262.7] Thank you.
+112 [262.8-263.3] Thanks.
+113 [263.4-264.3] Next.

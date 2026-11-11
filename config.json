@@ -92,7 +92,16 @@
     "bottom_margin": 50,
     "narr_max_em": 11.0,
     "dial_max_em": 11.5,
-    "min_line_sec": 0.7
+    "min_line_sec": 0.7,
+    "look": "capcut_v16",
+    "look_font": "BM JUA",
+    "look_size": 74,
+    "look_in_ms": 133,
+    "look_shadow_dx": 4,
+    "look_shadow_dy": 4,
+    "look_shadow_blur": 5,
+    "look_shadow_alpha": "&H1A&",
+    "look_blur_from": 14
   },
   "render": {
     "clip_pad_before": 0.1,
