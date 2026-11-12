@@ -18,7 +18,7 @@
     "krw_rate": 1400
   },
   "tts": {
-    "provider": "typecast",
+    "provider": "capcut",
     "extra_tempo": 1.0,
     "fish": {
       "model": "s2.1-pro",
@@ -39,7 +39,13 @@
       "rate": 3
     },
     "max_pause": 0.1,
-    "pause_threshold_db": -30
+    "pause_threshold_db": -30,
+    "capcut": {
+      "voice": "vibrant_baritone",
+      "tone_type": "활기찬 바리톤",
+      "speed": 1.1,
+      "_why": "2026-11-12 사용자 고정 (socks_footcardigan_v10): CapCut '활기찬 바리톤(Vibrant Baritone)' 1.1배속. 예전 Typecast 김건 = provider typecast"
+    }
   },
   "layout": {
     "width": 1080,

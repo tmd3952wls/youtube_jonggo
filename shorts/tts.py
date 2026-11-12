@@ -3,6 +3,7 @@
 provider
 - fish     : Fish Audio API  (FISH_API_KEY, config tts.fish.reference_id)
 - typecast : Typecast API    (TYPECAST_API_KEY, config tts.typecast.voice_id)
+- capcut   : CapCut AI 목소리 (tools/capcut_voice.py 로 미리 만들어 둔 파일, config tts.capcut.voice)
 - sapi     : Windows 기본 한국어 음성(Heami). 무료 테스트용, 품질 낮음.
 결과는 앞뒤 무음을 잘라낸 48kHz 스테레오 wav. 같은 문장은 캐시 재사용.
 """
@@ -74,7 +75,18 @@ def _sapi(text, out, c):
     subprocess.run(["powershell", "-NoProfile", "-Command", ps], check=True, capture_output=True)
 
 
-PROVIDERS = {"fish": _fish, "typecast": _typecast, "sapi": _sapi}
+def _capcut(text, out: Path, c):
+    """CapCut AI 목소리 (2026-11-12, 사용자 고정: 활기찬 바리톤 1.1배속). CapCut 은 외부 API 가 없어
+    tools/capcut_voice.py make → CapCut 텍스트 읽기 → harvest 로 만든 assets/voices/<voice>/<md5>.wav 를 씀."""
+    import shutil
+    from .common import ASSETS
+    f = ASSETS / "voices" / c["voice"] / (hashlib.md5(text.strip().encode("utf-8")).hexdigest()[:16] + ".wav")
+    if not f.exists():
+        raise RuntimeError(f"CapCut 목소리 파일 없음: {text} → python tools/capcut_voice.py make/harvest --job <job> 먼저")
+    shutil.copy2(f, out)
+
+
+PROVIDERS = {"fish": _fish, "typecast": _typecast, "sapi": _sapi, "capcut": _capcut}
 
 
 def synth(text, tts_dir: Path, cfg):
