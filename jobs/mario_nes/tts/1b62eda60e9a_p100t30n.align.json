@@ -1,0 +1,23 @@
+{
+ "text": "1985년 시험 출시판이라는데",
+ "words": [
+  {
+   "word": "1985년",
+   "start": 0.441,
+   "end": 0.722,
+   "aligned": true
+  },
+  {
+   "word": "시험",
+   "start": 0.822,
+   "end": 0.963,
+   "aligned": true
+  },
+  {
+   "word": "출시판이라는데",
+   "start": 1.023,
+   "end": 1.785,
+   "aligned": true
+  }
+ ]
+}

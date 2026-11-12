@@ -1,0 +1,29 @@
+{
+ "text": "이에 릭이 흥정을 시작하는데",
+ "words": [
+  {
+   "word": "이에",
+   "start": 0.0,
+   "end": 0.161,
+   "aligned": true
+  },
+  {
+   "word": "릭이",
+   "start": 0.241,
+   "end": 0.442,
+   "aligned": true
+  },
+  {
+   "word": "흥정을",
+   "start": 0.522,
+   "end": 0.883,
+   "aligned": true
+  },
+  {
+   "word": "시작하는데",
+   "start": 0.943,
+   "end": 1.465,
+   "aligned": true
+  }
+ ]
+}

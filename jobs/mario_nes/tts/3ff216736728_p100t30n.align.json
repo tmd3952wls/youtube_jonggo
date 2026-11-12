@@ -1,0 +1,29 @@
+{
+ "text": "릭이 첨리를 불러 살펴보는데",
+ "words": [
+  {
+   "word": "릭이",
+   "start": 0.061,
+   "end": 0.223,
+   "aligned": true
+  },
+  {
+   "word": "첨리를",
+   "start": 0.283,
+   "end": 0.567,
+   "aligned": true
+  },
+  {
+   "word": "불러",
+   "start": 0.627,
+   "end": 0.809,
+   "aligned": true
+  },
+  {
+   "word": "살펴보는데",
+   "start": 0.85,
+   "end": 1.396,
+   "aligned": true
+  }
+ ]
+}

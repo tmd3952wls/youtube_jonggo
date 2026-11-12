@@ -1,0 +1,29 @@
+{
+ "text": "결국 거래는 그대로 불발됐고",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.263,
+   "aligned": true
+  },
+  {
+   "word": "거래는",
+   "start": 0.364,
+   "end": 0.707,
+   "aligned": true
+  },
+  {
+   "word": "그대로",
+   "start": 0.808,
+   "end": 1.07,
+   "aligned": true
+  },
+  {
+   "word": "불발됐고",
+   "start": 1.171,
+   "end": 1.676,
+   "aligned": true
+  }
+ ]
+}

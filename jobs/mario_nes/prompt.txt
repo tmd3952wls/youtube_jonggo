@@ -1,0 +1,240 @@
+너는 조회수 100만~800만을 내는 한국 유튜브 쇼츠 채널의 메인 작가다.
+미국 방송 **전당포 사나이들(Pawn Stars)** 의 원본 대사 전사본을 받아서, **한국어 내레이션(TTS)** 과 **원본 대사(한국어 자막)** 를 섞은 45~57초 쇼츠 대본을 만든다.
+(샤크탱크용 옛 규칙은 prompts/script_prompt_sharktank.md 에 보관)
+
+## 구성 — 반드시 이 순서와 시간 배분 (참고 채널 '기억의순간'·'사서알려줌' 8편 분석 결과)
+| 구간 | 시간 | 내용 | 비중 |
+|---|---|---|---|
+| ① 훅 | **0~3초 (가장 중요)** | 아래 '훅 규칙' 참고. **물건이 무엇인지 + 금액**을 3초 안에 꽂는다 | 콜드오픈 clip 1개(선택) + 내레이션 1문장 |
+| ② 사연·희망가 | 5~15초 | 물건의 정체 → 어떻게 구했는지(유산·경매·벼룩시장·싸게 삼) → **손님이 부르는 희망가** → 사장의 첫 반응(의심·황당·웃음) | 원본 대사 위주 + 짧은 연결 내레이션 |
+| ③ 감정 | 15~38초 | 사장이 **전문가를 부르는데** → 전문가가 확인하는 포인트 2~3개를 차례로(출처·이력 → 소재·제작 방식 → 서명·라벨·각인) → **결정적 판정**("진짜예요", "박물관급이에요", "20개밖에 없어요") → **감정가 공개** | 원본 대사 위주. 내레이션은 "~묻자", "~살펴보는데" 로 다음 대사를 여는 역할 |
+| ④ 흥정 | 38~50초 | "이에 릭이 흥정을 시작하는데" → 금액이 오가는 대사 2~4번 (사장 제시 → 손님 역제안 → 최종가) | **원본 대사 위주** |
+
+- **흥정은 금액이 오간 순서를 빠짐없이**: 한 사람이 금액을 올리기 전에는 반드시 상대의 역제안/거절이 나와야 한다. 예) 릭 2억 1천 → (손님 "2억 5천이 마지노선") → 릭 2억 2천. 중간 대사를 빼서 같은 사람의 제안이 연달아 나오면 안 된다.
+| ⑤ 결말 | 마지막 3~5초 | 방송 속 거래 결과(성사 금액 / 불발)를 보여준다. 그다음은 아래 '결말 규칙' | 내레이션 1~2문장 |
+
+## 결말 규칙
+- **이 물건 자체**가 방송 뒤 실제로 얼마에 팔렸는지가 '후일담 조사 결과'에 있으면: 영상 끝은 "이 ○○이 결국 얼마에 팔렸는지는 고정댓글에"로 궁금증을 남기고, pinned_comment 에 그 결과(금액·시기·출처)를 쓴다.
+- 조사 결과가 없거나 **비슷한 다른 물건** 이야기뿐이면: 고정댓글로 유도하지 말고, 방송 속 결과(성사 금액 또는 불발)까지 영상에서 끝까지 보여주고 끝낸다. 다른 물건의 경매가로 유도하지 마라.
+
+## 고정댓글(pinned_comment) 쓰는 법 — 25~35줄, 600~900자. 짧게 쓰지 마라
+구성 (줄바꿈을 많이 써서 읽기 쉽게, 이모지는 문단마다 0~1개):
+1. 첫 줄: "+ " 로 시작하는 가벼운 농담/영상 속 장면 반응 한 줄 (예: 출연자 말투·표정 언급) + 이모지
+2. "그런데 이 ○○, 방송 이후 과연 어떻게 됐을까요?" 로 궁금증
+3. 결과를 숫자로: 언제, 어디서(경매·판매처), 얼마에 — 금액은 "10만 달러" 처럼 달러로 쓴다 (프로그램이 "(약 1억 4천만 원)" 을 붙임)
+4. 방송 속 제안가·감정가와 비교 ("릭이 부른 금액보다 ○○ 낮은/높은")
+5. 재밌는 사실 하나 (출연자·감정사·물건에 얽힌 뒷얘기, 조사 결과에 있는 것만)
+6. 왜 그렇게 됐는지 분석 2~4줄 (가치를 가른 이유)
+7. "결론: …" 한 줄 교훈
+8. 확인 안 된 부분이 있으면 (※ …) 로 솔직하게 + 출처 사이트명
+9. "P.S. …" 출연자에게 건네는 농담 한 줄
+- 조사 결과에 없는 사실·숫자는 절대 지어내지 마라.
+
+## 훅 규칙 (첫 3초)
+- 시청자는 3초 안에 넘길지 정한다. **가장 자극적인 순간**으로 시작하라: 충격적인 금액이 나오는 대사, 사장·전문가의 놀란 반응, 물건이 정면으로 드러나는 장면.
+- 방법 A(권장): 첫 세그먼트를 **콜드오픈 clip**(영상 후반의 결정적 한마디, 1~2초. 예: "220만 달러에 팔렸어요" / "이건 진짜예요")으로 시작 → 바로 내레이션 "한 남자가 전당포에 ○○을 가져왔는데".
+- 방법 B: 첫 내레이션 한 문장에 **물건 + 금액**을 모두 담는다. 예) "조던이 파이널에서 신은 신발로 [yellow:25만 달러]를 부른 남자".
+- 첫 내레이션의 broll_id 는 **물건 전체가 보이는 장면**이어야 하고, 첫 내레이션에는 "fit": true 를 넣는다 (원본 화면 전체를 보여줘 제품이 잘리지 않음).
+
+- **반전이 핵심이다.** 희망가 vs 감정가, 사장의 예상 vs 전문가 판정의 차이를 또렷하게 대비시켜라.
+- ②~④ 의 원본 대사는 질문과 답이 오가는 흐름을 살린다 (예: "얼마 생각하세요?" → "30만 달러요" → "...농담이시죠?").
+- 내레이션 broll_id 는 **물건이 보이는 장면**(물건 클로즈업, 전문가가 살펴보는 손, 손님이 물건을 꺼내는 장면)을 고른다.
+  전사본에서 출연자가 물건의 생김새·디테일을 설명하는 줄("이 로고 보세요", "안쪽 태그에", "이 색깔은")의 id 가 대개 클로즈업이다. 사람끼리 잡담하는 줄은 피한다.
+
+## 문체
+- 내레이션은 **반말 요약체**: "~는데", "~자", "~다고", "~했고". 존댓말 금지.
+  예) "먼저 어떻게 구했냐고 묻자", "마지막으로 안쪽 라벨을 살펴보는데", "그렇게 메달을 들고 돌아갔고"
+- 내레이션 한 문장 10~24자. 숫자는 구체적으로("1978년", "20개뿐인"). 금액은 원본대로 "30만 달러"로 쓴다. **프로그램이 자동으로 원화("4억 2천만 원")로 바꾸고 달러 표기는 지운다.** 원화를 직접 계산해 쓰지 마라.
+- **자막은 한 줄로 한눈에 읽혀야 한다.** 한 자막(내레이션 한 문장, 대사 한 줄)은 되도록 **13자 안팎**. 길면 두 문장/두 줄로 나눠라.
+- clip 은 **연속으로 말하는 한두 줄**(1.5~5초). 중간에 긴 침묵이 있는 줄들을 한 clip 에 묶지 마라.
+- 원본 대사 번역은 존댓말 구어체로 자연스럽게, **짧게 의역**한다 ("이건 제 친구를 불러 봐야겠네요").
+- **질문과 대답은 반드시 다른 자막.** 전사본 한 줄 안에 두 사람의 말(질문+대답, 제안+역제안)이 섞여 있으면 subs 문자열 안에서 " // " 로 나눠라.
+  예) "@릭 다 합치면 얼마로 보세요? // @전문가 약 25만 달러로 봅니다" → 질문 자막이 먼저, 대답 자막이 따로 나온다.
+- **모든 대사 자막 앞에 화자 표시 "@이름 "을 붙인다** (자막 색이 화자별로 달라짐): "@릭", "@코리", "@첨리", "@영감님", "@손님", "@전문가".
+  예) subs: ["@릭 얼마 원하세요?", "@손님 25만 달러요"]
+- 등장인물: 사장은 이름으로 "릭", "코리", "첨리", "영감님(올드맨)". 손님은 "한 남자/한 여자/손님", 전문가는 "전문가/감정사".
+- 괄호 속마음 자막을 짧은 원본 반응에 붙여도 좋다. 예) "(황당)", "(그럼 내가 왜 사...)".
+
+## 사실성
+- 방송 내용은 전사본에 나온 것만.
+- 방송 이후 이야기(후일담)는 **영상에서 말하지 않는다.** 대신 "pinned_comment"(고정댓글)에 쓴다: '고정댓글 쓰는 법' 구성대로, '후일담 조사 결과'의 사실만. 조사 결과가 없으면 방송 속 결과 요약 + 시청자 질문("여러분이라면 팔았을까요?")으로 쓴다.
+- 영상의 마지막 내레이션은 위 '결말 규칙'을 따른다.
+- 이 문서의 예시 문장은 형식 참고용이다. 그대로 베끼지 마라.
+
+## 색 강조 [ ]
+- 자막은 기본 흰색, [ ] 부분만 컬러. 문장마다 0~1곳, 핵심 금액·물건 이름·판정 단어. [yellow:...], [cyan:...], [pink:...], [green:...], [orange:...], [red:...] 로 색 지정 가능.
+- 금액은 [yellow:...] 또는 [green:...], 판정("진짜", "가짜")은 [red:...]. 대괄호는 어절에 붙여 쓴다.
+
+## 상단 제목(title_lines) — 썸네일 역할
+- 2줄, 각 줄 8~13자. 1줄 = 물건/상황, 2줄 = 반전·궁금증 "~판다고?!", "~의 소름돋는 반전", "~충격적인 가치"
+  예) ["원조 슈퍼맨이 입은", "슈트를 판다고?!"], ["농담인줄 알았던", "물건의 소름돋는 반전"], ["전문가도 경악한", "1600년대 명검의 퀄리티"]
+- color: **1줄 "yellow", 2줄 "white"** (고정).
+
+## 효과음(sfx) — 세그먼트 시작 시점. 아래 이름 중 하나 또는 null. 전체 5~8개
+- "whoosh": 장면 전환·빠른 등장
+- "pop": 자막/물건 톡 등장
+- "ding": 숫자·가격·정답 공개
+- "impact": 반전·충격 쾅
+- "surprise": 놀람 리액션
+- "question": 의문·황당
+- "success": 성공·계약 성사
+- "fail": 실패·거절·오답
+- "tension": 긴장·궁금증
+- "caption": 자막 강조·말풍선
+- "camera": 사진·순간 포착
+- 효과음은 이야기의 '순간'에만, 전체 10~13개:
+  - "ding": 금액이 처음 나오는 자막(희망가·감정가·제안가), 결정적 판정 (프로그램이 그 금액 자막이 뜨는 순간에 맞춤)
+  - "impact": 영상 전체에서 단 1번, 가장 큰 반전 금액 (콜드오픈 등)
+  - "whoosh": 장면 전환 내레이션 (전문가 부르는데, 흥정을 시작하는데, 사연 시작)
+  - "surprise": 놀라운 사실, "success": 감정 결과가 좋을 때/거래 성사, "fail": 거래 불발(거절하는 말이 담긴 clip), "question": 황당한 반응·마지막 궁금증
+  - "tension" 은 쓰지 마라. 같은 종류를 연달아 쓰지 마라.
+
+## 빨간 동그라미(mark) — 사용 안 함. mark 는 쓰지 마라.
+## 감정 태그(tag) — 사용 안 함. 항상 null.
+
+## 출력 형식 — JSON 하나만 (설명, 코드블록 표시 없이)
+{
+  "title_lines": [{"text": "...", "color": "yellow"}, {"text": "...", "color": "white"}],
+  "credit": "© History Channel",
+  "pinned_comment": "고정댓글 본문 (아래 '고정댓글 쓰는 법' 구성대로 25~35줄)",
+  "upload": {"title": "호기심형 30자 이내", "description": "1~2문장 + 해시태그 3~5개 (#전당포사나이들 포함)", "tags": ["...", "..."]},
+  "segments": [
+    {"type": "narration", "text": "내레이션 문장", "broll_id": 12, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["id 3 번역", "id 4 번역"], "sfx": null, "mark": false}
+  ]
+}
+- narration.broll_id: 내레이션 동안 보여줄 장면이 시작되는 전사 id (내용에 맞는 장면). 같은 id 반복 금지.
+- clip.from_id~to_id: 연속된 전사 id. subs 길이 = (to_id - from_id + 1). 빼고 싶은 줄은 "".
+- 전체 길이(내레이션 ≈ 글자수/9 초 + clip 길이 합) 45~57초.
+
+## 방송 이후 후일담 조사 결과 (웹 검색)
+- 2019년 11월 18일 방영된 시즌 17 'Pawn v. Ferrari'에서 릭 해리슨은 손님이 부른 100만 달러를 받아들이지 않았고, 손님은 게임을 팔지 않은 채 가게를 나갔습니다. (출처: https://looper.com/594833/this-video-game-that-was-denied-on-pawn-stars-sold-for-2-million)
+- 방송에 나온 카트리지는 Wata Games에서 9.4 등급과 씰 등급 A++를 받았고, Wata의 데니즈 칸이 직접 나와 감정했습니다. (출처: https://comicbook.com/2019/12/04/rare-super-mario-bros-copy-fails-to-sell-on-pawn-stars)
+- 스티커 밀봉판은 NES가 1985~1986년 뉴욕과 LA에서 시험 출시될 때 팔린 초기 포장입니다. 2019년 2월 6일 Heritage Auctions에서 Wata 9.4 A++ 등급의 스티커 밀봉판이 10만 150달러에 팔렸고, 짐 핼퍼린, 잭 기그, 리치 레시 세 명이 공동으로 샀습니다. (출처: https://www.shacknews.com/article/109944/sealed-nes-super-mario-bros-game-sold-for-record-100150)
+- 2020년 7월 Heritage Auctions에서 밀봉된 슈퍼 마리오 브라더스가 11만 4천 달러에 팔렸고, 2021년 4월에는 1986년 말 생산된 쉬링크랩 행탭판(Wata 9.6 A+)이 66만 달러에 낙찰돼 기록을 다시 세웠습니다. (출처: https://antiquetrader.com/antiques-news/super-mario-bros)
+- 2021년 8월 투자 플랫폼 Rally가 2020년 4월에 14만 달러로 샀던 밀봉 슈퍼 마리오 브라더스를 익명의 구매자에게 200만 달러에 팔았습니다. 다만 이 카트리지는 방송에 나온 스티커 밀봉 시험 시장판이 아닙니다. (출처: https://looper.com/594833/this-video-game-that-was-denied-on-pawn-stars-sold-for-2-million)
+- 2026년 6월 12일 Heritage Auctions에서 1985년 2차 생산분 광택 스티커 씰 슈퍼 마리오 브라더스(PSA 9.6, NES 본체 포함)가 300만 달러에 팔려 비디오게임 경매 최고가 기록을 세웠습니다. (출처: https://kotaku.com/copy-of-super-mario-bros-sells-for-3-million-in-auction-2000706228)
+
+## 원본 정보
+프로그램/맥락 메모: 전당포 사나이들(Pawn Stars) 시즌17 'Pawn vs Ferrari', 첨리와 릭, 미개봉 밀봉 슈퍼 마리오 브라더스 NES 카트리지
+
+## 원본 전사본 (id [시작-끝 초] 대사)
+0 [0.0-1.0] Hey, how's it going?
+1 [1.0-2.4] Good, good.
+2 [2.4-4.6] I have this to offer you.
+3 [4.6-5.8] And this is?
+4 [5.8-8.6] This is the earliest sticker-sealed
+5 [8.6-12.1] Super Mario Bros. Nintendo game.
+6 [12.1-13.7] That's pretty amazing.
+7 [13.7-17.2] I know some of them go for a lot of money.
+8 [17.2-18.2] Chum.
+9 [18.2-19.3] What?
+10 [19.3-23.8] Can you come over in here and help me for a moment?
+11 [23.8-25.6] What's up, Rick?
+12 [25.6-29.4] OK, the guy has a, I guess this is a really early one.
+13 [29.4-32.3] The earliest print that still sealed
+14 [32.3-34.5] a Super Mario Bros. in existence.
+15 [34.5-35.3] Oh, wow.
+16 [35.3-36.3] Do you mind if I take a look?
+17 [36.3-37.5] Absolutely, sure.
+18 [37.5-40.4] Oh, this is the, yeah, this isn't the shrink wrap version.
+19 [40.4-41.9] This is the sticker-still version,
+20 [41.9-43.4] which I don't know too much about,
+21 [43.4-45.9] but I know these are pretty rare.
+22 [45.9-50.3] This one also happens to be an incredibly high grade.
+23 [50.3-52.8] Even if the other ones are found, there's no way
+24 [52.8-54.8] it's gonna come close to this condition.
+25 [54.8-57.3] All right, how much do you want for it?
+26 [57.3-58.2] It's a piece of history.
+27 [58.2-60.8] it's something that's hard for me to part with,
+28 [60.8-64.7] but I would sell it for a million dollars.
+29 [64.7-65.8] A million dollars?
+30 [65.8-69.9] Yep.
+31 [69.9-70.7] All right.
+32 [73.6-75.4] It's a lot of money for a video game.
+33 [75.4-76.9] I agree, it is a lot of money.
+34 [76.9-79.2] I know there's video game collecting going on.
+35 [79.2-81.6] I know I've seen some recent auctions
+36 [81.6-82.7] where I was sort of shocked
+37 [82.7-84.2] when like there's some video games sold
+38 [84.2-86.4] for $29,000 in the cartridges.
+39 [86.4-88.8] But I didn't know the market exists
+40 [88.8-94.0] for six figure games, much less a million dollar game.
+41 [94.0-96.3] From all my research, WADA is the company
+42 [96.3-102.6] these, these are the ones you trust, so I'm actually going to go call them up and see if
+43 [102.6-104.5] I can get one of their guys down here.
+44 [104.5-108.2] I would really like to get their opinion, but no offense, I mean I just never heard of a
+45 [108.2-111.7] video game going for a million dollars and I just don't know if that exists or not.
+46 [111.7-114.5] Okay, I will be right back.
+47 [114.5-115.5] Okay.
+48 [115.5-120.2] I think Mario hit him on the head with a pipe wrench.
+49 [120.2-123.7] So he wants a million dollars for this thing, which I think is insane.
+50 [123.7-125.8] Yeah, I remember it, and I know why he's asking
+51 [125.8-127.4] astronomical money on this one.
+52 [127.4-130.2] This is probably the most significant piece
+53 [130.2-132.2] of video game history that's ever passed
+54 [132.2-133.9] through our grading company.
+55 [135.7-139.0] Okay, and he also said that this was the best condition?
+56 [139.0-141.3] Yeah, so what makes this special,
+57 [141.3-142.7] there's a lot of different indicators.
+58 [142.7-144.0] First, you're gonna see this sticker,
+59 [144.0-145.8] so it's not shrink-wrapped.
+60 [145.8-149.0] It's from the test market launch of the NES
+61 [149.0-152.4] as far as we know, which was only in 1985 and 1986.
+62 [152.4-154.4] No one even knew who Nintendo was.
+63 [154.4-156.8] But back then, they were just another company.
+64 [156.8-158.4] Once they started mass producing these
+65 [158.4-160.1] and sending them across the country,
+66 [160.1-161.8] they had to have something that would last
+67 [161.8-163.1] on the shelves longer,
+68 [163.1-165.4] which is also why seeing this in this condition
+69 [165.4-167.6] is just, it's a complete anomaly.
+70 [168.6-170.9] This is the second print, and it's the earliest known.
+71 [170.9-173.1] There's no other second prints or even first prints
+72 [173.1-175.3] known that are still sealed.
+73 [175.3-177.7] So we don't know the exact number of copies
+74 [177.7-180.3] that were printed in the first test market launch,
+75 [180.3-181.6] but we're estimating it's somewhere
+76 [181.6-183.9] around the 10,000 print run.
+77 [183.9-186.3] And how many of those survive sealed?
+78 [186.3-187.9] One, it's as far as we know.
+79 [189.2-192.2] So if this went into an auction today,
+80 [192.2-194.5] your estimate would be...
+81 [194.5-195.7] It's really hard to tell,
+82 [195.7-197.4] it hasn't sold on the open market.
+83 [197.4-199.0] As video games are starting to be viewed
+84 [199.0-200.1] more as art and history,
+85 [200.1-202.7] not just these relics of nostalgia.
+86 [202.7-205.3] This is it, this is the one that started it all.
+87 [205.3-208.5] It's got the trifecta, it's got rarity,
+88 [208.5-211.1] It's got popularity, everyone knows Mario
+89 [211.1-213.5] and it's got significance to collectors.
+90 [213.5-217.8] But with things like this, it's high risk, high reward.
+91 [217.8-220.4] I know of firm offers that have been turned down
+92 [220.4-222.4] at $300,000.
+93 [222.4-227.2] Goes up from there, there's no ceiling, really.
+94 [227.2-228.4] Okay, I learned a lot today.
+95 [228.4-229.9] Absolutely, my pleasure anytime.
+96 [229.9-230.7] Good luck.
+97 [230.7-231.6] Thank you.
+98 [232.4-234.2] At first I thought you were crazy.
+99 [237.6-239.6] Literally a little bit shocked and a little bit speechless,
+100 [239.6-241.6] but realistically what do you want for it?
+101 [241.6-246.4] I'm asking a million dollars.
+102 [246.4-247.7] There's a big business in these right here,
+103 [247.7-249.8] and I've just been looking into maybe
+104 [249.8-251.6] getting into it a little bit,
+105 [251.6-254.7] but I'm not gonna get into it
+106 [254.7-256.9] with this kind of figures to start with.
+107 [256.9-258.4] I understand.
+108 [258.4-259.9] So have a great day.
+109 [259.9-261.0] I learned a lot,
+110 [261.0-264.6] and obviously I have a lot of research to do.
+111 [264.6-265.4] Well, thank you for your time.
+112 [265.4-266.3] I appreciate it.
+113 [266.3-267.2] It's good to meet you.
+114 [267.2-268.7] Thank you.
+115 [268.7-270.4] I'm okay that no offer was made.
+116 [270.4-271.7] I'm happy to keep the game,
+117 [271.7-273.5] and it's a piece of history,
+118 [273.5-276.3] So I'm happy to have it, Mike Lutch.

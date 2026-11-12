@@ -1,0 +1,23 @@
+{
+ "text": "얼마를 원하냐고 묻자",
+ "words": [
+  {
+   "word": "얼마를",
+   "start": 0.041,
+   "end": 0.408,
+   "aligned": true
+  },
+  {
+   "word": "원하냐고",
+   "start": 0.489,
+   "end": 0.876,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 0.978,
+   "end": 1.141,
+   "aligned": true
+  }
+ ]
+}

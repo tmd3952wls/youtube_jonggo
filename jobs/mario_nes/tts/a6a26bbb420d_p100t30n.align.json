@@ -1,0 +1,47 @@
+{
+ "text": "그 시절 아이들이 열광하던 바로 그 마리오",
+ "words": [
+  {
+   "word": "그",
+   "start": 0.04,
+   "end": 0.101,
+   "aligned": true
+  },
+  {
+   "word": "시절",
+   "start": 0.161,
+   "end": 0.362,
+   "aligned": true
+  },
+  {
+   "word": "아이들이",
+   "start": 0.402,
+   "end": 0.684,
+   "aligned": true
+  },
+  {
+   "word": "열광하던",
+   "start": 0.724,
+   "end": 1.206,
+   "aligned": true
+  },
+  {
+   "word": "바로",
+   "start": 1.287,
+   "end": 1.488,
+   "aligned": true
+  },
+  {
+   "word": "그",
+   "start": 1.568,
+   "end": 1.669,
+   "aligned": true
+  },
+  {
+   "word": "마리오",
+   "start": 1.749,
+   "end": 2.212,
+   "aligned": true
+  }
+ ]
+}

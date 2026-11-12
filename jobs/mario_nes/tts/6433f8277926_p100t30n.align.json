@@ -1,0 +1,35 @@
+{
+ "text": "결국 릭은 와타 감정사를 부르는데",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.303,
+   "aligned": true
+  },
+  {
+   "word": "릭은",
+   "start": 0.384,
+   "end": 0.586,
+   "aligned": true
+  },
+  {
+   "word": "와타",
+   "start": 0.687,
+   "end": 0.949,
+   "aligned": true
+  },
+  {
+   "word": "감정사를",
+   "start": 1.01,
+   "end": 1.535,
+   "aligned": true
+  },
+  {
+   "word": "부르는데",
+   "start": 1.616,
+   "end": 1.979,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "text": "미개봉 마리오 게임 하나에 14억 원?",
+ "words": [
+  {
+   "word": "미개봉",
+   "start": 0.1,
+   "end": 0.402,
+   "aligned": true
+  },
+  {
+   "word": "마리오",
+   "start": 0.482,
+   "end": 0.703,
+   "aligned": true
+  },
+  {
+   "word": "게임",
+   "start": 0.763,
+   "end": 0.904,
+   "aligned": true
+  },
+  {
+   "word": "하나에",
+   "start": 0.984,
+   "end": 1.326,
+   "aligned": true
+  },
+  {
+   "word": "14억",
+   "start": 1.446,
+   "end": 1.547,
+   "aligned": true
+  },
+  {
+   "word": "원?",
+   "start": 1.627,
+   "end": 1.808,
+   "aligned": true
+  }
+ ]
+}

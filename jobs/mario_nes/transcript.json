@@ -1,0 +1,716 @@
+[
+  {
+    "id": 0,
+    "start": 0.0,
+    "end": 1.0,
+    "text": "Hey, how's it going?"
+  },
+  {
+    "id": 1,
+    "start": 1.0,
+    "end": 2.44,
+    "text": "Good, good."
+  },
+  {
+    "id": 2,
+    "start": 2.44,
+    "end": 4.56,
+    "text": "I have this to offer you."
+  },
+  {
+    "id": 3,
+    "start": 4.56,
+    "end": 5.8,
+    "text": "And this is?"
+  },
+  {
+    "id": 4,
+    "start": 5.8,
+    "end": 8.56,
+    "text": "This is the earliest sticker-sealed"
+  },
+  {
+    "id": 5,
+    "start": 8.56,
+    "end": 12.08,
+    "text": "Super Mario Bros. Nintendo game."
+  },
+  {
+    "id": 6,
+    "start": 12.08,
+    "end": 13.72,
+    "text": "That's pretty amazing."
+  },
+  {
+    "id": 7,
+    "start": 13.72,
+    "end": 17.16,
+    "text": "I know some of them go for a lot of money."
+  },
+  {
+    "id": 8,
+    "start": 17.16,
+    "end": 18.24,
+    "text": "Chum."
+  },
+  {
+    "id": 9,
+    "start": 18.24,
+    "end": 19.32,
+    "text": "What?"
+  },
+  {
+    "id": 10,
+    "start": 19.32,
+    "end": 23.8,
+    "text": "Can you come over in here and help me for a moment?"
+  },
+  {
+    "id": 11,
+    "start": 23.8,
+    "end": 25.56,
+    "text": "What's up, Rick?"
+  },
+  {
+    "id": 12,
+    "start": 25.56,
+    "end": 29.36,
+    "text": "OK, the guy has a, I guess this is a really early one."
+  },
+  {
+    "id": 13,
+    "start": 29.36,
+    "end": 32.32,
+    "text": "The earliest print that still sealed"
+  },
+  {
+    "id": 14,
+    "start": 32.32,
+    "end": 34.48,
+    "text": "a Super Mario Bros. in existence."
+  },
+  {
+    "id": 15,
+    "start": 34.48,
+    "end": 35.32,
+    "text": "Oh, wow."
+  },
+  {
+    "id": 16,
+    "start": 35.32,
+    "end": 36.32,
+    "text": "Do you mind if I take a look?"
+  },
+  {
+    "id": 17,
+    "start": 36.32,
+    "end": 37.52,
+    "text": "Absolutely, sure."
+  },
+  {
+    "id": 18,
+    "start": 37.52,
+    "end": 40.44,
+    "text": "Oh, this is the, yeah, this isn't the shrink wrap version."
+  },
+  {
+    "id": 19,
+    "start": 40.44,
+    "end": 41.88,
+    "text": "This is the sticker-still version,"
+  },
+  {
+    "id": 20,
+    "start": 41.88,
+    "end": 43.36,
+    "text": "which I don't know too much about,"
+  },
+  {
+    "id": 21,
+    "start": 43.36,
+    "end": 45.86,
+    "text": "but I know these are pretty rare."
+  },
+  {
+    "id": 22,
+    "start": 45.86,
+    "end": 50.28,
+    "text": "This one also happens to be an incredibly high grade."
+  },
+  {
+    "id": 23,
+    "start": 50.28,
+    "end": 52.8,
+    "text": "Even if the other ones are found, there's no way"
+  },
+  {
+    "id": 24,
+    "start": 52.8,
+    "end": 54.8,
+    "text": "it's gonna come close to this condition."
+  },
+  {
+    "id": 25,
+    "start": 54.8,
+    "end": 57.28,
+    "text": "All right, how much do you want for it?"
+  },
+  {
+    "id": 26,
+    "start": 57.28,
+    "end": 58.24,
+    "text": "It's a piece of history."
+  },
+  {
+    "id": 27,
+    "start": 58.24,
+    "end": 60.84,
+    "text": "it's something that's hard for me to part with,"
+  },
+  {
+    "id": 28,
+    "start": 60.84,
+    "end": 64.72,
+    "text": "but I would sell it for a million dollars."
+  },
+  {
+    "id": 29,
+    "start": 64.72,
+    "end": 65.8,
+    "text": "A million dollars?"
+  },
+  {
+    "id": 30,
+    "start": 65.8,
+    "end": 69.9,
+    "text": "Yep."
+  },
+  {
+    "id": 31,
+    "start": 69.9,
+    "end": 70.74,
+    "text": "All right."
+  },
+  {
+    "id": 32,
+    "start": 73.62,
+    "end": 75.38,
+    "text": "It's a lot of money for a video game."
+  },
+  {
+    "id": 33,
+    "start": 75.38,
+    "end": 76.86,
+    "text": "I agree, it is a lot of money."
+  },
+  {
+    "id": 34,
+    "start": 76.86,
+    "end": 79.18,
+    "text": "I know there's video game collecting going on."
+  },
+  {
+    "id": 35,
+    "start": 79.18,
+    "end": 81.58,
+    "text": "I know I've seen some recent auctions"
+  },
+  {
+    "id": 36,
+    "start": 81.58,
+    "end": 82.66,
+    "text": "where I was sort of shocked"
+  },
+  {
+    "id": 37,
+    "start": 82.66,
+    "end": 84.18,
+    "text": "when like there's some video games sold"
+  },
+  {
+    "id": 38,
+    "start": 84.18,
+    "end": 86.42,
+    "text": "for $29,000 in the cartridges."
+  },
+  {
+    "id": 39,
+    "start": 86.42,
+    "end": 88.78,
+    "text": "But I didn't know the market exists"
+  },
+  {
+    "id": 40,
+    "start": 88.78,
+    "end": 94.02,
+    "text": "for six figure games, much less a million dollar game."
+  },
+  {
+    "id": 41,
+    "start": 94.02,
+    "end": 96.26,
+    "text": "From all my research, WADA is the company"
+  },
+  {
+    "id": 42,
+    "start": 96.26,
+    "end": 102.56,
+    "text": "these, these are the ones you trust, so I'm actually going to go call them up and see if"
+  },
+  {
+    "id": 43,
+    "start": 102.56,
+    "end": 104.48,
+    "text": "I can get one of their guys down here."
+  },
+  {
+    "id": 44,
+    "start": 104.48,
+    "end": 108.24,
+    "text": "I would really like to get their opinion, but no offense, I mean I just never heard of a"
+  },
+  {
+    "id": 45,
+    "start": 108.24,
+    "end": 111.68,
+    "text": "video game going for a million dollars and I just don't know if that exists or not."
+  },
+  {
+    "id": 46,
+    "start": 111.68,
+    "end": 114.52,
+    "text": "Okay, I will be right back."
+  },
+  {
+    "id": 47,
+    "start": 114.52,
+    "end": 115.52,
+    "text": "Okay."
+  },
+  {
+    "id": 48,
+    "start": 115.52,
+    "end": 120.2,
+    "text": "I think Mario hit him on the head with a pipe wrench."
+  },
+  {
+    "id": 49,
+    "start": 120.2,
+    "end": 123.68,
+    "text": "So he wants a million dollars for this thing, which I think is insane."
+  },
+  {
+    "id": 50,
+    "start": 123.68,
+    "end": 125.82,
+    "text": "Yeah, I remember it, and I know why he's asking"
+  },
+  {
+    "id": 51,
+    "start": 125.82,
+    "end": 127.38,
+    "text": "astronomical money on this one."
+  },
+  {
+    "id": 52,
+    "start": 127.38,
+    "end": 130.22,
+    "text": "This is probably the most significant piece"
+  },
+  {
+    "id": 53,
+    "start": 130.22,
+    "end": 132.18,
+    "text": "of video game history that's ever passed"
+  },
+  {
+    "id": 54,
+    "start": 132.18,
+    "end": 133.86,
+    "text": "through our grading company."
+  },
+  {
+    "id": 55,
+    "start": 135.7,
+    "end": 139.02,
+    "text": "Okay, and he also said that this was the best condition?"
+  },
+  {
+    "id": 56,
+    "start": 139.02,
+    "end": 141.26,
+    "text": "Yeah, so what makes this special,"
+  },
+  {
+    "id": 57,
+    "start": 141.26,
+    "end": 142.7,
+    "text": "there's a lot of different indicators."
+  },
+  {
+    "id": 58,
+    "start": 142.7,
+    "end": 143.98,
+    "text": "First, you're gonna see this sticker,"
+  },
+  {
+    "id": 59,
+    "start": 143.98,
+    "end": 145.82,
+    "text": "so it's not shrink-wrapped."
+  },
+  {
+    "id": 60,
+    "start": 145.82,
+    "end": 148.98,
+    "text": "It's from the test market launch of the NES"
+  },
+  {
+    "id": 61,
+    "start": 148.98,
+    "end": 152.38,
+    "text": "as far as we know, which was only in 1985 and 1986."
+  },
+  {
+    "id": 62,
+    "start": 152.38,
+    "end": 154.38,
+    "text": "No one even knew who Nintendo was."
+  },
+  {
+    "id": 63,
+    "start": 154.38,
+    "end": 156.78,
+    "text": "But back then, they were just another company."
+  },
+  {
+    "id": 64,
+    "start": 156.78,
+    "end": 158.42,
+    "text": "Once they started mass producing these"
+  },
+  {
+    "id": 65,
+    "start": 158.42,
+    "end": 160.14,
+    "text": "and sending them across the country,"
+  },
+  {
+    "id": 66,
+    "start": 160.14,
+    "end": 161.82,
+    "text": "they had to have something that would last"
+  },
+  {
+    "id": 67,
+    "start": 161.82,
+    "end": 163.06,
+    "text": "on the shelves longer,"
+  },
+  {
+    "id": 68,
+    "start": 163.06,
+    "end": 165.42,
+    "text": "which is also why seeing this in this condition"
+  },
+  {
+    "id": 69,
+    "start": 165.42,
+    "end": 167.62,
+    "text": "is just, it's a complete anomaly."
+  },
+  {
+    "id": 70,
+    "start": 168.62,
+    "end": 170.94,
+    "text": "This is the second print, and it's the earliest known."
+  },
+  {
+    "id": 71,
+    "start": 170.94,
+    "end": 173.1,
+    "text": "There's no other second prints or even first prints"
+  },
+  {
+    "id": 72,
+    "start": 173.1,
+    "end": 175.26,
+    "text": "known that are still sealed."
+  },
+  {
+    "id": 73,
+    "start": 175.26,
+    "end": 177.74,
+    "text": "So we don't know the exact number of copies"
+  },
+  {
+    "id": 74,
+    "start": 177.74,
+    "end": 180.34,
+    "text": "that were printed in the first test market launch,"
+  },
+  {
+    "id": 75,
+    "start": 180.34,
+    "end": 181.62,
+    "text": "but we're estimating it's somewhere"
+  },
+  {
+    "id": 76,
+    "start": 181.62,
+    "end": 183.94,
+    "text": "around the 10,000 print run."
+  },
+  {
+    "id": 77,
+    "start": 183.94,
+    "end": 186.3,
+    "text": "And how many of those survive sealed?"
+  },
+  {
+    "id": 78,
+    "start": 186.3,
+    "end": 187.9,
+    "text": "One, it's as far as we know."
+  },
+  {
+    "id": 79,
+    "start": 189.18,
+    "end": 192.18,
+    "text": "So if this went into an auction today,"
+  },
+  {
+    "id": 80,
+    "start": 192.18,
+    "end": 194.5,
+    "text": "your estimate would be..."
+  },
+  {
+    "id": 81,
+    "start": 194.5,
+    "end": 195.7,
+    "text": "It's really hard to tell,"
+  },
+  {
+    "id": 82,
+    "start": 195.7,
+    "end": 197.38,
+    "text": "it hasn't sold on the open market."
+  },
+  {
+    "id": 83,
+    "start": 197.38,
+    "end": 198.98,
+    "text": "As video games are starting to be viewed"
+  },
+  {
+    "id": 84,
+    "start": 198.98,
+    "end": 200.14,
+    "text": "more as art and history,"
+  },
+  {
+    "id": 85,
+    "start": 200.14,
+    "end": 202.66,
+    "text": "not just these relics of nostalgia."
+  },
+  {
+    "id": 86,
+    "start": 202.66,
+    "end": 205.3,
+    "text": "This is it, this is the one that started it all."
+  },
+  {
+    "id": 87,
+    "start": 205.3,
+    "end": 208.46,
+    "text": "It's got the trifecta, it's got rarity,"
+  },
+  {
+    "id": 88,
+    "start": 208.46,
+    "end": 211.08,
+    "text": "It's got popularity, everyone knows Mario"
+  },
+  {
+    "id": 89,
+    "start": 211.08,
+    "end": 213.48,
+    "text": "and it's got significance to collectors."
+  },
+  {
+    "id": 90,
+    "start": 213.48,
+    "end": 217.8,
+    "text": "But with things like this, it's high risk, high reward."
+  },
+  {
+    "id": 91,
+    "start": 217.8,
+    "end": 220.4,
+    "text": "I know of firm offers that have been turned down"
+  },
+  {
+    "id": 92,
+    "start": 220.4,
+    "end": 222.36,
+    "text": "at $300,000."
+  },
+  {
+    "id": 93,
+    "start": 222.36,
+    "end": 227.19,
+    "text": "Goes up from there, there's no ceiling, really."
+  },
+  {
+    "id": 94,
+    "start": 227.19,
+    "end": 228.39,
+    "text": "Okay, I learned a lot today."
+  },
+  {
+    "id": 95,
+    "start": 228.39,
+    "end": 229.87,
+    "text": "Absolutely, my pleasure anytime."
+  },
+  {
+    "id": 96,
+    "start": 229.87,
+    "end": 230.71,
+    "text": "Good luck."
+  },
+  {
+    "id": 97,
+    "start": 230.71,
+    "end": 231.55,
+    "text": "Thank you."
+  },
+  {
+    "id": 98,
+    "start": 232.39,
+    "end": 234.19,
+    "text": "At first I thought you were crazy."
+  },
+  {
+    "id": 99,
+    "start": 237.58,
+    "end": 239.62,
+    "text": "Literally a little bit shocked and a little bit speechless,"
+  },
+  {
+    "id": 100,
+    "start": 239.62,
+    "end": 241.62,
+    "text": "but realistically what do you want for it?"
+  },
+  {
+    "id": 101,
+    "start": 241.62,
+    "end": 246.37,
+    "text": "I'm asking a million dollars."
+  },
+  {
+    "id": 102,
+    "start": 246.37,
+    "end": 247.69,
+    "text": "There's a big business in these right here,"
+  },
+  {
+    "id": 103,
+    "start": 247.69,
+    "end": 249.85,
+    "text": "and I've just been looking into maybe"
+  },
+  {
+    "id": 104,
+    "start": 249.85,
+    "end": 251.61,
+    "text": "getting into it a little bit,"
+  },
+  {
+    "id": 105,
+    "start": 251.61,
+    "end": 254.69,
+    "text": "but I'm not gonna get into it"
+  },
+  {
+    "id": 106,
+    "start": 254.69,
+    "end": 256.93,
+    "text": "with this kind of figures to start with."
+  },
+  {
+    "id": 107,
+    "start": 256.93,
+    "end": 258.37,
+    "text": "I understand."
+  },
+  {
+    "id": 108,
+    "start": 258.37,
+    "end": 259.93,
+    "text": "So have a great day."
+  },
+  {
+    "id": 109,
+    "start": 259.93,
+    "end": 260.97,
+    "text": "I learned a lot,"
+  },
+  {
+    "id": 110,
+    "start": 260.97,
+    "end": 264.61,
+    "text": "and obviously I have a lot of research to do."
+  },
+  {
+    "id": 111,
+    "start": 264.61,
+    "end": 265.45,
+    "text": "Well, thank you for your time."
+  },
+  {
+    "id": 112,
+    "start": 265.45,
+    "end": 266.29,
+    "text": "I appreciate it."
+  },
+  {
+    "id": 113,
+    "start": 266.29,
+    "end": 267.21,
+    "text": "It's good to meet you."
+  },
+  {
+    "id": 114,
+    "start": 267.21,
+    "end": 268.69,
+    "text": "Thank you."
+  },
+  {
+    "id": 115,
+    "start": 268.69,
+    "end": 270.37,
+    "text": "I'm okay that no offer was made."
+  },
+  {
+    "id": 116,
+    "start": 270.37,
+    "end": 271.73,
+    "text": "I'm happy to keep the game,"
+  },
+  {
+    "id": 117,
+    "start": 271.73,
+    "end": 273.53,
+    "text": "and it's a piece of history,"
+  },
+  {
+    "id": 118,
+    "start": 273.53,
+    "end": 276.29,
+    "text": "So I'm happy to have it, Mike Lutch."
+  }
+]

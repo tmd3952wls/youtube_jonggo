@@ -1,0 +1,227 @@
+{
+  "title_lines": [
+    {
+      "text": "밀봉된 마리오 게임이",
+      "color": "yellow"
+    },
+    {
+      "text": "단 1개뿐이라고?!",
+      "color": "white"
+    }
+  ],
+  "credit": "",
+  "pinned_comment": "+ 100만 달러(약 14억 원) 듣자마자 굳어버린 릭 표정이 진짜 하이라이트 😂\n\n그런데 이 마리오 카트리지, 방송 이후 과연 어떻게 됐을까요?\n\n2019년 11월 18일 방영된 시즌 17 'Pawn v. Ferrari' 편에서\n릭은 손님이 부른 100만 달러(약 14억 원)를 받아들이지 않았고\n손님은 게임을 팔지 않은 채 그대로 가게를 나갔어요.\n\n감정은 Wata Games의 데니즈 칸이 직접 나와서 했고\n이 카트리지는 9.4 등급, 씰 등급 A++를 받은 물건이었어요.\n\n방송 이후 이 카트리지 자체가 팔린 기록은 찾지 못했지만\n같은 계열 마리오 게임 시장은 이렇게 움직였어요 📈\n\n방송 9개월 전인 2019년 2월,\nWata 9.4 A++ 스티커 밀봉판이 Heritage Auctions에서\n10만 150달러(약 1억 4천만 원)에 팔렸고 (수집가 3명이 공동 구매)\n\n2021년 4월엔 쉬링크랩 행탭판(9.6 A+)이 66만 달러(약 9억 2천만 원),\n2026년 6월엔 1985년 스티커 씰판(PSA 9.6)이\n300만 달러(약 42억 원)에 팔려 게임 경매 최고가를 찍었어요.\n\n방송 속 감정사가 말한 '거절된 제안'이 30만 달러(약 4억 2천만 원)였는데\n몇 년 만에 같은 계열 카트리지가 그 10배까지 간 셈이죠.\n\n가치를 가른 건 결국 세 가지예요.\n희소성 — 밀봉본 자체가 극히 드물고\n상태 — 등급 숫자 하나에 가격이 뛰는 시장이고\n상징성 — 모두가 아는 '마리오'라는 이름.\n\n결론: 수집품은 '언제 파느냐'가 가격의 절반이다.\n\n(※ 2019년 2월 낙찰품이 방송 속 카트리지와 같은 물건인지는 확인되지 않았고, 200만 달러(약 28억 원)에 팔렸다는 Rally의 카트리지는 방송 속 스티커 밀봉판이 아닙니다. 출처: Looper, ComicBook, Shacknews, Antique Trader, Kotaku)\n\n여러분이라면 끝까지 100만 달러(약 14억 원)를 고집했을까요?\n\nP.S. 릭, '처음부터 이 금액으론 못 시작한다'던 그 게임… 지금 시장 보면 살짝 아깝지 않아요? 🍄",
+  "upload": {
+    "title": "미개봉 마리오 게임에 14억 원?!",
+    "description": "세상에 단 1개뿐이라는 밀봉 슈퍼 마리오, 릭의 선택은? #전당포사나이들 #슈퍼마리오 #닌텐도 #쇼츠\n\n영상 출처: Pawn Stars (HISTORY) / 일반인 영상: YouTube 'ggrimme32068' (NINTENDO for CHRISTMAS 1987)",
+    "tags": [
+      "전당포사나이들",
+      "Pawn Stars",
+      "슈퍼마리오",
+      "닌텐도",
+      "레트로게임",
+      "릭해리슨",
+      "수집품"
+    ]
+  },
+  "segments": [
+    {
+      "type": "narration",
+      "text": "미개봉 마리오 게임 하나에 [yellow:14억 원]?",
+      "fit": true,
+      "sfx": "impact",
+      "broll_t": 10.0,
+      "broll_id": 0
+    },
+    {
+      "type": "clip",
+      "from_id": 77,
+      "to_id": 78,
+      "subs": [
+        "@릭 밀봉본은 몇 개 남았죠?",
+        "@전문가 알기론 단 [red:1개]예요"
+      ],
+      "sfx": "ding",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "그 시절 아이들이 열광하던 바로 그 마리오",
+      "sfx": "whoosh",
+      "ext": [
+        {
+          "file": "ext_yt/cLe5hJ4Eh70.mp4",
+          "t": 8.0,
+          "dur": 1.3
+        },
+        {
+          "file": "ext_yt/cLe5hJ4Eh70.mp4",
+          "t": 66.0,
+          "dur": 1.3
+        }
+      ],
+      "broll_t": 11.5,
+      "broll_id": 0
+    },
+    {
+      "type": "narration",
+      "text": "릭이 첨리를 불러 살펴보는데",
+      "broll_id": 16,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 18,
+      "to_id": 19,
+      "subs": [
+        "@첨리 비닐 포장이 아니라",
+        "@첨리 [cyan:스티커 밀봉판]이네요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 23,
+      "to_id": 24,
+      "subs": [
+        "@첨리 다른 게 나와도",
+        "@첨리 이 상태는 못 따라와요"
+      ],
+      "sfx": "pop",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "얼마를 원하냐고 묻자",
+      "broll_id": 26,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 28,
+      "to_id": 30,
+      "subs": [
+        "@손님 [yellow:14억 원]에 팔게요",
+        "@릭 14억 원이요?",
+        "@손님 네"
+      ],
+      "sfx": "question",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 32,
+      "to_id": 33,
+      "subs": [
+        "@릭 게임치곤 너무 큰돈인데요",
+        "@손님 맞아요, 큰돈이죠"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "결국 릭은 와타 감정사를 부르는데",
+      "broll_id": 47,
+      "sfx": "whoosh"
+    },
+    {
+      "type": "clip",
+      "from_id": 52,
+      "to_id": 54,
+      "subs": [
+        "@전문가 게임 역사상 가장",
+        "@전문가 [red:중요한] 물건일 거예요",
+        "@전문가 저희 회사를 거친 것 중에요"
+      ],
+      "sfx": "surprise",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "[cyan:1985년] 시험 출시판이라는데",
+      "broll_id": 58,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 71,
+      "to_id": 72,
+      "subs": [
+        "@전문가 밀봉된 초기판은",
+        "@전문가 이것 말곤 [red:없어요]"
+      ],
+      "sfx": "ding",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "그럼 경매가는 얼마냐고 묻자",
+      "broll_id": 68,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 91,
+      "to_id": 92,
+      "subs": [
+        "@전문가 거절된 확정 제안 중엔",
+        "@전문가 [yellow:4억 2천만 원]도 있어요"
+      ],
+      "sfx": "ding",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "이에 릭이 흥정을 시작하는데",
+      "broll_id": 102,
+      "sfx": "whoosh"
+    },
+    {
+      "type": "clip",
+      "from_id": 100,
+      "to_id": 101,
+      "subs": [
+        "@릭 현실적으로 얼마 원해요?",
+        "@손님 그래도 [yellow:14억 원]이요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 105,
+      "to_id": 106,
+      "subs": [
+        "@릭 처음부터 이 금액으론",
+        "@릭 시작 못 하겠네요"
+      ],
+      "sfx": "fail",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "결국 거래는 그대로 불발됐고",
+      "broll_id": 110,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 116,
+      "to_id": 117,
+      "subs": [
+        "@손님 게임은 제가 간직할게요",
+        "@손님 [cyan:역사의 한 조각]이니까요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "이 마리오의 뒷이야기는 고정댓글에 있다",
+      "broll_id": 113,
+      "sfx": "question"
+    }
+  ]
+}

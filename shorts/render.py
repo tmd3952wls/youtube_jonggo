@@ -907,7 +907,22 @@ def render(job: Path, cfg):
     lst = job / "segments" / "list.txt"
     lst.write_text("".join(f"file '{sg['file'].name}'\n" for sg in segs), encoding="utf-8")
     body = job / "body.mp4"
-    ffmpeg("-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", body)
+    # 2026-11-12: 소리까지 '-c copy' 로 이어 붙이면 조각마다 AAC 앞쪽 지연(priming, 약 21~48ms)이
+    # 잘리지 않고 쌓여서, 끝으로 갈수록 목소리가 영상·자막보다 최대 0.5초 늦어졌음 (mario_nes 측정).
+    # → 영상만 copy 로 잇고, 소리는 조각마다 따로 디코딩(앞쪽 지연이 제대로 잘림)해서 그 파일 길이에 딱 맞게
+    #   자른 뒤 샘플 단위로 이어 붙인다. 조각 k 의 소리는 정확히 앞 조각 길이 합에서 시작.
+    vonly = job / "segments" / "_video_only.mp4"
+    ffmpeg("-f", "concat", "-safe", "0", "-i", lst, "-an", "-c:v", "copy", vonly)
+    a_in, a_fc = [], []
+    for k, sg in enumerate(segs):
+        a_in += ["-i", str(sg["file"])]
+        a_fc.append(f"[{k}:a]aresample=48000,aformat=channel_layouts=stereo,apad,"
+                    f"atrim=duration={duration(sg['file']):.6f},asetpts=N/SR/TB[a{k}]")
+    a_fc.append("".join(f"[a{k}]" for k in range(len(segs))) + f"concat=n={len(segs)}:v=0:a=1[a]")
+    aonly = job / "segments" / "_audio.wav"
+    ffmpeg(*a_in, "-filter_complex", ";".join(a_fc), "-map", "[a]", "-c:a", "pcm_s16le", aonly)
+    ffmpeg("-i", vonly, "-i", aonly, "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+           "-shortest", body)
     total = duration(body)
 
     # 최종 내레이션 오디오(무음 제거된 TTS) 기준으로 어절 시간 정렬

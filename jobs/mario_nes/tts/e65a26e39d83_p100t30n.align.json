@@ -1,0 +1,29 @@
+{
+ "text": "그럼 경매가는 얼마냐고 묻자",
+ "words": [
+  {
+   "word": "그럼",
+   "start": 0.02,
+   "end": 0.202,
+   "aligned": true
+  },
+  {
+   "word": "경매가는",
+   "start": 0.283,
+   "end": 0.789,
+   "aligned": true
+  },
+  {
+   "word": "얼마냐고",
+   "start": 0.849,
+   "end": 1.274,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 1.355,
+   "end": 1.537,
+   "aligned": true
+  }
+ ]
+}

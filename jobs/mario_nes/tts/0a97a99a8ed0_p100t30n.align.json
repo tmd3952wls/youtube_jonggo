@@ -1,0 +1,35 @@
+{
+ "text": "이 마리오의 뒷이야기는 고정댓글에 있다",
+ "words": [
+  {
+   "word": "이",
+   "start": 0.04,
+   "end": 0.101,
+   "aligned": true
+  },
+  {
+   "word": "마리오의",
+   "start": 0.182,
+   "end": 0.464,
+   "aligned": true
+  },
+  {
+   "word": "뒷이야기는",
+   "start": 0.545,
+   "end": 0.969,
+   "aligned": true
+  },
+  {
+   "word": "고정댓글에",
+   "start": 1.069,
+   "end": 1.655,
+   "aligned": true
+  },
+  {
+   "word": "있다",
+   "start": 1.695,
+   "end": 1.998,
+   "aligned": true
+  }
+ ]
+}
