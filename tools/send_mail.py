@@ -32,6 +32,7 @@ def main():
     ap.add_argument("--job", required=True)
     ap.add_argument("--video", required=True)
     ap.add_argument("--name", required=True, help="txt 파일 앞 한글 이름 (예: 페이퍼박스)")
+    ap.add_argument("--prefix", default="[1분냠냠]", help="메일 제목 앞머리")
     a = ap.parse_args()
 
     user = env("NAVER_SMTP_USER").split("@")[0]
@@ -46,7 +47,7 @@ def main():
     msg = EmailMessage()
     msg["From"] = addr
     msg["To"] = addr
-    msg["Subject"] = f"[쇼츠 업로드] {title}"
+    msg["Subject"] = f"{a.prefix} {title}"
     msg.set_content(
         "■ 업로드 정보 (제목·설명·태그)\n" + "─" * 30 + "\n" + info
         + "\n\n\n■ 고정댓글\n" + "─" * 30 + "\n" + pinned + "\n"
