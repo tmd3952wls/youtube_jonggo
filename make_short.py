@@ -45,6 +45,8 @@ def do_render(job, cfg):
     out, total = R.render(job, cfg)
     warn = "  ⚠ 60초 초과 — plan.json 에서 clip/내레이션을 줄이세요" if total > 59.5 else ""
     print(f"\n완료: {out}  ({total:.1f}초){warn}\n업로드 정보: {job / 'upload.txt'}")
+    from tools.qa_check import run_qa
+    run_qa(job)
 
 
 def main():
