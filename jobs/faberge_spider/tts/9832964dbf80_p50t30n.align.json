@@ -1,0 +1,59 @@
+{
+ "text": "결국 희망가보다 7배 넘게 받은 여자는 웃으며 가게를 나섰다",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.321,
+   "aligned": true
+  },
+  {
+   "word": "희망가보다",
+   "start": 0.402,
+   "end": 0.984,
+   "aligned": true
+  },
+  {
+   "word": "7배",
+   "start": 1.004,
+   "end": 1.426,
+   "aligned": true
+  },
+  {
+   "word": "넘게",
+   "start": 1.466,
+   "end": 1.728,
+   "aligned": true
+  },
+  {
+   "word": "받은",
+   "start": 1.768,
+   "end": 1.969,
+   "aligned": true
+  },
+  {
+   "word": "여자는",
+   "start": 2.029,
+   "end": 2.411,
+   "aligned": true
+  },
+  {
+   "word": "웃으며",
+   "start": 2.491,
+   "end": 2.812,
+   "aligned": true
+  },
+  {
+   "word": "가게를",
+   "start": 2.913,
+   "end": 3.234,
+   "aligned": true
+  },
+  {
+   "word": "나섰다",
+   "start": 3.315,
+   "end": 3.817,
+   "aligned": true
+  }
+ ]
+}

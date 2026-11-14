@@ -1,0 +1,110 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,카페24 아네모네,128,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+Style: Narr,카페24 아네모네,88,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Dial,카페24 아네모네,84,&H001AE8FF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Tag,카페24 아네모네,70,&H00FFE035,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,0,7,40,40,525,1
+Style: Credit,카페24 아네모네,30,&H009A9A9A,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:51.49,Title,,0,0,0,,{\pos(540,242)\fs107\c&H001AE8FF\3c&H001AE8FF\bord0\shad3\4c&H000000&\4a&H40&}서랍 속 낡은 거미 브로치
+Dialogue: 1,0:00:00.00,0:00:51.49,Title,,0,0,0,,{\pos(540,353)\fs94\c&H00FFFFFF\3c&H00FFFFFF\bord0\shad3\4c&H000000&\4a&H40&}280만 원 불렀다 대반전?!
+Dialogue: 20,0:00:00.00,0:00:51.49,Credit,,0,0,0,,{\an8\pos(540,1507)\fs40\1c&HFFFFFF&\alpha&HB3&\bord0\shad0\blur0.5}1분냠냠
+Dialogue: 3,0:00:00.00,0:00:00.86,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}서랍 정리하다 나온
+Dialogue: 5,0:00:00.00,0:00:00.86,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}서랍 정리하다 나온
+Dialogue: 3,0:00:00.86,0:00:01.89,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}280만 원{\1c&H000000&\fs76}짜리
+Dialogue: 5,0:00:00.86,0:00:01.89,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs98}280만 원{\1c&HFFFFFF&\fs76}짜리
+Dialogue: 3,0:00:01.89,0:00:02.67,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}거미 브로치
+Dialogue: 5,0:00:01.89,0:00:02.67,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}거미 브로치
+Dialogue: 3,0:00:02.67,0:00:03.70,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}옛날에 어머니가
+Dialogue: 5,0:00:02.67,0:00:03.70,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}옛날에 어머니가
+Dialogue: 3,0:00:03.70,0:00:04.47,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}주신 거예요
+Dialogue: 5,0:00:03.70,0:00:04.47,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}주신 거예요
+Dialogue: 3,0:00:04.47,0:00:05.88,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}이거 {\1c&H000000&\fs76}독거미{\1c&H000000&\fs76} 브로치예요
+Dialogue: 5,0:00:04.47,0:00:05.88,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}이거 {\1c&HFFF23D&\fs76}독거미{\1c&HFFFFFF&\fs76} 브로치예요
+Dialogue: 3,0:00:05.88,0:00:06.77,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}독 있는 거{\1c&H000000&\fs98} 아니죠?!
+Dialogue: 5,0:00:05.88,0:00:06.77,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H1AE1FF&\fs98}독 있는 거{\1c&HFFFFFF&\fs98} 아니죠?!
+Dialogue: 3,0:00:06.77,0:00:08.28,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}케이스 안쪽을\N본 릭은 단번에
+Dialogue: 5,0:00:06.77,0:00:08.28,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}케이스 안쪽을\N본 릭은 단번에
+Dialogue: 3,0:00:08.28,0:00:09.44,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}정체를 알아보는데
+Dialogue: 5,0:00:08.28,0:00:09.44,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}정체를 알아보는데
+Dialogue: 3,0:00:09.44,0:00:10.35,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}이게 뭔지 알고 오셨어요?
+Dialogue: 5,0:00:09.44,0:00:10.35,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}이게 뭔지 알고 오셨어요?
+Dialogue: 3,0:00:10.35,0:00:11.21,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}아뇨, 전혀 몰라요
+Dialogue: 5,0:00:10.35,0:00:11.21,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}아뇨, 전혀 몰라요
+Dialogue: 3,0:00:11.21,0:00:12.31,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}파베르제{\1c&H000000&\fs98} 진품이죠!
+Dialogue: 5,0:00:11.21,0:00:12.31,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H1AE1FF&\fs98}파베르제{\1c&HFFFFFF&\fs98} 진품이죠!
+Dialogue: 3,0:00:12.31,0:00:13.64,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}러시아 황실{\1c&H000000&\fs76} 전속
+Dialogue: 5,0:00:12.31,0:00:13.64,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFF23D&\fs76}러시아 황실{\1c&HFFFFFF&\fs76} 전속
+Dialogue: 3,0:00:13.64,0:00:14.54,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}보석상이었죠!
+Dialogue: 5,0:00:13.64,0:00:14.54,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}보석상이었죠!
+Dialogue: 3,0:00:14.54,0:00:15.50,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}몸통은 전부\N{\1c&H000000&\fs76}다이아몬드{\1c&H000000&\fs76}고
+Dialogue: 5,0:00:14.54,0:00:15.50,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}몸통은 전부\N{\1c&HFFF23D&\fs76}다이아몬드{\1c&HFFFFFF&\fs76}고
+Dialogue: 3,0:00:15.50,0:00:16.85,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}발끝엔 {\1c&H000000&\fs76}사파이어{\1c&H000000&\fs76}가\N박혔어요
+Dialogue: 5,0:00:15.50,0:00:16.85,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}발끝엔 {\1c&HFFF23D&\fs76}사파이어{\1c&HFFFFFF&\fs76}가\N박혔어요
+Dialogue: 3,0:00:16.85,0:00:18.24,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}눈알은 심지어 {\1c&H000000&\fs76}루비{\1c&H000000&\fs76}네요!
+Dialogue: 5,0:00:16.85,0:00:18.24,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}눈알은 심지어 {\1c&H4E3BFF&\fs76}루비{\1c&HFFFFFF&\fs76}네요!
+Dialogue: 3,0:00:18.24,0:00:19.54,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}진가를 모르는 손님에게
+Dialogue: 5,0:00:18.24,0:00:19.54,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}진가를 모르는 손님에게
+Dialogue: 3,0:00:19.54,0:00:20.71,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}희망가를 물어보자
+Dialogue: 5,0:00:19.54,0:00:20.71,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}희망가를 물어보자
+Dialogue: 3,0:00:20.71,0:00:22.00,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}얼마쯤 받길 원하세요?
+Dialogue: 5,0:00:20.71,0:00:22.00,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}얼마쯤 받길 원하세요?
+Dialogue: 3,0:00:22.00,0:00:23.18,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}280만 원{\1c&H000000&\fs98}만 줘요!
+Dialogue: 5,0:00:22.00,0:00:23.18,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs98}280만 원{\1c&HFFFFFF&\fs98}만 줘요!
+Dialogue: 3,0:00:23.18,0:00:24.47,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}그대로 사면 대박이지만
+Dialogue: 5,0:00:23.18,0:00:24.47,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}그대로 사면 대박이지만
+Dialogue: 3,0:00:24.47,0:00:25.71,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}릭이 양심을 꺼내는데
+Dialogue: 5,0:00:24.47,0:00:25.71,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}릭이 양심을 꺼내는데
+Dialogue: 3,0:00:25.71,0:00:27.65,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}솔직히 그냥 못 본 척하고
+Dialogue: 5,0:00:25.71,0:00:27.65,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}솔직히 그냥 못 본 척하고
+Dialogue: 3,0:00:27.65,0:00:28.69,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}280만 원{\1c&H000000&\fs76}만\N드리고 싶지만
+Dialogue: 5,0:00:27.65,0:00:28.69,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs76}280만 원{\1c&HFFFFFF&\fs76}만\N드리고 싶지만
+Dialogue: 3,0:00:28.69,0:00:30.09,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}양심상{\1c&H000000&\fs98} 못 사요!
+Dialogue: 5,0:00:28.69,0:00:30.09,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFF23D&\fs98}양심상{\1c&HFFFFFF&\fs98} 못 사요!
+Dialogue: 3,0:00:30.09,0:00:31.42,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}단도직입적으로 말할게요
+Dialogue: 5,0:00:30.09,0:00:31.42,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}단도직입적으로 말할게요
+Dialogue: 3,0:00:31.42,0:00:32.49,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}2,100만 원{\1c&H000000&\fs98} 쏴요!
+Dialogue: 5,0:00:31.42,0:00:32.49,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs98}2,100만 원{\1c&HFFFFFF&\fs98} 쏴요!
+Dialogue: 3,0:00:32.49,0:00:33.09,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}헐 {\1c&H000000&\fs98}세상에나{\1c&H000000&\fs98}?!
+Dialogue: 5,0:00:32.49,0:00:33.09,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs98}헐 {\1c&H1AE1FF&\fs98}세상에나{\1c&HFFFFFF&\fs98}?!
+Dialogue: 3,0:00:33.09,0:00:34.21,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}그런데 횡재한 손님이
+Dialogue: 5,0:00:33.09,0:00:34.21,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}그런데 횡재한 손님이
+Dialogue: 3,0:00:34.21,0:00:35.69,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}갑자기 욕심을 부리는데
+Dialogue: 5,0:00:34.21,0:00:35.69,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}갑자기 욕심을 부리는데
+Dialogue: 3,0:00:35.69,0:00:36.80,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}2,380만 원{\1c&H000000&\fs98} 내놔요!
+Dialogue: 5,0:00:35.69,0:00:36.80,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs98}2,380만 원{\1c&HFFFFFF&\fs98} 내놔요!
+Dialogue: 3,0:00:36.80,0:00:37.27,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}어림도 없죠!
+Dialogue: 5,0:00:36.80,0:00:37.27,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H4E3BFF&\fs98}어림도 없죠!
+Dialogue: 3,0:00:37.27,0:00:38.58,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}그럼 {\1c&H000000&\fs76}2,240만 원{\1c&H000000&\fs76}만요!
+Dialogue: 5,0:00:37.27,0:00:38.58,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}그럼 {\1c&H23FF2C&\fs76}2,240만 원{\1c&HFFFFFF&\fs76}만요!
+Dialogue: 3,0:00:38.58,0:00:39.34,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}딱 {\1c&H000000&\fs76}2,100만 원{\1c&H000000&\fs76}\N드린다니까요
+Dialogue: 5,0:00:38.58,0:00:39.34,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}딱 {\1c&H23FF2C&\fs76}2,100만 원{\1c&HFFFFFF&\fs76}\N드린다니까요
+Dialogue: 3,0:00:39.34,0:00:40.59,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}2,170만 원{\1c&H000000&\fs98}만 쏴요!
+Dialogue: 5,0:00:39.34,0:00:40.59,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs98}2,170만 원{\1c&HFFFFFF&\fs98}만 쏴요!
+Dialogue: 3,0:00:40.59,0:00:41.87,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}이래서 {\1c&H000000&\fs76}양심\N{\1c&H000000&\fs76}챙기면{\1c&H000000&\fs76} 손해예요!
+Dialogue: 5,0:00:40.59,0:00:41.87,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}이래서 {\1c&H4E3BFF&\fs76}양심\N{\1c&H4E3BFF&\fs76}챙기면{\1c&HFFFFFF&\fs76} 손해예요!
+Dialogue: 3,0:00:41.87,0:00:43.51,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}잭팟 터졌다 알려줬더니
+Dialogue: 5,0:00:41.87,0:00:43.51,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}잭팟 터졌다 알려줬더니
+Dialogue: 3,0:00:43.51,0:00:45.41,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}한 판 더 돌리려 하네요!
+Dialogue: 5,0:00:43.51,0:00:45.41,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}한 판 더 돌리려 하네요!
+Dialogue: 3,0:00:45.41,0:00:46.13,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}알았어요, 사장님
+Dialogue: 5,0:00:45.41,0:00:46.13,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}알았어요, 사장님
+Dialogue: 3,0:00:46.13,0:00:46.90,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}진짜 천사네요!
+Dialogue: 5,0:00:46.13,0:00:46.90,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}진짜 천사네요!
+Dialogue: 3,0:00:46.90,0:00:47.49,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}콜이요!
+Dialogue: 5,0:00:46.90,0:00:47.49,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}콜이요!
+Dialogue: 3,0:00:47.49,0:00:48.91,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}결국 희망가보다 {\1c&H000000&\fs76}7배
+Dialogue: 5,0:00:47.49,0:00:48.91,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}결국 희망가보다 {\1c&H1AE1FF&\fs76}7배
+Dialogue: 3,0:00:48.91,0:00:49.93,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}넘게{\1c&H000000&\fs76} 받은 여자는
+Dialogue: 5,0:00:48.91,0:00:49.93,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H1AE1FF&\fs76}넘게{\1c&HFFFFFF&\fs76} 받은 여자는
+Dialogue: 3,0:00:49.93,0:00:51.49,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}웃으며 가게를 나섰다
+Dialogue: 5,0:00:49.93,0:00:51.49,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}웃으며 가게를 나섰다

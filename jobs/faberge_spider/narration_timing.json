@@ -1,0 +1,128 @@
+[
+  {
+    "text": "서랍 정리하다 나온",
+    "start": 0.0,
+    "end": 0.858,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.667
+  },
+  {
+    "text": "280만 원짜리",
+    "start": 0.858,
+    "end": 1.888,
+    "method": "whisperx",
+    "prop_start": 0.72,
+    "seg_start": 0.0,
+    "seg_end": 2.667
+  },
+  {
+    "text": "거미 브로치",
+    "start": 1.888,
+    "end": 2.667,
+    "method": "whisperx",
+    "prop_start": 2.233,
+    "seg_start": 0.0,
+    "seg_end": 2.667
+  },
+  {
+    "text": "케이스 안쪽을 본 릭은 단번에",
+    "start": 6.774,
+    "end": 8.276,
+    "method": "whisperx",
+    "prop_start": 6.774,
+    "seg_start": 6.774,
+    "seg_end": 9.44
+  },
+  {
+    "text": "정체를 알아보는데",
+    "start": 8.276,
+    "end": 9.44,
+    "method": "whisperx",
+    "prop_start": 7.555,
+    "seg_start": 6.774,
+    "seg_end": 9.44
+  },
+  {
+    "text": "진가를 모르는 손님에게",
+    "start": 18.241,
+    "end": 19.538,
+    "method": "whisperx",
+    "prop_start": 18.241,
+    "seg_start": 18.241,
+    "seg_end": 20.714
+  },
+  {
+    "text": "희망가를 물어보자",
+    "start": 19.538,
+    "end": 20.714,
+    "method": "whisperx",
+    "prop_start": 19.655,
+    "seg_start": 18.241,
+    "seg_end": 20.714
+  },
+  {
+    "text": "그대로 사면 대박이지만",
+    "start": 23.181,
+    "end": 24.475,
+    "method": "whisperx",
+    "prop_start": 23.181,
+    "seg_start": 23.181,
+    "seg_end": 25.714
+  },
+  {
+    "text": "릭이 양심을 꺼내는데",
+    "start": 24.475,
+    "end": 25.714,
+    "method": "whisperx",
+    "prop_start": 24.51,
+    "seg_start": 23.181,
+    "seg_end": 25.714
+  },
+  {
+    "text": "그런데 횡재한 손님이",
+    "start": 33.094,
+    "end": 34.209,
+    "method": "whisperx",
+    "prop_start": 33.094,
+    "seg_start": 33.094,
+    "seg_end": 35.694
+  },
+  {
+    "text": "갑자기 욕심을 부리는데",
+    "start": 34.209,
+    "end": 35.694,
+    "method": "whisperx",
+    "prop_start": 34.343,
+    "seg_start": 33.094,
+    "seg_end": 35.694
+  },
+  {
+    "text": "결국 희망가보다 7배",
+    "start": 47.493,
+    "end": 48.909,
+    "method": "whisperx",
+    "prop_start": 47.493,
+    "seg_start": 47.493,
+    "seg_end": 51.503
+  },
+  {
+    "text": "넘게 받은 여자는",
+    "start": 48.909,
+    "end": 49.934,
+    "method": "whisperx",
+    "prop_start": 49.306,
+    "seg_start": 47.493,
+    "seg_end": 51.503
+  },
+  {
+    "text": "웃으며 가게를 나섰다",
+    "start": 49.934,
+    "end": 51.503,
+    "method": "whisperx",
+    "prop_start": 50.26,
+    "seg_start": 47.493,
+    "seg_end": 51.503
+  }
+]

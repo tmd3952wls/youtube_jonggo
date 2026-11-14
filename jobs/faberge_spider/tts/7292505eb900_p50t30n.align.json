@@ -1,0 +1,41 @@
+{
+ "text": "그런데 횡재한 손님이 갑자기 욕심을 부리는데",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.02,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "횡재한",
+   "start": 0.362,
+   "end": 0.683,
+   "aligned": true
+  },
+  {
+   "word": "손님이",
+   "start": 0.763,
+   "end": 1.085,
+   "aligned": true
+  },
+  {
+   "word": "갑자기",
+   "start": 1.165,
+   "end": 1.527,
+   "aligned": true
+  },
+  {
+   "word": "욕심을",
+   "start": 1.567,
+   "end": 1.929,
+   "aligned": true
+  },
+  {
+   "word": "부리는데",
+   "start": 2.029,
+   "end": 2.431,
+   "aligned": true
+  }
+ ]
+}

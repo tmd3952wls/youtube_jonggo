@@ -1,0 +1,41 @@
+{
+ "text": "그대로 사면 대박이지만 릭이 양심을 꺼내는데",
+ "words": [
+  {
+   "word": "그대로",
+   "start": 0.04,
+   "end": 0.341,
+   "aligned": true
+  },
+  {
+   "word": "사면",
+   "start": 0.381,
+   "end": 0.602,
+   "aligned": true
+  },
+  {
+   "word": "대박이지만",
+   "start": 0.662,
+   "end": 1.244,
+   "aligned": true
+  },
+  {
+   "word": "릭이",
+   "start": 1.344,
+   "end": 1.524,
+   "aligned": true
+  },
+  {
+   "word": "양심을",
+   "start": 1.564,
+   "end": 1.885,
+   "aligned": true
+  },
+  {
+   "word": "꺼내는데",
+   "start": 1.966,
+   "end": 2.387,
+   "aligned": true
+  }
+ ]
+}

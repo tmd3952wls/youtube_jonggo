@@ -1,0 +1,47 @@
+{
+ "text": "케이스 안쪽을 본 릭은 단번에 정체를 알아보는데",
+ "words": [
+  {
+   "word": "케이스",
+   "start": 0.02,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "안쪽을",
+   "start": 0.322,
+   "end": 0.625,
+   "aligned": true
+  },
+  {
+   "word": "본",
+   "start": 0.725,
+   "end": 0.806,
+   "aligned": true
+  },
+  {
+   "word": "릭은",
+   "start": 0.866,
+   "end": 1.088,
+   "aligned": true
+  },
+  {
+   "word": "단번에",
+   "start": 1.189,
+   "end": 1.511,
+   "aligned": true
+  },
+  {
+   "word": "정체를",
+   "start": 1.552,
+   "end": 1.914,
+   "aligned": true
+  },
+  {
+   "word": "알아보는데",
+   "start": 1.954,
+   "end": 2.458,
+   "aligned": true
+  }
+ ]
+}

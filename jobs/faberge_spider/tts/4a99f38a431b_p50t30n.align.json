@@ -1,0 +1,47 @@
+{
+ "text": "서랍 정리하다 나온 280만 원짜리 거미 브로치",
+ "words": [
+  {
+   "word": "서랍",
+   "start": 0.04,
+   "end": 0.202,
+   "aligned": true
+  },
+  {
+   "word": "정리하다",
+   "start": 0.283,
+   "end": 0.646,
+   "aligned": true
+  },
+  {
+   "word": "나온",
+   "start": 0.707,
+   "end": 0.848,
+   "aligned": true
+  },
+  {
+   "word": "280만",
+   "start": 0.908,
+   "end": 1.393,
+   "aligned": true
+  },
+  {
+   "word": "원짜리",
+   "start": 1.554,
+   "end": 1.877,
+   "aligned": true
+  },
+  {
+   "word": "거미",
+   "start": 1.938,
+   "end": 2.12,
+   "aligned": true
+  },
+  {
+   "word": "브로치",
+   "start": 2.2,
+   "end": 2.503,
+   "aligned": true
+  }
+ ]
+}

@@ -13,7 +13,7 @@
   3. `python "60SEC_YOUTUBE_AUTO_SHORT/tools/capcut_voice.py" harvest --job <작업명> --voice vibrant_baritone` 실행하여 `assets/voices/vibrant_baritone/`에 6~8문장 `.wav` 수집 확인.
 
 ## 3. 대본·금액·효과음·마무리 규칙
-- 작업 폴더: `60SEC_YOUTUBE_AUTO_SHORT/jobs/<작업명>/` (기존 제작 완료 주제인 `rolex_gmt`, `silver_hoard`, `mario_nes`, `vhs_trio`, `double_eagle`, `jordan_sneakers`, `pawn_auto`, `charizard_cards`, `apple1_computer`, `stradivarius_violin`과 중복 금지).
+- 작업 폴더: `60SEC_YOUTUBE_AUTO_SHORT/jobs/<작업명>/` (기존 제작 완료 주제인 `rolex_gmt`, `silver_hoard`, `mario_nes`, `vhs_trio`, `double_eagle`, `jordan_sneakers`, `pawn_auto`, `charizard_cards`, `apple1_computer`, `stradivarius_violin`, `faberge_spider`와 중복 금지).
 - 총 영상 길이는 **45~57초** 사이로 맞춘다.
 - **자막·음성 빈틈 제로 규칙**:
   - 처음(`0.00초`)부터 끝까지 **자막 사이 빈틈이 단 0.01초도 생기지 않게** 이전 자막 끝과 다음 자막 시작을 빈틈없이 이어 붙인다(화면에서 자막이 잠깐이라도 사라져 흐름이 끊기면 안 됨).

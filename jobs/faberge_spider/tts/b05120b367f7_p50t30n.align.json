@@ -1,0 +1,35 @@
+{
+ "text": "진가를 모르는 손님에게 희망가를 물어보자",
+ "words": [
+  {
+   "word": "진가를",
+   "start": 0.06,
+   "end": 0.422,
+   "aligned": true
+  },
+  {
+   "word": "모르는",
+   "start": 0.503,
+   "end": 0.744,
+   "aligned": true
+  },
+  {
+   "word": "손님에게",
+   "start": 0.845,
+   "end": 1.267,
+   "aligned": true
+  },
+  {
+   "word": "희망가를",
+   "start": 1.347,
+   "end": 1.83,
+   "aligned": true
+  },
+  {
+   "word": "물어보자",
+   "start": 1.91,
+   "end": 2.473,
+   "aligned": true
+  }
+ ]
+}
