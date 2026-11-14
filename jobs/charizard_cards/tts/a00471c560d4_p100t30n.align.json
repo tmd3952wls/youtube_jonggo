@@ -1,0 +1,35 @@
+{
+ "text": "하지만 정작 릭은 고개를 저었는데",
+ "words": [
+  {
+   "word": "하지만",
+   "start": 0.02,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "정작",
+   "start": 0.343,
+   "end": 0.625,
+   "aligned": true
+  },
+  {
+   "word": "릭은",
+   "start": 0.686,
+   "end": 0.908,
+   "aligned": true
+  },
+  {
+   "word": "고개를",
+   "start": 1.009,
+   "end": 1.311,
+   "aligned": true
+  },
+  {
+   "word": "저었는데",
+   "start": 1.392,
+   "end": 1.816,
+   "aligned": true
+  }
+ ]
+}

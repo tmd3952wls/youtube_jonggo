@@ -1,0 +1,90 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,카페24 아네모네,128,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+Style: Narr,카페24 아네모네,88,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Dial,카페24 아네모네,84,&H001AE8FF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Tag,카페24 아네모네,70,&H00FFE035,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,0,7,40,40,525,1
+Style: Credit,카페24 아네모네,30,&H009A9A9A,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:54.47,Title,,0,0,0,,{\pos(540,223)\fs100\c&H001AE8FF\3c&H001AE8FF\bord0\shad3\4c&H000000&\4a&H40&}12년간 모은 은 105kg
+Dialogue: 1,0:00:00.00,0:00:54.47,Title,,0,0,0,,{\pos(540,341)\fs115\c&H00FFFFFF\3c&H00FFFFFF\bord0\shad3\4c&H000000&\4a&H40&}드릴부터 들이댄 이유?!
+Dialogue: 20,0:00:00.00,0:00:54.47,Credit,,0,0,0,,{\an8\pos(540,1507)\fs40\1c&HFFFFFF&\alpha&HB3&\bord0\shad0\blur0.5}1분냠냠
+Dialogue: 3,0:00:00.00,0:00:01.20,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}1억 5천만 원{\1c&H000000&\fs74}어치 은
+Dialogue: 5,0:00:00.00,0:00:01.20,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs74}1억 5천만 원{\1c&HFFFFFF&\fs74}어치 은
+Dialogue: 3,0:00:01.20,0:00:02.50,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}더미를 싣고 온 남자
+Dialogue: 5,0:00:01.20,0:00:02.50,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}더미를 싣고 온 남자
+Dialogue: 3,0:00:02.50,0:00:04.60,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}은괴 한가운데에
+Dialogue: 5,0:00:02.50,0:00:04.60,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}은괴 한가운데에
+Dialogue: 3,0:00:04.60,0:00:05.73,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}다른 금속{\1c&H000000&\fs74}이\N들었을 수 있죠
+Dialogue: 5,0:00:04.60,0:00:05.73,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H5E4DFF&\fs74}다른 금속{\1c&HFFFFFF&\fs74}이\N들었을 수 있죠
+Dialogue: 3,0:00:05.73,0:00:06.45,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}아버지 조언으로
+Dialogue: 5,0:00:05.73,0:00:06.45,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}아버지 조언으로
+Dialogue: 3,0:00:06.45,0:00:07.61,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}12년간{\1c&H000000&\fs74} 모은 은인데
+Dialogue: 5,0:00:06.45,0:00:07.61,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFF04D&\fs74}12년간{\1c&HFFFFFF&\fs74} 모은 은인데
+Dialogue: 3,0:00:07.61,0:00:08.84,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}실버바도 있고 이 큰
+Dialogue: 5,0:00:07.61,0:00:08.84,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}실버바도 있고 이 큰
+Dialogue: 3,0:00:08.84,0:00:10.26,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}놈만 {\1c&H000000&\fs74}34kg{\1c&H000000&\fs74}이에요
+Dialogue: 5,0:00:08.84,0:00:10.26,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}놈만 {\1c&H00DCFF&\fs74}34kg{\1c&HFFFFFF&\fs74}이에요
+Dialogue: 3,0:00:10.26,0:00:11.64,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}총 {\1c&H000000&\fs74}3,372온스{\1c&H000000&\fs74}지만
+Dialogue: 5,0:00:10.26,0:00:11.64,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}총 {\1c&H00DCFF&\fs74}3,372온스{\1c&HFFFFFF&\fs74}지만
+Dialogue: 3,0:00:11.64,0:00:12.93,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}가짜 철심 위험이 있어
+Dialogue: 5,0:00:11.64,0:00:12.93,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}가짜 철심 위험이 있어
+Dialogue: 3,0:00:12.93,0:00:13.85,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}바로 검사해
+Dialogue: 5,0:00:12.93,0:00:13.85,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}바로 검사해
+Dialogue: 3,0:00:13.85,0:00:14.82,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}볼 수 있나요?
+Dialogue: 5,0:00:13.85,0:00:14.82,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}볼 수 있나요?
+Dialogue: 3,0:00:14.82,0:00:16.31,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}깊게 구멍을 몇 개 뚫어서
+Dialogue: 5,0:00:14.82,0:00:16.31,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}깊게 구멍을 몇 개 뚫어서
+Dialogue: 3,0:00:16.31,0:00:17.96,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}속가루를 녹여보면 돼요
+Dialogue: 5,0:00:16.31,0:00:17.96,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}속가루를 녹여보면 돼요
+Dialogue: 3,0:00:17.96,0:00:19.22,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}드릴로 파낸 뒤 {\1c&H000000&\fs74}질산
+Dialogue: 5,0:00:17.96,0:00:19.22,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}드릴로 파낸 뒤 {\1c&HFFF04D&\fs74}질산
+Dialogue: 3,0:00:19.22,0:00:20.43,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}시약{\1c&H000000&\fs74}을 떨어뜨리는데
+Dialogue: 5,0:00:19.22,0:00:20.43,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFF04D&\fs74}시약{\1c&HFFFFFF&\fs74}을 떨어뜨리는데
+Dialogue: 3,0:00:20.43,0:00:22.70,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}질산이 {\1c&H000000&\fs74}순은{\1c&H000000&\fs74}과 반응하면
+Dialogue: 5,0:00:20.43,0:00:22.70,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}질산이 {\1c&HFFF04D&\fs74}순은{\1c&HFFFFFF&\fs74}과 반응하면
+Dialogue: 3,0:00:22.70,0:00:23.69,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}크림빛 흰색{\1c&H000000&\fs74}으로 변해요
+Dialogue: 5,0:00:22.70,0:00:23.69,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H00DCFF&\fs74}크림빛 흰색{\1c&HFFFFFF&\fs74}으로 변해요
+Dialogue: 3,0:00:23.69,0:00:25.07,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}진짜 순은{\1c&H000000&\fs74}으로 확인되자
+Dialogue: 5,0:00:23.69,0:00:25.07,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H5E4DFF&\fs74}진짜 순은{\1c&HFFFFFF&\fs74}으로 확인되자
+Dialogue: 3,0:00:25.07,0:00:26.19,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}흥정이 시작되고
+Dialogue: 5,0:00:25.07,0:00:26.19,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}흥정이 시작되고
+Dialogue: 3,0:00:26.19,0:00:30.47,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}시세대로 총\N{\1c&H000000&\fs74}1억 5,526만 원{\1c&H000000&\fs74} 드릴게요
+Dialogue: 5,0:00:26.19,0:00:30.47,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}시세대로 총\N{\1c&H23FF2C&\fs74}1억 5,526만 원{\1c&HFFFFFF&\fs74} 드릴게요
+Dialogue: 3,0:00:30.47,0:00:34.06,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}1억 6,100만 원{\1c&H000000&\fs74}은\N안 될까요?
+Dialogue: 5,0:00:30.47,0:00:34.06,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs74}1억 6,100만 원{\1c&HFFFFFF&\fs74}은\N안 될까요?
+Dialogue: 3,0:00:34.06,0:00:35.00,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}안 돼요
+Dialogue: 5,0:00:34.06,0:00:35.00,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}안 돼요
+Dialogue: 3,0:00:35.00,0:00:36.83,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}딱 맞춰 {\1c&H000000&\fs74}1억 5,540만 원{\1c&H000000&\fs74}\N드릴게요
+Dialogue: 5,0:00:35.00,0:00:36.83,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}딱 맞춰 {\1c&H23FF2C&\fs74}1억 5,540만 원{\1c&HFFFFFF&\fs74}\N드릴게요
+Dialogue: 3,0:00:36.83,0:00:38.89,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}14만 원{\1c&H000000&\fs74} 더\N얹어드리는 거예요
+Dialogue: 5,0:00:36.83,0:00:38.89,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs74}14만 원{\1c&HFFFFFF&\fs74} 더\N얹어드리는 거예요
+Dialogue: 3,0:00:38.89,0:00:40.54,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}1억 5,680만 원{\1c&H000000&\fs74}은요?
+Dialogue: 5,0:00:38.89,0:00:40.54,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs74}1억 5,680만 원{\1c&HFFFFFF&\fs74}은요?
+Dialogue: 3,0:00:40.54,0:00:41.35,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}절대 안 돼요
+Dialogue: 5,0:00:40.54,0:00:41.35,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}절대 안 돼요
+Dialogue: 3,0:00:41.35,0:00:42.27,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}남는 게 없어요
+Dialogue: 5,0:00:41.35,0:00:42.27,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}남는 게 없어요
+Dialogue: 3,0:00:42.27,0:00:43.52,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}12년 전에 훨씬
+Dialogue: 5,0:00:42.27,0:00:43.52,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}12년 전에 훨씬
+Dialogue: 3,0:00:43.52,0:00:46.86,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}싸게 샀으니까요
+Dialogue: 5,0:00:43.52,0:00:46.86,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}싸게 샀으니까요
+Dialogue: 3,0:00:46.86,0:00:47.63,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}1억 5,540만 원{\1c&H000000&\fs74}에\N거래하죠
+Dialogue: 5,0:00:46.86,0:00:47.63,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs74}1억 5,540만 원{\1c&HFFFFFF&\fs74}에\N거래하죠
+Dialogue: 3,0:00:47.63,0:00:49.57,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}좋아요 거래 성사입니다!
+Dialogue: 5,0:00:47.63,0:00:49.57,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}좋아요 거래 성사입니다!
+Dialogue: 3,0:00:49.57,0:00:51.41,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}결국 {\1c&H000000&\fs74}1억 5,540만 원
+Dialogue: 5,0:00:49.57,0:00:51.41,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}결국 {\1c&H23FF2C&\fs74}1억 5,540만 원
+Dialogue: 3,0:00:51.41,0:00:52.21,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}현금 거래로
+Dialogue: 5,0:00:51.41,0:00:52.21,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}현금 거래로
+Dialogue: 3,0:00:52.21,0:00:54.47,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs74}훈훈하게 끝났다
+Dialogue: 5,0:00:52.21,0:00:54.47,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord0\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs74}훈훈하게 끝났다

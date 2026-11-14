@@ -1,0 +1,35 @@
+{
+ "text": "전문가를 불러 카드 상태를 살펴보는데",
+ "words": [
+  {
+   "word": "전문가를",
+   "start": 0.061,
+   "end": 0.586,
+   "aligned": true
+  },
+  {
+   "word": "불러",
+   "start": 0.667,
+   "end": 0.889,
+   "aligned": true
+  },
+  {
+   "word": "카드",
+   "start": 0.95,
+   "end": 1.111,
+   "aligned": true
+  },
+  {
+   "word": "상태를",
+   "start": 1.172,
+   "end": 1.495,
+   "aligned": true
+  },
+  {
+   "word": "살펴보는데",
+   "start": 1.596,
+   "end": 2.202,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "text": "결국 1억 5,540만 원 현금 거래로 훈훈하게 끝났다",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "1억",
+   "start": 0.302,
+   "end": 0.583,
+   "aligned": true
+  },
+  {
+   "word": "5,540만",
+   "start": 0.684,
+   "end": 1.669,
+   "aligned": true
+  },
+  {
+   "word": "원",
+   "start": 1.69,
+   "end": 1.79,
+   "aligned": true
+  },
+  {
+   "word": "현금",
+   "start": 1.891,
+   "end": 2.152,
+   "aligned": true
+  },
+  {
+   "word": "거래로",
+   "start": 2.233,
+   "end": 2.554,
+   "aligned": true
+  },
+  {
+   "word": "훈훈하게",
+   "start": 2.695,
+   "end": 3.057,
+   "aligned": true
+  },
+  {
+   "word": "끝났다",
+   "start": 3.138,
+   "end": 3.701,
+   "aligned": true
+  }
+ ]
+}

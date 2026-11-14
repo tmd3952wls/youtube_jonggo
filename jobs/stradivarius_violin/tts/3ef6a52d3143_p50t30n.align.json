@@ -1,0 +1,35 @@
+{
+ "text": "미련이 남은 남자가 매입가를 묻는데",
+ "words": [
+  {
+   "word": "미련이",
+   "start": 0.02,
+   "end": 0.303,
+   "aligned": true
+  },
+  {
+   "word": "남은",
+   "start": 0.364,
+   "end": 0.546,
+   "aligned": true
+  },
+  {
+   "word": "남자가",
+   "start": 0.606,
+   "end": 0.97,
+   "aligned": true
+  },
+  {
+   "word": "매입가를",
+   "start": 1.031,
+   "end": 1.476,
+   "aligned": true
+  },
+  {
+   "word": "묻는데",
+   "start": 1.556,
+   "end": 1.86,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "text": "긴장 속에 드디어 최종 판정이 내려지자",
+ "words": [
+  {
+   "word": "긴장",
+   "start": 0.06,
+   "end": 0.363,
+   "aligned": true
+  },
+  {
+   "word": "속에",
+   "start": 0.463,
+   "end": 0.685,
+   "aligned": true
+  },
+  {
+   "word": "드디어",
+   "start": 0.786,
+   "end": 1.068,
+   "aligned": true
+  },
+  {
+   "word": "최종",
+   "start": 1.208,
+   "end": 1.45,
+   "aligned": true
+  },
+  {
+   "word": "판정이",
+   "start": 1.551,
+   "end": 1.913,
+   "aligned": true
+  },
+  {
+   "word": "내려지자",
+   "start": 1.974,
+   "end": 2.357,
+   "aligned": true
+  }
+ ]
+}

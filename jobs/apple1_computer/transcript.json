@@ -1,0 +1,956 @@
+[
+  {
+    "id": 0,
+    "start": 0.0,
+    "end": 1.0,
+    "text": "Hey, Bobby, how's it going?"
+  },
+  {
+    "id": 1,
+    "start": 1.0,
+    "end": 2.0,
+    "text": "Hey, Rick."
+  },
+  {
+    "id": 2,
+    "start": 2.0,
+    "end": 3.0,
+    "text": "How you doing, man?"
+  },
+  {
+    "id": 3,
+    "start": 3.0,
+    "end": 4.0,
+    "text": "Thanks for coming by."
+  },
+  {
+    "id": 4,
+    "start": 4.0,
+    "end": 5.0,
+    "text": "Good for you."
+  },
+  {
+    "id": 5,
+    "start": 5.0,
+    "end": 6.0,
+    "text": "Yeah."
+  },
+  {
+    "id": 6,
+    "start": 6.0,
+    "end": 7.0,
+    "text": "So..."
+  },
+  {
+    "id": 7,
+    "start": 7.0,
+    "end": 9.92,
+    "text": "So that is it."
+  },
+  {
+    "id": 8,
+    "start": 9.92,
+    "end": 13.0,
+    "text": "That is an original Apple One."
+  },
+  {
+    "id": 9,
+    "start": 13.0,
+    "end": 15.0,
+    "text": "Wow."
+  },
+  {
+    "id": 10,
+    "start": 15.0,
+    "end": 18.96,
+    "text": "Rick's coming down to the auction house to check out an Apple One computer we have."
+  },
+  {
+    "id": 11,
+    "start": 18.96,
+    "end": 22.04,
+    "text": "We got it coming up in a sale, and he's going to try to buy it from me before I offer"
+  },
+  {
+    "id": 12,
+    "start": 22.04,
+    "end": 23.04,
+    "text": "it to the public."
+  },
+  {
+    "id": 13,
+    "start": 23.04,
+    "end": 27.6,
+    "text": "If Rick walked into the half a million dollars, put it on the table, I'd seriously"
+  },
+  {
+    "id": 14,
+    "start": 27.6,
+    "end": 28.6,
+    "text": "have to consider it."
+  },
+  {
+    "id": 15,
+    "start": 28.6,
+    "end": 30.1,
+    "text": "I'd probably have to sell it to him"
+  },
+  {
+    "id": 16,
+    "start": 30.1,
+    "end": 32.1,
+    "text": "and my client would be happy."
+  },
+  {
+    "id": 17,
+    "start": 32.1,
+    "end": 34.3,
+    "text": "This is really, really incredible."
+  },
+  {
+    "id": 18,
+    "start": 34.3,
+    "end": 36.9,
+    "text": "Yeah, and this is the grandfather of all the computers."
+  },
+  {
+    "id": 19,
+    "start": 36.9,
+    "end": 38.1,
+    "text": "It's been condensed down, you know,"
+  },
+  {
+    "id": 20,
+    "start": 38.1,
+    "end": 39.7,
+    "text": "from the giant full rooms."
+  },
+  {
+    "id": 21,
+    "start": 39.7,
+    "end": 42.3,
+    "text": "This was, like, the first one that you could use at home."
+  },
+  {
+    "id": 22,
+    "start": 42.3,
+    "end": 44.6,
+    "text": "The evolution of computers is really, really amazing."
+  },
+  {
+    "id": 23,
+    "start": 44.6,
+    "end": 47.3,
+    "text": "I mean, Wozniak worked for Hewlett Packard,"
+  },
+  {
+    "id": 24,
+    "start": 47.3,
+    "end": 50.3,
+    "text": "and there wasn't anything like this available to the public."
+  },
+  {
+    "id": 25,
+    "start": 50.3,
+    "end": 53.0,
+    "text": "And what he did was he combined everything"
+  },
+  {
+    "id": 26,
+    "start": 53.0,
+    "end": 55.3,
+    "text": "onto one board, which made it less expensive."
+  },
+  {
+    "id": 27,
+    "start": 55.3,
+    "end": 57.4,
+    "text": "It also made it a little bit faster."
+  },
+  {
+    "id": 28,
+    "start": 57.4,
+    "end": 59.44,
+    "text": "and this is basically what started"
+  },
+  {
+    "id": 29,
+    "start": 59.44,
+    "end": 61.6,
+    "text": "the whole personal computer crazed."
+  },
+  {
+    "id": 30,
+    "start": 61.6,
+    "end": 65.76,
+    "text": "Yeah, then came along his partner, Steve Jobs in 1971."
+  },
+  {
+    "id": 31,
+    "start": 65.76,
+    "end": 69.08,
+    "text": "And by 1976, Steve Jobs and Wozniak"
+  },
+  {
+    "id": 32,
+    "start": 69.08,
+    "end": 71.68,
+    "text": "co-founded Apple and Jobs Garage."
+  },
+  {
+    "id": 33,
+    "start": 71.68,
+    "end": 75.16,
+    "text": "And soon after, investors took notice."
+  },
+  {
+    "id": 34,
+    "start": 75.16,
+    "end": 77.92,
+    "text": "From that, they were able to design the Apple II."
+  },
+  {
+    "id": 35,
+    "start": 77.92,
+    "end": 79.36,
+    "text": "That ended up leading to the Mac,"
+  },
+  {
+    "id": 36,
+    "start": 79.36,
+    "end": 82.04,
+    "text": "which really changed Apple."
+  },
+  {
+    "id": 37,
+    "start": 82.04,
+    "end": 84.48,
+    "text": "Now, we have an entire generation"
+  },
+  {
+    "id": 38,
+    "start": 84.48,
+    "end": 86.6,
+    "text": "that walks around like this."
+  },
+  {
+    "id": 39,
+    "start": 86.6,
+    "end": 88.0,
+    "text": "because of these guys."
+  },
+  {
+    "id": 40,
+    "start": 88.0,
+    "end": 91.48,
+    "text": "So the Apple One came out in 1976."
+  },
+  {
+    "id": 41,
+    "start": 91.48,
+    "end": 93.84,
+    "text": "They only sold a couple of hundred of these, right?"
+  },
+  {
+    "id": 42,
+    "start": 93.84,
+    "end": 95.64,
+    "text": "They made only 200 of them,"
+  },
+  {
+    "id": 43,
+    "start": 95.64,
+    "end": 96.98,
+    "text": "and a lot of them didn't sell."
+  },
+  {
+    "id": 44,
+    "start": 96.98,
+    "end": 99.64,
+    "text": "So this one is the second batch of 100."
+  },
+  {
+    "id": 45,
+    "start": 99.64,
+    "end": 101.56,
+    "text": "So it's pretty rare."
+  },
+  {
+    "id": 46,
+    "start": 101.56,
+    "end": 104.32,
+    "text": "Okay, so what is the dollar figure?"
+  },
+  {
+    "id": 47,
+    "start": 104.32,
+    "end": 108.12,
+    "text": "Apple Ones like this have sold for as much as $900,000."
+  },
+  {
+    "id": 48,
+    "start": 108.12,
+    "end": 111.56,
+    "text": "So I would think one like this in this condition,"
+  },
+  {
+    "id": 49,
+    "start": 112.92,
+    "end": 114.84,
+    "text": "$500,000 would get it done."
+  },
+  {
+    "id": 50,
+    "start": 116.6,
+    "end": 117.8,
+    "text": "Damn."
+  },
+  {
+    "id": 51,
+    "start": 117.8,
+    "end": 118.96,
+    "text": "Does it work?"
+  },
+  {
+    "id": 52,
+    "start": 118.96,
+    "end": 120.64,
+    "text": "This works."
+  },
+  {
+    "id": 53,
+    "start": 120.64,
+    "end": 122.0,
+    "text": "You can use it today."
+  },
+  {
+    "id": 54,
+    "start": 122.0,
+    "end": 123.8,
+    "text": "That's what makes it so valuable."
+  },
+  {
+    "id": 55,
+    "start": 123.8,
+    "end": 125.32,
+    "text": "It's operational."
+  },
+  {
+    "id": 56,
+    "start": 125.32,
+    "end": 126.44,
+    "text": "I know about the history."
+  },
+  {
+    "id": 57,
+    "start": 126.44,
+    "end": 128.48,
+    "text": "I know about the prices."
+  },
+  {
+    "id": 58,
+    "start": 128.48,
+    "end": 131.6,
+    "text": "The thing I don't know about is I couldn't tell you"
+  },
+  {
+    "id": 59,
+    "start": 131.6,
+    "end": 133.84,
+    "text": "if this was made last week by someone else"
+  },
+  {
+    "id": 60,
+    "start": 133.84,
+    "end": 134.96,
+    "text": "in a different garage."
+  },
+  {
+    "id": 61,
+    "start": 134.96,
+    "end": 137.48,
+    "text": "So I have a guy who's going to meet us here."
+  },
+  {
+    "id": 62,
+    "start": 137.48,
+    "end": 139.72,
+    "text": "He will know everything there is to know about it."
+  },
+  {
+    "id": 63,
+    "start": 139.72,
+    "end": 140.92,
+    "text": "He's got to look at it."
+  },
+  {
+    "id": 64,
+    "start": 140.92,
+    "end": 141.48,
+    "text": "Makes sense."
+  },
+  {
+    "id": 65,
+    "start": 141.48,
+    "end": 142.44,
+    "text": "Makes sense."
+  },
+  {
+    "id": 66,
+    "start": 142.44,
+    "end": 144.4,
+    "text": "So I guess we'll just hang out till it gets here?"
+  },
+  {
+    "id": 67,
+    "start": 144.4,
+    "end": 144.8,
+    "text": "Yeah, man."
+  },
+  {
+    "id": 68,
+    "start": 144.8,
+    "end": 145.6,
+    "text": "Let's get a cup of coffee."
+  },
+  {
+    "id": 69,
+    "start": 145.6,
+    "end": 146.24,
+    "text": "OK."
+  },
+  {
+    "id": 70,
+    "start": 146.24,
+    "end": 148.2,
+    "text": "But Apple One is worth a lot of money."
+  },
+  {
+    "id": 71,
+    "start": 148.2,
+    "end": 150.76,
+    "text": "So I'm glad Rick is gonna bring his guy in here"
+  },
+  {
+    "id": 72,
+    "start": 150.76,
+    "end": 154.96,
+    "text": "and look at it because this is one beautiful Apple One."
+  },
+  {
+    "id": 73,
+    "start": 154.96,
+    "end": 157.32,
+    "text": "The Apple One."
+  },
+  {
+    "id": 74,
+    "start": 157.32,
+    "end": 158.44,
+    "text": "It's really clean."
+  },
+  {
+    "id": 75,
+    "start": 158.44,
+    "end": 161.0,
+    "text": "Like I could read the numbers on everything here."
+  },
+  {
+    "id": 76,
+    "start": 161.0,
+    "end": 162.8,
+    "text": "So that's kind of amazing."
+  },
+  {
+    "id": 77,
+    "start": 162.8,
+    "end": 165.36,
+    "text": "The Apple One was revolutionary."
+  },
+  {
+    "id": 78,
+    "start": 165.36,
+    "end": 167.12,
+    "text": "When you bought a computer, they were kits"
+  },
+  {
+    "id": 79,
+    "start": 167.12,
+    "end": 170.0,
+    "text": "and you tried to assemble it"
+  },
+  {
+    "id": 80,
+    "start": 170.0,
+    "end": 171.68,
+    "text": "and half the time it didn't work."
+  },
+  {
+    "id": 81,
+    "start": 171.68,
+    "end": 173.88,
+    "text": "This one actually was guaranteed to work."
+  },
+  {
+    "id": 82,
+    "start": 173.88,
+    "end": 175.4,
+    "text": "They had a warranty."
+  },
+  {
+    "id": 83,
+    "start": 175.4,
+    "end": 178.1,
+    "text": "No one had a warranty at the time."
+  },
+  {
+    "id": 84,
+    "start": 178.1,
+    "end": 181.14,
+    "text": "Your resident geek, Steve Jobs or Steve Wozniak"
+  },
+  {
+    "id": 85,
+    "start": 181.14,
+    "end": 182.54,
+    "text": "would come out and repair your computer"
+  },
+  {
+    "id": 86,
+    "start": 182.54,
+    "end": 183.86,
+    "text": "if you were in the Bay Area."
+  },
+  {
+    "id": 87,
+    "start": 185.14,
+    "end": 186.66,
+    "text": "That's crazy."
+  },
+  {
+    "id": 88,
+    "start": 186.66,
+    "end": 188.74,
+    "text": "It looks in great condition."
+  },
+  {
+    "id": 89,
+    "start": 188.74,
+    "end": 190.78,
+    "text": "So, can we see if it works?"
+  },
+  {
+    "id": 90,
+    "start": 190.78,
+    "end": 191.62,
+    "text": "Sure."
+  },
+  {
+    "id": 91,
+    "start": 191.62,
+    "end": 192.94,
+    "text": "We're gonna have to load something on it"
+  },
+  {
+    "id": 92,
+    "start": 192.94,
+    "end": 194.78,
+    "text": "to kind of show that it works."
+  },
+  {
+    "id": 93,
+    "start": 194.78,
+    "end": 196.9,
+    "text": "We're gonna use a little modern technology."
+  },
+  {
+    "id": 94,
+    "start": 196.9,
+    "end": 199.9,
+    "text": "Probably more horsepower in this thing than that, but..."
+  },
+  {
+    "id": 95,
+    "start": 199.9,
+    "end": 200.74,
+    "text": "If that's an iPod,"
+  },
+  {
+    "id": 96,
+    "start": 200.74,
+    "end": 202.58,
+    "text": "it's not really modern technology anymore."
+  },
+  {
+    "id": 97,
+    "start": 202.58,
+    "end": 203.9,
+    "text": "Well..."
+  },
+  {
+    "id": 98,
+    "start": 203.9,
+    "end": 209.55,
+    "text": "and just plug this in and it'll load software."
+  },
+  {
+    "id": 99,
+    "start": 209.55,
+    "end": 212.71,
+    "text": "And we should see our screen turn on any second."
+  },
+  {
+    "id": 100,
+    "start": 212.71,
+    "end": 215.19,
+    "text": "So that was the original screen where it came out?"
+  },
+  {
+    "id": 101,
+    "start": 215.19,
+    "end": 216.87,
+    "text": "Yeah, that's kind of your boot-up screen."
+  },
+  {
+    "id": 102,
+    "start": 216.87,
+    "end": 220.91,
+    "text": "And basically, you get this kind of flashing characters."
+  },
+  {
+    "id": 103,
+    "start": 220.91,
+    "end": 223.59,
+    "text": "That just told you it was alive."
+  },
+  {
+    "id": 104,
+    "start": 223.59,
+    "end": 225.79,
+    "text": "We would clear the screen."
+  },
+  {
+    "id": 105,
+    "start": 225.79,
+    "end": 227.83,
+    "text": "We'd reset the system, and then we"
+  },
+  {
+    "id": 106,
+    "start": 227.83,
+    "end": 230.95,
+    "text": "can start loading software."
+  },
+  {
+    "id": 107,
+    "start": 230.95,
+    "end": 232.99,
+    "text": "So how do we know when the program's loaded?"
+  },
+  {
+    "id": 108,
+    "start": 232.99,
+    "end": 235.31,
+    "text": "We're going to get a little slash at the end."
+  },
+  {
+    "id": 109,
+    "start": 235.31,
+    "end": 236.95,
+    "text": "So it looks like we got a good load here."
+  },
+  {
+    "id": 110,
+    "start": 236.95,
+    "end": 241.83,
+    "text": "And I got my little slash,"
+  },
+  {
+    "id": 111,
+    "start": 241.83,
+    "end": 244.51,
+    "text": "and then this is something someone put together"
+  },
+  {
+    "id": 112,
+    "start": 244.51,
+    "end": 246.75,
+    "text": "a few years ago to show off the Apple One"
+  },
+  {
+    "id": 113,
+    "start": 246.75,
+    "end": 248.35,
+    "text": "for its anniversary."
+  },
+  {
+    "id": 114,
+    "start": 248.35,
+    "end": 251.07,
+    "text": "People are still writing programs today for the Apple One."
+  },
+  {
+    "id": 115,
+    "start": 251.07,
+    "end": 253.07,
+    "text": "It's got this giant following."
+  },
+  {
+    "id": 116,
+    "start": 253.07,
+    "end": 254.71,
+    "text": "It's really cool because like it's just a little"
+  },
+  {
+    "id": 117,
+    "start": 254.71,
+    "end": 257.87,
+    "text": "over 40 years in a completely changed society."
+  },
+  {
+    "id": 118,
+    "start": 257.87,
+    "end": 260.07,
+    "text": "So what do you think?"
+  },
+  {
+    "id": 119,
+    "start": 260.07,
+    "end": 263.87,
+    "text": "It is a real functioning Apple One computer."
+  },
+  {
+    "id": 120,
+    "start": 263.87,
+    "end": 264.71,
+    "text": "Okay."
+  },
+  {
+    "id": 121,
+    "start": 264.71,
+    "end": 267.63,
+    "text": "And apparently they grade these things"
+  },
+  {
+    "id": 122,
+    "start": 267.63,
+    "end": 269.59,
+    "text": "and the grade is..."
+  },
+  {
+    "id": 123,
+    "start": 269.59,
+    "end": 271.75,
+    "text": "This is an eight, eight out of 10."
+  },
+  {
+    "id": 124,
+    "start": 271.75,
+    "end": 273.31,
+    "text": "There are no known 10s."
+  },
+  {
+    "id": 125,
+    "start": 273.31,
+    "end": 275.99,
+    "text": "10 would be if it like came straight out of the box,"
+  },
+  {
+    "id": 126,
+    "start": 275.99,
+    "end": 277.03,
+    "text": "never touched."
+  },
+  {
+    "id": 127,
+    "start": 277.03,
+    "end": 278.71,
+    "text": "All these parts are clean and clear."
+  },
+  {
+    "id": 128,
+    "start": 278.71,
+    "end": 280.27,
+    "text": "That's not always the case."
+  },
+  {
+    "id": 129,
+    "start": 280.27,
+    "end": 281.79,
+    "text": "It really is a good example."
+  },
+  {
+    "id": 130,
+    "start": 281.79,
+    "end": 284.19,
+    "text": "I should say an amazing example."
+  },
+  {
+    "id": 131,
+    "start": 284.19,
+    "end": 285.39,
+    "text": "And it's worth?"
+  },
+  {
+    "id": 132,
+    "start": 286.63,
+    "end": 289.23,
+    "text": "Easily half a million, maybe more."
+  },
+  {
+    "id": 133,
+    "start": 289.23,
+    "end": 291.35,
+    "text": "I like the way he thinks, half a million, Rick."
+  },
+  {
+    "id": 134,
+    "start": 291.35,
+    "end": 292.87,
+    "text": "At least."
+  },
+  {
+    "id": 135,
+    "start": 292.87,
+    "end": 293.83,
+    "text": "Well, thanks for coming, man."
+  },
+  {
+    "id": 136,
+    "start": 293.83,
+    "end": 294.75,
+    "text": "I really appreciate it."
+  },
+  {
+    "id": 137,
+    "start": 294.75,
+    "end": 296.03,
+    "text": "Sure, anytime."
+  },
+  {
+    "id": 138,
+    "start": 296.03,
+    "end": 297.15,
+    "text": "I'm going to leave this running."
+  },
+  {
+    "id": 139,
+    "start": 297.15,
+    "end": 299.15,
+    "text": "I'm going to give you guys some privacy to talk,"
+  },
+  {
+    "id": 140,
+    "start": 299.15,
+    "end": 300.79,
+    "text": "and I'll be back in a little bit."
+  },
+  {
+    "id": 141,
+    "start": 300.79,
+    "end": 301.51,
+    "text": "Pleasure."
+  },
+  {
+    "id": 142,
+    "start": 301.51,
+    "end": 304.38,
+    "text": "Pleasure."
+  },
+  {
+    "id": 143,
+    "start": 304.38,
+    "end": 306.18,
+    "text": "It's a beautiful one, Rick."
+  },
+  {
+    "id": 144,
+    "start": 306.18,
+    "end": 306.86,
+    "text": "It's mint."
+  },
+  {
+    "id": 145,
+    "start": 306.86,
+    "end": 307.42,
+    "text": "It works."
+  },
+  {
+    "id": 146,
+    "start": 307.42,
+    "end": 309.06,
+    "text": "He created it in eight."
+  },
+  {
+    "id": 147,
+    "start": 309.06,
+    "end": 311.38,
+    "text": "And you want a half million dollars for this thing?"
+  },
+  {
+    "id": 148,
+    "start": 311.38,
+    "end": 312.46,
+    "text": "At least, Rick."
+  },
+  {
+    "id": 149,
+    "start": 312.46,
+    "end": 315.14,
+    "text": "I mean, that auction could go for so much more."
+  },
+  {
+    "id": 150,
+    "start": 315.14,
+    "end": 316.42,
+    "text": "Yeah."
+  },
+  {
+    "id": 151,
+    "start": 316.42,
+    "end": 318.14,
+    "text": "This is incredibly tempting."
+  },
+  {
+    "id": 152,
+    "start": 318.14,
+    "end": 321.06,
+    "text": "And I know I may never get another chance again."
+  },
+  {
+    "id": 153,
+    "start": 321.06,
+    "end": 323.14,
+    "text": "And while I'm looking to get into the vintage computer"
+  },
+  {
+    "id": 154,
+    "start": 323.14,
+    "end": 328.3,
+    "text": "market this just might be a little too much too soon. I'm gonna have to read more"
+  },
+  {
+    "id": 155,
+    "start": 328.3,
+    "end": 334.18,
+    "text": "about these. Have a good one, man. Great to see you, man. Super cool though. I kind of"
+  },
+  {
+    "id": 156,
+    "start": 334.18,
+    "end": 337.9,
+    "text": "wish that Rick had bought the Apple one because it would have made my life in"
+  },
+  {
+    "id": 157,
+    "start": 337.9,
+    "end": 342.28,
+    "text": "the auction house life a lot easier but now we're excited for the auction"
+  },
+  {
+    "id": 158,
+    "start": 342.28,
+    "end": 345.98,
+    "text": "because it was worth more than half a million."
+  }
+]

@@ -1,0 +1,41 @@
+{
+ "text": "곧바로 전원을 켜 작동하는지 시험해 보자",
+ "words": [
+  {
+   "word": "곧바로",
+   "start": 0.04,
+   "end": 0.381,
+   "aligned": true
+  },
+  {
+   "word": "전원을",
+   "start": 0.441,
+   "end": 0.742,
+   "aligned": true
+  },
+  {
+   "word": "켜",
+   "start": 0.822,
+   "end": 0.923,
+   "aligned": true
+  },
+  {
+   "word": "작동하는지",
+   "start": 0.983,
+   "end": 1.544,
+   "aligned": true
+  },
+  {
+   "word": "시험해",
+   "start": 1.625,
+   "end": 1.885,
+   "aligned": true
+  },
+  {
+   "word": "보자",
+   "start": 1.966,
+   "end": 2.126,
+   "aligned": true
+  }
+ ]
+}

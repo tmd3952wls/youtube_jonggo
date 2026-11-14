@@ -47,8 +47,8 @@ ENTER = r"\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alp
 
 
 def plain(text):
-    """강조 표시 [ ], [색:  ] 제거 (TTS·정렬·검증용)."""
-    return re.sub(r"\[(\w+:)?|\]", "", text)
+    """강조 표시 {big}, [ ], [big:...], [색:  ] 제거 (TTS·정렬·검증용)."""
+    return re.sub(r"\{big\}\s*|\[(?:big:)?(?:\w+:)?|\]", "", text)
 
 
 def keywordize(text, base, kw, on):
@@ -66,18 +66,24 @@ def keywordize(text, base, kw, on):
     return "".join(out), on
 
 
+def _char_w(ch):
+    if ch == " ":
+        return 0.3
+    if "가" <= ch <= "힣" or "ㄱ" <= ch <= "ㆎ":
+        return 1.0
+    if ch.isascii() and ch.isalnum():
+        return 0.6
+    return 0.45
+
+
 def vis_w(text):
-    """자막 한 줄의 대략적인 가로 폭(em). 한글 1, 영문·숫자 0.6, 공백 0.3, 기호 0.45."""
+    """자막 한 줄의 대략적인 가로 폭(em). {big} 또는 [big:...] 구간은 1.29배 폭 반영."""
+    from .subfx import parse_spans
     w = 0.0
-    for ch in plain(text):
-        if ch == " ":
-            w += 0.3
-        elif "가" <= ch <= "힣" or "ㄱ" <= ch <= "ㆎ":
-            w += 1.0
-        elif ch.isascii() and ch.isalnum():
-            w += 0.6
-        else:
-            w += 0.45
+    for seg_txt, col in parse_spans(text, "yellow"):
+        scale = 1.29 if col.endswith("_b") else 1.0
+        for ch in seg_txt:
+            w += _char_w(ch) * scale
     return w
 
 
@@ -89,8 +95,9 @@ def sub_tokens(text):
     괄호 앞에서는 끊을 수 있음: '25만 달러' / '(약 3.5억)를 원해요'."""
     out, depth = [], 0
     for w in text.split():
-        last = plain(out[-1]).split()[-1] if out else ""
-        if out and (depth > 0 or NUM_TOKEN.fullmatch(last)):
+        ps = plain(out[-1]).split() if out else []
+        last = ps[-1] if ps else ""
+        if out and (depth > 0 or (last and NUM_TOKEN.fullmatch(last))):
             out[-1] += " " + w
         else:
             out.append(w)
@@ -104,11 +111,14 @@ BOUND = re.compile(r"^(뒤|후|것|게|수|때|적|중|만큼|듯|전|채|대로
 def split_chunks(text, max_em):
     """자막을 한 줄짜리 덩어리들로 (2줄 대신 순서대로 넘김).
     덩어리 수를 최소로, 그다음 폭이 고르게 (끝에 한 단어만 남는 일 없게) — 작은 DP."""
-    toks = sub_tokens(text)
-    if vis_w(text) <= max_em or len(toks) <= 1:
-        return [text]
+    m_big = re.match(r"^\s*\{big\}\s*", text)
+    big_pre = "{big} " if m_big else ""
+    body = text[m_big.end():] if m_big else text
+    toks = sub_tokens(body)
+    if vis_w(big_pre + body) <= max_em or len(toks) <= 1:
+        return [big_pre + body] if body else []
     n = len(toks)
-    width = lambda i, j: vis_w(" ".join(toks[i:j]))
+    width = lambda i, j: vis_w(big_pre + " ".join(toks[i:j]))
     INF = (10 ** 9, 0.0)
     best = [INF] * (n + 1)  # best[i] = (덩어리 수, 폭 편차 합) for toks[:i]
     prev = [0] * (n + 1)
@@ -124,7 +134,7 @@ def split_chunks(text, max_em):
                 best[j], prev[j] = c, i
     chunks, j = [], n
     while j > 0:
-        chunks.insert(0, " ".join(toks[prev[j]:j]))
+        chunks.insert(0, big_pre + " ".join(toks[prev[j]:j]))
         j = prev[j]
     return chunks
 
@@ -141,7 +151,8 @@ def merge_short(items, min_d):
         g = it[3] if len(it) > 3 else None
         short = (b - a) < min_d or (out and (out[-1][1] - out[-1][0]) < min_d)
         same = out and (out[-1][3] if len(out[-1]) > 3 else None) == g
-        if out and short and same and NL not in out[-1][2] and NL not in txt:
+        same_big = out and (("{big}" in out[-1][2] or "[big:" in out[-1][2]) == ("{big}" in txt or "[big:" in txt))
+        if out and short and same and same_big and NL not in out[-1][2] and NL not in txt:
             out[-1] = (out[-1][0], b, out[-1][2] + NL + txt) + tuple(out[-1][3:])
         else:
             out.append(tuple(it))
@@ -184,11 +195,13 @@ def boxcut_events(kind, txt, pos, S, color=None):
 
 
 def carry_color(chunks):
-    """덩어리 경계를 넘는 [색: ...] 강조를 다음 덩어리 앞에 다시 열어 줌."""
+    """덩어리 경계를 넘는 {big} 및 [big:색: ...] / [색: ...] 강조를 다음 덩어리 앞에 다시 열어 줌."""
+    line_big = bool(chunks and chunks[0].lstrip().startswith("{big}"))
     out, open_tag = [], None
-    for c in chunks:
-        out.append((open_tag or "") + c)
-        for m in re.finditer(r"\[(\w+:)?|\]", c):
+    for idx, c in enumerate(chunks):
+        prefix = ("{big} " if line_big and idx > 0 and not c.lstrip().startswith("{big}") else "") + (open_tag or "")
+        out.append(prefix + c)
+        for m in re.finditer(r"\[(?:big:)?(?:\w+:)?|\]", c):
             open_tag = m.group(0) if m.group(0) != "]" else None
     return out
 
@@ -255,7 +268,7 @@ ENC = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-c:a", "aac", "-
        "-ar", "48000", "-ac", "2"]
 
 
-def voiced_islands(vocals, a, b, min_len=0.2, bridge=0.15):
+def voiced_islands(vocals, a, b, min_len=0.12, bridge=0.10):
     """목소리 트랙(source_vocals.wav)에서 [a,b] 안의 실제로 말하는 구간들."""
     import numpy as np
     import soundfile as sf
@@ -270,7 +283,7 @@ def voiced_islands(vocals, a, b, min_len=0.2, bridge=0.15):
     if n == 0:
         return []
     db = 20 * np.log10(np.sqrt((x[:n * h].reshape(n, h) ** 2).mean(1)) + 1e-9)
-    thr = max(-45.0, db.max() - 30.0)
+    thr = max(-38.0, db.max() - 25.0)
     out = []
     for k in np.flatnonzero(db > thr):
         t0, t1 = a + k * 0.02, a + (k + 1) * 0.02
@@ -283,29 +296,44 @@ def voiced_islands(vocals, a, b, min_len=0.2, bridge=0.15):
 
 def speech_pieces(words, ids, tr, R, vocals=None):
     """대사 클립 → 실제 말하는 구간들. 단어 사이가 max_inner_gap 보다 벌어지면 그 침묵은 잘라냄(점프컷)."""
+    # WhisperX(wav2vec2)는 숫자("1763", "$500")를 0.1초로 뭉개 정렬하는 일이 있음 → 말끝이 잘리지 않게
+    # 실제로 이어진 목소리 섬(voiced_islands) 끝까지만 마지막 단어 끝 시각을 보정(별도 한숨·숨소리는 제외).
+    if vocals is not None and Path(vocals).exists():
+        all_w = [w for i in ids for w in words.get(str(i), [])]
+        if all_w:
+            lo = min(w["s"] for w in all_w)
+            nxt_tr = tr.get(ids[-1] + 1)
+            hi = max(max(w["e"] for w in all_w), tr[ids[-1]]["end"])
+            if nxt_tr:
+                hi = min(hi, nxt_tr["start"] - 0.04)
+            hi = max(hi, max(w["e"] for w in all_w))
+            vis = voiced_islands(vocals, lo, hi)
+            for idx_i, i in enumerate(ids):
+                lw_list = list(words.get(str(i), []))
+                if not lw_list:
+                    continue
+                lw = dict(lw_list[-1])
+                if idx_i + 1 < len(ids) and words.get(str(ids[idx_i + 1])):
+                    ceil = words[str(ids[idx_i + 1])][0]["s"] - 0.04
+                elif (i + 1) in tr:
+                    ceil = min(tr[i]["end"] + 0.15, tr[i + 1]["start"] - 0.04)
+                else:
+                    ceil = tr[i]["end"] + 0.15
+                max_ext = 1.15 if re.search(r"\d", lw.get("w", "")) else 0.22
+                for x0, x1 in vis:
+                    if x0 <= lw["e"] + 0.10 and x1 > lw["e"]:
+                        lw["e"] = min(x1, lw["e"] + max_ext, max(lw["e"], ceil))
+                lw_list[-1] = lw
+                words[str(i)] = lw_list
     ws = [w for i in ids for w in words.get(str(i), [])]
     if not ws:  # 어절 정렬이 없으면 줄 단위
         ws = [{"s": tr[i]["start"], "e": tr[i]["end"]} for i in ids]
-    # WhisperX 는 숫자("$25 million")를 0.1초로 뭉개 정렬하는 일이 있음 → 그 뒤의 실제 말이 잘려 나감.
-    # 목소리 트랙에서 말하는 구간을 찾아, 단어로 안 덮인 말소리도 대사로 포함 (다음 줄 시작 전까지만)
-    if vocals is not None and Path(vocals).exists():
-        lo = min(w["s"] for w in ws)
-        nxt = tr.get(ids[-1] + 1)
-        hi = max(max(w["e"] for w in ws), tr[ids[-1]]["end"])
-        if nxt:
-            hi = min(hi, nxt["start"] - 0.05)
-        hi = max(hi, max(w["e"] for w in ws))
-        for x0, x1 in voiced_islands(vocals, lo, hi):
-            ws = ws + [{"w": "", "s": x0, "e": x1}]  # 단어와 겹치면 합쳐져 말끝이 잘리지 않음
     ps = []
     for w in sorted(ws, key=lambda w: w["s"]):
         if ps and w["s"] - ps[-1][1] <= R["max_inner_gap"]:
             ps[-1][1] = max(ps[-1][1], w["e"])
         else:
             ps.append([w["s"], w["e"]])
-    # 말은 절대 버리지 않는다. 조각 사이 침묵은:
-    #  - ramp_max_gap 이하 → 그 구간 영상을 2프레임으로 빨리감기(스피드 램프): 소리는 안 비고 화면도 안 튐
-    #  - 더 길면 → 점프컷(render_shots 에서 확대 배율을 번갈아 바꿔 의도된 편집처럼)
     pieces = []
     for k, (a, b) in enumerate(ps):
         a, b = max(0.0, a - R["word_pad_before"]), b + R["word_pad_after"]
@@ -320,8 +348,7 @@ def speech_pieces(words, ids, tr, R, vocals=None):
 
 
 def pieces_to_shots(pieces, cuts, ws, R):
-    """speech/ramp 조각 → 원본 컷 기준으로 쪼갠 (a, b, kind) 목록.
-    침묵(ramp) 구간 안에 원본 컷이 있으면 그냥 하드컷으로 넘어가면 되므로 ramp 는 버림."""
+    """speech/ramp 조각 → 원본 컷 기준으로 쪼갠 (a, b, kind) 목록."""
     out = []
     for a, b, kind in pieces:
         if kind == "ramp":
@@ -333,16 +360,26 @@ def pieces_to_shots(pieces, cuts, ws, R):
 
 
 def split_shots(a, b, cuts, ws, R):
-    """[a,b] 를 원본 컷 기준 샷 조각으로. 앞/뒤 끝의 아주 짧은 조각에 말이 거의 없으면 버림(번쩍임 방지)."""
-    bounds = [a] + [c for c in cuts if a < c < b] + [b]
+    """[a,b] 를 원본 컷 기준 샷 조각으로.
+    원본 방송의 J컷/L컷 때문에 문장 앞뒤 0.55초 미만에 컷이 걸리면, 무음 패딩 대신 한 조각으로 유지해
+    render_shots 에서 소리([a,b])는 그대로 두고 화면만 주 샷으로 매끄럽게 채운다."""
+    inner = [c for c in cuts if a + 0.04 < c < b - 0.04]
+    if not inner:
+        return [(a, b)]
+    bounds = [a] + inner + [b]
     shots = list(zip(bounds, bounds[1:]))
 
     def talk(x, y):
         return sum(max(0.0, min(y, w["e"]) - max(x, w["s"])) for w in ws)
-    while len(shots) > 1 and shots[0][1] - shots[0][0] < R["min_shot_sec"] and talk(*shots[0]) <= 0.2:
+    while len(shots) > 1 and shots[0][1] - shots[0][0] < 0.35 and talk(*shots[0]) <= 0.10:
         shots.pop(0)
-    while len(shots) > 1 and shots[-1][1] - shots[-1][0] < R["min_shot_sec"] and talk(*shots[-1]) <= 0.2:
+    while len(shots) > 1 and shots[-1][1] - shots[-1][0] < 0.35 and talk(*shots[-1]) <= 0.10:
         shots.pop()
+    if len(shots) > 1 and any(y - x < 0.55 for x, y in shots):
+        aa, bb = shots[0][0], shots[-1][1]
+        best_span = max(shots, key=lambda p: p[1] - p[0])
+        if best_span[1] - best_span[0] >= max(0.50, (bb - aa) * 0.58):
+            return [(aa, bb)]
     return shots
 
 
@@ -366,9 +403,9 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
     for a_, b_, kk, xf in shots:
         if kk not in ("ramp", "ext"):
             for c in cuts:
-                if a_ - 0.1 < c < a_ + 0.12:
+                if a_ - 0.06 < c < a_ + 0.06:
                     a_ = c + F1
-                if b_ - 0.12 < c < b_ + 0.1:
+                if b_ - 0.06 < c < b_ + 0.06:
                     b_ = c - F1
         if b_ - a_ > 0.05:
             snapped.append((a_, b_, kk, xf))
@@ -392,7 +429,19 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
             prev_crop, face = None, None
             t += d
             continue
-        cut_at = any(abs(c - a) < 0.06 for c in cuts)
+        va, vb = a, b
+        if seg_kind == "clip" and kind == "speech":
+            inner_cuts = [c for c in cuts if a + 0.05 < c < b - 0.05]
+            if inner_cuts:
+                spans = list(zip([a] + inner_cuts, inner_cuts + [b]))
+                va, vb = max(spans, key=lambda p: p[1] - p[0])
+                if va > a:
+                    va += F1
+                if vb < b:
+                    vb -= F1
+                if vb - va < 0.25:
+                    va, vb = a, b
+        cut_at = any(abs(c - va) < 0.06 for c in cuts)
         prev = shots[k - 1] if k else None
         if prev is not None and prev[2] == "ext":
             prev = None
@@ -403,22 +452,19 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
             fit = prev_fit
         else:
             fit = False
-            face = face_in_shot(src, a, b, fcache) if cfg["face"]["enabled"] and \
+            face = face_in_shot(src, va, vb, fcache) if cfg["face"]["enabled"] and \
                 (seg_kind != "narration" or cfg["face"].get("zoom_narration", False)) else None
-            # 같은 원본 샷 안에서 침묵을 잘라낸 점프컷이면 확대 배율을 번갈아 → '펀치인' 편집처럼
-            jump = prev is not None and not any(prev[1] - 0.05 <= c <= a + 0.05 for c in cuts) and a - prev[1] < 5
-            alt = (not alt) if jump else False
+            # 같은 원본 샷 안에서 침묵을 잘라낸 점프컷이면 확대 배율을 번갈아 → '펀치인' 편집처럼 (너무 짧은 조각은 흔들림 방지)
+            jump = prev is not None and (b - a) >= 0.70 and not any(prev[1] - 0.05 <= c <= a + 0.05 for c in cuts) and a - prev[1] < 5
+            alt = (not alt) if jump else (alt if (prev is not None and (b - a) < 0.70 and not cut_at) else False)
             x, y, w, h = crop_box(face, iw, ih, cfg, cfg["face"]["jump_zoom"] if alt else 1.0)
-            # 대화 장면인데 얼굴이 작게 잡힌 넓은 샷(두 사람이 양쪽 끝)이거나 얼굴을 못 찾으면:
-            # 정사각형으로 자르면 사람이 잘리므로 원본 화면 전체를 가로폭에 맞춰 보여줌 (2026-11-11)
-            # 훅(첫 장면) 등 제품 전체를 보여줘야 하는 내레이션은 대본의 "fit": true 로 원본 화면 전체
             fit = fit_all or seg_kind == "clip" and cfg["face"].get("fit_wide", True) and \
                 (face is None or face[3] < cfg["face"].get("wide_face_h", 0.28))
         prev_crop, prev_fit = (x, y, w, h), fit
-        inputs += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(src)]
+        inputs += ["-ss", f"{va:.3f}", "-t", f"{vb - va:.3f}", "-i", str(src)]
         vk, nin = nin, nin + 1
-        if asrc:  # 원본 대사 소리는 Demucs 로 분리한 목소리만 (원본 방송 배경음악 제거)
-            inputs += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(asrc)]
+        if asrc or abs((vb - va) - (b - a)) > 0.01:  # 대사 소리는 [a,b] 원본 실시간 그대로 유지
+            inputs += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(asrc or src)]
             ak, nin = nin, nin + 1
         else:
             ak = vk
@@ -430,13 +476,14 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
                       f"atrim=duration={d:.3f},asetpts=PTS-STARTPTS[a{k}]")
         else:
             d = b - a
+            v_stretch = f"setpts=(PTS-STARTPTS)*{d / (vb - va):.5f}," if abs((vb - va) - d) > 0.01 else ""
             if fit:  # 원본 전체(16:9)를 가로폭에 맞추고, 위아래 빈 곳은 같은 화면을 흐리고 어둡게 깔아 채움
-                fc.append(f"[{vk}:v]fps=30,trim=duration={d:.3f},setsar=1,split[f{k}a][f{k}b];"
+                fc.append(f"[{vk}:v]{v_stretch}fps=30,trim=duration={d:.3f},setsar=1,split[f{k}a][f{k}b];"
                           f"[f{k}a]scale={W}:{VH}:force_original_aspect_ratio=increase,crop={W}:{VH},"
                           f"boxblur=20:2,colorchannelmixer=rr=0.5:gg=0.5:bb=0.5[f{k}g];"
                           f"[f{k}b]scale={W}:-2[f{k}f];[f{k}g][f{k}f]overlay=0:(H-h)/2,setsar=1,format=yuv420p[v{k}]")
             else:
-                fc.append(f"[{vk}:v]crop={w}:{h}:{x}:{y},scale={W}:{VH},setsar=1,fps=30,"
+                fc.append(f"[{vk}:v]{v_stretch}crop={w}:{h}:{x}:{y},scale={W}:{VH},setsar=1,fps=30,"
                           f"trim=duration={d:.3f},format=yuv420p[v{k}]")
             fc.append(f"[{ak}:a]aresample=48000,aformat=channel_layouts=stereo,volume={audio_gain_db:.2f}dB,"
                       f"atrim=duration={d:.3f},afade=t=in:d=0.01,afade=t=out:st={max(0, d - 0.015):.3f}:d=0.015[a{k}]")
@@ -463,71 +510,28 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
 
 
 def smooth_clip_shots(shots, cuts, ws, src_dur, R):
-    """대사 클립에서 0.x초짜리 샷·끊기는 점프컷이 생기지 않게 조각 경계를 고친다.
-    영상과 소리를 항상 같이 옮기므로 입모양·자막 싱크는 그대로다 (정지 화면 없음)."""
-    minv = R.get("min_visual_shot", 0.8)
-    F1 = 1 / 30
-    # t 에 딱 붙은 컷도 경계로 봄 (그 컷을 넘어 다음 샷까지 늘리지 않게)
-    nxt = lambda t: next((c for c in cuts if c > t - 0.01), src_dur)
-    prv = lambda t: max([0.0] + [c for c in cuts if c < t + 0.01])
+    """대사 클립 조각 경계를 고치되, 숨쉬는 무음 구간이 다시 끼어들거나 앞뒤 무음이 패딩되지 않게 유지한다."""
     talk = lambda x, y: sum(max(0.0, min(y, w["e"]) - max(x, w["s"])) for w in ws)
     cut_between = lambda x, y: any(x - 0.03 <= c <= y + 0.03 for c in cuts)
     shots = [tuple(s) if len(s) == 3 else (s[0], s[1], "speech") for s in shots]
-    # 1) 같은 원본 샷 안에서 침묵을 잘라낸 점프컷 → 쉼이 짧으면 원본 그대로 이어서 재생 (화면 튐 없음)
     merged = []
     for a, b, k in shots:
         if merged and k != "ramp" and merged[-1][2] != "ramp":
             pa, pb, pk = merged[-1]
-            if a > pb + 0.02 and not cut_between(pb, a) and a - pb <= R.get("jump_merge_gap", 0.8):
+            if a > pb + 0.01 and not cut_between(pb, a) and a - pb <= R.get("jump_merge_gap", 0.12):
                 merged[-1] = (pa, b, pk)
                 continue
-            # 사이에 원본 컷이 있어도 쉼이 짧으면 원본 편집 그대로 이어서 (대화 주고받기가 원래 속도로)
-            if a > pb + 0.02 and cut_between(pb, a) and a - pb <= R.get("cross_cut_gap", 0.8):
+            if a > pb + 0.01 and cut_between(pb, a) and a - pb <= R.get("cross_cut_gap", 0.12):
                 c = next(c for c in cuts if pb - 0.03 <= c <= a + 0.03)
                 merged[-1] = (pa, max(pb, c), pk)
                 merged.append((min(a, c), b, k))
                 continue
         merged.append((a, b, k))
     shots = merged
-    # 2) 0.x초 조각 처리 (어디에 있든):
-    #    같은 원본 샷의 앞/뒤 조각과 사이 쉼까지 이어 붙임 → 원본 그대로 끊김 없이 재생
-    #    끝 조각인데 말이 거의 없으면 뺌, 그래도 짧으면 같은 샷 안에서 앞뒤를 더 보여줌
-    changed = True
-    while changed and len(shots) > 1:
-        changed = False
-        for i, (a, b, k) in enumerate(shots):
-            if b - a >= minv or k == "ramp":
-                continue
-            if i > 0 and not cut_between(shots[i - 1][1], a) and a - shots[i - 1][1] <= 1.5:
-                shots[i - 1:i + 1] = [(shots[i - 1][0], b, shots[i - 1][2])]
-            elif i + 1 < len(shots) and not cut_between(b, shots[i + 1][0]) and shots[i + 1][0] - b <= 1.5:
-                shots[i:i + 2] = [(a, shots[i + 1][1], k)]
-            elif i in (0, len(shots) - 1) and talk(a, b) <= 0.15:
-                shots.pop(i)
-            else:
-                continue
-            changed = True
-            break
-    for i, (a, b, k) in enumerate(shots):  # 남은 짧은 조각: 같은 샷 안에서 늘림 (원본 소리 포함)
-        if b - a >= minv or k == "ramp":
-            continue
-        lo = shots[i - 1][1] if i > 0 else prv(a) + F1
-        hi = shots[i + 1][0] if i + 1 < len(shots) else nxt(b) - F1
-        lo, hi = max(lo, prv(a) + F1), min(hi, nxt(b) - F1)
-        nb = min(hi, b + (minv - (b - a)))
-        na = max(lo, a - (minv - (nb - a)))
-        shots[i] = (min(a, na), max(b, nb), k)
-    # 3) 클립이 너무 짧으면(예: "140 grand") 같은 샷 안에서 뒤를 더, 모자라면 앞을 더 보여줌
-    need = R.get("min_clip_sec", 1.3) - sum(b - a for a, b, _ in shots)
-    if need > 0:
-        a, b, k = shots[-1]
-        nb = min(nxt(b) - F1, b + need)
-        shots[-1] = (a, max(b, nb), k)
-        need -= max(0.0, nb - b)
-    if need > 0:
-        a, b, k = shots[0]
-        na = max(prv(a) + F1, a - need)
-        shots[0] = (min(a, na), b, k)
+    while len(shots) > 1 and shots[0][1] - shots[0][0] < 0.28 and talk(shots[0][0], shots[0][1]) <= 0.10:
+        shots.pop(0)
+    while len(shots) > 1 and shots[-1][1] - shots[-1][0] < 0.28 and talk(shots[-1][0], shots[-1][1]) <= 0.10:
+        shots.pop()
     return shots
 
 
@@ -571,10 +575,18 @@ def build_segments(job: Path, plan, cfg):
         f = seg_dir / f"{i:02d}.mp4"
         if s["type"] == "clip":
             ids = list(range(s["from_id"], s["to_id"] + 1))
-            wds = words
+            wds = dict(words)
+            tr_seg = tr
             if s.get("skip_words"):  # 첫 줄 앞 단어 몇 개(예: 같은 줄의 질문)는 빼고 시작
-                wds = {**words, str(ids[0]): words.get(str(ids[0]), [])[s["skip_words"]:]}
-            pieces, ws = speech_pieces(wds, ids, tr, R, vocals=job / "source_vocals.wav")
+                wds = {**wds, str(ids[0]): wds.get(str(ids[0]), [])[s["skip_words"]:]}
+            if s.get("drop_end_words"):  # 마지막 줄 뒤 단어 몇 개(다음 문장 앞부분이 딸려 들어온 경우)를 빼고 끝냄
+                full_last = wds.get(str(ids[-1]), [])
+                kept_last, dropped_last = full_last[:-s["drop_end_words"]], full_last[-s["drop_end_words"]:]
+                wds = {**wds, str(ids[-1]): kept_last}
+                if kept_last and dropped_last:
+                    tr_seg = {**tr, ids[-1]: {**tr[ids[-1]], "end": kept_last[-1]["e"] + 0.08},
+                              ids[-1] + 1: {"start": dropped_last[0]["s"], "end": dropped_last[-1]["e"]}}
+            pieces, ws = speech_pieces(wds, ids, tr_seg, R, vocals=job / "source_vocals.wav")
             shots = smooth_clip_shots(pieces_to_shots(pieces, cuts, ws, R), cuts, ws, src_dur, R)
             # 원본 대사 음량을 TTS 와 같은 목표 음량으로 (말하는 구간만 측정)
             vocals = job / "source_vocals.wav"
@@ -586,8 +598,8 @@ def build_segments(job: Path, plan, cfg):
         else:
             wav = synth(plain(s["text"]), job / "tts", cfg)
             L = duration(wav) + R["narration_gap"]
-            if i == len(plan["segments"]) - 1:  # 마지막 줄 뒤에 원본 화면을 조금 더 이어 붙임 (말끝·효과음이 잘리지 않게, 정지화면 아님)
-                L += R.get("end_tail", 1.2)
+            if i == len(plan["segments"]) - 1:  # 마지막 줄 뒤 짧은 여운만 남기고 바로 마무리
+                L += R.get("end_tail", 0.22)
             # 내레이션 그림은 소리와 무관 → 0.x초 조각이 생기지 않는 자리를 원하는 장면 근처에서 찾음
             # ext: 내레이션 앞부분에 바깥(무료 스톡) 영상을 잠깐씩 — [{"file": "ext/x.mp4", "t": 원본초, "dur": 초}]
             ext = [(float(e["t"]), float(e["t"]) + float(e["dur"]), "ext", (job / e["file"], float(e.get("fx", 0.5)), float(e.get("fy", 0.5)))) for e in s.get("ext", [])]
@@ -598,7 +610,7 @@ def build_segments(job: Path, plan, cfg):
                 ext_len = L
             Lfull, L = L, L - ext_len
             st0 = float(s["broll_t"]) if s.get("broll_t") is not None else tr[s["broll_id"]]["start"]  # broll_t: 원본 초 단위로 장면 직접 지정
-            minv = R.get("min_visual_shot", 1.0)
+            minv = max(1.0, R.get("min_visual_shot", 1.0))
             shots = None
             for off in (0, -0.5, 0.5, -1.0, 1.0, -1.5, 1.5, -2.0, 2.0, -3.0, 3.0, -4.0, 4.0) if L > 0.05 else ():
                 smin = min(R["broll_shot_min"], minv) if s.get("broll_t") is not None else R["broll_shot_min"]  # 직접 지정한 장면은 짧아도 씀
@@ -704,6 +716,7 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
     # 참고 채널 문법 자막 (애니메이션 없음, 내레이션 상자 / 대사 화자색)
     boxcut = S.get("style") == "box_cut"
     subq = []  # [a, b, kind, text, color]
+    center_q = []  # [a, b, style, spans] — 0.00초부터 끝까지 자막 빈틈 0초 보장용
     spk_palette = S.get("speaker_colors", ["5CE1FF", "8CFF4F", "FFE14D", "FF8AD8"])
     spk_color, last_spk = {}, [None]
 
@@ -746,11 +759,12 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
         s = sg["seg"]
         # 효과음 위치 (참고 영상 분석): 내레이션은 컷 지점, 원본 대사는 말 시작에 겹치지 않게
         # → 강조어 자막이 뜰 때로 옮기고, 없으면 생략
-        REVEAL = ("ding", "surprise", "impact", "success", "question", "fail", "cash")
+        REVEAL = ("ding", "surprise", "impact", "success", "question", "fail", "cash", "camera")
         if s.get("sfx"):
-            if s["sfx"] not in REVEAL:  # 휙·팝 = 장면 전환 순간 (내레이션·대사 모두 구간 시작)
-                sfx_events.append((max(0.0, t + SFX_OFFSET.get(s["sfx"], 0.0)), s["sfx"]))
-            else:  # 띵·쿵·놀람 = 금액/강조어 자막이 뜨는 순간 (없으면 첫 자막)
+            base_sfx = s["sfx"].split("/", 1)[0]
+            if base_sfx not in REVEAL:  # 휙·팝·캡션 = 장면 전환 순간 (내레이션·대사 모두 구간 시작)
+                sfx_events.append((max(0.0, t + SFX_OFFSET.get(base_sfx, 0.0)), s["sfx"]))
+            else:  # 띵·쿵·놀람·캐셔·카메라 = 금액/강조어 자막이 뜨는 순간 (없으면 첫 자막)
                 pending_clip_sfx[0] = s["sfx"]
         if sg["kind"] == "narration":
             chunks = split_chunks(s["text"], S.get("narr_max_em", 11.5))
@@ -765,8 +779,10 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
             accent = next_accent()
             merged = merge_short([(a_, b_, c_) for (a_, b_), c_ in zip(times, carry_color(chunks))],
                                  S.get("min_line_sec", 0.7))
-            if pending_clip_sfx[0]:  # 내레이션의 '띵' 등은 강조어([ ])가 든 자막 덩어리가 뜰 때
-                hit = next((a_ for a_, _, c_ in merged if "[" in c_), merged[0][0] if merged else 0.0)
+            if pending_clip_sfx[0]:  # 내레이션의 '띵' 등은 강조어([ ])가 든 자막 덩어리가 뜰 때 (실패/엔딩은 마지막 줄에)
+                p_base = pending_clip_sfx[0].split("/", 1)[0]
+                default_hit = (merged[-1][0] if p_base == "fail" else merged[0][0]) if merged else 0.0
+                hit = next((a_ for a_, _, c_ in merged if "[" in c_ or "{big}" in c_), default_hit)
                 sfx_events.append((t + hit, pending_clip_sfx[0]))
                 pending_clip_sfx[0] = None
             for (a, b, cc), (pa, _) in zip(merged, prop):
@@ -780,8 +796,7 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
                     continue
                 if center:
                     spans = money_green(parse_spans(cc, accent))
-                    for ly, s0, s1, body in neon_events(spans, a, b, cfg, pos=sub_pos, an=sub_an):
-                        add(s0, s1, "Narr", body, ly)
+                    center_q.append([a, b, "Narr", spans])
                     timing_log.append({"text": plain(c), "start": round(a, 3), "end": round(b, 3),
                                        "method": method, "prop_start": round(t + pa, 3),
                                        "seg_start": round(t, 3), "seg_end": round(t + sg["dur"], 3)})
@@ -810,38 +825,70 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
                 return ws[0]["s"], ws[-1]["e"]
             # 자막 이벤트: 줄마다 '//' 로 화자를 나누고(질문·대답 따로), 다시 한 줄 폭으로 나눔.
             # 시작 시각은 그 줄 단어들 사이에서 글자 폭 비율로 배분
-            evs_, spk_of = [], {}
+            evs_, spk_of, line_end_of = [], {}, {}
+            first_talk_out, last_talk_out = None, None
             for k, i in enumerate(ids):
                 txt = s["subs"][k].strip()
                 if not txt:
                     continue
                 ws = sg["words"].get(str(i)) or [{"s": tr[i]["start"], "e": tr[i]["end"]}]
-                # (덩어리, 화자 묶음 번호): 전사 줄이 바뀌거나 '//' 를 넘으면 다른 화자로 본다.
-                # 화자 표시 '@릭 얼마 원하세요?' → 화자별 자막 색
-                parts = []
-                for q, p_ in enumerate(x.strip() for x in txt.split("//") if x.strip()):
-                    m_ = re.match(r"@(\S+)\s*", p_)
+                if first_talk_out is None:
+                    first_talk_out = t + src_to_out(mp, ws[0]["s"])
+                last_talk_out = t + src_to_out(mp, ws[-1]["e"])
+                line_end_of[k] = last_talk_out
+                # 화자 표시 '@릭 얼마 원하세요?' 또는 '@릭#4 2만 달러요' (#단어인덱스 지정 시 해당 영어 단어 시작 시각에 정확히 동기화)
+                raw_parts = [x.strip() for x in txt.split("//") if x.strip()]
+                parsed_parts = []
+                for q, p_ in enumerate(raw_parts):
+                    has_big_pre = bool(re.match(r"^\s*\{big\}\s*", p_))
+                    p_clean = re.sub(r"^\s*\{big\}\s*", "", p_, count=1)
+                    m_ = re.match(r"@([^\s#]+)(?:#(\d+))?\s*", p_clean)
                     spk_of[(k, q)] = m_.group(1) if m_ else None
-                    p_ = p_[m_.end():] if m_ else p_
-                    parts += [(c, (k, q)) for c in carry_color(split_chunks(p_, S.get("dial_max_em", 11.5)))]
-                tot = sum(vis_w(c) for c, _ in parts) or 1.0
-                acc = 0.0
-                for c, grp in parts:
-                    j = min(len(ws) - 1, int(round(acc / tot * len(ws))))
-                    evs_.append((t + src_to_out(mp, ws[j]["s"]), c, grp))
-                    acc += vis_w(c)
+                    pin_w = int(m_.group(2)) if (m_ and m_.group(2) is not None) else None
+                    p_ = p_clean[m_.end():] if m_ else p_clean
+                    if has_big_pre and not p_.lstrip().startswith("{big}"):
+                        p_ = "{big} " + p_
+                    chks = carry_color(split_chunks(p_, S.get("dial_max_em", 11.5)))
+                    parsed_parts.append((q, pin_w, chks))
+                # pin_w 가 지정된 구간은 정확히 ws[pin_w] 범위에 배분, 없으면 전체 ws 에 비율 배분
+                if any(pw is not None for _, pw, _ in parsed_parts):
+                    anchors = [pw if pw is not None else (0 if idx_p == 0 else None) for idx_p, (_, pw, _) in enumerate(parsed_parts)]
+                    for idx_p, (_, pw, chks) in enumerate(parsed_parts):
+                        w_lo = min(len(ws) - 1, anchors[idx_p] if anchors[idx_p] is not None else 0)
+                        nxt_p = next((anchors[u] for u in range(idx_p + 1, len(parsed_parts)) if anchors[u] is not None), len(ws))
+                        w_hi = max(w_lo + 1, min(len(ws), nxt_p))
+                        sub_ws = ws[w_lo:w_hi]
+                        ptot = sum(vis_w(c) for c in chks) or 1.0
+                        pacc = 0.0
+                        for c in chks:
+                            jj = min(len(sub_ws) - 1, int(round(pacc / ptot * len(sub_ws))))
+                            evs_.append((t + src_to_out(mp, sub_ws[jj]["s"]), c, (k, parsed_parts[idx_p][0])))
+                            pacc += vis_w(c)
+                else:
+                    parts = [(c, (k, q)) for q, _, chks in parsed_parts for c in chks]
+                    tot = sum(vis_w(c) for c, _ in parts) or 1.0
+                    acc = 0.0
+                    for c, grp in parts:
+                        j = min(len(ws) - 1, int(round(acc / tot * len(ws))))
+                        evs_.append((t + src_to_out(mp, ws[j]["s"]), c, grp))
+                        acc += vis_w(c)
             if evs_:
-                evs_[0] = (t,) + evs_[0][1:]  # 첫 자막은 세그먼트 시작과 함께
-                ends_ = [x[0] for x in evs_[1:]] + [t + sg["dur"]]
+                evs_[0] = (t,) + evs_[0][1:]
+                t_last_end = t + sg["dur"]
+                ends_ = [x[0] for x in evs_[1:]] + [t_last_end]
                 # 너무 짧은 자막은 같은 화자 안에서만 두 줄로 합침 (질문·대답은 절대 합치지 않음)
                 evs_ = [(a_, txt_, g_) for a_, _, txt_, g_ in
                         merge_short([(a_, b_, x_, g_) for (a_, x_, g_), b_ in zip(evs_, ends_)],
                                     S.get("min_line_sec", 0.7))]
             marked = False
             for n, (st, txt, grp) in enumerate(evs_):
-                a = max(t, st - 0.03)
-                b = max(a + 0.4, evs_[n + 1][0] - 0.03) if n + 1 < len(evs_) else t + sg["dur"]
-                if pending_clip_sfx[0] and pending_clip_sfx[0] != "fail" and "[" in txt:
+                a = t if n == 0 else max(t, st - 0.03)
+                if n + 1 < len(evs_):
+                    nxt_st = evs_[n + 1][0] - 0.03
+                    b = max(a + 0.12, nxt_st)
+                else:
+                    b = t_last_end
+                if pending_clip_sfx[0] and pending_clip_sfx[0].split("/", 1)[0] != "fail" and ("[" in txt or "{big}" in txt):
                     sfx_events.append((a, pending_clip_sfx[0]))
                     pending_clip_sfx[0] = None
                 # 동그라미는 클립의 마지막 자막(결정적 대답·판정)을 말하는 사람에게만
@@ -857,9 +904,7 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
                     subq.append([a, b, "dial", txt, color_of(spk_of.get(grp))])
                     continue
                 if center:
-                    for ly, s0, s1, body in neon_events(money_green(parse_spans(txt, next_accent())), a, b, cfg,
-                                                        pos=sub_pos, an=sub_an):
-                        add(s0, s1, "Dial", body, ly)
+                    center_q.append([a, b, "Dial", money_green(parse_spans(txt, next_accent()))])
                     continue
                 body, _ = keywordize(txt, dial_base, dial_kw, False)
                 add(a, b, "Dial", "{" + ENTER + "}" + body, 3)
@@ -867,10 +912,24 @@ def build_ass(job: Path, plan, segs, tr, cfg, total, aligned, timing_log):
                 add(t, t + sg["dur"], "Tag", rf"{{\pos(60,{top + 40})}}" + pop + s["tag"], 2)
         if pending_clip_sfx[0] and sg["kind"] == "clip" and evs_:
             # 강조어 자막이 없는 클립: '실패'는 마지막 자막(거절하는 말), 나머지는 첫 자막에
-            k_ = -1 if pending_clip_sfx[0] == "fail" else 0
+            k_ = -1 if pending_clip_sfx[0].split("/", 1)[0] == "fail" else 0
             sfx_events.append((max(t, evs_[k_][0]), pending_clip_sfx[0]))
         pending_clip_sfx[0] = None
         t += sg["dur"]
+    if center and center_q:  # 0.00초부터 끝까지 자막 흐름이 단 0.01초도 끊기지 않게 빈틈없이 연결
+        center_q.sort(key=lambda x: x[0])
+        center_q[0][0] = 0.0
+        for k in range(len(center_q)):
+            cs_a = int(round(center_q[k][0] * 100))
+            if k > 0:
+                cs_a = max(cs_a, int(round(center_q[k - 1][0] * 100)) + 1)
+            center_q[k][0] = cs_a / 100.0
+        for k in range(len(center_q) - 1):
+            center_q[k][1] = center_q[k + 1][0]
+        center_q[-1][1] = max(center_q[-1][0] + 0.05, int(round(total * 100)) / 100.0)
+        for a, b, st_name, spans in center_q:
+            for ly, s0, s1, body in neon_events(spans, a, b, cfg, pos=sub_pos, an=sub_an):
+                add(s0, s1, st_name, body, ly)
     if boxcut:  # 자막 사이 빈틈(깜빡임) 없이 다음 자막으로 바로 교체
         subq.sort(key=lambda x: x[0])
         for k in range(len(subq) - 1):

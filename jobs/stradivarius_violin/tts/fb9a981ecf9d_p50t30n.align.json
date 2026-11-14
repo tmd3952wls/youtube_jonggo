@@ -1,0 +1,29 @@
+{
+ "text": "어디서 구했는지 사연부터 들어보는데",
+ "words": [
+  {
+   "word": "어디서",
+   "start": 0.04,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "구했는지",
+   "start": 0.402,
+   "end": 0.805,
+   "aligned": true
+  },
+  {
+   "word": "사연부터",
+   "start": 0.865,
+   "end": 1.268,
+   "aligned": true
+  },
+  {
+   "word": "들어보는데",
+   "start": 1.328,
+   "end": 1.811,
+   "aligned": true
+  }
+ ]
+}

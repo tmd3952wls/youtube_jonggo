@@ -1,0 +1,29 @@
+{
+ "text": "전문가를 불러 기판부터 살펴보는데",
+ "words": [
+  {
+   "word": "전문가를",
+   "start": 0.04,
+   "end": 0.543,
+   "aligned": true
+  },
+  {
+   "word": "불러",
+   "start": 0.623,
+   "end": 0.804,
+   "aligned": true
+  },
+  {
+   "word": "기판부터",
+   "start": 0.885,
+   "end": 1.388,
+   "aligned": true
+  },
+  {
+   "word": "살펴보는데",
+   "start": 1.448,
+   "end": 1.991,
+   "aligned": true
+  }
+ ]
+}

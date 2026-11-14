@@ -1,0 +1,35 @@
+{
+ "text": "아들과 17년간 모은 리자몽 컬렉션인데",
+ "words": [
+  {
+   "word": "아들과",
+   "start": 0.04,
+   "end": 0.403,
+   "aligned": true
+  },
+  {
+   "word": "17년간",
+   "start": 0.423,
+   "end": 0.967,
+   "aligned": true
+  },
+  {
+   "word": "모은",
+   "start": 1.068,
+   "end": 1.209,
+   "aligned": true
+  },
+  {
+   "word": "리자몽",
+   "start": 1.29,
+   "end": 1.632,
+   "aligned": true
+  },
+  {
+   "word": "컬렉션인데",
+   "start": 1.652,
+   "end": 2.297,
+   "aligned": true
+  }
+ ]
+}

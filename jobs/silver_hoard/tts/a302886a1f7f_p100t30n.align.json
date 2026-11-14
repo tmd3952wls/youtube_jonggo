@@ -1,0 +1,35 @@
+{
+ "text": "아버지 조언으로 12년간 모은 은인데",
+ "words": [
+  {
+   "word": "아버지",
+   "start": 0.06,
+   "end": 0.362,
+   "aligned": true
+  },
+  {
+   "word": "조언으로",
+   "start": 0.442,
+   "end": 0.844,
+   "aligned": true
+  },
+  {
+   "word": "12년간",
+   "start": 0.864,
+   "end": 1.508,
+   "aligned": true
+  },
+  {
+   "word": "모은",
+   "start": 1.628,
+   "end": 1.729,
+   "aligned": true
+  },
+  {
+   "word": "은인데",
+   "start": 1.809,
+   "end": 2.131,
+   "aligned": true
+  }
+ ]
+}

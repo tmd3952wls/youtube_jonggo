@@ -1,0 +1,164 @@
+[
+  {
+    "text": "새 집 헛간에서",
+    "start": 0.0,
+    "end": 0.854,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.811
+  },
+  {
+    "text": "14억 원짜리",
+    "start": 0.854,
+    "end": 1.576,
+    "method": "whisperx",
+    "prop_start": 0.577,
+    "seg_start": 0.0,
+    "seg_end": 2.811
+  },
+  {
+    "text": "바이올린을 찾은 남자",
+    "start": 1.576,
+    "end": 2.811,
+    "method": "whisperx",
+    "prop_start": 2.018,
+    "seg_start": 0.0,
+    "seg_end": 2.811
+  },
+  {
+    "text": "어디서 구했는지",
+    "start": 7.144,
+    "end": 7.959,
+    "method": "whisperx",
+    "prop_start": 7.144,
+    "seg_start": 7.144,
+    "seg_end": 9.144
+  },
+  {
+    "text": "사연부터 들어보는데",
+    "start": 7.959,
+    "end": 9.144,
+    "method": "whisperx",
+    "prop_start": 8.048,
+    "seg_start": 7.144,
+    "seg_end": 9.144
+  },
+  {
+    "text": "안쪽 라벨을 본 릭은",
+    "start": 11.744,
+    "end": 12.8,
+    "method": "whisperx",
+    "prop_start": 11.744,
+    "seg_start": 11.744,
+    "seg_end": 14.016
+  },
+  {
+    "text": "단번에 의심하는데",
+    "start": 12.8,
+    "end": 14.016,
+    "method": "whisperx",
+    "prop_start": 12.994,
+    "seg_start": 11.744,
+    "seg_end": 14.016
+  },
+  {
+    "text": "그래도 혹시 몰라",
+    "start": 17.716,
+    "end": 18.578,
+    "method": "whisperx",
+    "prop_start": 17.716,
+    "seg_start": 17.716,
+    "seg_end": 19.65
+  },
+  {
+    "text": "희망가를 물어보자",
+    "start": 18.578,
+    "end": 19.65,
+    "method": "whisperx",
+    "prop_start": 18.669,
+    "seg_start": 17.716,
+    "seg_end": 19.65
+  },
+  {
+    "text": "곧바로 장인을 불러",
+    "start": 24.717,
+    "end": 25.75,
+    "method": "whisperx",
+    "prop_start": 24.717,
+    "seg_start": 24.717,
+    "seg_end": 27.05
+  },
+  {
+    "text": "내부까지 살펴보는데",
+    "start": 25.75,
+    "end": 27.05,
+    "method": "whisperx",
+    "prop_start": 25.881,
+    "seg_start": 24.717,
+    "seg_end": 27.05
+  },
+  {
+    "text": "긴장 속에 드디어",
+    "start": 31.617,
+    "end": 32.75,
+    "method": "whisperx",
+    "prop_start": 31.617,
+    "seg_start": 31.617,
+    "seg_end": 34.163
+  },
+  {
+    "text": "최종 판정이 내려지자",
+    "start": 32.75,
+    "end": 34.163,
+    "method": "whisperx",
+    "prop_start": 32.762,
+    "seg_start": 31.617,
+    "seg_end": 34.163
+  },
+  {
+    "text": "미련이 남은 남자가",
+    "start": 42.247,
+    "end": 43.228,
+    "method": "whisperx",
+    "prop_start": 42.247,
+    "seg_start": 42.247,
+    "seg_end": 44.288
+  },
+  {
+    "text": "매입가를 묻는데",
+    "start": 43.228,
+    "end": 44.288,
+    "method": "whisperx",
+    "prop_start": 43.381,
+    "seg_start": 42.247,
+    "seg_end": 44.288
+  },
+  {
+    "text": "결국 14억 원의 꿈이",
+    "start": 46.354,
+    "end": 47.632,
+    "method": "whisperx",
+    "prop_start": 46.354,
+    "seg_start": 46.354,
+    "seg_end": 50.421
+  },
+  {
+    "text": "깨진 남자는 악기를",
+    "start": 47.632,
+    "end": 48.88,
+    "method": "whisperx",
+    "prop_start": 48.287,
+    "seg_start": 46.354,
+    "seg_end": 50.421
+  },
+  {
+    "text": "챙겨 쓸쓸히 돌아갔다",
+    "start": 48.88,
+    "end": 50.421,
+    "method": "whisperx",
+    "prop_start": 49.207,
+    "seg_start": 46.354,
+    "seg_end": 50.421
+  }
+]

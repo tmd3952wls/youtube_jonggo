@@ -1,0 +1,35 @@
+{
+ "text": "감정을 마친 릭이 담판에 나서는데",
+ "words": [
+  {
+   "word": "감정을",
+   "start": 0.06,
+   "end": 0.421,
+   "aligned": true
+  },
+  {
+   "word": "마친",
+   "start": 0.481,
+   "end": 0.722,
+   "aligned": true
+  },
+  {
+   "word": "릭이",
+   "start": 0.802,
+   "end": 0.983,
+   "aligned": true
+  },
+  {
+   "word": "담판에",
+   "start": 1.043,
+   "end": 1.364,
+   "aligned": true
+  },
+  {
+   "word": "나서는데",
+   "start": 1.424,
+   "end": 1.825,
+   "aligned": true
+  }
+ ]
+}

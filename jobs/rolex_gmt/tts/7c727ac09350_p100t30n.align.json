@@ -1,0 +1,41 @@
+{
+ "text": "결혼 자금으로 내놓은 2천8백만 원짜리 롤렉스",
+ "words": [
+  {
+   "word": "결혼",
+   "start": 0.04,
+   "end": 0.222,
+   "aligned": true
+  },
+  {
+   "word": "자금으로",
+   "start": 0.303,
+   "end": 0.666,
+   "aligned": true
+  },
+  {
+   "word": "내놓은",
+   "start": 0.726,
+   "end": 0.969,
+   "aligned": true
+  },
+  {
+   "word": "2천8백만",
+   "start": 1.009,
+   "end": 1.715,
+   "aligned": true
+  },
+  {
+   "word": "원짜리",
+   "start": 1.876,
+   "end": 2.26,
+   "aligned": true
+  },
+  {
+   "word": "롤렉스",
+   "start": 2.3,
+   "end": 2.643,
+   "aligned": true
+  }
+ ]
+}

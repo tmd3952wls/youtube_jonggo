@@ -1,0 +1,35 @@
+{
+ "text": "화면엔 잡스의 얼굴까지 생생히 뜨고",
+ "words": [
+  {
+   "word": "화면엔",
+   "start": 0.02,
+   "end": 0.363,
+   "aligned": true
+  },
+  {
+   "word": "잡스의",
+   "start": 0.444,
+   "end": 0.786,
+   "aligned": true
+  },
+  {
+   "word": "얼굴까지",
+   "start": 0.867,
+   "end": 1.331,
+   "aligned": true
+  },
+  {
+   "word": "생생히",
+   "start": 1.391,
+   "end": 1.734,
+   "aligned": true
+  },
+  {
+   "word": "뜨고",
+   "start": 1.835,
+   "end": 1.976,
+   "aligned": true
+  }
+ ]
+}

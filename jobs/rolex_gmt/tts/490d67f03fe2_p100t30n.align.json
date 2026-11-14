@@ -1,0 +1,35 @@
+{
+ "text": "릭이 수리한 적 있냐고 묻자",
+ "words": [
+  {
+   "word": "릭이",
+   "start": 0.081,
+   "end": 0.264,
+   "aligned": true
+  },
+  {
+   "word": "수리한",
+   "start": 0.366,
+   "end": 0.589,
+   "aligned": true
+  },
+  {
+   "word": "적",
+   "start": 0.65,
+   "end": 0.751,
+   "aligned": true
+  },
+  {
+   "word": "있냐고",
+   "start": 0.812,
+   "end": 1.076,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 1.158,
+   "end": 1.341,
+   "aligned": true
+  }
+ ]
+}

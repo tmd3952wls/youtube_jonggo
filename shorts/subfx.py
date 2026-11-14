@@ -15,14 +15,22 @@ NEON = {  # 네온용 밝은 색 (RGB)
 
 
 def bgr(name_or_hex):
-    name_or_hex = name_or_hex.removesuffix("_s")  # "_s" = 작은 보조 줄(예: green_s 원화 환산)
+    name_or_hex = re.sub(r"_(?:s|b)$", "", name_or_hex)  # "_s" = 작은 보조 줄, "_b" = 대박 강조 큰 글씨
     h = NEON.get(name_or_hex, name_or_hex).lstrip("#")
     return f"&H{h[4:6]}{h[2:4]}{h[0:2]}&".upper()
 
 
 def parse_spans(text, accent):
-    """'펌프로 [땅콩버터를]' → [(텍스트, 색이름)]. 대괄호가 덩어리 경계를 넘어 열려 있으면 이어받음."""
-    spans, buf, color = [], "", "white"
+    """'펌프로 [땅콩버터를]' → [(텍스트, 색이름)].
+    - 문장 앞 '{big}' → 줄 전체 큰 강조 자막('_b')
+    - '[big:yellow:대박]' 또는 '[big:대박]' → 해당 구간만 큰 강조 자막('_b')
+    """
+    line_big = False
+    if "{big}" in text:
+        line_big = True
+        text = re.sub(r"\{big\}\s*", "", text)
+    base_white = "white_b" if line_big else "white"
+    spans, buf, color = [], "", base_white
     i = 0
     while i < len(text):
         ch = text[i]
@@ -30,16 +38,22 @@ def parse_spans(text, accent):
             if buf:
                 spans.append((buf, color))
             buf = ""
+            mb = re.match(r"\[big:(?:(\w+):)?", text[i:])
+            if mb:
+                cname = mb.group(1) if mb.group(1) and mb.group(1) in NEON else accent
+                color = f"{cname}_b"
+                i += len(mb.group(0))
+                continue
             m = re.match(r"\[(\w+):", text[i:])
             if m and m.group(1) in NEON:
-                color = m.group(1)
+                color = f"{m.group(1)}_b" if line_big else m.group(1)
                 i += len(m.group(0))
                 continue
-            color = accent
+            color = f"{accent}_b" if line_big else accent
         elif ch == "]":
             if buf:
                 spans.append((buf, color))
-            buf, color = "", "white"
+            buf, color = "", base_white
         else:
             buf += ch
         i += 1
@@ -55,19 +69,21 @@ MONEY_RE = re.compile(rf"(?:약\s*)?{_NUM}(?:\s*~\s*{_NUM})?\s*원")
 
 def money_green(spans):
     """초록색은 돈 금액에만 (사용자 요청 2026-11-09).
-    - 금액 부분은 원래 색과 상관없이 초록
+    - 금액 부분은 원래 색과 상관없이 초록 ('_b' 큰 글씨 속성은 유지)
     - 금액이 아닌데 초록으로 적힌 말은 노랑으로 바꿈"""
     out = []
     for txt, col in spans:
         if col.endswith("_s"):  # 보조 줄(원화 환산 등)은 그대로
             out.append((txt, col))
             continue
-        base = "yellow" if col == "green" else col
+        suf = "_b" if col.endswith("_b") else ""
+        raw_col = col.removesuffix("_b")
+        base = ("yellow" if raw_col == "green" else raw_col) + suf
         k = 0
         for m in MONEY_RE.finditer(txt):
             if m.start() > k:
                 out.append((txt[k:m.start()], base))
-            out.append((m.group(0), "green"))
+            out.append((m.group(0), "green" + suf))
             k = m.end()
         if k < len(txt):
             out.append((txt[k:], base))
@@ -132,8 +148,12 @@ FRAME = 1 / 30
 SMALL = 0.68  # 보조 줄(원화 환산) 글자 크기 비율
 
 
-def _fs(col, size):
-    return rf"\fs{round(size * SMALL)}" if col.endswith("_s") else rf"\fs{size}"
+def _fs(col, size, big_size=None):
+    if col.endswith("_s"):
+        return rf"\fs{round(size * SMALL)}"
+    if col.endswith("_b"):
+        return rf"\fs{big_size if big_size else round(size * 1.29)}"
+    return rf"\fs{size}"
 
 
 def _colored(spans, alpha, size):
@@ -246,24 +266,30 @@ def neon_events(spans, t0, t1, cfg, layer_base=3, pos=None, an=5):
 #  - 글씨체 배달의민족 주아(BM JUA), 크기 13 (CapCut) = em 67.6px → libass 74
 #  - 외곽선 없음. 그림자: 검정 90%, 거리 5, 각도 -45°(오른쪽 아래), 흐림 0.45
 #  - 애니메이션 [인 > 블러 입장] 0.133초. 색: 노랑 #FFDC00, 돈 초록 #2CFF23 (사용자 프로젝트 값)
-CAPCUT_COLORS = {"yellow": "FFDC00", "green": "2CFF23"}
+CAPCUT_COLORS = {"yellow": "FFE11A", "green": "2CFF23", "red": "FF3B4E", "cyan": "3DF2FF", "orange": "FFA62B"}
 
 
 def capcut_events(spans, t0, t1, S, layer_base=3, pos=None, an=5):
-    size = S.get("look_size", 74)
-    ms = S.get("look_in_ms", 133)
-    blur_in = S.get("look_blur_from", 14)
+    size = S.get("look_size", 76)
+    big_size = S.get("look_big_size", round(size * 1.29))
+    ol = S.get("look_outline", 3.0)
+    ms = min(int(S.get("look_in_ms", 65)), 70)
+    blur_in = min(float(S.get("look_blur_from", 6)), 6.0)
     x, y = pos if pos else (540, 960)
+    has_big = any(col.endswith("_b") for _, col in spans)
+    # 신기하거나 대단하거나 대박인 자막('_b'): 더 큰 글자 크기 + 탄력 있게 튀어나오는 팝 애니메이션
+    pop_anim = r"\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)" if has_big else ""
 
-    def line(color_of, alpha_end, dx, dy, blur_end):
-        head = (rf"{{\an{an}\pos({x + dx},{y + dy})\fn{S.get('look_font', 'BM JUA')}\b0\bord0\shad0"
-                rf"\alpha&HFF&\blur{blur_in}\t(0,{ms},\alpha{alpha_end}\blur{blur_end})}}")
+    def line(color_of, alpha_start, alpha_end, dx, dy, blur_end, bord, out_col=""):
+        head = (rf"{{\an{an}\pos({x + dx},{y + dy})\fn{S.get('look_font', 'BM JUA')}\b0\bord{bord}{out_col}\shad0"
+                rf"{pop_anim}\alpha{alpha_start}\blur{blur_in}\t(0,{ms},\alpha{alpha_end}\blur{blur_end})}}")
         out = []
         for txt, col in spans:
-            out.append("{" + color_of(col) + _fs(col, size) + "}" + txt.replace("\n", r"\N"))
+            out.append("{" + color_of(col) + _fs(col, size, big_size) + "}" + txt.replace("\n", r"\N"))
         return head + "".join(out)
 
-    shadow = line(lambda c: r"\1c&H000000&", S.get("look_shadow_alpha", "&H1A&"),
-                  S.get("look_shadow_dx", 4), S.get("look_shadow_dy", 4), S.get("look_shadow_blur", 5))
-    text = line(lambda c: rf"\1c{bgr(CAPCUT_COLORS.get(c.removesuffix('_s'), c))}", "&H00&", 0, 0, 0.4)
+    shadow = line(lambda c: r"\1c&H000000&", "&H50&", S.get("look_shadow_alpha", "&H1A&"),
+                  S.get("look_shadow_dx", 4), S.get("look_shadow_dy", 4), S.get("look_shadow_blur", 5), ol, r"\3c&H000000&")
+    text = line(lambda c: rf"\1c{bgr(CAPCUT_COLORS.get(re.sub(r'_(?:s|b)$', '', c), c))}", "&H28&", "&H00&", 0, 0, 0.4,
+                ol, r"\3c&H000000&")
     return [(layer_base, t0, t1, shadow), (layer_base + 2, t0, t1, text)]

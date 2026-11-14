@@ -1,0 +1,53 @@
+{
+ "text": "새 집 헛간에서 14억 원짜리 바이올린을 찾은 남자",
+ "words": [
+  {
+   "word": "새",
+   "start": 0.06,
+   "end": 0.141,
+   "aligned": true
+  },
+  {
+   "word": "집",
+   "start": 0.181,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "헛간에서",
+   "start": 0.261,
+   "end": 0.803,
+   "aligned": true
+  },
+  {
+   "word": "14억",
+   "start": 0.904,
+   "end": 1.165,
+   "aligned": true
+  },
+  {
+   "word": "원짜리",
+   "start": 1.245,
+   "end": 1.566,
+   "aligned": true
+  },
+  {
+   "word": "바이올린을",
+   "start": 1.626,
+   "end": 2.068,
+   "aligned": true
+  },
+  {
+   "word": "찾은",
+   "start": 2.169,
+   "end": 2.389,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 2.47,
+   "end": 2.691,
+   "aligned": true
+  }
+ ]
+}

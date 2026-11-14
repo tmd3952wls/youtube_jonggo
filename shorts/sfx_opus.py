@@ -26,7 +26,19 @@ SR = 48000
 #    '띵'(글로켄슈필·종, 컷 50ms 안 30% — 우연 8%) > 휙(24%)·역재생 심벌 스웰(19%) > 낮은 쿵(38%) 순.
 #  - 예전 판(거품 팝·나무 톡·천 스치는 소리 같은 실제 녹음)은 참고 영상과 결이 달라 사용자가 '별로'라고 함.
 #  - 소리 파일은 earshot rank(설명 문장 검색, z>=3.8 'strong')로 사용자 효과음 폴더 + opus 키트에서 고름.
-PACK = Path(os.environ.get("SHORTS_SFX_PACK", r"C:\Users\tmd39\Desktop\효과음\효과음600개"))
+def _resolve_pack() -> Path:
+    env = os.environ.get("SHORTS_SFX_PACK")
+    for cand in ([Path(env)] if env else []) + [
+        ROOT / "assets" / "sfx_pack",
+        Path(r"C:\Users\tmd39\Desktop\효과음\효과음2869개"),
+        Path(r"C:\Users\tmd39\Desktop\효과음\효과음600개"),
+    ]:
+        if cand.is_dir():
+            return cand
+    return ROOT / "assets" / "sfx_pack"
+
+
+PACK = _resolve_pack()
 
 
 def _p(name):
@@ -34,24 +46,36 @@ def _p(name):
 
 
 FAMILY = {
-    "ding": [_p("001_띵.mp3"), _p("185_Ting.mp3"), _p("265_딩 다음 페이지 넘기기.mp3"), _p("400_전화 메시지 소리3.mp3"),
-             _p("526_화면전환효과음_01.mp3"), "chime/fs-159011-ding2-wav-1", _p("042_마법봉.mp3")],
-    "whoosh": [_p("573_Whoosh(Transition).mp3"), "whoosh/fs-449988-whoosh-med-high-1", _p("190_훅.mp3"),
-               "whoosh/fs-60004-fast-sword-swing-sound-1", "whoosh/fs-449992-whoosh-short-low-wav-1",
-               "whoosh/fs-60011-whoosh-24-2"],
-    "swell": ["riser/fs-503802-reverse-fx-4-wav-1", "riser/fs-503799-reverse-fx-9-wav-1", _p("087_스르륵 효과음.mp3")],
-    "impact": ["boom/fs-81145-sub-oceano-a-wav-1", "boom/fs-236956-boom-mp3-1",
-               _p("084_폭발 -b묵직.mp3"), _p("007_쿵 효과음.mp3")],  # earshot z 4.4 / 3.7
-    "pop": [_p("002_뿅.mp3")],
-    "question": [_p("171_먼가 이상할때 띠용.mp3"), _p("015_띠동띠동(물음표).mp3")],  # earshot z 4.4 / 3.1
-    "success": [_p("468_또잉(정답소리).mp3"), _p("379_Correct.mp3")],
-    "surprise": [_p("042_마법봉.mp3"), "riser/fs-503799-reverse-fx-9-wav-1"],
-    "fail": ["boom/fs-81149-sub-oceano-g-sharp-wav-1", _p("412_Wah Wah Wah.mp3")],  # earshot z 6.9
-    "tension": ["tick/fs-403001-clock-tick-tik-tak-2", "tick/fs-130388-clock-ticking-1"],
-    "caption": [_p("267_캡션 사운드 타탁.mp3"), "key/fs-194795-vintage-keyboard-1-1"],
-    "camera": [_p("502_카메라 플래시 셔터.mp3"), "click/kenney-ui-audio-switch16"],
-    # 돈 금액 + 지폐 아이콘 (2026-11-10): Freesound CC0 금전등록기 — sfx.py search 로 찾아 add
-    "cash": ["chime/own-ov-deafdf72", "chime/own-ov-62dd2f8f"],
+    "ding": [_p("001_띵.mp3"), _p("185_Ting.mp3"), _p("265_딩 다음 페이지 넘기기.mp3"),
+             _p("316_캡션 딩동.mp3"), _p("239_정답음_띠롱_띵동.mp3"), _p("400_전화 메시지 소리3.mp3"),
+             _p("526_화면전환효과음_01.mp3"), "chime/fs-159011-ding2-wav-1"],
+    "cash": [_p("010_철컥띵 (캐셔).mp3"), _p("201_코인5.mp3"), _p("467_코인4.mp3"),
+             _p("030_띠룽 (슈퍼마리오 코인).mp3"), "chime/own-ov-deafdf72", "chime/own-ov-62dd2f8f"],
+    "whoosh": [_p("352_후윽.mp3"), _p("573_Whoosh(Transition).mp3"), _p("190_훅.mp3"),
+               _p("086_후욱 -b중간1.mp3"), _p("212_쉭쉭 스우쉬.mp3"), _p("009_쉭.mp3"),
+               _p("287_휙하고 히트1.mp3"), _p("100_후욱 -a짧은2.mp3"), _p("119_넘기는소리(장면효과).mp3"),
+               "whoosh/fs-449988-whoosh-med-high-1", "whoosh/fs-60004-fast-sword-swing-sound-1"],
+    "swell": [_p("087_스르륵 효과음.mp3"), _p("053_샤스륵 효과음.mp3"),
+              "riser/fs-503802-reverse-fx-4-wav-1", "riser/fs-503799-reverse-fx-9-wav-1"],
+    "impact": [_p("007_쿵 효과음.mp3"), _p("084_폭발 -b묵직.mp3"), _p("405_쿠웅_떨어지며_울리는.mp3"),
+               _p("085_둥(큰북소리).mp3"), _p("014_두둥탁!.mp3"), _p("244_텅.mp3"),
+               "boom/fs-81145-sub-oceano-a-wav-1", "boom/fs-236956-boom-mp3-1"],
+    "pop": [_p("008_팝.mp3"), _p("037_카툰 팝.mp3"), _p("062_뾰옥 (물방울).mp3"),
+            _p("301_Poink.mp3"), _p("338_버튼 클릭1.mp3")],
+    "question": [_p("171_먼가 이상할때 띠용.mp3"), _p("015_띠동띠동(물음표).mp3"),
+                 _p("144_띠용(빠른).mp3"), _p("103_띠요용(바운스).mp3"), _p("307_띠우웅.mp3")],
+    "success": [_p("468_또잉(정답소리).mp3"), _p("379_Correct.mp3"), _p("225_Magical.mp3"),
+                _p("317_Unlocked.mp3"), _p("341_짜잔_금관악기.mp3")],
+    "surprise": [_p("255_놀람_반전.mp3"), _p("375_Shocked4.mp3"), _p("042_마법봉.mp3"),
+                 _p("376_Shocked1.mp3"), _p("465_깜짝 1.mp3"), "riser/fs-503799-reverse-fx-9-wav-1"],
+    "fail": [_p("411_Windows Error.mp3"), _p("019_삐삑 (오답 -짧은).mp3"), _p("572_Wrong.mp3"),
+             "boom/fs-81149-sub-oceano-g-sharp-wav-1"],
+    "tension": [_p("029_째깍째깍 (시계).mp3"), _p("253_긴장된 심장박동.mp3"),
+                "tick/fs-403001-clock-tick-tik-tak-2", "tick/fs-130388-clock-ticking-1"],
+    "caption": [_p("189_핑거스냅.mp3"), _p("267_캡션 사운드 타탁.mp3"), _p("505_일반 캡션.mp3"),
+                _p("310_핑거 스냅(딱).mp3"), "key/fs-194795-vintage-keyboard-1-1"],
+    "camera": [_p("018_찰칵 (카메라).mp3"), _p("502_카메라 플래시 셔터.mp3"),
+               _p("348_초점음,써터음 1회.mp3"), "click/kenney-ui-audio-switch16"],
 }
 HERO = {"impact"}  # 한 영상의 큰 한 방: 직전 정적 + 짧게 차오르는 소리
 BUILD = "riser/fs-503802-reverse-fx-4-wav-1"  # 큰 한 방 직전: 역재생 심벌 스웰 (참고 영상에 많음)
@@ -105,20 +129,34 @@ def available():
 
 
 def _sound(cat, used):
+    used_files = used.setdefault("_files", set())
     if os.path.isfile(cat):  # 파일 경로를 직접 적은 경우
+        used_files.add(cat)
         return cat
     if "/" in cat:
         typ, rest = cat.split("/", 1)
+        for cand in (PACK / rest, PACK / f"{rest}.mp3", PACK / f"{rest}.wav"):
+            if cand.is_file():
+                s = str(cand)
+                used_files.add(s)
+                return s
         if (KIT / typ / f"{rest}.wav").exists():
+            used_files.add(cat)
             return cat
-        cat = typ  # 예전 효과음 폴더의 고정 이름("pop/카툰 팝") → 같은 종류에서 고름
+        cat = typ  # 못 찾으면 같은 종류에서 안 쓴 소리를 고름
     opts = [o for o in (FAMILY.get(cat) or FAMILY["pop"]) if _exists(o)]
     if not PACK.exists():  # 사용자 효과음 폴더가 없는 PC: 키트에서 종류별 여러 개를 더해 돌려 씀
         opts += [o for o in KIT_FAMILY.get(cat, []) if _exists(o) and o not in opts]
     opts = opts or [o for o in LOCAL.get(cat, LOCAL["pop"]) if os.path.isfile(o)]
-    k = used.get(cat, 0)
-    used[cat] = k + 1
-    return opts[k % len(opts)]
+    fresh = [o for o in opts if o not in used_files]
+    if fresh:
+        pick = fresh[0]
+    else:
+        k = used.get(cat, 0)
+        used[cat] = k + 1
+        pick = opts[k % len(opts)]
+    used_files.add(pick)
+    return pick
 
 
 def _read(path):

@@ -1,0 +1,41 @@
+{
+ "text": "안쪽 라벨을 본 릭은 단번에 의심하는데",
+ "words": [
+  {
+   "word": "안쪽",
+   "start": 0.02,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "라벨을",
+   "start": 0.342,
+   "end": 0.623,
+   "aligned": true
+  },
+  {
+   "word": "본",
+   "start": 0.704,
+   "end": 0.784,
+   "aligned": true
+  },
+  {
+   "word": "릭은",
+   "start": 0.824,
+   "end": 1.025,
+   "aligned": true
+  },
+  {
+   "word": "단번에",
+   "start": 1.106,
+   "end": 1.488,
+   "aligned": true
+  },
+  {
+   "word": "의심하는데",
+   "start": 1.528,
+   "end": 2.01,
+   "aligned": true
+  }
+ ]
+}

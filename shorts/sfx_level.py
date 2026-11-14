@@ -22,9 +22,9 @@ from .sfx_opus import BUILD, FAMILY, HERO, KIT, _exists, _sound
 
 SR = 48000
 # 목소리 대비 들리는 크기(dB). 0 = 목소리와 같은 크기로 들림
-OFFSET = {"impact": 0.0, "success": -1.5, "ding": -2.5, "pop": -2.5, "question": -2.5, "surprise": -2.5,
-          "camera": -3.0, "cash": -1.5, "whoosh": -3.0, "fail": -1.5, "caption": -4.0, "swell": -5.0, "tension": -7.0}
-PRE_MAX, POST_MAX = 1.5, 1.2  # 가장 센 지점 앞뒤로 쓰는 최대 길이(초)
+OFFSET = {"impact": -1.0, "success": -2.5, "ding": -3.0, "pop": -3.0, "question": -3.0, "surprise": -3.0,
+          "camera": -3.0, "cash": -2.5, "whoosh": -3.5, "fail": -3.0, "caption": -4.5, "swell": -5.5, "tension": -6.5}
+PRE_MAX, POST_MAX = 1.5, 2.2  # 가장 센 지점 앞뒤로 쓰는 최대 길이(초) — 여운/엔딩음이 중간에 잘리지 않게
 
 
 def _read(path):

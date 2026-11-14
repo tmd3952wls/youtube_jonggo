@@ -1,0 +1,98 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,카페24 아네모네,128,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+Style: Narr,카페24 아네모네,88,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Dial,카페24 아네모네,84,&H001AE8FF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Tag,카페24 아네모네,70,&H00FFE035,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,0,7,40,40,525,1
+Style: Credit,카페24 아네모네,30,&H009A9A9A,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:51.64,Title,,0,0,0,,{\pos(540,195)\fs125\c&H001AE8FF\3c&H001AE8FF\bord0\shad3\4c&H000000&\4a&H40&}잡스가 만든 첫 컴퓨터
+Dialogue: 1,0:00:00.00,0:00:51.64,Title,,0,0,0,,{\pos(540,334)\fs128\c&H00FFFFFF\3c&H00FFFFFF\bord0\shad3\4c&H000000&\4a&H40&}전원 켜자 대반전?!
+Dialogue: 20,0:00:00.00,0:00:51.64,Credit,,0,0,0,,{\an8\pos(540,1507)\fs40\1c&HFFFFFF&\alpha&HB3&\bord0\shad0\blur0.5}1분냠냠
+Dialogue: 3,0:00:00.00,0:00:00.98,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}스티브 잡스가 만든
+Dialogue: 5,0:00:00.00,0:00:00.98,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}스티브 잡스가 만든
+Dialogue: 3,0:00:00.98,0:00:02.47,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}7억 원{\1c&H000000&\fs76}짜리 1호 컴퓨터
+Dialogue: 5,0:00:00.98,0:00:02.47,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs98}7억 원{\1c&HFFFFFF&\fs76}짜리 1호 컴퓨터
+Dialogue: 3,0:00:02.47,0:00:03.29,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}이게 아직도 작동하나요?
+Dialogue: 5,0:00:02.47,0:00:03.29,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}이게 아직도 작동하나요?
+Dialogue: 3,0:00:03.64,0:00:05.17,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}지금도 작동해요!
+Dialogue: 5,0:00:03.64,0:00:05.17,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H1AE1FF&\fs98}지금도 작동해요!
+Dialogue: 3,0:00:05.17,0:00:06.60,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}1976년{\1c&H000000&\fs76} 잡스와
+Dialogue: 5,0:00:05.17,0:00:06.60,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFF23D&\fs76}1976년{\1c&HFFFFFF&\fs76} 잡스와
+Dialogue: 3,0:00:06.60,0:00:07.45,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}워즈니악이 직접
+Dialogue: 5,0:00:06.60,0:00:07.45,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}워즈니악이 직접
+Dialogue: 3,0:00:07.45,0:00:08.33,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}만든 모델로
+Dialogue: 5,0:00:07.45,0:00:08.33,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}만든 모델로
+Dialogue: 3,0:00:08.33,0:00:10.68,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}고작 몇백 대만 팔렸죠?
+Dialogue: 5,0:00:08.33,0:00:10.68,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}고작 몇백 대만 팔렸죠?
+Dialogue: 3,0:00:10.68,0:00:12.27,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}단 {\1c&H000000&\fs98}200대뿐{\1c&H000000&\fs98}이에요!
+Dialogue: 5,0:00:10.68,0:00:12.27,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs98}단 {\1c&H1AE1FF&\fs98}200대뿐{\1c&HFFFFFF&\fs98}이에요!
+Dialogue: 3,0:00:12.27,0:00:13.20,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}경매 전 찾아간
+Dialogue: 5,0:00:12.27,0:00:13.20,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}경매 전 찾아간
+Dialogue: 3,0:00:13.20,0:00:14.43,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}릭이 희망가를 묻자
+Dialogue: 5,0:00:13.20,0:00:14.43,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}릭이 희망가를 묻자
+Dialogue: 3,0:00:14.43,0:00:15.37,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}7억 원{\1c&H000000&\fs98}이면 됩니다
+Dialogue: 5,0:00:14.43,0:00:15.37,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs98}7억 원{\1c&HFFFFFF&\fs98}이면 됩니다
+Dialogue: 3,0:00:16.81,0:00:17.47,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}와 빡세네요...
+Dialogue: 5,0:00:16.81,0:00:17.47,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}와 빡세네요...
+Dialogue: 3,0:00:17.47,0:00:18.31,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}전문가를 불러
+Dialogue: 5,0:00:17.47,0:00:18.31,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}전문가를 불러
+Dialogue: 3,0:00:18.31,0:00:19.74,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}기판부터 살펴보는데
+Dialogue: 5,0:00:18.31,0:00:19.74,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}기판부터 살펴보는데
+Dialogue: 3,0:00:20.24,0:00:21.32,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}기판이 정말 깨끗하네요
+Dialogue: 5,0:00:20.24,0:00:21.32,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}기판이 정말 깨끗하네요
+Dialogue: 3,0:00:21.32,0:00:22.54,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}칩 위 {\1c&H000000&\fs76}숫자까지
+Dialogue: 5,0:00:21.32,0:00:22.54,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}칩 위 {\1c&HFFF23D&\fs76}숫자까지
+Dialogue: 3,0:00:22.54,0:00:23.74,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}선명히{\1c&H000000&\fs76} 읽혀요
+Dialogue: 5,0:00:22.54,0:00:23.74,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFF23D&\fs76}선명히{\1c&HFFFFFF&\fs76} 읽혀요
+Dialogue: 3,0:00:23.74,0:00:24.67,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}곧바로 전원을 켜
+Dialogue: 5,0:00:23.74,0:00:24.67,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}곧바로 전원을 켜
+Dialogue: 3,0:00:24.67,0:00:26.11,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}작동하는지 시험해 보자
+Dialogue: 5,0:00:24.67,0:00:26.11,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}작동하는지 시험해 보자
+Dialogue: 3,0:00:26.11,0:00:27.53,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}프로그램이\N제대로 올라오네요
+Dialogue: 5,0:00:26.11,0:00:27.53,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}프로그램이\N제대로 올라오네요
+Dialogue: 3,0:00:27.86,0:00:30.04,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}부팅 성공{\1c&H000000&\fs98}입니다!
+Dialogue: 5,0:00:27.86,0:00:30.04,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H1AE1FF&\fs98}부팅 성공{\1c&HFFFFFF&\fs98}입니다!
+Dialogue: 3,0:00:30.04,0:00:30.86,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}화면엔 잡스의
+Dialogue: 5,0:00:30.04,0:00:30.86,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}화면엔 잡스의
+Dialogue: 3,0:00:30.86,0:00:32.27,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}얼굴까지 생생히 뜨고
+Dialogue: 5,0:00:30.86,0:00:32.27,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}얼굴까지 생생히 뜨고
+Dialogue: 3,0:00:32.27,0:00:33.40,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}등급은 10점 만점에
+Dialogue: 5,0:00:32.27,0:00:33.40,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}등급은 10점 만점에
+Dialogue: 3,0:00:33.40,0:00:34.27,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}무려 {\1c&H000000&\fs98}8점{\1c&H000000&\fs98}이에요!
+Dialogue: 5,0:00:33.40,0:00:34.27,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs98}무려 {\1c&H1AE1FF&\fs98}8점{\1c&HFFFFFF&\fs98}이에요!
+Dialogue: 3,0:00:34.27,0:00:35.06,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}현존하는 {\1c&H000000&\fs76}10점은
+Dialogue: 5,0:00:34.27,0:00:35.06,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}현존하는 {\1c&H4E3BFF&\fs76}10점은
+Dialogue: 3,0:00:35.06,0:00:35.84,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}아예 없거든요
+Dialogue: 5,0:00:35.06,0:00:35.84,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H4E3BFF&\fs76}아예 없거든요
+Dialogue: 3,0:00:35.84,0:00:36.65,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}감정가는 얼마로 보세요?
+Dialogue: 5,0:00:35.84,0:00:36.65,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}감정가는 얼마로 보세요?
+Dialogue: 3,0:00:37.91,0:00:39.37,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}최소 {\1c&H000000&\fs98}7억 원{\1c&H000000&\fs98}이죠!
+Dialogue: 5,0:00:37.91,0:00:39.37,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs98}최소 {\1c&H23FF2C&\fs98}7억 원{\1c&HFFFFFF&\fs98}이죠!
+Dialogue: 3,0:00:39.37,0:00:40.37,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}감정을 마친 릭이
+Dialogue: 5,0:00:39.37,0:00:40.37,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}감정을 마친 릭이
+Dialogue: 3,0:00:40.37,0:00:41.44,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}담판에 나서는데
+Dialogue: 5,0:00:40.37,0:00:41.44,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}담판에 나서는데
+Dialogue: 3,0:00:41.44,0:00:43.25,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}정말 {\1c&H000000&\fs76}7억 원{\1c&H000000&\fs76}을\N원하시는 거죠?
+Dialogue: 5,0:00:41.44,0:00:43.25,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}정말 {\1c&H23FF2C&\fs76}7억 원{\1c&HFFFFFF&\fs76}을\N원하시는 거죠?
+Dialogue: 3,0:00:43.25,0:00:44.54,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}최소 그 정도{\1c&H000000&\fs76}는 받아야죠
+Dialogue: 5,0:00:43.25,0:00:44.54,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H4E3BFF&\fs76}최소 그 정도{\1c&HFFFFFF&\fs76}는 받아야죠
+Dialogue: 3,0:00:44.54,0:00:45.63,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}지금 지르기엔
+Dialogue: 5,0:00:44.54,0:00:45.63,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}지금 지르기엔
+Dialogue: 3,0:00:45.63,0:00:46.97,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}너무 큰 금액{\1c&H000000&\fs76}이네요
+Dialogue: 5,0:00:45.63,0:00:46.97,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H4E3BFF&\fs76}너무 큰 금액{\1c&HFFFFFF&\fs76}이네요
+Dialogue: 3,0:00:46.97,0:00:48.39,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}결국 불발된 이 컴퓨터가
+Dialogue: 5,0:00:46.97,0:00:48.39,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}결국 불발된 이 컴퓨터가
+Dialogue: 3,0:00:48.39,0:00:49.44,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}얼마에 팔렸는지는
+Dialogue: 5,0:00:48.39,0:00:49.44,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}얼마에 팔렸는지는
+Dialogue: 3,0:00:49.44,0:00:51.64,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}고정댓글{\1c&H000000&\fs76}에 있다
+Dialogue: 5,0:00:49.44,0:00:51.64,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&HFF&\blur14\t(0,133,\alpha&H00&\blur0.4)}{\1c&H1AE1FF&\fs76}고정댓글{\1c&HFFFFFF&\fs76}에 있다

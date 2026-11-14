@@ -1,0 +1,35 @@
+{
+ "text": "진짜 순은으로 확인되자 흥정이 시작되고",
+ "words": [
+  {
+   "word": "진짜",
+   "start": 0.061,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "순은으로",
+   "start": 0.383,
+   "end": 0.726,
+   "aligned": true
+  },
+  {
+   "word": "확인되자",
+   "start": 0.787,
+   "end": 1.311,
+   "aligned": true
+  },
+  {
+   "word": "흥정이",
+   "start": 1.432,
+   "end": 1.795,
+   "aligned": true
+  },
+  {
+   "word": "시작되고",
+   "start": 1.856,
+   "end": 2.3,
+   "aligned": true
+  }
+ ]
+}

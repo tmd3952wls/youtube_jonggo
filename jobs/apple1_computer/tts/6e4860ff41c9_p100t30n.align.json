@@ -1,0 +1,41 @@
+{
+ "text": "경매 전 찾아간 릭이 희망가를 묻자",
+ "words": [
+  {
+   "word": "경매",
+   "start": 0.04,
+   "end": 0.303,
+   "aligned": true
+  },
+  {
+   "word": "전",
+   "start": 0.363,
+   "end": 0.464,
+   "aligned": true
+  },
+  {
+   "word": "찾아간",
+   "start": 0.545,
+   "end": 0.908,
+   "aligned": true
+  },
+  {
+   "word": "릭이",
+   "start": 0.988,
+   "end": 1.19,
+   "aligned": true
+  },
+  {
+   "word": "희망가를",
+   "start": 1.25,
+   "end": 1.694,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 1.775,
+   "end": 1.956,
+   "aligned": true
+  }
+ ]
+}

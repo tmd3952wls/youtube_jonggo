@@ -1,0 +1,35 @@
+{
+ "text": "1966년식 롤렉스 일명 펩시 모델로",
+ "words": [
+  {
+   "word": "1966년식",
+   "start": 0.04,
+   "end": 0.788,
+   "aligned": true
+  },
+  {
+   "word": "롤렉스",
+   "start": 0.848,
+   "end": 1.172,
+   "aligned": true
+  },
+  {
+   "word": "일명",
+   "start": 1.232,
+   "end": 1.454,
+   "aligned": true
+  },
+  {
+   "word": "펩시",
+   "start": 1.535,
+   "end": 1.778,
+   "aligned": true
+  },
+  {
+   "word": "모델로",
+   "start": 1.818,
+   "end": 2.141,
+   "aligned": true
+  }
+ ]
+}

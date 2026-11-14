@@ -1,0 +1,164 @@
+[
+  {
+    "text": "스티브 잡스가 만든",
+    "start": 0.0,
+    "end": 0.978,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.467
+  },
+  {
+    "text": "7억 원짜리 1호 컴퓨터",
+    "start": 0.978,
+    "end": 2.467,
+    "method": "whisperx",
+    "prop_start": 0.683,
+    "seg_start": 0.0,
+    "seg_end": 2.467
+  },
+  {
+    "text": "1976년 잡스와",
+    "start": 5.167,
+    "end": 6.603,
+    "method": "whisperx",
+    "prop_start": 5.167,
+    "seg_start": 5.167,
+    "seg_end": 8.333
+  },
+  {
+    "text": "워즈니악이 직접",
+    "start": 6.603,
+    "end": 7.447,
+    "method": "whisperx",
+    "prop_start": 6.849,
+    "seg_start": 5.167,
+    "seg_end": 8.333
+  },
+  {
+    "text": "만든 모델로",
+    "start": 7.447,
+    "end": 8.333,
+    "method": "whisperx",
+    "prop_start": 7.69,
+    "seg_start": 5.167,
+    "seg_end": 8.333
+  },
+  {
+    "text": "경매 전 찾아간",
+    "start": 12.267,
+    "end": 13.205,
+    "method": "whisperx",
+    "prop_start": 12.267,
+    "seg_start": 12.267,
+    "seg_end": 14.433
+  },
+  {
+    "text": "릭이 희망가를 묻자",
+    "start": 13.205,
+    "end": 14.433,
+    "method": "whisperx",
+    "prop_start": 13.226,
+    "seg_start": 12.267,
+    "seg_end": 14.433
+  },
+  {
+    "text": "전문가를 불러",
+    "start": 17.472,
+    "end": 18.307,
+    "method": "whisperx",
+    "prop_start": 17.472,
+    "seg_start": 17.472,
+    "seg_end": 19.739
+  },
+  {
+    "text": "기판부터 살펴보는데",
+    "start": 18.307,
+    "end": 19.739,
+    "method": "whisperx",
+    "prop_start": 18.4,
+    "seg_start": 17.472,
+    "seg_end": 19.739
+  },
+  {
+    "text": "곧바로 전원을 켜",
+    "start": 23.739,
+    "end": 24.672,
+    "method": "whisperx",
+    "prop_start": 23.739,
+    "seg_start": 23.739,
+    "seg_end": 26.106
+  },
+  {
+    "text": "작동하는지 시험해 보자",
+    "start": 24.672,
+    "end": 26.106,
+    "method": "whisperx",
+    "prop_start": 24.753,
+    "seg_start": 23.739,
+    "seg_end": 26.106
+  },
+  {
+    "text": "화면엔 잡스의",
+    "start": 30.039,
+    "end": 30.856,
+    "method": "whisperx",
+    "prop_start": 30.039,
+    "seg_start": 30.039,
+    "seg_end": 32.273
+  },
+  {
+    "text": "얼굴까지 생생히 뜨고",
+    "start": 30.856,
+    "end": 32.273,
+    "method": "whisperx",
+    "prop_start": 30.902,
+    "seg_start": 30.039,
+    "seg_end": 32.273
+  },
+  {
+    "text": "감정을 마친 릭이",
+    "start": 39.373,
+    "end": 40.366,
+    "method": "whisperx",
+    "prop_start": 39.373,
+    "seg_start": 39.373,
+    "seg_end": 41.439
+  },
+  {
+    "text": "담판에 나서는데",
+    "start": 40.366,
+    "end": 41.439,
+    "method": "whisperx",
+    "prop_start": 40.466,
+    "seg_start": 39.373,
+    "seg_end": 41.439
+  },
+  {
+    "text": "결국 불발된 이 컴퓨터가",
+    "start": 46.973,
+    "end": 48.392,
+    "method": "whisperx",
+    "prop_start": 46.973,
+    "seg_start": 46.973,
+    "seg_end": 51.639
+  },
+  {
+    "text": "얼마에 팔렸는지는",
+    "start": 48.392,
+    "end": 49.438,
+    "method": "whisperx",
+    "prop_start": 48.12,
+    "seg_start": 46.973,
+    "seg_end": 51.639
+  },
+  {
+    "text": "고정댓글에 있다",
+    "start": 49.438,
+    "end": 51.639,
+    "method": "whisperx",
+    "prop_start": 48.914,
+    "seg_start": 46.973,
+    "seg_end": 51.639
+  }
+]

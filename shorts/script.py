@@ -258,8 +258,10 @@ def validate(plan, transcript, rate=KRW_RATE):
         if up.get(k):
             up[k] = add_krw(up[k], rate)
     for i, s in enumerate(plan["segments"]):
-        if s.get("sfx") and s["sfx"] not in CATEGORIES and s["sfx"] != "boom":
-            s["sfx"] = None  # 모르는 효과음 이름은 무시
+        if s.get("sfx"):
+            base_sfx = str(s["sfx"]).split("/", 1)[0]
+            if base_sfx not in CATEGORIES and base_sfx not in ("boom", "cash", "swell"):
+                s["sfx"] = None  # 모르는 효과음 이름은 무시
         if s["type"] == "narration":
             assert s.get("text"), f"segment {i}: 내레이션 text 없음"
             s["text"] = add_krw(s["text"], rate)
@@ -304,19 +306,19 @@ def check_structure(plan, transcript, cfg, words=None):
     for i, s in enumerate(plan["segments"]):
         if s["type"] == "narration":
             txt = s["text"]
-            d = len(re.sub(r"\[(\w+:)?|\]|\s", "", txt)) / T["chars_per_sec"]
+            d = len(re.sub(r"\{big\}|\[(?:big:)?(?:\w+:)?|\]|\s", "", txt)) / T["chars_per_sec"]
         else:
             txt = " ".join(s["subs"])
             d = clip_speech_sec(range(s["from_id"], s["to_id"] + 1), tr, words or {})
-        clean = re.sub(r"\[(\w+:)?|\]", "", txt)
+        clean = re.sub(r"\{big\}\s*|\[(?:big:)?(?:\w+:)?|\]", "", txt)
         timeline.append(f"  {t:4.1f}s {'N' if s['type'] == 'narration' else 'C'} {clean[:40]}")
         if i > 0 and first_deal is None and DEAL_WORDS.search(txt):
             first_deal = (t, clean[:30])
         t += d
-    # 질문과 대답이 한 자막에 붙어 있는지 ("얼마예요? 25만 달러요" → '//' 로 나눠야 함)
+    # 질문과 대답이 한 자막에 붙어 있는지 ("얼마예요? 25만 달러요" → '//' 로 나눠야 함, '(황당)' 같은 괄호 반응은 제외)
     for s in plan["segments"]:
         for x in s.get("subs", []) if s["type"] == "clip" else []:
-            if any(re.search(r"\?\s*\S", part) for part in x.split("//")):
+            if any(re.search(r"\?\s*(?!\()[^\s?!]", part) for part in x.split("//")):
                 problems.append(f"자막 '{x[:30]}' 에 질문과 대답이 한 자막에 붙어 있음 → ' // ' 로 나눠라.")
     if first_deal and first_deal[0] < T["intro_sec"]:
         need = T["intro_sec"] - first_deal[0]

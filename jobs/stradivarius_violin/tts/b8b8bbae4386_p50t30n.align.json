@@ -1,0 +1,35 @@
+{
+ "text": "그래도 혹시 몰라 희망가를 물어보자",
+ "words": [
+  {
+   "word": "그래도",
+   "start": 0.02,
+   "end": 0.263,
+   "aligned": true
+  },
+  {
+   "word": "혹시",
+   "start": 0.324,
+   "end": 0.527,
+   "aligned": true
+  },
+  {
+   "word": "몰라",
+   "start": 0.608,
+   "end": 0.831,
+   "aligned": true
+  },
+  {
+   "word": "희망가를",
+   "start": 0.912,
+   "end": 1.337,
+   "aligned": true
+  },
+  {
+   "word": "물어보자",
+   "start": 1.418,
+   "end": 1.722,
+   "aligned": true
+  }
+ ]
+}

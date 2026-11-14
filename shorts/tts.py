@@ -104,7 +104,7 @@ def synth(text, tts_dir: Path, cfg):
     if not raw.exists():
         PROVIDERS[prov](text, raw, pcfg)
     # 앞뒤 무음 제거 + 문장 사이 쉼을 max_pause 이하로 압축(말이 비지 않게) + 포맷 통일
-    trim = "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.03"
+    trim = "silenceremove=start_periods=1:start_threshold=-36dB:start_silence=0.02"
     squeeze = (f"silenceremove=stop_periods=-1:stop_duration={pause}:stop_threshold={thr}dB:"
                f"stop_silence={pause}")
     # TTS 원본이 아주 작게 오는 경우(최고 -19dB)가 있어, 고정 -35dB 기준으로는 조용한 말끝("던지는데")까지

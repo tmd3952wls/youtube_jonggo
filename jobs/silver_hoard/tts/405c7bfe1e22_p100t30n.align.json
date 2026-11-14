@@ -1,0 +1,41 @@
+{
+ "text": "총 3,372온스지만 가짜 철심 위험이 있어",
+ "words": [
+  {
+   "word": "총",
+   "start": 0.04,
+   "end": 0.482,
+   "aligned": true
+  },
+  {
+   "word": "3,372온스지만",
+   "start": 0.502,
+   "end": 1.525,
+   "aligned": true
+  },
+  {
+   "word": "가짜",
+   "start": 1.686,
+   "end": 1.927,
+   "aligned": true
+  },
+  {
+   "word": "철심",
+   "start": 1.967,
+   "end": 2.228,
+   "aligned": true
+  },
+  {
+   "word": "위험이",
+   "start": 2.288,
+   "end": 2.509,
+   "aligned": true
+  },
+  {
+   "word": "있어",
+   "start": 2.549,
+   "end": 2.71,
+   "aligned": true
+  }
+ ]
+}

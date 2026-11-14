@@ -1,0 +1,53 @@
+{
+ "text": "결국 불발된 이 컴퓨터가 얼마에 팔렸는지는 고정댓글에 있다",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "불발된",
+   "start": 0.362,
+   "end": 0.765,
+   "aligned": true
+  },
+  {
+   "word": "이",
+   "start": 0.805,
+   "end": 0.885,
+   "aligned": true
+  },
+  {
+   "word": "컴퓨터가",
+   "start": 0.966,
+   "end": 1.368,
+   "aligned": true
+  },
+  {
+   "word": "얼마에",
+   "start": 1.469,
+   "end": 1.751,
+   "aligned": true
+  },
+  {
+   "word": "팔렸는지는",
+   "start": 1.851,
+   "end": 2.435,
+   "aligned": true
+  },
+  {
+   "word": "고정댓글에",
+   "start": 2.515,
+   "end": 3.079,
+   "aligned": true
+  },
+  {
+   "word": "있다",
+   "start": 3.099,
+   "end": 3.441,
+   "aligned": true
+  }
+ ]
+}

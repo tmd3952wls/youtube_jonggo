@@ -1,0 +1,35 @@
+{
+ "text": "여친 집안 대대로 물려받은 시계인데",
+ "words": [
+  {
+   "word": "여친",
+   "start": 0.04,
+   "end": 0.304,
+   "aligned": true
+  },
+  {
+   "word": "집안",
+   "start": 0.385,
+   "end": 0.587,
+   "aligned": true
+  },
+  {
+   "word": "대대로",
+   "start": 0.668,
+   "end": 0.992,
+   "aligned": true
+  },
+  {
+   "word": "물려받은",
+   "start": 1.052,
+   "end": 1.477,
+   "aligned": true
+  },
+  {
+   "word": "시계인데",
+   "start": 1.579,
+   "end": 1.882,
+   "aligned": true
+  }
+ ]
+}

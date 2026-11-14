@@ -1,0 +1,41 @@
+{
+ "text": "드릴로 파낸 뒤 질산 시약을 떨어뜨리는데",
+ "words": [
+  {
+   "word": "드릴로",
+   "start": 0.04,
+   "end": 0.342,
+   "aligned": true
+  },
+  {
+   "word": "파낸",
+   "start": 0.422,
+   "end": 0.623,
+   "aligned": true
+  },
+  {
+   "word": "뒤",
+   "start": 0.724,
+   "end": 0.825,
+   "aligned": true
+  },
+  {
+   "word": "질산",
+   "start": 0.945,
+   "end": 1.187,
+   "aligned": true
+  },
+  {
+   "word": "시약을",
+   "start": 1.267,
+   "end": 1.508,
+   "aligned": true
+  },
+  {
+   "word": "떨어뜨리는데",
+   "start": 1.569,
+   "end": 2.051,
+   "aligned": true
+  }
+ ]
+}

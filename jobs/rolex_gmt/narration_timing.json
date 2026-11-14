@@ -1,0 +1,146 @@
+[
+  {
+    "text": "결혼 자금으로 내놓은",
+    "start": 0.0,
+    "end": 0.959,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.805
+  },
+  {
+    "text": "2천8백만 원짜리 롤렉스",
+    "start": 0.959,
+    "end": 2.805,
+    "method": "whisperx",
+    "prop_start": 0.935,
+    "seg_start": 0.0,
+    "seg_end": 2.805
+  },
+  {
+    "text": "여친 집안 대대로",
+    "start": 5.307,
+    "end": 6.309,
+    "method": "whisperx",
+    "prop_start": 5.307,
+    "seg_start": 5.307,
+    "seg_end": 7.374
+  },
+  {
+    "text": "물려받은 시계인데",
+    "start": 6.309,
+    "end": 7.374,
+    "method": "whisperx",
+    "prop_start": 6.339,
+    "seg_start": 5.307,
+    "seg_end": 7.374
+  },
+  {
+    "text": "1966년식 롤렉스",
+    "start": 10.274,
+    "end": 11.456,
+    "method": "whisperx",
+    "prop_start": 10.274,
+    "seg_start": 10.274,
+    "seg_end": 12.577
+  },
+  {
+    "text": "일명 펩시 모델로",
+    "start": 11.456,
+    "end": 12.577,
+    "method": "whisperx",
+    "prop_start": 11.779,
+    "seg_start": 10.274,
+    "seg_end": 12.577
+  },
+  {
+    "text": "릭이 수리한 적",
+    "start": 16.577,
+    "end": 17.339,
+    "method": "whisperx",
+    "prop_start": 16.577,
+    "seg_start": 16.577,
+    "seg_end": 18.077
+  },
+  {
+    "text": "있냐고 묻자",
+    "start": 17.339,
+    "end": 18.077,
+    "method": "whisperx",
+    "prop_start": 17.424,
+    "seg_start": 16.577,
+    "seg_end": 18.077
+  },
+  {
+    "text": "곧바로 자외선",
+    "start": 22.477,
+    "end": 23.295,
+    "method": "whisperx",
+    "prop_start": 22.477,
+    "seg_start": 22.477,
+    "seg_end": 24.658
+  },
+  {
+    "text": "손전등을 비춰보는데",
+    "start": 23.295,
+    "end": 24.658,
+    "method": "whisperx",
+    "prop_start": 23.375,
+    "seg_start": 22.477,
+    "seg_end": 24.658
+  },
+  {
+    "text": "문자판을 새로 칠한",
+    "start": 30.558,
+    "end": 31.781,
+    "method": "whisperx",
+    "prop_start": 30.558,
+    "seg_start": 30.558,
+    "seg_end": 32.824
+  },
+  {
+    "text": "흔적이 드러난 것",
+    "start": 31.781,
+    "end": 32.824,
+    "method": "whisperx",
+    "prop_start": 31.915,
+    "seg_start": 30.558,
+    "seg_end": 32.824
+  },
+  {
+    "text": "이에 릭이 흥정을",
+    "start": 35.091,
+    "end": 35.984,
+    "method": "whisperx",
+    "prop_start": 35.091,
+    "seg_start": 35.091,
+    "seg_end": 36.791
+  },
+  {
+    "text": "시작하는데",
+    "start": 35.984,
+    "end": 36.791,
+    "method": "whisperx",
+    "prop_start": 36.175,
+    "seg_start": 35.091,
+    "seg_end": 36.791
+  },
+  {
+    "text": "결국 거래는 불발됐고",
+    "start": 50.737,
+    "end": 52.371,
+    "method": "whisperx",
+    "prop_start": 50.737,
+    "seg_start": 50.737,
+    "seg_end": 54.804
+  },
+  {
+    "text": "시계를 챙겨 떠났다",
+    "start": 52.371,
+    "end": 54.804,
+    "method": "whisperx",
+    "prop_start": 52.249,
+    "seg_start": 50.737,
+    "seg_end": 54.804
+  }
+]

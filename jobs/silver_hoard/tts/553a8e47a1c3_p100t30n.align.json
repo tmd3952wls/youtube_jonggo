@@ -1,0 +1,53 @@
+{
+ "text": "1억 5천만 원어치 은 더미를 싣고 온 남자",
+ "words": [
+  {
+   "word": "1억",
+   "start": 0.04,
+   "end": 0.341,
+   "aligned": true
+  },
+  {
+   "word": "5천만",
+   "start": 0.361,
+   "end": 0.622,
+   "aligned": true
+  },
+  {
+   "word": "원어치",
+   "start": 0.703,
+   "end": 0.904,
+   "aligned": true
+  },
+  {
+   "word": "은",
+   "start": 1.084,
+   "end": 1.165,
+   "aligned": true
+  },
+  {
+   "word": "더미를",
+   "start": 1.245,
+   "end": 1.506,
+   "aligned": true
+  },
+  {
+   "word": "싣고",
+   "start": 1.526,
+   "end": 1.687,
+   "aligned": true
+  },
+  {
+   "word": "온",
+   "start": 1.887,
+   "end": 1.988,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 2.048,
+   "end": 2.269,
+   "aligned": true
+  }
+ ]
+}

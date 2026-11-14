@@ -1,0 +1,47 @@
+{
+ "text": "포켓몬 카드 더미로 7억 원을 부른 남자",
+ "words": [
+  {
+   "word": "포켓몬",
+   "start": 0.04,
+   "end": 0.401,
+   "aligned": true
+  },
+  {
+   "word": "카드",
+   "start": 0.481,
+   "end": 0.662,
+   "aligned": true
+  },
+  {
+   "word": "더미로",
+   "start": 0.722,
+   "end": 0.963,
+   "aligned": true
+  },
+  {
+   "word": "7억",
+   "start": 0.983,
+   "end": 1.183,
+   "aligned": true
+  },
+  {
+   "word": "원을",
+   "start": 1.344,
+   "end": 1.504,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 1.605,
+   "end": 1.765,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 1.825,
+   "end": 2.086,
+   "aligned": true
+  }
+ ]
+}

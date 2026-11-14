@@ -1,0 +1,35 @@
+{
+ "text": "곧바로 장인을 불러 내부까지 살펴보는데",
+ "words": [
+  {
+   "word": "곧바로",
+   "start": 0.04,
+   "end": 0.341,
+   "aligned": true
+  },
+  {
+   "word": "장인을",
+   "start": 0.421,
+   "end": 0.722,
+   "aligned": true
+  },
+  {
+   "word": "불러",
+   "start": 0.823,
+   "end": 1.003,
+   "aligned": true
+  },
+  {
+   "word": "내부까지",
+   "start": 1.083,
+   "end": 1.505,
+   "aligned": true
+  },
+  {
+   "word": "살펴보는데",
+   "start": 1.565,
+   "end": 2.167,
+   "aligned": true
+  }
+ ]
+}

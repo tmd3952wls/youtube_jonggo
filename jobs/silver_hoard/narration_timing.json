@@ -1,0 +1,119 @@
+[
+  {
+    "text": "1억 5천만 원어치 은",
+    "start": 0.0,
+    "end": 1.195,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.5
+  },
+  {
+    "text": "더미를 싣고 온 남자",
+    "start": 1.195,
+    "end": 2.5,
+    "method": "whisperx",
+    "prop_start": 1.634,
+    "seg_start": 0.0,
+    "seg_end": 2.5
+  },
+  {
+    "text": "아버지 조언으로",
+    "start": 5.733,
+    "end": 6.448,
+    "method": "whisperx",
+    "prop_start": 5.733,
+    "seg_start": 5.733,
+    "seg_end": 7.606
+  },
+  {
+    "text": "12년간 모은 은인데",
+    "start": 6.448,
+    "end": 7.606,
+    "method": "whisperx",
+    "prop_start": 6.31,
+    "seg_start": 5.733,
+    "seg_end": 7.606
+  },
+  {
+    "text": "총 3,372온스지만",
+    "start": 10.259,
+    "end": 11.635,
+    "method": "whisperx",
+    "prop_start": 10.259,
+    "seg_start": 10.259,
+    "seg_end": 12.926
+  },
+  {
+    "text": "가짜 철심 위험이 있어",
+    "start": 11.635,
+    "end": 12.926,
+    "method": "whisperx",
+    "prop_start": 11.929,
+    "seg_start": 10.259,
+    "seg_end": 12.926
+  },
+  {
+    "text": "드릴로 파낸 뒤 질산",
+    "start": 17.959,
+    "end": 19.219,
+    "method": "whisperx",
+    "prop_start": 17.959,
+    "seg_start": 17.959,
+    "seg_end": 20.426
+  },
+  {
+    "text": "시약을 떨어뜨리는데",
+    "start": 19.219,
+    "end": 20.426,
+    "method": "whisperx",
+    "prop_start": 19.452,
+    "seg_start": 17.959,
+    "seg_end": 20.426
+  },
+  {
+    "text": "진짜 순은으로 확인되자",
+    "start": 23.693,
+    "end": 25.075,
+    "method": "whisperx",
+    "prop_start": 23.693,
+    "seg_start": 23.693,
+    "seg_end": 26.193
+  },
+  {
+    "text": "흥정이 시작되고",
+    "start": 25.075,
+    "end": 26.193,
+    "method": "whisperx",
+    "prop_start": 25.424,
+    "seg_start": 23.693,
+    "seg_end": 26.193
+  },
+  {
+    "text": "결국 1억 5,540만 원",
+    "start": 49.566,
+    "end": 51.407,
+    "method": "whisperx",
+    "prop_start": 49.566,
+    "seg_start": 49.566,
+    "seg_end": 54.474
+  },
+  {
+    "text": "현금 거래로",
+    "start": 51.407,
+    "end": 52.211,
+    "method": "whisperx",
+    "prop_start": 51.866,
+    "seg_start": 49.566,
+    "seg_end": 54.474
+  },
+  {
+    "text": "훈훈하게 끝났다",
+    "start": 52.211,
+    "end": 54.474,
+    "method": "whisperx",
+    "prop_start": 52.466,
+    "seg_start": 49.566,
+    "seg_end": 54.474
+  }
+]

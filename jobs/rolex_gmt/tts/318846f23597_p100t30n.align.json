@@ -1,0 +1,29 @@
+{
+ "text": "곧바로 자외선 손전등을 비춰보는데",
+ "words": [
+  {
+   "word": "곧바로",
+   "start": 0.04,
+   "end": 0.404,
+   "aligned": true
+  },
+  {
+   "word": "자외선",
+   "start": 0.464,
+   "end": 0.788,
+   "aligned": true
+  },
+  {
+   "word": "손전등을",
+   "start": 0.868,
+   "end": 1.313,
+   "aligned": true
+  },
+  {
+   "word": "비춰보는데",
+   "start": 1.414,
+   "end": 1.939,
+   "aligned": true
+  }
+ ]
+}

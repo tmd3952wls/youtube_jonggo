@@ -1,0 +1,41 @@
+{
+ "text": "1976년 잡스와 워즈니악이 직접 만든 모델로",
+ "words": [
+  {
+   "word": "1976년",
+   "start": 0.281,
+   "end": 0.924,
+   "aligned": true
+  },
+  {
+   "word": "잡스와",
+   "start": 1.085,
+   "end": 1.406,
+   "aligned": true
+  },
+  {
+   "word": "워즈니악이",
+   "start": 1.486,
+   "end": 1.969,
+   "aligned": true
+  },
+  {
+   "word": "직접",
+   "start": 2.029,
+   "end": 2.27,
+   "aligned": true
+  },
+  {
+   "word": "만든",
+   "start": 2.33,
+   "end": 2.591,
+   "aligned": true
+  },
+  {
+   "word": "모델로",
+   "start": 2.672,
+   "end": 2.953,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "text": "결국 불발된 이 카드들의 뒷이야기는 고정댓글에 있다",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "불발된",
+   "start": 0.403,
+   "end": 0.786,
+   "aligned": true
+  },
+  {
+   "word": "이",
+   "start": 0.826,
+   "end": 0.907,
+   "aligned": true
+  },
+  {
+   "word": "카드들의",
+   "start": 0.967,
+   "end": 1.35,
+   "aligned": true
+  },
+  {
+   "word": "뒷이야기는",
+   "start": 1.431,
+   "end": 2.015,
+   "aligned": true
+  },
+  {
+   "word": "고정댓글에",
+   "start": 2.156,
+   "end": 2.801,
+   "aligned": true
+  },
+  {
+   "word": "있다",
+   "start": 2.841,
+   "end": 3.184,
+   "aligned": true
+  }
+ ]
+}

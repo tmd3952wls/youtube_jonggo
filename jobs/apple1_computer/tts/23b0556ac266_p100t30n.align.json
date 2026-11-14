@@ -1,0 +1,47 @@
+{
+ "text": "스티브 잡스가 만든 7억 원짜리 1호 컴퓨터",
+ "words": [
+  {
+   "word": "스티브",
+   "start": 0.04,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "잡스가",
+   "start": 0.363,
+   "end": 0.705,
+   "aligned": true
+  },
+  {
+   "word": "만든",
+   "start": 0.766,
+   "end": 1.008,
+   "aligned": true
+  },
+  {
+   "word": "7억",
+   "start": 1.028,
+   "end": 1.27,
+   "aligned": true
+  },
+  {
+   "word": "원짜리",
+   "start": 1.33,
+   "end": 1.673,
+   "aligned": true
+  },
+  {
+   "word": "1호",
+   "start": 1.713,
+   "end": 1.875,
+   "aligned": true
+  },
+  {
+   "word": "컴퓨터",
+   "start": 1.935,
+   "end": 2.459,
+   "aligned": true
+  }
+ ]
+}

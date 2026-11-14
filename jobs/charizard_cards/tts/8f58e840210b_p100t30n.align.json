@@ -1,0 +1,47 @@
+{
+ "text": "심지어 세계 유일한 베켓 10등급까지 포함된 상황",
+ "words": [
+  {
+   "word": "심지어",
+   "start": 0.08,
+   "end": 0.381,
+   "aligned": true
+  },
+  {
+   "word": "세계",
+   "start": 0.462,
+   "end": 0.662,
+   "aligned": true
+  },
+  {
+   "word": "유일한",
+   "start": 0.743,
+   "end": 0.984,
+   "aligned": true
+  },
+  {
+   "word": "베켓",
+   "start": 1.064,
+   "end": 1.305,
+   "aligned": true
+  },
+  {
+   "word": "10등급까지",
+   "start": 1.405,
+   "end": 2.068,
+   "aligned": true
+  },
+  {
+   "word": "포함된",
+   "start": 2.148,
+   "end": 2.489,
+   "aligned": true
+  },
+  {
+   "word": "상황",
+   "start": 2.59,
+   "end": 2.75,
+   "aligned": true
+  }
+ ]
+}

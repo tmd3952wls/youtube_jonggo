@@ -39,3 +39,6 @@ jobs/**/sfx_level_tmp/
 
 # CapCut AI 목소리로 만든 내레이션 (tools/capcut_voice.py harvest)
 assets/voices/
+
+# 백업 파일
+*.bak

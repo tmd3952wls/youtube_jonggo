@@ -1,0 +1,35 @@
+{
+ "text": "희망가를 묻자 엄청난 금액이 나오고",
+ "words": [
+  {
+   "word": "희망가를",
+   "start": 0.06,
+   "end": 0.483,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 0.584,
+   "end": 0.785,
+   "aligned": true
+  },
+  {
+   "word": "엄청난",
+   "start": 0.845,
+   "end": 1.288,
+   "aligned": true
+  },
+  {
+   "word": "금액이",
+   "start": 1.348,
+   "end": 1.63,
+   "aligned": true
+  },
+  {
+   "word": "나오고",
+   "start": 1.69,
+   "end": 1.932,
+   "aligned": true
+  }
+ ]
+}

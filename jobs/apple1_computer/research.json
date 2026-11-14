@@ -1,0 +1,22 @@
+{
+  "company": "Apple-1 Computer (1976)",
+  "product": "스티브 워즈니악이 직접 수제작한 1976년 오리지널 애플-1 컴퓨터 (NTI 보드 + 흰색 세라믹 Synertek C6502 CPU + 카세트 인터페이스 세트)",
+  "facts": [
+    {
+      "fact": "2020년 1월 방영된 시즌 17 10화('Ship Happens')에 등장한 바로 이 Apple-1 컴퓨터는 방송에서 거래가 불발된 직후 보스턴 경매사 RR Auction에 출품되어, 2020년 3월 12일 구매자 수수료 포함 458,711달러(약 6억 4천만 원)에 실제 낙찰되었다.",
+      "source": "https://www.appleinsider.com / https://www.rrauction.com"
+    },
+    {
+      "fact": "이 개체는 1980년대 미시간주 컴퓨터 매장 SoftWarehouse가 손님의 구형 기기를 신형 IBM 컴퓨터와 보상교환해주며 확보해 수십 년간 보관해 온 희귀 NTI 보드(흰색 세라믹 Synertek C6502 프로세서 장착) 모델이다.",
+      "source": "https://www.rrauction.com / Journal of Antiques"
+    },
+    {
+      "fact": "1976년 스티브 잡스와 스티브 워즈니악은 약 200대의 Apple-1을 만들어 첫 50대를 폴 테렐의 바이트 샵(Byte Shop)에 납품했으며, 출시 당시 소매가는 666.66달러였다.",
+      "source": "https://www.appleinsider.com"
+    },
+    {
+      "fact": "양산형 Apple-1 경매 최고가는 워즈니악 서명과 잡스의 편지가 포함된 'Hatfield' 모델의 115만 달러이며, 양산 전 테스트용 'Celebration' 프로토타입 보드(#0)는 275만 달러에 낙찰된 바 있다.",
+      "source": "https://www.macrumors.com / Bonhams / RR Auction"
+    }
+  ]
+}

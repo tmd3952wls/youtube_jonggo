@@ -1,0 +1,65 @@
+{
+ "text": "결국 14억 원의 꿈이 깨진 남자는 악기를 챙겨 쓸쓸히 돌아갔다",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "14억",
+   "start": 0.321,
+   "end": 0.723,
+   "aligned": true
+  },
+  {
+   "word": "원의",
+   "start": 0.823,
+   "end": 0.984,
+   "aligned": true
+  },
+  {
+   "word": "꿈이",
+   "start": 1.084,
+   "end": 1.265,
+   "aligned": true
+  },
+  {
+   "word": "깨진",
+   "start": 1.345,
+   "end": 1.566,
+   "aligned": true
+  },
+  {
+   "word": "남자는",
+   "start": 1.626,
+   "end": 2.007,
+   "aligned": true
+  },
+  {
+   "word": "악기를",
+   "start": 2.268,
+   "end": 2.609,
+   "aligned": true
+  },
+  {
+   "word": "챙겨",
+   "start": 2.69,
+   "end": 2.93,
+   "aligned": true
+  },
+  {
+   "word": "쓸쓸히",
+   "start": 3.051,
+   "end": 3.372,
+   "aligned": true
+  },
+  {
+   "word": "돌아갔다",
+   "start": 3.432,
+   "end": 3.994,
+   "aligned": true
+  }
+ ]
+}

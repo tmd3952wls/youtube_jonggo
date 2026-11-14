@@ -1,0 +1,41 @@
+{
+ "text": "문자판을 새로 칠한 흔적이 드러난 것",
+ "words": [
+  {
+   "word": "문자판을",
+   "start": 0.061,
+   "end": 0.626,
+   "aligned": true
+  },
+  {
+   "word": "새로",
+   "start": 0.727,
+   "end": 0.889,
+   "aligned": true
+  },
+  {
+   "word": "칠한",
+   "start": 0.99,
+   "end": 1.212,
+   "aligned": true
+  },
+  {
+   "word": "흔적이",
+   "start": 1.273,
+   "end": 1.616,
+   "aligned": true
+  },
+  {
+   "word": "드러난",
+   "start": 1.677,
+   "end": 1.98,
+   "aligned": true
+  },
+  {
+   "word": "것",
+   "start": 2.081,
+   "end": 2.101,
+   "aligned": true
+  }
+ ]
+}
