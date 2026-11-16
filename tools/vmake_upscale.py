@@ -54,6 +54,14 @@ def launch(p, downloads=False, visible=False):
                 pass
         if br is None:
             print("FAIL: 크롬 연결 실패"); sys.exit(7)
+        # 방금 새로 켠 크롬만: '이전 세션 이어서 열기'로 되살아난 옛 탭이 쌓이지 않게 마지막 탭 하나만 남긴다.
+        # (이미 켜져 있던 공용 크롬에 붙을 때는 다른 세션 탭일 수 있으니 건드리지 않음)
+        time.sleep(2)
+        for pg in br.contexts[0].pages[:-1]:
+            try:
+                pg.close(run_before_unload=False)
+            except Exception:
+                pass
     ctx = br.contexts[0]
     return ctx
 
