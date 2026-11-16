@@ -1,0 +1,23 @@
+{
+ "text": "드디어 희망가를 묻자",
+ "words": [
+  {
+   "word": "드디어",
+   "start": 0.02,
+   "end": 0.265,
+   "aligned": true
+  },
+  {
+   "word": "희망가를",
+   "start": 0.326,
+   "end": 0.754,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 0.815,
+   "end": 1.019,
+   "aligned": true
+  }
+ ]
+}

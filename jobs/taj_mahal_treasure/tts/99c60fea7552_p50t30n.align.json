@@ -1,0 +1,35 @@
+{
+ "text": "하나는 2004년 쓰나미에 휩쓸려 사라졌다고",
+ "words": [
+  {
+   "word": "하나는",
+   "start": 0.02,
+   "end": 0.343,
+   "aligned": true
+  },
+  {
+   "word": "2004년",
+   "start": 0.403,
+   "end": 1.069,
+   "aligned": true
+  },
+  {
+   "word": "쓰나미에",
+   "start": 1.19,
+   "end": 1.533,
+   "aligned": true
+  },
+  {
+   "word": "휩쓸려",
+   "start": 1.614,
+   "end": 1.977,
+   "aligned": true
+  },
+  {
+   "word": "사라졌다고",
+   "start": 2.058,
+   "end": 2.582,
+   "aligned": true
+  }
+ ]
+}

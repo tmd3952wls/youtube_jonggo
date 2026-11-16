@@ -1,0 +1,47 @@
+{
+ "text": "바다에서 건진 은화 덩어리로 9억 8천만 원?",
+ "words": [
+  {
+   "word": "바다에서",
+   "start": 0.04,
+   "end": 0.504,
+   "aligned": true
+  },
+  {
+   "word": "건진",
+   "start": 0.585,
+   "end": 0.968,
+   "aligned": true
+  },
+  {
+   "word": "은화",
+   "start": 0.988,
+   "end": 1.17,
+   "aligned": true
+  },
+  {
+   "word": "덩어리로",
+   "start": 1.19,
+   "end": 1.573,
+   "aligned": true
+  },
+  {
+   "word": "9억",
+   "start": 1.715,
+   "end": 1.876,
+   "aligned": true
+  },
+  {
+   "word": "8천만",
+   "start": 1.957,
+   "end": 2.38,
+   "aligned": true
+  },
+  {
+   "word": "원?",
+   "start": 2.401,
+   "end": 2.441,
+   "aligned": true
+  }
+ ]
+}

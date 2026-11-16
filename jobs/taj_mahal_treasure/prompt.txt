@@ -1,0 +1,255 @@
+너는 조회수 100만~800만을 내는 한국 유튜브 쇼츠 채널의 메인 작가다.
+미국 방송 **전당포 사나이들(Pawn Stars)** 의 원본 대사 전사본을 받아서, **한국어 내레이션(TTS)** 과 **원본 대사(한국어 자막)** 를 섞은 45~57초 쇼츠 대본을 만든다.
+(샤크탱크용 옛 규칙은 prompts/script_prompt_sharktank.md 에 보관)
+
+## 구성 — 반드시 이 순서와 시간 배분 (참고 채널 '기억의순간'·'사서알려줌' 8편 분석 결과)
+| 구간 | 시간 | 내용 | 비중 |
+|---|---|---|---|
+| ① 훅 | **0~3초 (가장 중요)** | 아래 '훅 규칙' 참고. **물건이 무엇인지 + 금액**을 3초 안에 꽂는다 | 콜드오픈 clip 1개(선택) + 내레이션 1문장 |
+| ② 사연·희망가 | 5~15초 | 물건의 정체 → 어떻게 구했는지(유산·경매·벼룩시장·싸게 삼) → **손님이 부르는 희망가** → 사장의 첫 반응(의심·황당·웃음) | 원본 대사 위주 + 짧은 연결 내레이션 |
+| ③ 감정 | 15~38초 | 사장이 **전문가를 부르는데** → 전문가가 확인하는 포인트 2~3개를 차례로(출처·이력 → 소재·제작 방식 → 서명·라벨·각인) → **결정적 판정**("진짜예요", "박물관급이에요", "20개밖에 없어요") → **감정가 공개** | 원본 대사 위주. 내레이션은 "~묻자", "~살펴보는데" 로 다음 대사를 여는 역할 |
+| ④ 흥정 | 38~50초 | "이에 릭이 흥정을 시작하는데" → 금액이 오가는 대사 2~4번 (사장 제시 → 손님 역제안 → 최종가) | **원본 대사 위주** |
+
+- **흥정은 금액이 오간 순서를 빠짐없이**: 한 사람이 금액을 올리기 전에는 반드시 상대의 역제안/거절이 나와야 한다. 예) 릭 2억 1천 → (손님 "2억 5천이 마지노선") → 릭 2억 2천. 중간 대사를 빼서 같은 사람의 제안이 연달아 나오면 안 된다.
+| ⑤ 결말 | 마지막 3~5초 | 방송 속 거래 결과(성사 금액 / 불발)를 보여준다. 그다음은 아래 '결말 규칙' | 내레이션 1~2문장 |
+
+## 결말 규칙
+- **이 물건 자체**가 방송 뒤 실제로 얼마에 팔렸는지가 '후일담 조사 결과'에 있으면: 영상 끝은 "이 ○○이 결국 얼마에 팔렸는지는 고정댓글에"로 궁금증을 남기고, pinned_comment 에 그 결과(금액·시기·출처)를 쓴다.
+- 조사 결과가 없거나 **비슷한 다른 물건** 이야기뿐이면: 고정댓글로 유도하지 말고, 방송 속 결과(성사 금액 또는 불발)까지 영상에서 끝까지 보여주고 끝낸다. 다른 물건의 경매가로 유도하지 마라.
+
+## 고정댓글(pinned_comment) 쓰는 법 — 25~35줄, 600~900자. 짧게 쓰지 마라
+구성 (줄바꿈을 많이 써서 읽기 쉽게, 이모지는 문단마다 0~1개):
+1. 첫 줄: "+ " 로 시작하는 가벼운 농담/영상 속 장면 반응 한 줄 (예: 출연자 말투·표정 언급) + 이모지
+2. "그런데 이 ○○, 방송 이후 과연 어떻게 됐을까요?" 로 궁금증
+3. 결과를 숫자로: 언제, 어디서(경매·판매처), 얼마에 — 금액은 "10만 달러" 처럼 달러로 쓴다 (프로그램이 "(약 1억 4천만 원)" 을 붙임)
+4. 방송 속 제안가·감정가와 비교 ("릭이 부른 금액보다 ○○ 낮은/높은")
+5. 재밌는 사실 하나 (출연자·감정사·물건에 얽힌 뒷얘기, 조사 결과에 있는 것만)
+6. 왜 그렇게 됐는지 분석 2~4줄 (가치를 가른 이유)
+7. "결론: …" 한 줄 교훈
+8. 확인 안 된 부분이 있으면 (※ …) 로 솔직하게 + 출처 사이트명
+9. "P.S. …" 출연자에게 건네는 농담 한 줄
+- 조사 결과에 없는 사실·숫자는 절대 지어내지 마라.
+
+## 훅 규칙 (첫 3초)
+- 시청자는 3초 안에 넘길지 정한다. **가장 자극적인 순간**으로 시작하라: 충격적인 금액이 나오는 대사, 사장·전문가의 놀란 반응, 물건이 정면으로 드러나는 장면.
+- 방법 A(권장): 첫 세그먼트를 **콜드오픈 clip**(영상 후반의 결정적 한마디, 1~2초. 예: "220만 달러에 팔렸어요" / "이건 진짜예요")으로 시작 → 바로 내레이션 "한 남자가 전당포에 ○○을 가져왔는데".
+- 방법 B: 첫 내레이션 한 문장에 **물건 + 금액**을 모두 담는다. 예) "조던이 파이널에서 신은 신발로 [yellow:25만 달러]를 부른 남자".
+- 첫 내레이션의 broll_id 는 **물건 전체가 보이는 장면**이어야 하고, 첫 내레이션에는 "fit": true 를 넣는다 (원본 화면 전체를 보여줘 제품이 잘리지 않음).
+
+- **반전이 핵심이다.** 희망가 vs 감정가, 사장의 예상 vs 전문가 판정의 차이를 또렷하게 대비시켜라.
+- ②~④ 의 원본 대사는 질문과 답이 오가는 흐름을 살린다 (예: "얼마 생각하세요?" → "30만 달러요" → "...농담이시죠?").
+- 내레이션 broll_id 는 **물건이 보이는 장면**(물건 클로즈업, 전문가가 살펴보는 손, 손님이 물건을 꺼내는 장면)을 고른다.
+  전사본에서 출연자가 물건의 생김새·디테일을 설명하는 줄("이 로고 보세요", "안쪽 태그에", "이 색깔은")의 id 가 대개 클로즈업이다. 사람끼리 잡담하는 줄은 피한다.
+
+## 문체
+- 내레이션은 **반말 요약체**: "~는데", "~자", "~다고", "~했고". 존댓말 금지.
+  예) "먼저 어떻게 구했냐고 묻자", "마지막으로 안쪽 라벨을 살펴보는데", "그렇게 메달을 들고 돌아갔고"
+- 내레이션 한 문장 10~24자. 숫자는 구체적으로("1978년", "20개뿐인"). 금액은 원본대로 "30만 달러"로 쓴다. **프로그램이 자동으로 원화("4억 2천만 원")로 바꾸고 달러 표기는 지운다.** 원화를 직접 계산해 쓰지 마라.
+- **자막은 한 줄로 한눈에 읽혀야 한다.** 한 자막(내레이션 한 문장, 대사 한 줄)은 되도록 **13자 안팎**. 길면 두 문장/두 줄로 나눠라.
+- clip 은 **연속으로 말하는 한두 줄**(1.5~5초). 중간에 긴 침묵이 있는 줄들을 한 clip 에 묶지 마라.
+- 원본 대사 번역은 존댓말 구어체로 자연스럽게, **짧게 의역**한다 ("14억 원 내놔요!", "2,100만 원 쏴요!", "어림도 없죠!", "아 피 말리시네요!"처럼 상황에 딱 맞는 찰지고 재치 있는 입말 티키타카를 적극 살린다).
+- 큰 강조 자막(`{big}` 또는 `[big:색상:...]`, 98px)을 쓸 때는 절대 2줄로 줄바꿈되지 않도록 화자 표시를 빼고 **공백 포함 8~9자 이내 한 줄**로만 짧게 쓴다.
+- 효과음은 한 영상 안에서 같은 파일을 절대 중복 사용하지 않으며, **마지막 마무리 내레이션 세그먼트는 반드시 `"sfx": null`** 로 둔다.
+- **질문과 대답은 반드시 다른 자막.** 전사본 한 줄 안에 두 사람의 말(질문+대답, 제안+역제안)이 섞여 있으면 subs 문자열 안에서 " // " 로 나눠라.
+  예) "@릭 다 합치면 얼마로 보세요? // @전문가 약 25만 달러로 봅니다" → 질문 자막이 먼저, 대답 자막이 따로 나온다.
+- **모든 대사 자막 앞에 화자 표시 "@이름 "을 붙인다** (자막 색이 화자별로 달라짐): "@릭", "@코리", "@첨리", "@영감님", "@손님", "@전문가".
+  예) subs: ["@릭 얼마 원하세요?", "@손님 25만 달러요"]
+- 등장인물: 사장은 이름으로 "릭", "코리", "첨리", "영감님(올드맨)". 손님은 "한 남자/한 여자/손님", 전문가는 "전문가/감정사".
+- 괄호 속마음 자막을 짧은 원본 반응에 붙여도 좋다. 예) "(황당)", "(그럼 내가 왜 사...)".
+
+## 사실성
+- 방송 내용은 전사본에 나온 것만.
+- 방송 이후 이야기(후일담)는 **영상에서 말하지 않는다.** 대신 "pinned_comment"(고정댓글)에 쓴다: '고정댓글 쓰는 법' 구성대로, '후일담 조사 결과'의 사실만. 조사 결과가 없으면 방송 속 결과 요약 + 시청자 질문("여러분이라면 팔았을까요?")으로 쓴다.
+- 영상의 마지막 내레이션은 위 '결말 규칙'을 따른다.
+- 이 문서의 예시 문장은 형식 참고용이다. 그대로 베끼지 마라.
+
+## 색 강조 [ ]
+- 자막은 기본 흰색, [ ] 부분만 컬러. 문장마다 0~1곳, 핵심 금액·물건 이름·판정 단어. [yellow:...], [cyan:...], [pink:...], [green:...], [orange:...], [red:...] 로 색 지정 가능.
+- 금액은 [yellow:...] 또는 [green:...], 판정("진짜", "가짜")은 [red:...]. 대괄호는 어절에 붙여 쓴다.
+
+## 상단 제목(title_lines) — 썸네일 역할
+- 2줄, 각 줄 8~13자. 1줄 = 물건/상황, 2줄 = 반전·궁금증 "~판다고?!", "~의 소름돋는 반전", "~충격적인 가치"
+  예) ["원조 슈퍼맨이 입은", "슈트를 판다고?!"], ["농담인줄 알았던", "물건의 소름돋는 반전"], ["전문가도 경악한", "1600년대 명검의 퀄리티"]
+- color: **1줄 "yellow", 2줄 "white"** (고정).
+
+## 효과음(sfx) — 세그먼트 시작 시점. 아래 이름 중 하나 또는 null. 전체 5~8개
+- "whoosh": 장면 전환·빠른 등장
+- "pop": 자막/물건 톡 등장
+- "cash": 희망가·돈 금액·가격표
+- "ding": 숫자·가격·제안가 공개
+- "impact": 반전·충격 쾅
+- "surprise": 놀람·충격 리액션
+- "question": 의문·황당·복선
+- "success": 성공·계약 성사
+- "fail": 실패·거절·결렬
+- "tension": 긴장·궁금증
+- "caption": 자막 강조·말풍선·핑거스냅
+- "camera": 연식·디테일 클로즈업 찰칵
+- "swell": 분위기 고조 스르륵
+- 효과음은 이야기의 '순간'에만, 전체 10~13개:
+  - "ding": 금액이 처음 나오는 자막(희망가·감정가·제안가), 결정적 판정 (프로그램이 그 금액 자막이 뜨는 순간에 맞춤)
+  - "impact": 영상 전체에서 단 1번, 가장 큰 반전 금액 (콜드오픈 등)
+  - "whoosh": 장면 전환 내레이션 (전문가 부르는데, 흥정을 시작하는데, 사연 시작)
+  - "surprise": 놀라운 사실, "success": 감정 결과가 좋을 때/거래 성사, "fail": 거래 불발(거절하는 말이 담긴 clip), "question": 황당한 반응·마지막 궁금증
+  - "tension" 은 쓰지 마라. 같은 종류를 연달아 쓰지 마라.
+
+## 빨간 동그라미(mark) — 사용 안 함. mark 는 쓰지 마라.
+## 감정 태그(tag) — 사용 안 함. 항상 null.
+
+## 출력 형식 — JSON 하나만 (설명, 코드블록 표시 없이)
+{
+  "title_lines": [{"text": "...", "color": "yellow"}, {"text": "...", "color": "white"}],
+  "credit": "© History Channel",
+  "pinned_comment": "고정댓글 본문 (아래 '고정댓글 쓰는 법' 구성대로 25~35줄)",
+  "upload": {"title": "호기심형 30자 이내", "description": "1~2문장 + 해시태그 3~5개 (#전당포사나이들 포함)", "tags": ["...", "..."]},
+  "segments": [
+    {"type": "narration", "text": "내레이션 문장", "broll_id": 12, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["id 3 번역", "id 4 번역"], "sfx": null, "mark": false}
+  ]
+}
+- narration.broll_id: 내레이션 동안 보여줄 장면이 시작되는 전사 id (내용에 맞는 장면). 같은 id 반복 금지.
+- clip.from_id~to_id: 연속된 전사 id. subs 길이 = (to_id - from_id + 1). 빼고 싶은 줄은 "".
+- 전체 길이(내레이션 ≈ 글자수/9 초 + clip 길이 합) 45~57초.
+
+## 방송 이후 후일담 조사 결과 (웹 검색)
+(조사 결과 없음 — 후일담은 쓰지 말 것)
+
+## 원본 정보
+프로그램/맥락 메모: 전당포 사나이들 시즌2 에피소드3 'Shocking Chum'. 타지마할호 침몰선에서 건진 보물(동전/은괴 등). 1분냠냠 채널, 하단 자막
+
+## 원본 전사본 (id [시작-끝 초] 대사)
+0 [0.9-7.3] So what do you got I've got something here that is more valuable than anything. I guarantee you've ever seen in this shop
+1 [9.0-13.0] Have a clump of rupees that were minted in
+2 [13.6-16.7] 1702 by the son of the man who built the Taj Mahal
+3 [17.0-24.0] Man's name was muhajuddin Muhammad Arangzeb Adam Geir otherwise known as Emperor Arangzeb
+4 [26.0-28.0] That took you a while to remember that
+5 [30.9-34.9] This clump of treasure coins is known as the Taj Mahal Treasure
+6 [34.9-38.9] because it truly is the only sunken treasure related to the Taj Mahal Dynasty.
+7 [38.9-43.9] The reason why I'm here today is because I had these in an auction here
+8 [43.9-47.9] and it did not sell so I'm coming over to see the guys here
+9 [47.9-52.9] and hopefully they'll open their wallets.
+10 [52.9-54.9] So what can you tell me about this?
+11 [54.9-56.9] They were minted in Surat, India.
+12 [56.9-62.1] He went to the bottom of the ocean in 1702 and were recovered by Arthur C. Clark and
+13 [62.1-63.1] his dive partner.
+14 [63.1-64.5] Didn't he write a few books about it?
+15 [64.5-65.7] Yeah, he wrote two books about it.
+16 [65.7-69.4] In fact, before he really started writing heavily about science fiction, he was an
+17 [69.4-70.4] avid scuba diver.
+18 [70.4-75.4] And when they discovered it in 1961, Clark and his dive partner, Mike Wilson, swam
+19 [75.4-79.2] over the edge of a reef and hear this shipwreck and all these silver coins were
+20 [79.2-80.9] laying out all over the bottom.
+21 [80.9-84.6] This is one of the most well-documented treasure discoveries in history.
+22 [84.6-86.9] I've read books about this wreck.
+23 [86.9-89.0] Ever since I started working in the pond business,
+24 [89.0-90.5] I've wanted suck and treasure.
+25 [90.5-92.6] And this is the mother load.
+26 [92.6-95.2] I mean, I've had a few individual coins come in,
+27 [95.2-97.0] but nothing like this.
+28 [97.0-98.9] They were minted in Sarat, India,
+29 [98.9-101.1] and then were headed on to the Orient
+30 [101.1-103.1] along the spice route, but they never made it there.
+31 [103.1-104.4] They were wrecked in a typhoon
+32 [104.4-105.9] and wound up on a shipwreck there,
+33 [105.9-108.9] and they sat underwater for that long.
+34 [108.9-110.4] The reason why they're in such good shape
+35 [110.4-111.8] is because they were laying up against
+36 [111.8-114.6] some iron object, more likely a cannon.
+37 [114.6-117.6] And the cannon oxidizes faster than the silver does,
+38 [117.6-119.6] just like a sink on your boat does.
+39 [119.6-121.6] So that's why the coins aren't touched.
+40 [121.6-124.4] The natural electrolysis in the water
+41 [124.4-127.2] went through the cannon instead of the silver first.
+42 [127.2-129.9] So the silver is perfectly preserved.
+43 [129.9-131.3] So how did you come in possession of them?
+44 [131.3-135.2] Well, I did a documentary with Arthur C. Clark in 1993.
+45 [135.2-137.1] His family consigned it to me
+46 [137.1-138.8] and we've been trying to sell it.
+47 [138.8-140.0] You got paperwork on them, right?
+48 [140.0-142.4] Yes, signed by Arthur C. Clarke.
+49 [142.4-144.0] Everything he's telling me about this
+50 [144.0-145.8] adds up with everything I've read.
+51 [145.8-148.0] It's authentic, it's the real thing,
+52 [148.0-151.9] and I cannot believe it is sitting in my shop.
+53 [151.9-153.4] I know it's worth a fortune,
+54 [153.4-156.3] but the question is, what does he consider a fortune?
+55 [156.3-158.9] One of the things that still gives me a shiver up
+56 [158.9-161.6] my spine is that these coins were minted
+57 [161.6-164.0] 30 years before George Washington was born.
+58 [164.0-166.2] These were worth a lot of money back in those days
+59 [166.2-167.2] because they were silver.
+60 [167.2-171.8] the coin of the realm for the common folks were copper or bronze.
+61 [171.8-174.5] By weight, it's a little over 25 pounds,
+62 [174.5-178.9] and at 25 pounds, it averages out to about 750 coins in here.
+63 [178.9-181.0] Can I buy for Silver Scrap?
+64 [181.0-182.4] No, no, you can't.
+65 [182.4-185.2] What makes these so valuable is that they
+66 [185.2-187.0] are still in clump form.
+67 [187.0-190.4] 99% of treasure coins are always
+68 [190.4-193.6] reduced down to individual coins and sold off that way.
+69 [193.6-197.0] It's extremely rare to have a treasure collection this large.
+70 [197.0-199.6] It's even more rare to have naturally fused together
+71 [199.6-201.0] like this.
+72 [201.0-204.1] This is unique, and unique usually costs money.
+73 [204.1-206.4] The fact that it's all clumped together now
+74 [206.4-209.9] and hasn't been disassembled makes it much more valuable,
+75 [209.9-212.2] as I'm sure you understand from some of the things
+76 [212.2-213.6] that you do here.
+77 [213.6-216.0] So how much do you want for it?
+78 [216.0-220.0] I'd like to get 700,000 for it.
+79 [220.0-221.4] It's a lot of money.
+80 [221.4-224.2] It is a lot of money, because we know the rarity.
+81 [224.2-225.8] There were only three of them in the world.
+82 [225.8-227.3] Now there's only two.
+83 [227.3-230.1] Originally, there were three clumps of coins,
+84 [230.1-231.4] the one that's here in the US,
+85 [231.4-233.5] one that's in the Clark Family Archives,
+86 [233.5-236.9] and a third that was in a museum in Colombo, Sri Lanka.
+87 [236.9-239.7] But when the 2004 tsunami hit,
+88 [239.7-242.5] the sea reclaimed that clump of coins,
+89 [242.5-243.4] and they've never found it,
+90 [243.4-245.4] so now there's only two of them in the world.
+91 [245.4-247.7] I really, really want this.
+92 [247.7-250.5] I mean, this thing is truly incredible.
+93 [250.5-252.6] But tying up three quarters of a million dollars
+94 [252.6-256.5] in one item, it could bankrupt the shop.
+95 [256.5-258.6] I'd love to have it, it's a cool item.
+96 [258.6-260.0] I mean, I would love to have it in my shop,
+97 [260.0-261.9] but I'm not gonna spend that kind of money.
+98 [261.9-264.7] If I buy this off you, I gotta put it in an auction.
+99 [265.9-268.4] And it might take five or 10 years.
+100 [268.4-269.3] Right.
+101 [269.3-270.9] Which means if my money's tied up for a long time.
+102 [270.9-272.3] That's an investment.
+103 [272.3-273.3] No, it's a gamble.
+104 [273.3-274.8] My biggest problem here is,
+105 [274.8-276.4] this guy's already told me it didn't meet reserve
+106 [276.4-277.2] in auction.
+107 [277.2-278.9] I have to buy this thing at a price
+108 [278.9-281.1] where I can sell it quickly and make a profit.
+109 [281.1-283.1] All I can do now is make an offer.
+110 [283.1-288.6] Um, I want to give you 200 grand for it.
+111 [288.6-289.6] 200?
+112 [289.6-290.6] Yeah.
+113 [290.6-291.6] Uh, no.
+114 [291.6-292.6] I mean, that's...
+115 [292.6-295.6] I can go a little bit more, but it's not going to be much.
+116 [295.6-296.6] That's what I could do.
+117 [296.6-298.6] I mean, there's some things even too expensive for me.
+118 [298.6-299.6] I respect that.
+119 [299.6-301.6] I got to hold out for more.
+120 [301.6-304.6] But, uh, hey, thanks very much, uh, for your time.
+121 [304.6-305.6] Okay.
+122 [305.6-306.6] You know?
+123 [306.6-307.6] All right.
+124 [307.6-308.6] Sorry you're getting new business.
+125 [308.6-309.6] I mean, you just got to look at my perspective,
+126 [309.6-311.6] and it's a lot of goddamn money.
+127 [311.6-312.6] That it is.
+128 [312.6-313.9] I knew it was a long shot,
+129 [313.9-316.9] and I'm really disappointed I wasn't able to buy the treasure.
+130 [316.9-319.1] But at the same time, I'm a little bit relieved,
+131 [319.1-320.2] because if I had to tell the old man
+132 [320.2-322.2] I shelled out a quarter of a million dollars,
+133 [322.2-324.4] he would have kicked my ass.
+134 [324.4-325.8] Ha, ha, ha.

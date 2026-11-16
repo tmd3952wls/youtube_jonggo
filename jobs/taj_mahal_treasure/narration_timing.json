@@ -1,0 +1,119 @@
+[
+  {
+    "text": "바다에서 건진",
+    "start": 0.0,
+    "end": 0.938,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.602
+  },
+  {
+    "text": "은화 덩어리로",
+    "start": 0.938,
+    "end": 1.665,
+    "method": "whisperx",
+    "prop_start": 0.506,
+    "seg_start": 0.0,
+    "seg_end": 2.602
+  },
+  {
+    "text": "9억 8천만 원?",
+    "start": 1.665,
+    "end": 2.602,
+    "method": "whisperx",
+    "prop_start": 1.012,
+    "seg_start": 0.0,
+    "seg_end": 2.602
+  },
+  {
+    "text": "드디어 희망가를 묻자",
+    "start": 28.354,
+    "end": 29.536,
+    "method": "whisperx",
+    "prop_start": 28.354,
+    "seg_start": 28.354,
+    "seg_end": 29.536
+  },
+  {
+    "text": "하나는 2004년 쓰나미에",
+    "start": 35.006,
+    "end": 36.57,
+    "method": "whisperx",
+    "prop_start": 35.006,
+    "seg_start": 35.006,
+    "seg_end": 37.689
+  },
+  {
+    "text": "휩쓸려 사라졌다고",
+    "start": 36.57,
+    "end": 37.689,
+    "method": "whisperx",
+    "prop_start": 36.884,
+    "seg_start": 35.006,
+    "seg_end": 37.689
+  },
+  {
+    "text": "이에 릭이 흥정을",
+    "start": 37.689,
+    "end": 38.587,
+    "method": "whisperx",
+    "prop_start": 37.689,
+    "seg_start": 37.689,
+    "seg_end": 39.356
+  },
+  {
+    "text": "시작하는데",
+    "start": 38.587,
+    "end": 39.356,
+    "method": "whisperx",
+    "prop_start": 38.752,
+    "seg_start": 37.689,
+    "seg_end": 39.356
+  },
+  {
+    "text": "결국 거래는",
+    "start": 42.923,
+    "end": 43.703,
+    "method": "whisperx",
+    "prop_start": 42.923,
+    "seg_start": 42.923,
+    "seg_end": 44.927
+  },
+  {
+    "text": "그대로 불발됐는데",
+    "start": 43.703,
+    "end": 44.927,
+    "method": "whisperx",
+    "prop_start": 43.724,
+    "seg_start": 42.923,
+    "seg_end": 44.927
+  },
+  {
+    "text": "세상에 2개뿐인",
+    "start": 49.36,
+    "end": 50.316,
+    "method": "whisperx",
+    "prop_start": 49.36,
+    "seg_start": 49.36,
+    "seg_end": 52.308
+  },
+  {
+    "text": "보물은 그대로 주인",
+    "start": 50.316,
+    "end": 51.281,
+    "method": "whisperx",
+    "prop_start": 50.208,
+    "seg_start": 49.36,
+    "seg_end": 52.308
+  },
+  {
+    "text": "품으로 돌아갔다",
+    "start": 51.281,
+    "end": 52.308,
+    "method": "whisperx",
+    "prop_start": 51.267,
+    "seg_start": 49.36,
+    "seg_end": 52.308
+  }
+]

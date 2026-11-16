@@ -1,0 +1,47 @@
+{
+ "text": "세상에 2개뿐인 보물은 그대로 주인 품으로 돌아갔다",
+ "words": [
+  {
+   "word": "세상에",
+   "start": 0.06,
+   "end": 0.382,
+   "aligned": true
+  },
+  {
+   "word": "2개뿐인",
+   "start": 0.463,
+   "end": 0.925,
+   "aligned": true
+  },
+  {
+   "word": "보물은",
+   "start": 1.006,
+   "end": 1.287,
+   "aligned": true
+  },
+  {
+   "word": "그대로",
+   "start": 1.368,
+   "end": 1.629,
+   "aligned": true
+  },
+  {
+   "word": "주인",
+   "start": 1.709,
+   "end": 1.87,
+   "aligned": true
+  },
+  {
+   "word": "품으로",
+   "start": 1.971,
+   "end": 2.192,
+   "aligned": true
+  },
+  {
+   "word": "돌아갔다",
+   "start": 2.252,
+   "end": 2.755,
+   "aligned": true
+  }
+ ]
+}

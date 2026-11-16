@@ -1,0 +1,29 @@
+{
+ "text": "릭이 무슨 물건이냐고 묻자",
+ "words": [
+  {
+   "word": "릭이",
+   "start": 0.101,
+   "end": 0.322,
+   "aligned": true
+  },
+  {
+   "word": "무슨",
+   "start": 0.382,
+   "end": 0.603,
+   "aligned": true
+  },
+  {
+   "word": "물건이냐고",
+   "start": 0.683,
+   "end": 1.186,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 1.266,
+   "end": 1.467,
+   "aligned": true
+  }
+ ]
+}
