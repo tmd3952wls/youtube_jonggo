@@ -37,5 +37,7 @@
 ## 4. 자동 품질 게이트 검수 · 메일 발송 · 깃허브 푸시
 1. `python make_short.py render "jobs/<작업명>"` 실행 시 자동으로 돌아가는 **`tools/qa_check.py`에서 `[자동 품질 검수 통과 8/8]`** 확인 + `tools/verify_sync.py` 싱크 확인.
 2. 자동 저장된 시각 검수 시트(`jobs/<작업명>/qa_big_cards.jpg`, `qa_transitions.jpg`)를 직접 눈으로 확인(경고가 1건이라도 있으면 발송 전 즉시 수정·재렌더).
+2-1. **Vmake 화질 업그레이드 (메일 발송 직전 필수)**: `python "60SEC_YOUTUBE_AUTO_SHORT/tools/vmake_upscale.py" --video jobs/<작업명>/final.mp4 --out jobs/<작업명>/final_4k.mp4` 실행 → QUALITY 모델 **4K**로 변환·다운로드 (이번 달 4K 무료 50건을 다 쓰면 자동으로 **8K**로 전환). 업그레이드된 영상을 `<한글이름>.mp4`로 저장해 메일로 보낸다. 로그인은 전용 크롬 프로필(`.vmake_chrome`, 일반 크롬)에 유지되며 `LOGIN_NEEDED`가 나오면 `--login`으로 창을 띄워 사용자에게 로그인만 부탁한다. 결제·업그레이드 화면이 뜨면 멈추고 사용자에게 알린다.
 3. `C:\Users\tmd39\Downloads\chatgpt 사진\<한글이름>.mp4`, `<한글이름>_업로드정보(제목·설명·태그).txt`, `<한글이름>_고정댓글.txt` 저장 후 `python "60SEC_YOUTUBE_AUTO_SHORT/tools/send_mail.py" --job <작업명> --video <한글이름.mp4> --name <한글이름>`으로 네이버 메일 발송.
+   - **4K 영상(SMTP 첨부 한도 초과)은** `python "60SEC_YOUTUBE_AUTO_SHORT/tools/naver_bigmail.py" --video "C:/Users/tmd39/Downloads/chatgpt 사진/<한글이름>_4K.mp4" --name <한글이름>`으로 **네이버 대용량 첨부**(30일 보관) 메일을 보낸다. Vmake와 같은 전용 크롬(`.vmake_chrome`)에 네이버 로그인이 유지되며, `LOGIN_NEEDED`가 나오면 그 창에서 사용자에게 로그인만 부탁한다.
 4. 위 제작 완료 주제 목록에 새 `<작업명>`을 추가하고 `https://github.com/tmd3952wls/youtube_jonggo.git` (`jonggo/main`)에 커밋 및 푸시한다 (`.env` 및 영상·음성 파일 제외).

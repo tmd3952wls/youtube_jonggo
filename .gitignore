@@ -42,3 +42,8 @@ assets/voices/
 
 # 백업 파일
 *.bak
+.vmake_profile/
+vmake_debug/
+.vmake_state.json
+.vmake_chrome/
+_mail_debug/
