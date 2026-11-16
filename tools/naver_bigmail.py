@@ -49,8 +49,16 @@ def main():
         pg = ctx.new_page()
         pg.goto(WRITE, wait_until="domcontentloaded")
         pg.wait_for_timeout(5000)
-        if "nidlogin" in pg.url or "nid.naver.com" in pg.url:
-            print("LOGIN_NEEDED: 열린 크롬 창에서 네이버에 로그인해 주세요"); sys.exit(6)
+        if "nid.naver.com" in pg.url:
+            print("LOGIN_NEEDED: 화면에 뜬 크롬 창에서 네이버에 로그인해 주세요 (최대 10분 대기)", flush=True)
+            v.show_window(ctx, pg)
+            t0 = time.time()
+            while "nid.naver.com" in pg.url and time.time() - t0 < 600:
+                pg.wait_for_timeout(3000)
+            if "nid.naver.com" in pg.url:
+                print("FAIL: 로그인 대기 시간 초과"); sys.exit(6)
+            v.hide_window(ctx, pg)
+            pg.goto(WRITE, wait_until="domcontentloaded"); pg.wait_for_timeout(5000)
 
         # 받는 사람 = 나 (send_mail.py 처럼 받은메일함으로 오게, 주소는 .env 의 아이디)
         import send_mail

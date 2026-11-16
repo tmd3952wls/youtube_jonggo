@@ -4,7 +4,8 @@
   python tools/vmake_upscale.py --video jobs/<작업명>/final.mp4 --out jobs/<작업명>/final_4k.mp4
   (--res 8k 로 강제 8K, --dry 는 다운로드 버튼 누르기 직전에 멈춤)
 
-- 로그인은 전용 브라우저 프로필(.vmake_profile)에 저장된다. 처음 한 번만 뜨는 창에서 직접 로그인.
+- 로그인은 전용 크롬 프로필(.vmake_chrome)에 저장된다. 크롬은 평소 화면 밖에 떠서 백그라운드로 일하고,
+  로그인이 필요할 때만 창이 화면에 나타난다 (--login 으로 직접 꺼낼 수도 있음).
 - 결제/업그레이드 창이 뜨면 아무것도 누르지 않고 멈춘다.
 """
 import argparse, json, re, subprocess, sys, time
@@ -21,16 +22,29 @@ PAY_WORDS = ["Upgrade to", "Subscribe", "Buy credits", "Purchase", "Payment", "�
 LIMIT_WORDS = ["limit", "Limit", "한도", "used up", "run out", "exceeded"]
 
 
-def launch(p, downloads=False):
+HIDE_POS = (-32000, -32000)  # 화면 밖 (백그라운드 작업용)
+SHOW_POS = (80, 40)
+
+
+def launch(p, downloads=False, visible=False):
     """진짜 크롬(자동화 표시 없음)을 전용 프로필로 띄우고 원격 연결한다.
-    구글 로그인은 자동화 크롬을 막기 때문에 이 방식이어야 로그인이 되고, 프로필에 계속 남는다."""
+    구글 로그인은 자동화 크롬을 막기 때문에 이 방식이어야 로그인이 되고, 프로필에 계속 남는다.
+    평소에는 창을 화면 밖에 띄워 백그라운드로 일하고, 로그인이 필요할 때만 show_window()로 꺼낸다."""
     url = f"http://127.0.0.1:{CDP_PORT}"
     try:
         br = p.chromium.connect_over_cdp(url, timeout=3000)
     except Exception:
         CHROME_PROFILE.mkdir(exist_ok=True)
+        x, y = SHOW_POS if visible else HIDE_POS
         subprocess.Popen([CHROME, f"--user-data-dir={CHROME_PROFILE}", f"--remote-debugging-port={CDP_PORT}",
-                          "--no-first-run", "--no-default-browser-check", "--window-size=1400,950", EDITOR])
+                          "--no-first-run", "--no-default-browser-check", "--window-size=1400,950",
+                          f"--window-position={x},{y}",
+                          # 화면 밖 창이라도 느려지지 않게 (가려진 창 절전 끄기)
+                          "--disable-features=CalculateNativeWinOcclusion",
+                          "--disable-backgrounding-occluded-windows", "--disable-renderer-backgrounding",
+                          "--disable-background-timer-throttling",
+                          "--lang=en-US", "--accept-lang=en-US,en",  # 버튼 글자를 영어로 고정 (스크립트가 영어 이름으로 찾음)
+                          EDITOR])
         br = None
         for _ in range(30):
             time.sleep(1)
@@ -42,6 +56,28 @@ def launch(p, downloads=False):
             print("FAIL: 크롬 연결 실패"); sys.exit(7)
     ctx = br.contexts[0]
     return ctx
+
+
+def move_window(ctx, page, show=True):
+    """크롬 창을 화면 안(로그인 부탁할 때) 또는 화면 밖(백그라운드)으로 옮긴다."""
+    try:
+        cdp = ctx.new_cdp_session(page)
+        wid = cdp.send("Browser.getWindowForTarget")["windowId"]
+        x, y = SHOW_POS if show else HIDE_POS
+        cdp.send("Browser.setWindowBounds", {"windowId": wid, "bounds": {"windowState": "normal"}})
+        cdp.send("Browser.setWindowBounds", {"windowId": wid, "bounds": {"left": x, "top": y}})
+        if show:
+            page.bring_to_front()
+    except Exception as e:
+        print("창 이동 실패:", e)
+
+
+def show_window(ctx, page):
+    move_window(ctx, page, True)
+
+
+def hide_window(ctx, page):
+    move_window(ctx, page, False)
 
 
 def save_state(ctx):
@@ -94,10 +130,13 @@ def main():
     a = ap.parse_args()
     if a.login:
         with sync_playwright() as p:
-            ctx = launch(p)
-            if not any("vmake.ai" in pg.url for pg in ctx.pages):
-                ctx.new_page().goto(EDITOR)
-        print("LOGIN_SAVED"); return
+            ctx = launch(p, visible=True)
+            pgs = [pg for pg in ctx.pages if "vmake.ai" in pg.url]
+            pg = pgs[0] if pgs else ctx.new_page()
+            if not pgs:
+                pg.goto(EDITOR)
+            show_window(ctx, pg)
+        print("LOGIN_SAVED: 창에서 로그인해 주세요 (다음 작업 때 창은 다시 화면 밖으로 숨겨짐)"); return
     video = Path(a.video).resolve()
     out = Path(a.out).resolve()
     dbg = out.parent / "vmake_debug"
@@ -119,6 +158,7 @@ def main():
 
         if not logged_in(page):
             print("LOGIN_NEEDED: 열린 크롬 창에서 Vmake에 로그인해 주세요 (최대 10분 대기)", flush=True)
+            show_window(ctx, page)
             t0 = time.time()
             while time.time() - t0 < 600:
                 page.wait_for_timeout(3000)
@@ -126,6 +166,7 @@ def main():
                     break
             else:
                 shot(page, dbg, "login_timeout"); print("FAIL: 로그인 대기 시간 초과"); sys.exit(2)
+            hide_window(ctx, page)
             page.goto(EDITOR, wait_until="domcontentloaded")
             page.wait_for_timeout(4000)
         print("로그인 확인", flush=True)
@@ -185,7 +226,7 @@ def main():
             shot(page, dbg, "03_after_apply")
             txt = body_text(page)
             if "Log in to enjoy" in txt:
-                print("LOGIN_NEEDED: 로그인이 안 된 상태 → --login 으로 먼저 로그인"); page.close(); sys.exit(6)
+                print("LOGIN_NEEDED: 로그인이 안 된 상태 → --login 으로 먼저 로그인"); show_window(ctx, page); sys.exit(6)
             if any(w in txt for w in PAY_WORDS + LIMIT_WORDS) and "Processing" not in txt and "%" not in txt:
                 print("PAYWALL_OR_LIMIT: 결제/한도 화면으로 보여 멈춤 (03_after_apply.png 확인)")
                 if res_label == "4K":
