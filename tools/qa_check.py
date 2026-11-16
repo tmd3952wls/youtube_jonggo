@@ -94,6 +94,23 @@ def run_qa(job: Path) -> bool:
     if leaks:
         issues.append(f"[자막 태그 노출] {leaks[:3]}")
 
+    # 5-1. 원화 표기: 띄어쓰기 없이 '7억5천만원' + '원'이 다음 자막(또는 다음 줄)으로 떨어지지 않게
+    money_space, won_split = [], []
+    U = r"[\d조억천백만]"
+    for idx, (a, b, _, t) in enumerate(events):
+        if re.search(rf"\d[\d,]*\s*[조억천백만]*\s+[\d조억천백만,]*\s*원|\d\s+[조억천만]|[조억]\s+\d", t):
+            money_space.append(f"{a:.2f}s '{t}'")
+        if re.search(rf"{U}\s*/\s*원", t):
+            won_split.append(f"{a:.2f}s '{t}' (줄바꿈으로 '원' 분리)")
+        if idx + 1 < len(events):
+            nxt = events[idx + 1][3].lstrip()
+            if nxt.startswith("원") and re.search(rf"{U}[\s!?.,~]*$", t):
+                won_split.append(f"{a:.2f}s '{t}' → 다음 '{nxt}'")
+    if money_space:
+        issues.append(f"[원화 띄어쓰기] '7억5천만원'처럼 붙여 쓰세요: {', '.join(money_space[:5])}")
+    if won_split:
+        issues.append(f"[원화 '원' 분리] 금액과 '원'을 같은 자막·같은 줄에: {', '.join(won_split[:5])}")
+
     # 6. 오디오 무음/삐처리 빈틈 검사 (body.mp4)
     if body_p.exists():
         pcm = subprocess.run(
@@ -174,7 +191,7 @@ def run_qa(job: Path) -> bool:
     cap.release()
 
     if not issues:
-        print(f"  [자동 품질 검수 통과 8/8] 길이 {dur:.1f}초 | 자막 {len(events)}장(빈틈 0초) | 강조자막 {len(big_times)}장(전원 1줄) | 오디오 공백 0건")
+        print(f"  [자동 품질 검수 통과 9/9] 길이 {dur:.1f}초 | 자막 {len(events)}장(빈틈 0초) | 강조자막 {len(big_times)}장(전원 1줄) | 원화 표기 OK | 오디오 공백 0건")
         print(f"  [시각 검수 시트] {job / 'qa_big_cards.jpg'} , {job / 'qa_transitions.jpg'}")
         return True
 
