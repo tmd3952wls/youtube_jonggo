@@ -43,9 +43,7 @@ def main():
 
     with sync_playwright() as p:
         ctx = v.launch(p)
-        for old in [x for x in ctx.pages if "mail.naver.com" in x.url]:  # 예전 메일 탭 정리
-            try: old.close(run_before_unload=False)
-            except Exception: pass
+        # 다른 세션이 같은 크롬을 함께 쓸 수 있으므로 남의 탭은 건드리지 않고 내 탭만 새로 연다
         pg = ctx.new_page()
         pg.goto(WRITE, wait_until="domcontentloaded")
         pg.wait_for_timeout(5000)
