@@ -15,7 +15,7 @@ from .common import ASSETS, ROOT, duration, ffmpeg, filter_path, read_json, run,
 from .align import align_all, chunk_times, proportional_times
 from .sfx import ensure_sfx, sfx_path
 from .align import ensure_words
-from .faces import crop_box, face_in_shot
+from .faces import crop_box, face_in_shot, focus_x
 from .faces import load_cache as load_faces
 from .faces import save_cache as save_faces
 from .scenes import broll_shots, detect_cuts
@@ -457,7 +457,8 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
             # 같은 원본 샷 안에서 침묵을 잘라낸 점프컷이면 확대 배율을 번갈아 → '펀치인' 편집처럼 (너무 짧은 조각은 흔들림 방지)
             jump = prev is not None and (b - a) >= 0.70 and not any(prev[1] - 0.05 <= c <= a + 0.05 for c in cuts) and a - prev[1] < 5
             alt = (not alt) if jump else (alt if (prev is not None and (b - a) < 0.70 and not cut_at) else False)
-            x, y, w, h = crop_box(face, iw, ih, cfg, cfg["face"]["jump_zoom"] if alt else 1.0)
+            focus = focus_x(src, va, vb, fcache) if face is None and cfg["face"].get("focus_no_face", True) else None
+            x, y, w, h = crop_box(face, iw, ih, cfg, cfg["face"]["jump_zoom"] if alt else 1.0, focus=focus)
             # fit_narration: 내레이션 밑그림(제품 클로즈업)도 원본 전체를 보여 줌 → 제품이 옆으로 잘리지 않음
             fit = fit_all or (seg_kind == "clip" or cfg["face"].get("fit_narration", False)) and \
                 cfg["face"].get("fit_wide", True) and \
@@ -479,7 +480,12 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
         else:
             d = b - a
             v_stretch = f"setpts=(PTS-STARTPTS)*{d / (vb - va):.5f}," if abs((vb - va) - d) > 0.01 else ""
-            if fit and cfg["face"].get("fit_fill", "blur") == "black":
+            if fit and cfg["face"].get("fit_fill", "blur") == "cover916":
+                # 2026-11-17 사용자 결정: 원본을 9:16 화면 전체(세로 1920)에 꽉 차게 먼저 올리고,
+                # 그 위아래를 제목 칸·아래 검정 칸이 덮는다 → 영상 칸에는 화면 정중앙이 얼굴 장면만큼 크게 보임
+                fc.append(f"[{vk}:v]{v_stretch}fps=30,trim=duration={d:.3f},setsar=1,scale=-2:{L['height']},"
+                          f"crop={W}:{VH}:(iw-{W})/2:{L['title_h']},setsar=1,format=yuv420p[v{k}]")
+            elif fit and cfg["face"].get("fit_fill", "blur") == "black":
                 # 2026-11-17 사용자 결정: 원본 전체(16:9)를 가로폭에 맞추고, 위아래 빈 곳은 검정으로 덮음 (흐림 채움은 보기 안 좋음)
                 fc.append(f"[{vk}:v]{v_stretch}fps=30,trim=duration={d:.3f},setsar=1,scale={W}:-2,"
                           f"pad={W}:{VH}:0:(oh-ih)/2:color=black,setsar=1,format=yuv420p[v{k}]")

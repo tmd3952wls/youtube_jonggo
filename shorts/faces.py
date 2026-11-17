@@ -71,7 +71,57 @@ def face_in_shot(src, a, b, cache):
     return res
 
 
-def crop_box(face, iw, ih, cfg, extra_zoom=1.0):
+def focus_x(src, a, b, cache):
+    """얼굴을 못 찾은 샷에서 주인공이 있는 가로 위치(0~1). 못 정하면 None(=화면 가운데).
+    2026-11-17: 넓은 장면에서 사람이 화면 가장자리에 서 있으면 가운데(빈 선반)만 잘려 보이던 문제 해결.
+    1) 작은 얼굴까지 다시 찾기(여러 프레임에서 같은 자리) → 2) 움직임이 몰린 곳."""
+    key = f"fx{a:.2f}-{b:.2f}"
+    if key in cache:
+        return cache[key]
+    imgs = [im for im in (_frame(src, a + (b - a) * f) for f in (0.1, 0.3, 0.5, 0.7, 0.9)) if im is not None]
+    res = None
+    dets = []
+    for fi, img in enumerate(imgs):
+        h, w = img.shape
+        m = (int(h * 0.05), int(h * 0.05))
+        for casc, flip in ((_front, False), (_prof, False), (_prof, True)):
+            im = cv2.flip(img, 1) if flip else img
+            for (x, y, fw, fh) in casc.detectMultiScale(im, 1.1, 7, minSize=m):
+                if flip:
+                    x = w - x - fw
+                if y / h < 0.7:  # 얼굴은 화면 아래쪽 끝에 잘 없음 (오검출 줄이기)
+                    dets.append((fi, (x + fw / 2) / w, fh / h))
+    cl = []
+    for d in dets:
+        for c in cl:
+            if abs(c[0][1] - d[1]) < 0.08:
+                c.append(d)
+                break
+        else:
+            cl.append([d])
+    good = [c for c in cl if len({d[0] for d in c}) >= 3]
+    if good:
+        c = max(good, key=lambda c: (len({d[0] for d in c}), np.median([d[2] for d in c])))
+        res = float(np.median([d[1] for d in c]))
+    elif len(imgs) >= 3:
+        mo = np.zeros(imgs[0].shape[1])
+        for i in range(1, len(imgs)):
+            if imgs[i].shape == imgs[0].shape:
+                mo += np.abs(imgs[i].astype(np.int16) - imgs[i - 1].astype(np.int16)).clip(12, None).sum(axis=0) - 12 * imgs[0].shape[0]
+        tot = mo.sum()
+        if tot > imgs[0].size * 0.4:  # 움직임이 충분할 때만
+            W = len(mo)
+            win = int(W * 0.4)
+            cs = np.concatenate([[0], np.cumsum(mo)])
+            sums = cs[win:] - cs[:-win]
+            k = int(np.argmax(sums))
+            if sums[k] > tot * 0.65:  # 움직임의 대부분이 한쪽 40% 폭에 몰려 있을 때만
+                res = (k + win / 2) / W
+    cache[key] = res
+    return res
+
+
+def crop_box(face, iw, ih, cfg, extra_zoom=1.0, focus=None):
     """원본 픽셀 기준 크롭 (x, y, w, h). 패널 비율 유지, 하단 배너 영역 제외."""
     L = cfg["layout"]
     A = L["width"] / L["video_h"]
@@ -93,7 +143,7 @@ def crop_box(face, iw, ih, cfg, extra_zoom=1.0):
         x = cx - w / 2
         y = cy - h * cfg["face"]["face_y"]  # 얼굴을 화면 위쪽(face_y) 지점에
     else:
-        x, y = (iw - w) / 2, 0.0
+        x, y = (iw * focus - w / 2 if focus is not None else (iw - w) / 2), 0.0
     x = max(0.0, min(iw - w, x))
     y = max(0.0, min(keep_h - h, y))
     return int(x) // 2 * 2, int(y) // 2 * 2, int(w) // 2 * 2, int(h) // 2 * 2

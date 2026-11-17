@@ -190,7 +190,7 @@
     "face_y": 0.36,
     "jump_zoom": 1.15,
     "zoom_narration": false,
-    "fit_wide": true,
+    "fit_wide": false,
     "fit_fill": "black",
     "fit_narration": true,
     "wide_face_h": 0.28
