@@ -1,0 +1,256 @@
+{
+  "title_lines": [
+    {
+      "text": "지미 헨드릭스 기타",
+      "color": "yellow"
+    },
+    {
+      "text": "한 대에 10.5억원?!",
+      "color": "white"
+    }
+  ],
+  "credit": "",
+  "pinned_comment": "+ \"의심할 여지 없이 진짜\"라는 말 듣고도 지갑은 끝까지 지키는 릭 사장님… 역시 프로는 다르네요 😂\n\n그런데 이 기타, 대체 뭐길래 75만 달러(약 10억5천만원)나 불렀을까요?\n\n전당포 사나이들 시즌 9 'Purple Haze' 편에 나온 이 기타는\n1963년산 흰색 펜더 스트라토캐스터예요 🎸\n\n지미 헨드릭스가 뉴욕 '저기 사운드 스튜디오'에서 녹음할 때 쓰던 기타로,\n스튜디오 엔지니어 스킵 주리드가 보관해 줬다고 해요.\n1970년 '밴드 오브 집시스' 앨범 녹음이 끝난 뒤\n헨드릭스가 이 기타를 그에게 선물했고요.\n\n방송에서는 빈티지 기타 전문가 제시 아모로소가\n옛 사진과 일련번호(L14985)를 대조해 헨드릭스의 기타가 맞다고 확인했어요.\n감정가는 75만 달러(약 11억 원)에서, 경매를 잘 타면 100만 달러(약 14억원)!\n\n릭은 45만 달러(약 6억3천만원)로 시작해\n55만, 마지막엔 60만 달러(약 8억4천만원)까지 올렸지만\n손님은 75만 달러(약 11억 원)에서 한 발도 물러서지 않았고, 거래는 불발됐죠.\n\n💡 재밌는 사실\n이 기타는 방송 전인 2007년 6월, 영국 페임 뷰로 경매에서\n6만 파운드(당시 환율로 약 1억1천만원)에 낙찰된 적이 있어요.\n몇 년 사이에 부르는 값이 거의 열 배가 된 셈이에요.\n\n릭이 끝까지 값을 깎은 이유는?\n제대로 팔려면 알맞은 경매를 찾고 홍보하는 데 최소 1년,\n수수료에 돈까지 오래 묶이는 '위험 부담'이 전부 자기 몫이기 때문이에요.\n\n결론: 진짜라는 판정과 그 값에 사 줄 사람은 별개의 문제다.\n\n(※ 방송 뒤 이 기타가 실제로 얼마에 팔렸는지는 확인된 기록이 없어요. 방송 내용과 Looper, Paul Fraser Collectibles 자료 기준입니다.)\n\n여러분이라면 8억4천만원에 팔았을까요, 끝까지 버텼을까요?\n\nP.S. 릭 사장님, 앰프에 꽂고 직접 쳐 볼 때 표정은 이미 산 사람이던데요 🤫",
+  "upload": {
+    "title": "지미 헨드릭스 기타 한 대에 10억5천만원?!",
+    "description": "지미 헨드릭스가 녹음실에서 치던 1963년산 펜더 기타! 전문가도 진짜라고 인정했는데, 릭이 부른 값은? #전당포사나이들 #지미헨드릭스 #펜더 #쇼츠",
+    "tags": [
+      "전당포사나이들",
+      "Pawn Stars",
+      "지미헨드릭스",
+      "펜더",
+      "스트라토캐스터",
+      "릭해리슨",
+      "기타",
+      "레전드흥정"
+    ]
+  },
+  "segments": [
+    {
+      "type": "narration",
+      "text": "낡은 기타 한 대를 들고 전당포에 온 남자",
+      "broll_t": 16.0,
+      "broll_id": 2,
+      "sfx": "impact/085_둥(큰북소리)"
+    },
+    {
+      "type": "narration",
+      "text": "무려 [big:yellow:10억원]이 넘는 엄청난 기타라는데",
+      "broll_t": 52.0,
+      "broll_id": 17,
+      "sfx": "cash/010_철컥띵 (캐셔)"
+    },
+    {
+      "type": "clip",
+      "from_id": 1,
+      "to_id": 1,
+      "subs": [
+        "@손님 [cyan:1963년]산 펜더 기타인데"
+      ],
+      "sfx": null,
+      "mark": false,
+      "drop_end_words": 17
+    },
+    {
+      "type": "clip",
+      "from_id": 3,
+      "to_id": 3,
+      "subs": [
+        "@손님 [cyan:지미 헨드릭스]가 쳤어요"
+      ],
+      "sfx": "surprise/255_놀람_반전",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 4,
+      "to_id": 4,
+      "subs": [
+        "@릭 와, 그건 대박인데"
+      ],
+      "sfx": null,
+      "mark": false,
+      "skip_words": 1
+    },
+    {
+      "type": "clip",
+      "from_id": 29,
+      "to_id": 30,
+      "subs": [
+        "@릭 근데 어디서 구했어요?",
+        "@손님 [cyan:녹음실 엔지니어] 거였어요"
+      ],
+      "sfx": "question/144_띠용(빠른)",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 35,
+      "to_id": 35,
+      "subs": [
+        "@손님 앨범 녹음 끝나고 // @손님 선물받은 거죠"
+      ],
+      "sfx": null,
+      "mark": false,
+      "skip_words": 3
+    },
+    {
+      "type": "clip",
+      "from_id": 22,
+      "to_id": 22,
+      "subs": [
+        "{big} @릭 이건 [yellow:성배]예요"
+      ],
+      "sfx": "success/341_짜잔_금관악기",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 58,
+      "to_id": 58,
+      "subs": [
+        "@릭 진짜인지는 // @릭 [cyan:제 친구]가 알 거예요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "그렇게 전문가까지 불러 직접 소리를 들어보는데",
+      "broll_t": 276.0,
+      "broll_id": 119,
+      "sfx": "whoosh/053_샤스륵 효과음"
+    },
+    {
+      "type": "clip",
+      "from_id": 109,
+      "to_id": 109,
+      "subs": [
+        "@전문가 의심할 여지 없이 // @전문가 [big:red:진짜] 기타예요"
+      ],
+      "sfx": "ding/185_Ting",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 115,
+      "to_id": 117,
+      "subs": [
+        "@전문가 꽂고 한번 질러 보죠",
+        "",
+        "@릭 소리 크게 키워요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 121,
+      "to_id": 121,
+      "subs": [
+        "@전문가 [green:좋은 기타]네요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 54,
+      "to_id": 54,
+      "subs": [
+        "@릭 그래서 얼마 원하세요?"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 57,
+      "to_id": 57,
+      "subs": [
+        "{big} @손님 [yellow:10억5천만원]!"
+      ],
+      "sfx": "ding/201_코인5",
+      "mark": false,
+      "skip_words": 4
+    },
+    {
+      "type": "narration",
+      "text": "전문가도 [green:14억원]까지 본다는 손님",
+      "broll_t": 192.0,
+      "broll_id": 77,
+      "sfx": "caption/310_핑거 스냅(딱)"
+    },
+    {
+      "type": "narration",
+      "text": "그래도 릭의 생각은 달랐는데",
+      "broll_t": 132.0,
+      "broll_id": 53,
+      "sfx": "whoosh/009_쉭"
+    },
+    {
+      "type": "clip",
+      "from_id": 134,
+      "to_id": 136,
+      "subs": [
+        "@릭 알맞은 경매부터 찾아야 하고",
+        "",
+        "@릭 최소 [cyan:1년]은 걸려요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 138,
+      "to_id": 138,
+      "subs": [
+        "{big} @릭 [yellow:6억3천만원]!"
+      ],
+      "sfx": "pop/037_카툰 팝",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 141,
+      "to_id": 142,
+      "subs": [
+        "@릭 위험은 제가 다 지고",
+        "@릭 손님은 현금만 챙기잖아요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 168,
+      "to_id": 168,
+      "subs": [
+        "@손님 그 값엔 못 팔아요"
+      ],
+      "sfx": "fail/019_삐삑 (오답 -짧은)",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "그렇게 빈손으로 돌아갔지만",
+      "broll_t": 80.0,
+      "broll_id": 29,
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "이 기타의 2007년 경매 낙찰가는",
+      "broll_t": 208.0,
+      "broll_id": 87,
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "고작 [yellow:1억1천만원]이었다고…",
+      "broll_t": 64.0,
+      "broll_id": 23,
+      "sfx": null
+    }
+  ]
+}

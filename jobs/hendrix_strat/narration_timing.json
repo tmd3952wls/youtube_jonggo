@@ -1,0 +1,137 @@
+[
+  {
+    "text": "낡은 기타 한 대를",
+    "start": 0.0,
+    "end": 0.935,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.333
+  },
+  {
+    "text": "들고 전당포에 온 남자",
+    "start": 0.935,
+    "end": 2.333,
+    "method": "whisperx",
+    "prop_start": 1.069,
+    "seg_start": 0.0,
+    "seg_end": 2.333
+  },
+  {
+    "text": "무려 10억원이 넘는",
+    "start": 2.333,
+    "end": 3.346,
+    "method": "whisperx",
+    "prop_start": 2.333,
+    "seg_start": 2.333,
+    "seg_end": 4.667
+  },
+  {
+    "text": "엄청난 기타라는데",
+    "start": 3.346,
+    "end": 4.667,
+    "method": "whisperx",
+    "prop_start": 4.025,
+    "seg_start": 2.333,
+    "seg_end": 4.667
+  },
+  {
+    "text": "기타 하나로 록의",
+    "start": 9.267,
+    "end": 10.187,
+    "method": "whisperx",
+    "prop_start": 9.267,
+    "seg_start": 9.267,
+    "seg_end": 11.6
+  },
+  {
+    "text": "역사를 바꾼 그 전설",
+    "start": 10.187,
+    "end": 11.6,
+    "method": "whisperx",
+    "prop_start": 10.313,
+    "seg_start": 9.267,
+    "seg_end": 11.6
+  },
+  {
+    "text": "그렇게 전문가까지 불러",
+    "start": 19.939,
+    "end": 21.192,
+    "method": "whisperx",
+    "prop_start": 19.939,
+    "seg_start": 19.939,
+    "seg_end": 22.639
+  },
+  {
+    "text": "직접 소리를 들어보는데",
+    "start": 21.192,
+    "end": 22.639,
+    "method": "whisperx",
+    "prop_start": 21.282,
+    "seg_start": 19.939,
+    "seg_end": 22.639
+  },
+  {
+    "text": "전문가도 14억원까지",
+    "start": 28.765,
+    "end": 30.185,
+    "method": "whisperx",
+    "prop_start": 28.765,
+    "seg_start": 28.765,
+    "seg_end": 31.041
+  },
+  {
+    "text": "본다는 손님",
+    "start": 30.185,
+    "end": 31.041,
+    "method": "whisperx",
+    "prop_start": 30.494,
+    "seg_start": 28.765,
+    "seg_end": 31.041
+  },
+  {
+    "text": "그래도 릭의 생각은 달랐는데",
+    "start": 31.041,
+    "end": 32.874,
+    "method": "whisperx",
+    "prop_start": 31.041,
+    "seg_start": 31.041,
+    "seg_end": 32.874
+  },
+  {
+    "text": "그렇게 빈손으로",
+    "start": 45.974,
+    "end": 46.833,
+    "method": "whisperx",
+    "prop_start": 45.974,
+    "seg_start": 45.974,
+    "seg_end": 47.574
+  },
+  {
+    "text": "돌아갔지만",
+    "start": 46.833,
+    "end": 47.574,
+    "method": "whisperx",
+    "prop_start": 46.956,
+    "seg_start": 45.974,
+    "seg_end": 47.574
+  },
+  {
+    "text": "이 기타의 2007년 경매 낙찰가는",
+    "start": 47.574,
+    "end": 49.474,
+    "method": "whisperx",
+    "prop_start": 47.574,
+    "seg_start": 47.574,
+    "seg_end": 49.474
+  },
+  {
+    "text": "고작 1억1천만원이었다고…",
+    "start": 49.474,
+    "end": 51.474,
+    "method": "whisperx",
+    "prop_start": 49.474,
+    "seg_start": 49.474,
+    "seg_end": 51.474
+  }
+]

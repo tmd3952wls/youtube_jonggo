@@ -1,0 +1,47 @@
+{
+ "text": "기타 하나로 록의 역사를 바꾼 그 전설",
+ "words": [
+  {
+   "word": "기타",
+   "start": 0.061,
+   "end": 0.303,
+   "aligned": true
+  },
+  {
+   "word": "하나로",
+   "start": 0.344,
+   "end": 0.647,
+   "aligned": true
+  },
+  {
+   "word": "록의",
+   "start": 0.728,
+   "end": 0.91,
+   "aligned": true
+  },
+  {
+   "word": "역사를",
+   "start": 0.97,
+   "end": 1.314,
+   "aligned": true
+  },
+  {
+   "word": "바꾼",
+   "start": 1.375,
+   "end": 1.617,
+   "aligned": true
+  },
+  {
+   "word": "그",
+   "start": 1.718,
+   "end": 1.799,
+   "aligned": true
+  },
+  {
+   "word": "전설",
+   "start": 1.86,
+   "end": 2.122,
+   "aligned": true
+  }
+ ]
+}

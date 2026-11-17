@@ -1,0 +1,17 @@
+{
+ "text": "고작 1억1천만원이었다고…",
+ "words": [
+  {
+   "word": "고작",
+   "start": 0.06,
+   "end": 0.321,
+   "aligned": true
+  },
+  {
+   "word": "1억1천만원이었다고…",
+   "start": 0.381,
+   "end": 1.585,
+   "aligned": true
+  }
+ ]
+}

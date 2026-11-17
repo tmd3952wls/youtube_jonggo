@@ -1,0 +1,29 @@
+{
+ "text": "하지만 릭의 생각은 달랐는데",
+ "words": [
+  {
+   "word": "하지만",
+   "start": 0.0,
+   "end": 0.305,
+   "aligned": true
+  },
+  {
+   "word": "릭의",
+   "start": 0.487,
+   "end": 0.589,
+   "aligned": true
+  },
+  {
+   "word": "생각은",
+   "start": 0.65,
+   "end": 0.954,
+   "aligned": true
+  },
+  {
+   "word": "달랐는데",
+   "start": 1.015,
+   "end": 1.523,
+   "aligned": true
+  }
+ ]
+}

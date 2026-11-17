@@ -1,0 +1,53 @@
+{
+ "text": "낡은 기타 한 대를 들고 전당포에 온 남자",
+ "words": [
+  {
+   "word": "낡은",
+   "start": 0.04,
+   "end": 0.261,
+   "aligned": true
+  },
+  {
+   "word": "기타",
+   "start": 0.342,
+   "end": 0.563,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 0.603,
+   "end": 0.663,
+   "aligned": true
+  },
+  {
+   "word": "대를",
+   "start": 0.744,
+   "end": 0.884,
+   "aligned": true
+  },
+  {
+   "word": "들고",
+   "start": 0.985,
+   "end": 1.186,
+   "aligned": true
+  },
+  {
+   "word": "전당포에",
+   "start": 1.266,
+   "end": 1.768,
+   "aligned": true
+  },
+  {
+   "word": "온",
+   "start": 1.809,
+   "end": 1.889,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 1.969,
+   "end": 2.19,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "text": "무려 10억5천만원짜리 기타라는데",
+ "words": [
+  {
+   "word": "무려",
+   "start": 0.04,
+   "end": 0.182,
+   "aligned": true
+  },
+  {
+   "word": "10억5천만원짜리",
+   "start": 0.263,
+   "end": 1.214,
+   "aligned": true
+  },
+  {
+   "word": "기타라는데",
+   "start": 1.275,
+   "end": 1.78,
+   "aligned": true
+  }
+ ]
+}

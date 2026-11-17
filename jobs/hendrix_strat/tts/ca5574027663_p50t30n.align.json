@@ -1,0 +1,41 @@
+{
+ "text": "그렇게 전문가까지 불러 직접 소리를 들어보는데",
+ "words": [
+  {
+   "word": "그렇게",
+   "start": 0.02,
+   "end": 0.281,
+   "aligned": true
+  },
+  {
+   "word": "전문가까지",
+   "start": 0.341,
+   "end": 0.942,
+   "aligned": true
+  },
+  {
+   "word": "불러",
+   "start": 1.022,
+   "end": 1.223,
+   "aligned": true
+  },
+  {
+   "word": "직접",
+   "start": 1.303,
+   "end": 1.523,
+   "aligned": true
+  },
+  {
+   "word": "소리를",
+   "start": 1.603,
+   "end": 1.844,
+   "aligned": true
+  },
+  {
+   "word": "들어보는데",
+   "start": 1.924,
+   "end": 2.405,
+   "aligned": true
+  }
+ ]
+}

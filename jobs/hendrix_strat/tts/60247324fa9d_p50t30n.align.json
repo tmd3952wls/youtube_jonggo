@@ -1,0 +1,29 @@
+{
+ "text": "전문가도 14억원까지 본다는 손님",
+ "words": [
+  {
+   "word": "전문가도",
+   "start": 0.04,
+   "end": 0.564,
+   "aligned": true
+  },
+  {
+   "word": "14억원까지",
+   "start": 0.644,
+   "end": 1.39,
+   "aligned": true
+  },
+  {
+   "word": "본다는",
+   "start": 1.47,
+   "end": 1.793,
+   "aligned": true
+  },
+  {
+   "word": "손님",
+   "start": 1.873,
+   "end": 2.074,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+  "title_lines": [
+    {"text": "지미 헨드릭스가 친", "color": "yellow"},
+    {"text": "기타를 판다고?!", "color": "white"}
+  ],
+  "credit": "© History Channel",
+  "pinned_comment": "+ 릭이 60만 달러까지 불렀는데 눈 하나 깜짝 안 하는 손님 표정 보셨나요 😂\n\n그런데 이 기타, 방송 이후 과연 어떻게 됐을까요?\n\n결론부터 말하면\n방송 뒤 실제로 팔린 금액은 확인되지 않았습니다.\n\n대신 방송 '이전' 기록은 남아 있어요.\n이 1963년식 흰색 스트라토캐스터는\n2007년 6월 Fame Bureau 경매에서\n6만 파운드에 낙찰됐습니다.\n\n그런데 방송에서 손님이 부른 값은 75만 달러,\n릭의 첫 제안은 45만 달러,\n전문가 감정가는 75만 달러에서 100만 달러였죠 💸\n\n재밌는 사실 하나.\n이 기타를 보관하던 사람은\n뉴욕 저기스 사운드 스튜디오의 엔지니어 스킵 주리드.\n헨드릭스가 1970년 '밴드 오브 집시스' 녹음을 마치고\n그에게 직접 건넨 기타라고 합니다 🎸\n\n왜 이렇게 값이 높게 매겨졌을까요?\n시리얼 번호가 기록으로 남아 있고\n거꾸로 잡고 친 흔적이 기타에 그대로 남아 있어서\n'누가 쳤는지'를 증명할 수 있었기 때문이죠.\n\n방송에서 감정을 맡은 제시 아모로소의 가게 카우타운 기타는\n2012년 헨드릭스가 소유했던 1963년식 스트라토캐스터의\n공식 중개를 맡기도 했습니다.\n\n결론: 전설의 물건은 물건값이 아니라 '증명값'이다.\n\n(※ 2012년에 중개된 기타가 방송 속 기타와 같은 것인지,\n이후 얼마에 팔렸는지는 확인하지 못했습니다.\n출처: Looper, Paul Fraser Collectibles, Wikipedia)\n\nP.S. 손님, 마음 바뀌면 전화한다더니… 릭 아직 기다리고 있을지도요 📞",
+  "upload": {
+    "title": "지미 헨드릭스가 친 기타의 충격적인 감정가",
+    "description": "지미 헨드릭스가 스튜디오에서 쳤다는 1963년식 스트라토캐스터가 전당포에 등장했습니다. 전문가 감정 결과와 릭의 흥정, 끝까지 확인해 보세요. #전당포사나이들 #지미헨드릭스 #펜더 #기타 #쇼츠",
+    "tags": ["전당포사나이들", "Pawn Stars", "지미 헨드릭스", "펜더 스트라토캐스터", "빈티지 기타", "감정", "흥정", "쇼츠"]
+  },
+  "segments": [
+    {"type": "clip", "from_id": 22, "to_id": 22, "subs": ["@릭 이건 [yellow:성배]예요"], "sfx": "impact", "mark": false},
+    {"type": "narration", "text": "헨드릭스 기타로 [yellow:75만 달러]를 부른 남자", "broll_id": 1, "fit": true, "sfx": "pop"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["@손님 [cyan:지미 헨드릭스]가 친 기타예요", "@릭 와, 이건 대박인데요"], "sfx": "surprise", "mark": false},
+    {"type": "narration", "text": "어디서 구했냐고 묻자", "broll_id": 28, "sfx": null},
+    {"type": "clip", "from_id": 34, "to_id": 35, "subs": ["@손님 앨범 녹음이 끝나고", "@손님 엔지니어한테 준 거예요"], "sfx": null, "mark": false},
+    {"type": "clip", "from_id": 54, "to_id": 54, "subs": ["@릭 얼마 원하세요?"], "sfx": null, "mark": false},
+    {"type": "narration", "text": "남자가 [yellow:75만 달러]를 부르자", "broll_id": 23, "sfx": "cash"},
+    {"type": "clip", "from_id": 58, "to_id": 58, "subs": ["@릭 진짜면 제 친구가 알아요"], "sfx": "question", "mark": false},
+    {"type": "narration", "text": "릭이 기타 전문가를 부르는데", "broll_id": 70, "sfx": "whoosh"},
+    {"type": "narration", "text": "먼저 트레몰로 바부터 살펴보자", "broll_id": 89, "sfx": "camera"},
+    {"type": "clip", "from_id": 91, "to_id": 92, "subs": ["@전문가 기타를 뒤집어 치니까", "@전문가 바를 [cyan:일자]로 폈어요"], "sfx": null, "mark": false},
+    {"type": "narration", "text": "넥 위쪽의 닳은 자국도 확인하는데", "broll_id": 99, "sfx": null},
+    {"type": "clip", "from_id": 101, "to_id": 102, "subs": ["@전문가 이렇게 뒤집어 쳐서 생긴 거죠", "@전문가 지미는 [cyan:왼손]으로 쳤으니까요"], "sfx": null, "mark": false},
+    {"type": "narration", "text": "마지막으로 시리얼 번호를 보자", "broll_id": 107, "sfx": "swell"},
+    {"type": "clip", "from_id": 108, "to_id": 109, "subs": ["@전문가 기록에 남은 기타예요", "@전문가 [red:진짜] 지미 기타 맞아요"], "sfx": "success", "mark": false},
+    {"type": "clip", "from_id": 122, "to_id": 123, "subs": ["@릭 얼마로 보세요?", "@전문가 경매면 최대 [yellow:100만 달러]요"], "sfx": "ding", "mark": false},
+    {"type": "narration", "text": "이에 릭이 흥정을 시작하는데", "broll_id": 121, "sfx": "caption"},
+    {"type": "clip", "from_id": 138, "to_id": 139, "subs": ["@릭 [green:45만 달러] 드릴게요", "@손님 45만 달러요? (황당)"], "sfx": null, "mark": false},
+    {"type": "clip", "from_id": 143, "to_id": 144, "subs": ["@손님 100만 달러도 가는 기타인데", "@손님 전문가가 방금 그랬잖아요"], "sfx": null, "mark": false},
+    {"type": "clip", "from_id": 147, "to_id": 147, "subs": ["@손님 전 [yellow:75만 달러] 생각해요"], "sfx": null, "mark": false},
+    {"type": "clip", "from_id": 152, "to_id": 153, "subs": ["@릭 그럼 [green:50만 달러]요", "@손님 그보단 더 나가죠"], "sfx": null, "mark": false},
+    {"type": "clip", "from_id": 155, "to_id": 155, "subs": ["@릭 지금 현금으로 [green:55만 달러]!"], "sfx": null, "mark": false},
+    {"type": "clip", "from_id": 159, "to_id": 159, "subs": ["@손님 [yellow:75만 달러]요, 진짜로"], "sfx": null, "mark": false},
+    {"type": "narration", "text": "릭이 마지막으로 [yellow:60만 달러]를 불렀지만", "broll_id": 166, "sfx": null},
+    {"type": "clip", "from_id": 168, "to_id": 168, "subs": ["@손님 [red:안 되겠어요]"], "sfx": "fail", "mark": false},
+    {"type": "narration", "text": "남자는 기타를 들고 그대로 돌아갔다", "broll_id": 171, "sfx": null}
+  ]
+}

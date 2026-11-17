@@ -1,0 +1,35 @@
+{
+ "text": "이 기타의 2007년 경매 낙찰가는",
+ "words": [
+  {
+   "word": "이",
+   "start": 0.04,
+   "end": 0.1,
+   "aligned": true
+  },
+  {
+   "word": "기타의",
+   "start": 0.161,
+   "end": 0.361,
+   "aligned": true
+  },
+  {
+   "word": "2007년",
+   "start": 0.401,
+   "end": 0.923,
+   "aligned": true
+  },
+  {
+   "word": "경매",
+   "start": 1.003,
+   "end": 1.224,
+   "aligned": true
+  },
+  {
+   "word": "낙찰가는",
+   "start": 1.264,
+   "end": 1.706,
+   "aligned": true
+  }
+ ]
+}

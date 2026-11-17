@@ -1,0 +1,23 @@
+{
+ "text": "그렇게 빈손으로 돌아갔지만",
+ "words": [
+  {
+   "word": "그렇게",
+   "start": 0.02,
+   "end": 0.303,
+   "aligned": true
+  },
+  {
+   "word": "빈손으로",
+   "start": 0.404,
+   "end": 0.848,
+   "aligned": true
+  },
+  {
+   "word": "돌아갔지만",
+   "start": 0.909,
+   "end": 1.394,
+   "aligned": true
+  }
+ ]
+}

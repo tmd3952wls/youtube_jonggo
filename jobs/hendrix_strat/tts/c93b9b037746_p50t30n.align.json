@@ -1,0 +1,35 @@
+{
+ "text": "릭은 진짜인지 확인하려고 전문가를 불렀는데",
+ "words": [
+  {
+   "word": "릭은",
+   "start": 0.061,
+   "end": 0.262,
+   "aligned": true
+  },
+  {
+   "word": "진짜인지",
+   "start": 0.363,
+   "end": 0.808,
+   "aligned": true
+  },
+  {
+   "word": "확인하려고",
+   "start": 0.888,
+   "end": 1.393,
+   "aligned": true
+  },
+  {
+   "word": "전문가를",
+   "start": 1.454,
+   "end": 1.898,
+   "aligned": true
+  },
+  {
+   "word": "불렀는데",
+   "start": 1.979,
+   "end": 2.443,
+   "aligned": true
+  }
+ ]
+}

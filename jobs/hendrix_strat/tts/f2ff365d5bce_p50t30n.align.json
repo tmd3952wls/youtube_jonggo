@@ -1,0 +1,35 @@
+{
+ "text": "무려 10억원이 넘는 엄청난 기타라는데",
+ "words": [
+  {
+   "word": "무려",
+   "start": 0.06,
+   "end": 0.201,
+   "aligned": true
+  },
+  {
+   "word": "10억원이",
+   "start": 0.301,
+   "end": 0.722,
+   "aligned": true
+  },
+  {
+   "word": "넘는",
+   "start": 0.762,
+   "end": 1.003,
+   "aligned": true
+  },
+  {
+   "word": "엄청난",
+   "start": 1.063,
+   "end": 1.484,
+   "aligned": true
+  },
+  {
+   "word": "기타라는데",
+   "start": 1.564,
+   "end": 2.106,
+   "aligned": true
+  }
+ ]
+}

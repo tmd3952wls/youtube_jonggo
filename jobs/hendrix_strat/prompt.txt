@@ -1,0 +1,305 @@
+너는 조회수 100만~800만을 내는 한국 유튜브 쇼츠 채널의 메인 작가다.
+미국 방송 **전당포 사나이들(Pawn Stars)** 의 원본 대사 전사본을 받아서, **한국어 내레이션(TTS)** 과 **원본 대사(한국어 자막)** 를 섞은 45~57초 쇼츠 대본을 만든다.
+(샤크탱크용 옛 규칙은 prompts/script_prompt_sharktank.md 에 보관)
+
+## 구성 — 반드시 이 순서와 시간 배분 (참고 채널 '기억의순간'·'사서알려줌' 8편 분석 결과)
+| 구간 | 시간 | 내용 | 비중 |
+|---|---|---|---|
+| ① 훅 | **0~3초 (가장 중요)** | 아래 '훅 규칙' 참고. **물건이 무엇인지 + 금액**을 3초 안에 꽂는다 | 콜드오픈 clip 1개(선택) + 내레이션 1문장 |
+| ② 사연·희망가 | 5~15초 | 물건의 정체 → 어떻게 구했는지(유산·경매·벼룩시장·싸게 삼) → **손님이 부르는 희망가** → 사장의 첫 반응(의심·황당·웃음) | 원본 대사 위주 + 짧은 연결 내레이션 |
+| ③ 감정 | 15~38초 | 사장이 **전문가를 부르는데** → 전문가가 확인하는 포인트 2~3개를 차례로(출처·이력 → 소재·제작 방식 → 서명·라벨·각인) → **결정적 판정**("진짜예요", "박물관급이에요", "20개밖에 없어요") → **감정가 공개** | 원본 대사 위주. 내레이션은 "~묻자", "~살펴보는데" 로 다음 대사를 여는 역할 |
+| ④ 흥정 | 38~50초 | "이에 릭이 흥정을 시작하는데" → 금액이 오가는 대사 2~4번 (사장 제시 → 손님 역제안 → 최종가) | **원본 대사 위주** |
+
+- **흥정은 금액이 오간 순서를 빠짐없이**: 한 사람이 금액을 올리기 전에는 반드시 상대의 역제안/거절이 나와야 한다. 예) 릭 2억 1천 → (손님 "2억 5천이 마지노선") → 릭 2억 2천. 중간 대사를 빼서 같은 사람의 제안이 연달아 나오면 안 된다.
+| ⑤ 결말 | 마지막 3~5초 | 방송 속 거래 결과(성사 금액 / 불발)를 보여준다. 그다음은 아래 '결말 규칙' | 내레이션 1~2문장 |
+
+## 결말 규칙
+- **이 물건 자체**가 방송 뒤 실제로 얼마에 팔렸는지가 '후일담 조사 결과'에 있으면: 영상 끝은 "이 ○○이 결국 얼마에 팔렸는지는 고정댓글에"로 궁금증을 남기고, pinned_comment 에 그 결과(금액·시기·출처)를 쓴다.
+- 조사 결과가 없거나 **비슷한 다른 물건** 이야기뿐이면: 고정댓글로 유도하지 말고, 방송 속 결과(성사 금액 또는 불발)까지 영상에서 끝까지 보여주고 끝낸다. 다른 물건의 경매가로 유도하지 마라.
+
+## 고정댓글(pinned_comment) 쓰는 법 — 25~35줄, 600~900자. 짧게 쓰지 마라
+구성 (줄바꿈을 많이 써서 읽기 쉽게, 이모지는 문단마다 0~1개):
+1. 첫 줄: "+ " 로 시작하는 가벼운 농담/영상 속 장면 반응 한 줄 (예: 출연자 말투·표정 언급) + 이모지
+2. "그런데 이 ○○, 방송 이후 과연 어떻게 됐을까요?" 로 궁금증
+3. 결과를 숫자로: 언제, 어디서(경매·판매처), 얼마에 — 금액은 "10만 달러" 처럼 달러로 쓴다 (프로그램이 "(약 1억 4천만 원)" 을 붙임)
+4. 방송 속 제안가·감정가와 비교 ("릭이 부른 금액보다 ○○ 낮은/높은")
+5. 재밌는 사실 하나 (출연자·감정사·물건에 얽힌 뒷얘기, 조사 결과에 있는 것만)
+6. 왜 그렇게 됐는지 분석 2~4줄 (가치를 가른 이유)
+7. "결론: …" 한 줄 교훈
+8. 확인 안 된 부분이 있으면 (※ …) 로 솔직하게 + 출처 사이트명
+9. "P.S. …" 출연자에게 건네는 농담 한 줄
+- 조사 결과에 없는 사실·숫자는 절대 지어내지 마라.
+
+## 훅 규칙 (첫 3초)
+- 시청자는 3초 안에 넘길지 정한다. **가장 자극적인 순간**으로 시작하라: 충격적인 금액이 나오는 대사, 사장·전문가의 놀란 반응, 물건이 정면으로 드러나는 장면.
+- 방법 A(권장): 첫 세그먼트를 **콜드오픈 clip**(영상 후반의 결정적 한마디, 1~2초. 예: "220만 달러에 팔렸어요" / "이건 진짜예요")으로 시작 → 바로 내레이션 "한 남자가 전당포에 ○○을 가져왔는데".
+- 방법 B: 첫 내레이션 한 문장에 **물건 + 금액**을 모두 담는다. 예) "조던이 파이널에서 신은 신발로 [yellow:25만 달러]를 부른 남자".
+- 첫 내레이션의 broll_id 는 **물건 전체가 보이는 장면**이어야 하고, 첫 내레이션에는 "fit": true 를 넣는다 (원본 화면 전체를 보여줘 제품이 잘리지 않음).
+
+- **반전이 핵심이다.** 희망가 vs 감정가, 사장의 예상 vs 전문가 판정의 차이를 또렷하게 대비시켜라.
+- ②~④ 의 원본 대사는 질문과 답이 오가는 흐름을 살린다 (예: "얼마 생각하세요?" → "30만 달러요" → "...농담이시죠?").
+- 내레이션 broll_id 는 **물건이 보이는 장면**(물건 클로즈업, 전문가가 살펴보는 손, 손님이 물건을 꺼내는 장면)을 고른다.
+  전사본에서 출연자가 물건의 생김새·디테일을 설명하는 줄("이 로고 보세요", "안쪽 태그에", "이 색깔은")의 id 가 대개 클로즈업이다. 사람끼리 잡담하는 줄은 피한다.
+
+## 문체
+- 내레이션은 **반말 요약체**: "~는데", "~자", "~다고", "~했고". 존댓말 금지.
+  예) "먼저 어떻게 구했냐고 묻자", "마지막으로 안쪽 라벨을 살펴보는데", "그렇게 메달을 들고 돌아갔고"
+- 내레이션 한 문장 10~24자. 숫자는 구체적으로("1978년", "20개뿐인"). 금액은 원본대로 "30만 달러"로 쓴다. **프로그램이 자동으로 원화("4억 2천만 원")로 바꾸고 달러 표기는 지운다.** 원화를 직접 계산해 쓰지 마라.
+- **자막은 한 줄로 한눈에 읽혀야 한다.** 한 자막(내레이션 한 문장, 대사 한 줄)은 되도록 **13자 안팎**. 길면 두 문장/두 줄로 나눠라.
+- clip 은 **연속으로 말하는 한두 줄**(1.5~5초). 중간에 긴 침묵이 있는 줄들을 한 clip 에 묶지 마라.
+- 원본 대사 번역은 존댓말 구어체로 자연스럽게, **짧게 의역**한다 ("14억 원 내놔요!", "2,100만 원 쏴요!", "어림도 없죠!", "아 피 말리시네요!"처럼 상황에 딱 맞는 찰지고 재치 있는 입말 티키타카를 적극 살린다).
+- 큰 강조 자막(`{big}` 또는 `[big:색상:...]`, 98px)을 쓸 때는 절대 2줄로 줄바꿈되지 않도록 화자 표시를 빼고 **공백 포함 8~9자 이내 한 줄**로만 짧게 쓴다.
+- 효과음은 한 영상 안에서 같은 파일을 절대 중복 사용하지 않으며, **마지막 마무리 내레이션 세그먼트는 반드시 `"sfx": null`** 로 둔다.
+- **질문과 대답은 반드시 다른 자막.** 전사본 한 줄 안에 두 사람의 말(질문+대답, 제안+역제안)이 섞여 있으면 subs 문자열 안에서 " // " 로 나눠라.
+  예) "@릭 다 합치면 얼마로 보세요? // @전문가 약 25만 달러로 봅니다" → 질문 자막이 먼저, 대답 자막이 따로 나온다.
+- **모든 대사 자막 앞에 화자 표시 "@이름 "을 붙인다** (자막 색이 화자별로 달라짐): "@릭", "@코리", "@첨리", "@영감님", "@손님", "@전문가".
+  예) subs: ["@릭 얼마 원하세요?", "@손님 25만 달러요"]
+- 등장인물: 사장은 이름으로 "릭", "코리", "첨리", "영감님(올드맨)". 손님은 "한 남자/한 여자/손님", 전문가는 "전문가/감정사".
+- 괄호 속마음 자막을 짧은 원본 반응에 붙여도 좋다. 예) "(황당)", "(그럼 내가 왜 사...)".
+
+## 사실성
+- 방송 내용은 전사본에 나온 것만.
+- 방송 이후 이야기(후일담)는 **영상에서 말하지 않는다.** 대신 "pinned_comment"(고정댓글)에 쓴다: '고정댓글 쓰는 법' 구성대로, '후일담 조사 결과'의 사실만. 조사 결과가 없으면 방송 속 결과 요약 + 시청자 질문("여러분이라면 팔았을까요?")으로 쓴다.
+- 영상의 마지막 내레이션은 위 '결말 규칙'을 따른다.
+- 이 문서의 예시 문장은 형식 참고용이다. 그대로 베끼지 마라.
+
+## 색 강조 [ ]
+- 자막은 기본 흰색, [ ] 부분만 컬러. 문장마다 0~1곳, 핵심 금액·물건 이름·판정 단어. [yellow:...], [cyan:...], [pink:...], [green:...], [orange:...], [red:...] 로 색 지정 가능.
+- 금액은 [yellow:...] 또는 [green:...], 판정("진짜", "가짜")은 [red:...]. 대괄호는 어절에 붙여 쓴다.
+
+## 상단 제목(title_lines) — 썸네일 역할
+- 2줄, 각 줄 8~13자. 1줄 = 물건/상황, 2줄 = 반전·궁금증 "~판다고?!", "~의 소름돋는 반전", "~충격적인 가치"
+  예) ["원조 슈퍼맨이 입은", "슈트를 판다고?!"], ["농담인줄 알았던", "물건의 소름돋는 반전"], ["전문가도 경악한", "1600년대 명검의 퀄리티"]
+- color: **1줄 "yellow", 2줄 "white"** (고정).
+
+## 효과음(sfx) — 세그먼트 시작 시점. 아래 이름 중 하나 또는 null. 전체 5~8개
+- "whoosh": 장면 전환·빠른 등장
+- "pop": 자막/물건 톡 등장
+- "cash": 희망가·돈 금액·가격표
+- "ding": 숫자·가격·제안가 공개
+- "impact": 반전·충격 쾅
+- "surprise": 놀람·충격 리액션
+- "question": 의문·황당·복선
+- "success": 성공·계약 성사
+- "fail": 실패·거절·결렬
+- "tension": 긴장·궁금증
+- "caption": 자막 강조·말풍선·핑거스냅
+- "camera": 연식·디테일 클로즈업 찰칵
+- "swell": 분위기 고조 스르륵
+- 효과음은 이야기의 '순간'에만, 전체 10~13개:
+  - "ding": 금액이 처음 나오는 자막(희망가·감정가·제안가), 결정적 판정 (프로그램이 그 금액 자막이 뜨는 순간에 맞춤)
+  - "impact": 영상 전체에서 단 1번, 가장 큰 반전 금액 (콜드오픈 등)
+  - "whoosh": 장면 전환 내레이션 (전문가 부르는데, 흥정을 시작하는데, 사연 시작)
+  - "surprise": 놀라운 사실, "success": 감정 결과가 좋을 때/거래 성사, "fail": 거래 불발(거절하는 말이 담긴 clip), "question": 황당한 반응·마지막 궁금증
+  - "tension" 은 쓰지 마라. 같은 종류를 연달아 쓰지 마라.
+
+## 빨간 동그라미(mark) — 사용 안 함. mark 는 쓰지 마라.
+## 감정 태그(tag) — 사용 안 함. 항상 null.
+
+## 출력 형식 — JSON 하나만 (설명, 코드블록 표시 없이)
+{
+  "title_lines": [{"text": "...", "color": "yellow"}, {"text": "...", "color": "white"}],
+  "credit": "© History Channel",
+  "pinned_comment": "고정댓글 본문 (아래 '고정댓글 쓰는 법' 구성대로 25~35줄)",
+  "upload": {"title": "호기심형 30자 이내", "description": "1~2문장 + 해시태그 3~5개 (#전당포사나이들 포함)", "tags": ["...", "..."]},
+  "segments": [
+    {"type": "narration", "text": "내레이션 문장", "broll_id": 12, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["id 3 번역", "id 4 번역"], "sfx": null, "mark": false}
+  ]
+}
+- narration.broll_id: 내레이션 동안 보여줄 장면이 시작되는 전사 id (내용에 맞는 장면). 같은 id 반복 금지.
+- clip.from_id~to_id: 연속된 전사 id. subs 길이 = (to_id - from_id + 1). 빼고 싶은 줄은 "".
+- 전체 길이(내레이션 ≈ 글자수/9 초 + clip 길이 합) 45~57초.
+
+## 방송 이후 후일담 조사 결과 (웹 검색)
+- In the Pawn Stars Season 9 episode 'Purple Haze', the customer asked $750,000 for this 1963 Stratocaster. Rick Harrison opened at $450,000, the customer wouldn't come down from $750,000, and no deal was made. (출처: https://looper.com/336939/the-insanely-expensive-jimi-hendrix-item-that-pawn-stars-wanted-to-buy)
+- On the show, vintage guitar expert Jesse Amoroso compared the guitar with old photos and checked its serial number, then confirmed it belonged to Hendrix. The same article says it could be worth $750,000 to $1 million. (출처: https://looper.com/336939/the-insanely-expensive-jimi-hendrix-item-that-pawn-stars-wanted-to-buy)
+- Studio engineer Skip Juried kept this 1963 white Stratocaster for Hendrix at Juggy's Sound Studios in New York. Hendrix gave it to him in 1970 after recording the Band of Gypsys album. (출처: https://www.paulfrasercollectibles.com/blogs/news/jimi-hendrix-memorabilia-top-10-most-expensive)
+- This 1963 white Stratocaster sold for £60,000 at a Fame Bureau auction in June 2007. (출처: https://www.paulfrasercollectibles.com/blogs/news/jimi-hendrix-memorabilia-top-10-most-expensive)
+- In 2012, Jesse Amoroso's shop Cowtown Guitars became the official broker for a 1963 Fender Stratocaster that Hendrix once owned. That guitar had first belonged to Henry 'Juggy' Murray of Juggy Sound. (출처: https://en.wikipedia.org/wiki/Cowtown_Guitars)
+- Three vintage guitar experts, including Amoroso, appraised that guitar. Its Hendrix modifications, its unusual green pickguard and a black mark inside the electronics cavity helped identify it, and in June 2013 Seymour Duncan authenticated the pickups and pickguard. (출처: https://en.wikipedia.org/wiki/Cowtown_Guitars)
+
+## 원본 정보
+프로그램/맥락 메모: Pawn Stars S9: Jimi Hendrix 1963 Fender Stratocaster
+
+## 원본 전사본 (id [시작-끝 초] 대사)
+0 [1.0-5.7] So what do we got here I think there's something in here. You're really gonna like to see okay
+1 [7.7-16.0] 1963 America made Fender Stratocaster. Oh to me. This is the guitar, but there's something very very special about this specific guitar
+2 [16.7-18.1] All right
+3 [18.1-20.7] This guitar was actually played by Jimmy Hendrix
+4 [21.3-25.5] That's a big wow factor right there
+5 [26.3-30.0] Jimmy Hendrix man. He's one of the greatest rock-and-roll legends of all time
+6 [30.0-31.5] But what I'm bringing to the table today
+7 [31.6-33.1] is not only a piece of rock-n-roll history,
+8 [33.2-35.2] but it's very well preserved.
+9 [35.3-37.0] Jimmy Hendrix, he was an icon.
+10 [37.1-40.0] This guy did things with a guitar that no one did before.
+11 [40.1-41.2] He played a strat.
+12 [41.3-43.0] Left-hand guitars are far and few between.
+13 [43.1-44.5] His first guitars were used.
+14 [44.6-45.9] He couldn't find a left one.
+15 [46.0-47.5] So he started playing with a right-handed guitar
+16 [47.6-49.1] with the strings upside down.
+17 [49.2-51.7] Even when he had money, he continued playing guitars
+18 [51.8-55.3] that were right-hand guitars strung upside down.
+19 [55.4-56.3] Do you mind if I pick it up?
+20 [56.4-57.6] No, absolutely. By all means.
+21 [57.7-58.6] All right.
+22 [58.6-60.6] This is the Holy Grail.
+23 [60.6-63.6] He actually held this guitar that you now have in your hands
+24 [63.6-65.6] and made wonderful music with it.
+25 [65.6-67.6] Is there any pictures of him playing it on stage or anything?
+26 [67.6-70.6] No, because it was exclusively played in the studio.
+27 [70.6-73.6] This was his really favorite sort of recording axe.
+28 [73.6-75.6] I'm gonna set this down.
+29 [77.6-80.9] And where did you get this?
+30 [80.9-84.9] It was actually owned by a guy named Skip Jarrett.
+31 [84.9-88.9] There's a studio called Juggie Sound Studio that Jimmy loved to cut in.
+32 [88.9-90.5] to cut in to New York.
+33 [90.5-93.6] Skip was the chief engineer at Juggie Sound Studio.
+34 [93.6-96.2] And after they wrapped up all the production on Band of Gypsies
+35 [96.2-98.9] and all that, they gave this guitar to Skip.
+36 [98.9-101.1] When he passed away, one of my business associates
+37 [101.1-103.1] and I acquired the guitar.
+38 [103.1-103.9] OK.
+39 [103.9-106.1] This guitar was on Band of Gypsies?
+40 [106.1-108.0] Yeah, he played this guitar on several records.
+41 [108.0-110.4] He actually played it on Nervous Breakdown as well.
+42 [110.4-111.3] OK.
+43 [111.3-113.1] Here's just something that came out this year
+44 [113.1-115.8] in this magazine about the specific guitar.
+45 [115.8-117.3] The guy that wrote this article
+46 [117.3-118.8] I did a lot of extreme diligence.
+47 [118.8-121.7] Plus I have, you know, a letter signed by Jimmy's brother.
+48 [121.7-124.8] I have seen items where people had letters from the family.
+49 [124.8-125.7] Right, right, OK.
+50 [125.7-128.4] And it turned out not to be what they said it was.
+51 [128.4-129.3] Right.
+52 [129.3-130.2] OK.
+53 [130.2-132.7] That's the one big thing that scares me.
+54 [132.7-134.2] How much do you want for the guitar?
+55 [134.2-135.9] I think this guitar, you know,
+56 [135.9-138.7] from everyone I've talked to, I'd
+57 [138.7-148.5] be willing to take, say, $750,000 for it.
+58 [148.5-151.5] I have a friend who, if this thing is real, he will know.
+59 [151.5-154.1] And if not, he'll call bull.
+60 [154.1-157.9] Bring it, you know what I'm saying?
+61 [157.9-158.8] All right, I'll be right back.
+62 [158.8-159.7] Give me a few votes.
+63 [159.7-161.0] OK, thanks, man.
+64 [161.0-161.9] I have nothing to hide.
+65 [161.9-163.7] Let's turn the lights on real bright.
+66 [163.7-165.6] This is an authentic Jimi Hendrix guitar.
+67 [165.6-167.5] I'm happy to challenge anybody
+68 [167.5-169.3] that he wants to bring the table to look at it,
+69 [169.3-171.1] because he'll authenticate the guitar.
+70 [171.1-172.7] This is stupid cool.
+71 [172.7-175.6] I mean, Jimi's, one of Jimi's guitars.
+72 [175.6-180.1] Hendrix turned the guitar into an extension of his body.
+73 [180.1-183.4] Every way he moved was altering the sound of the guitar.
+74 [183.4-185.6] When you see him dip down real low,
+75 [185.6-186.5] he's bending the guitar.
+76 [186.5-189.2] I physically bending the guitar.
+77 [189.2-192.4] There's very few guys that can make their own statement
+78 [192.4-193.8] with the guitar anymore.
+79 [193.8-196.3] But guys come along like Jimi Hendrix
+80 [196.3-200.1] and just take it to a completely new place.
+81 [200.1-202.7] I want to make sure this is 100%
+82 [202.7-204.7] before we start talking a lot of money.
+83 [204.7-204.9] Yeah.
+84 [204.9-206.1] You mind if I take a look at it?
+85 [206.1-206.4] No, man.
+86 [206.4-207.6] By all means, that's why you do it.
+87 [207.6-209.7] Awesome.
+88 [209.7-211.8] There's a couple of things you'd want to look at.
+89 [211.8-213.1] The tremolo bar.
+90 [213.1-214.9] These are usually bent and angled up.
+91 [214.9-216.1] You play the guitar upside down.
+92 [216.1-218.3] He flattened a lot of these out, made them straight.
+93 [218.3-219.9] So they probably weren't ramming into his arm
+94 [219.9-220.9] and stuff like that.
+95 [220.9-222.7] Another thing is what they call ring wear.
+96 [222.7-224.7] For playing the guitar like this, my wedding ring
+97 [224.7-227.0] hits the guitar, removes a lot of the paint,
+98 [227.0-228.0] finished from there.
+99 [228.0-230.9] If you look at this guitar, the top side of the neck
+100 [230.9-232.7] has a lot of that wear.
+101 [232.7-235.5] That's from the guitar being this way.
+102 [235.5-237.9] Jimmy would have played it left-handed.
+103 [237.9-240.6] The article that you guys have sitting over there,
+104 [240.6-241.9] they asked a bunch of vintage dealers
+105 [241.9-243.7] to take a look at this guitar with photos
+106 [243.7-244.9] and stuff like that.
+107 [244.9-250.9] The serial number here, L14985.
+108 [250.9-254.1] This guitar's actually been documented.
+109 [254.1-257.5] No doubt this is definitely one of Jimmy's guitars.
+110 [257.5-259.8] That's really, really cool.
+111 [259.8-261.8] In my head, I think I know what it's worth,
+112 [261.8-263.5] but what do you think?
+113 [263.5-265.3] No guitar's worth anything unless everything's
+114 [265.3-266.8] working on it in my book.
+115 [266.8-268.8] Plug it in, let it rip.
+116 [268.8-269.8] Let's do this.
+117 [269.8-270.8] Turn it up loud.
+118 [270.8-272.8] I cannot believe this.
+119 [272.8-285.1] Come on.
+120 [285.1-289.7] Come on.
+121 [289.7-290.7] That's a good guitar, man.
+122 [290.7-292.7] So what do you think it's worth?
+123 [292.7-299.7] Anywhere from 750 to good auction million.
+124 [299.7-303.5] All right, thanks, buddy.
+125 [303.5-304.5] All right, man.
+126 [304.5-305.5] Thank you.
+127 [305.5-306.5] Thanks again for letting me play.
+128 [306.5-307.5] You're welcome, man.
+129 [307.5-308.5] Thanks a lot.
+130 [308.5-310.5] It felt crazy to hold one of Jimi Hendrix's guitars, man.
+131 [310.5-313.5] You could see why he liked it because it was a really good, balanced, nice feeling
+132 [313.5-315.6] feeling guitar.
+133 [315.6-317.4] At a personal level, I absolutely love it.
+134 [317.4-318.9] But you have to find the right auction.
+135 [318.9-320.2] It has to be advertised.
+136 [320.2-322.6] And the least amount of time would be a year, most likely.
+137 [322.6-326.5] Right.
+138 [326.5-328.2] Let me give you $450,000.
+139 [328.2-330.2] $450,000?
+140 [330.2-331.1] Man.
+141 [331.1-332.5] My thing is, I take all the risk.
+142 [332.5-334.1] You walk away with the cash.
+143 [334.1-336.7] For a guitar that could fetch maybe a million dollars
+144 [336.7-339.4] on any day, your own guy just told you that.
+145 [339.4-340.3] OK, but what we do?
+146 [340.3-342.1] Come on, $450,000.
+147 [342.1-344.5] Yeah, I'm thinking $750,000, man.
+148 [344.5-345.9] A lot of commissions and a lot of people
+149 [345.9-347.8] people got to get paid to sell this thing, OK?
+150 [347.8-349.4] Maybe it's just the way the world works.
+151 [349.4-351.7] All right, OK.
+152 [351.7-353.3] I'll give you half a million.
+153 [353.3-354.8] This guitar's worth more than that.
+154 [354.8-357.0] It just is.
+155 [357.0-359.3] If you want the money now, I can go $550.
+156 [359.3-360.7] Knowing that it could potentially
+157 [360.7-362.3] affect $2 million at an auction,
+158 [362.3-364.8] I can't leave that much money on the table.
+159 [364.8-366.0] $750, really, man.
+160 [366.0-375.4] That's a bottom dollar I can take for the guitar.
+161 [375.4-376.4] Hey, we'll have a nice day.
+162 [376.4-377.3] Tell me if it goes to auction.
+163 [377.3-378.0] I might bid on it.
+164 [378.0-378.8] OK.
+165 [378.8-379.5] Thanks, man.
+166 [379.5-386.5] Well?
+167 [386.5-393.5] Six?
+168 [393.5-394.8] I can't do it, man.
+169 [394.8-396.5] But I'll call you if I change my mind.
+170 [396.5-397.2] OK.
+171 [397.2-398.9] All right.
+172 [398.9-401.3] You inspired one last bullet across the boat there
+173 [401.3-404.0] with the $600,000 offer, you know?
+174 [404.0-406.0] Honestly, I was starting to kind of get a little bit more
+175 [406.0-407.1] tempted by that.
+176 [407.1-408.9] But you want to come to a fair point
+177 [408.9-411.0] in selling something of great value?
+178 [411.0-412.4] Don't be desperate about it.
+179 [412.4-414.4] And that I am not.
