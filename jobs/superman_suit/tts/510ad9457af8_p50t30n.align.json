@@ -1,0 +1,41 @@
+{
+ "text": "이후 경매에 나온 원조 슈퍼맨 슈트는",
+ "words": [
+  {
+   "word": "이후",
+   "start": 0.04,
+   "end": 0.222,
+   "aligned": true
+  },
+  {
+   "word": "경매에",
+   "start": 0.303,
+   "end": 0.626,
+   "aligned": true
+  },
+  {
+   "word": "나온",
+   "start": 0.686,
+   "end": 0.848,
+   "aligned": true
+  },
+  {
+   "word": "원조",
+   "start": 0.928,
+   "end": 1.15,
+   "aligned": true
+  },
+  {
+   "word": "슈퍼맨",
+   "start": 1.251,
+   "end": 1.594,
+   "aligned": true
+  },
+  {
+   "word": "슈트는",
+   "start": 1.715,
+   "end": 1.957,
+   "aligned": true
+  }
+ ]
+}

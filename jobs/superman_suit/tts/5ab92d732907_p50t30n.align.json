@@ -1,0 +1,23 @@
+{
+ "text": "무려 4억9천만원에 팔렸다고…",
+ "words": [
+  {
+   "word": "무려",
+   "start": 0.06,
+   "end": 0.221,
+   "aligned": true
+  },
+  {
+   "word": "4억9천만원에",
+   "start": 0.321,
+   "end": 1.065,
+   "aligned": true
+  },
+  {
+   "word": "팔렸다고…",
+   "start": 1.125,
+   "end": 1.708,
+   "aligned": true
+  }
+ ]
+}

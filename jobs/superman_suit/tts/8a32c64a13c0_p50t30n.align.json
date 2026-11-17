@@ -1,0 +1,41 @@
+{
+ "text": "그렇게 할리우드 소품 전문가를 급히 부르는데",
+ "words": [
+  {
+   "word": "그렇게",
+   "start": 0.02,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "할리우드",
+   "start": 0.322,
+   "end": 0.826,
+   "aligned": true
+  },
+  {
+   "word": "소품",
+   "start": 0.846,
+   "end": 1.007,
+   "aligned": true
+  },
+  {
+   "word": "전문가를",
+   "start": 1.087,
+   "end": 1.531,
+   "aligned": true
+  },
+  {
+   "word": "급히",
+   "start": 1.631,
+   "end": 1.853,
+   "aligned": true
+  },
+  {
+   "word": "부르는데",
+   "start": 1.933,
+   "end": 2.296,
+   "aligned": true
+  }
+ ]
+}

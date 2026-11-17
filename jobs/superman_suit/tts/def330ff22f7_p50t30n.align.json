@@ -1,0 +1,29 @@
+{
+ "text": "이에 릭이 승부수를 던지는데",
+ "words": [
+  {
+   "word": "이에",
+   "start": 0.0,
+   "end": 0.121,
+   "aligned": true
+  },
+  {
+   "word": "릭이",
+   "start": 0.181,
+   "end": 0.383,
+   "aligned": true
+  },
+  {
+   "word": "승부수를",
+   "start": 0.484,
+   "end": 0.907,
+   "aligned": true
+  },
+  {
+   "word": "던지는데",
+   "start": 0.987,
+   "end": 1.431,
+   "aligned": true
+  }
+ ]
+}

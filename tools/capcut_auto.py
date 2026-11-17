@@ -168,7 +168,11 @@ def run_auto(job: str, voice: str = "vibrant_baritone"):
     env["QT_OPENGL"] = "software"
     proc = subprocess.Popen([_resolve_capcut_exe()], env=env)
     print(f"CapCut 실행됨 (PID={proc.pid}), 홈 화면 대기 중...")
-    time.sleep(9.0)
+    for _ in range(40):
+        time.sleep(1.0)
+        if any(w[5] > 400 and w[6] > 300 for w in _find_windows()):
+            break
+    time.sleep(3.5)
 
     try:
         wins = _find_windows()
@@ -179,16 +183,19 @@ def run_auto(job: str, voice: str = "vibrant_baritone"):
         user32.ShowWindow(main_win, 3)
         time.sleep(1.2)
 
-        # 1) 첫 번째 프로젝트 열기
-        _click(_find_windows(), 308, 740, wait=7.0)
+        # 1) 첫 번째 프로젝트 열기 및 편집기 팝업창 닫기
+        _click(_find_windows(), 308, 740, wait=7.5)
         wins = _find_windows()
         main_win = max(wins, key=lambda x: x[5] * x[6])[0]
+        for w in wins:
+            if w[0] != main_win:
+                user32.PostMessageW(w[0], WM_CLOSE, 0, 0)
+        time.sleep(1.0)
         user32.ShowWindow(main_win, 3)
         time.sleep(1.0)
 
-        # 2) 자동 재생 중이면 일시정지 클릭 후 타임라인 텍스트 전체 드래그 선택
-        _click(_find_windows(), 975, 616, wait=0.8)
-        _drag(_find_windows(), 1650, 825, 195, 760, steps=25, wait=0.9)
+        # 2) 타임라인 텍스트 전체 드래그 선택
+        _drag(_find_windows(), 1650, 825, 195, 760, steps=25, wait=1.0)
 
         # 3) '텍스트에서 음성으로' 탭 → '활기찬 바리톤' 검색 → 카드 선택 → '음성 생성'
         _click(_find_windows(), 1555, 54, wait=1.8)

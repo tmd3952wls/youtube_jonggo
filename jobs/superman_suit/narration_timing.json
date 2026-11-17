@@ -1,0 +1,137 @@
+[
+  {
+    "text": "마네킹 통째로",
+    "start": 0.0,
+    "end": 0.833,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.108
+  },
+  {
+    "text": "전당포에 찾아온 남자",
+    "start": 0.833,
+    "end": 2.108,
+    "method": "whisperx",
+    "prop_start": 0.82,
+    "seg_start": 0.0,
+    "seg_end": 2.108
+  },
+  {
+    "text": "무려 4억2천만원짜리",
+    "start": 2.108,
+    "end": 3.487,
+    "method": "whisperx",
+    "prop_start": 2.108,
+    "seg_start": 2.108,
+    "seg_end": 4.624
+  },
+  {
+    "text": "전설의 옷이라는데",
+    "start": 3.487,
+    "end": 4.624,
+    "method": "whisperx",
+    "prop_start": 3.843,
+    "seg_start": 2.108,
+    "seg_end": 4.624
+  },
+  {
+    "text": "전 세계에 빨간 망토",
+    "start": 8.724,
+    "end": 9.884,
+    "method": "whisperx",
+    "prop_start": 8.724,
+    "seg_start": 8.724,
+    "seg_end": 11.265
+  },
+  {
+    "text": "열풍을 일으킨 그 영웅",
+    "start": 9.884,
+    "end": 11.265,
+    "method": "whisperx",
+    "prop_start": 9.939,
+    "seg_start": 8.724,
+    "seg_end": 11.265
+  },
+  {
+    "text": "그렇게 할리우드 소품",
+    "start": 17.115,
+    "end": 18.152,
+    "method": "whisperx",
+    "prop_start": 17.115,
+    "seg_start": 17.115,
+    "seg_end": 19.615
+  },
+  {
+    "text": "전문가를 급히 부르는데",
+    "start": 18.152,
+    "end": 19.615,
+    "method": "whisperx",
+    "prop_start": 18.31,
+    "seg_start": 17.115,
+    "seg_end": 19.615
+  },
+  {
+    "text": "이에 릭이 승부수를 던지는데",
+    "start": 39.682,
+    "end": 41.355,
+    "method": "whisperx",
+    "prop_start": 39.682,
+    "seg_start": 39.682,
+    "seg_end": 41.355
+  },
+  {
+    "text": "그렇게 빈손으로",
+    "start": 48.122,
+    "end": 48.981,
+    "method": "whisperx",
+    "prop_start": 48.122,
+    "seg_start": 48.122,
+    "seg_end": 49.722
+  },
+  {
+    "text": "돌아갔지만",
+    "start": 48.981,
+    "end": 49.722,
+    "method": "whisperx",
+    "prop_start": 49.104,
+    "seg_start": 48.122,
+    "seg_end": 49.722
+  },
+  {
+    "text": "이후 경매에 나온",
+    "start": 49.722,
+    "end": 50.6,
+    "method": "whisperx",
+    "prop_start": 49.722,
+    "seg_start": 49.722,
+    "seg_end": 51.888
+  },
+  {
+    "text": "원조 슈퍼맨 슈트는",
+    "start": 50.6,
+    "end": 51.888,
+    "method": "whisperx",
+    "prop_start": 50.744,
+    "seg_start": 49.722,
+    "seg_end": 51.888
+  },
+  {
+    "text": "무려 4억9천만원에",
+    "start": 51.888,
+    "end": 52.963,
+    "method": "whisperx",
+    "prop_start": 51.888,
+    "seg_start": 51.888,
+    "seg_end": 53.822
+  },
+  {
+    "text": "팔렸다고…",
+    "start": 52.963,
+    "end": 53.822,
+    "method": "whisperx",
+    "prop_start": 53.24,
+    "seg_start": 51.888,
+    "seg_end": 53.822
+  }
+]

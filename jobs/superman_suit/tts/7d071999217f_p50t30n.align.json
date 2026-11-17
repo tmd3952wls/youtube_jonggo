@@ -1,0 +1,53 @@
+{
+ "text": "전 세계에 빨간 망토 열풍을 일으킨 그 영웅",
+ "words": [
+  {
+   "word": "전",
+   "start": 0.04,
+   "end": 0.181,
+   "aligned": true
+  },
+  {
+   "word": "세계에",
+   "start": 0.302,
+   "end": 0.524,
+   "aligned": true
+  },
+  {
+   "word": "빨간",
+   "start": 0.625,
+   "end": 0.867,
+   "aligned": true
+  },
+  {
+   "word": "망토",
+   "start": 0.948,
+   "end": 1.17,
+   "aligned": true
+  },
+  {
+   "word": "열풍을",
+   "start": 1.21,
+   "end": 1.573,
+   "aligned": true
+  },
+  {
+   "word": "일으킨",
+   "start": 1.613,
+   "end": 1.956,
+   "aligned": true
+  },
+  {
+   "word": "그",
+   "start": 2.037,
+   "end": 2.117,
+   "aligned": true
+  },
+  {
+   "word": "영웅",
+   "start": 2.178,
+   "end": 2.359,
+   "aligned": true
+  }
+ ]
+}

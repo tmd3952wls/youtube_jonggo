@@ -1,0 +1,35 @@
+{
+ "text": "마네킹 통째로 전당포에 찾아온 남자",
+ "words": [
+  {
+   "word": "마네킹",
+   "start": 0.02,
+   "end": 0.361,
+   "aligned": true
+  },
+  {
+   "word": "통째로",
+   "start": 0.442,
+   "end": 0.823,
+   "aligned": true
+  },
+  {
+   "word": "전당포에",
+   "start": 0.883,
+   "end": 1.365,
+   "aligned": true
+  },
+  {
+   "word": "찾아온",
+   "start": 1.425,
+   "end": 1.707,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 1.787,
+   "end": 1.907,
+   "aligned": true
+  }
+ ]
+}

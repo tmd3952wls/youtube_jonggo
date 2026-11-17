@@ -1,0 +1,29 @@
+{
+ "text": "무려 4억2천만원짜리 전설의 옷이라는데",
+ "words": [
+  {
+   "word": "무려",
+   "start": 0.04,
+   "end": 0.221,
+   "aligned": true
+  },
+  {
+   "word": "4억2천만원짜리",
+   "start": 0.342,
+   "end": 1.348,
+   "aligned": true
+  },
+  {
+   "word": "전설의",
+   "start": 1.429,
+   "end": 1.811,
+   "aligned": true
+  },
+  {
+   "word": "옷이라는데",
+   "start": 1.852,
+   "end": 2.335,
+   "aligned": true
+  }
+ ]
+}
