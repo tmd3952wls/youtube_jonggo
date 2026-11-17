@@ -458,7 +458,9 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
             jump = prev is not None and (b - a) >= 0.70 and not any(prev[1] - 0.05 <= c <= a + 0.05 for c in cuts) and a - prev[1] < 5
             alt = (not alt) if jump else (alt if (prev is not None and (b - a) < 0.70 and not cut_at) else False)
             x, y, w, h = crop_box(face, iw, ih, cfg, cfg["face"]["jump_zoom"] if alt else 1.0)
-            fit = fit_all or seg_kind == "clip" and cfg["face"].get("fit_wide", True) and \
+            # fit_narration: 내레이션 밑그림(제품 클로즈업)도 원본 전체를 보여 줌 → 제품이 옆으로 잘리지 않음
+            fit = fit_all or (seg_kind == "clip" or cfg["face"].get("fit_narration", False)) and \
+                cfg["face"].get("fit_wide", True) and \
                 (face is None or face[3] < cfg["face"].get("wide_face_h", 0.28))
         prev_crop, prev_fit = (x, y, w, h), fit
         inputs += ["-ss", f"{va:.3f}", "-t", f"{vb - va:.3f}", "-i", str(src)]
@@ -477,7 +479,11 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
         else:
             d = b - a
             v_stretch = f"setpts=(PTS-STARTPTS)*{d / (vb - va):.5f}," if abs((vb - va) - d) > 0.01 else ""
-            if fit:  # 원본 전체(16:9)를 가로폭에 맞추고, 위아래 빈 곳은 같은 화면을 흐리고 어둡게 깔아 채움
+            if fit and cfg["face"].get("fit_fill", "blur") == "black":
+                # 2026-11-17 사용자 결정: 원본 전체(16:9)를 가로폭에 맞추고, 위아래 빈 곳은 검정으로 덮음 (흐림 채움은 보기 안 좋음)
+                fc.append(f"[{vk}:v]{v_stretch}fps=30,trim=duration={d:.3f},setsar=1,scale={W}:-2,"
+                          f"pad={W}:{VH}:0:(oh-ih)/2:color=black,setsar=1,format=yuv420p[v{k}]")
+            elif fit:  # 원본 전체(16:9)를 가로폭에 맞추고, 위아래 빈 곳은 같은 화면을 흐리고 어둡게 깔아 채움
                 fc.append(f"[{vk}:v]{v_stretch}fps=30,trim=duration={d:.3f},setsar=1,split[f{k}a][f{k}b];"
                           f"[f{k}a]scale={W}:{VH}:force_original_aspect_ratio=increase,crop={W}:{VH},"
                           f"boxblur=20:2,colorchannelmixer=rr=0.5:gg=0.5:bb=0.5[f{k}g];"
