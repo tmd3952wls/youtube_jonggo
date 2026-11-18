@@ -46,4 +46,7 @@ assets/voices/
 vmake_debug/
 .vmake_state.json
 .vmake_chrome/
+.yt_chrome/
 _mail_debug/
+_yt_upload_debug/
+jobs/_yt_upload_debug/

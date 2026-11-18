@@ -115,12 +115,22 @@ def main():
             print("DRY: 보내기 직전에 멈춤 (창은 그대로 둠)"); return
 
         pg.locator("button.button_write_task", has_text="보내기").first.click()
-        pg.wait_for_timeout(6000)
+        # 보내기 클릭 후 '첨부파일 업로드' 모달 진행(100%) → 발송 완료 화면까지 폴링 대기
+        send_deadline = time.time() + a.timeout_min * 60
+        k = 0
+        while time.time() < send_deadline:
+            pg.wait_for_timeout(3000)
+            k += 1
+            txt = pg.inner_text("body")
+            if "보냈습니다" in txt or pg.url.endswith("/done"):
+                shot_p = dbg / "03_sent.png"
+                pg.screenshot(path=str(shot_p))
+                print(f"SENT: {me} ← '{subject}' (대용량 첨부 {video.name})")
+                pg.close(); return
+            if k % 5 == 0:
+                pg.screenshot(path=str(dbg / f"sending_{k:03d}.png"))
+                print(f"..대용량 전송 중 ({k * 3}초 경과)", flush=True)
         pg.screenshot(path=str(dbg / "03_sent.png"))
-        txt = pg.inner_text("body")
-        if "보냈습니다" in txt or pg.url.endswith("/done"):
-            print(f"SENT: {me} ← '{subject}' (대용량 첨부 {video.name})")
-            pg.close(); return
         print("CHECK: 보낸 결과를 확인 못 함 → jobs/_mail_debug/03_sent.png 확인"); sys.exit(9)
 
 
