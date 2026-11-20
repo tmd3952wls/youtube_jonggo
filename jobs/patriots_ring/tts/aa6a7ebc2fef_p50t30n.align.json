@@ -1,0 +1,29 @@
+{
+ "text": "무려 슈퍼볼 우승 반지라는데",
+ "words": [
+  {
+   "word": "무려",
+   "start": 0.04,
+   "end": 0.202,
+   "aligned": true
+  },
+  {
+   "word": "슈퍼볼",
+   "start": 0.303,
+   "end": 0.647,
+   "aligned": true
+  },
+  {
+   "word": "우승",
+   "start": 0.688,
+   "end": 0.91,
+   "aligned": true
+  },
+  {
+   "word": "반지라는데",
+   "start": 0.971,
+   "end": 1.497,
+   "aligned": true
+  }
+ ]
+}

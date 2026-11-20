@@ -1,0 +1,41 @@
+{
+ "text": "릭이 사 놓고 안 파는 반지만",
+ "words": [
+  {
+   "word": "릭이",
+   "start": 0.02,
+   "end": 0.101,
+   "aligned": true
+  },
+  {
+   "word": "사",
+   "start": 0.263,
+   "end": 0.323,
+   "aligned": true
+  },
+  {
+   "word": "놓고",
+   "start": 0.384,
+   "end": 0.586,
+   "aligned": true
+  },
+  {
+   "word": "안",
+   "start": 0.606,
+   "end": 0.626,
+   "aligned": true
+  },
+  {
+   "word": "파는",
+   "start": 0.727,
+   "end": 0.909,
+   "aligned": true
+  },
+  {
+   "word": "반지만",
+   "start": 0.989,
+   "end": 1.353,
+   "aligned": true
+  }
+ ]
+}

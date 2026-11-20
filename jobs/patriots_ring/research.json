@@ -1,0 +1,27 @@
+{
+  "company": "2004 New England Patriots Super Bowl XXXIX championship ring (player ring, made by Jostens)",
+  "product": "A player's championship ring from Super Bowl XXXIX (Patriots beat the Eagles 24-21). A broker brought it to Pawn Stars (YouTube clip 'MAJOR CASH for 2004 Patriots Super Bowl Ring (Season 5)', id iQdpoD_XqB8). He said wide receiver Ricky Bryant left it with him for a loan and never came back. Ask $22,000, Rick opened at $18,000, deal at $21,000.",
+  "facts": [
+    {
+      "fact": "On the show the seller asked $22,000, Rick offered $18,000 then $20,000, and they made a deal at $21,000.",
+      "source": "broadcast transcript (jobs/patriots_ring/transcript.json ids 133-154)"
+    },
+    {
+      "fact": "The expert said the ring is 14K white gold with 124 diamonds, was the heaviest and most expensive Super Bowl ring made up to then, and that player rings like this sell for about $30,000 to $35,000.",
+      "source": "broadcast transcript ids 90-94, 128"
+    },
+    {
+      "fact": "Rick doubted the maker's mark because it looked hand engraved; the expert explained the ring was too big for the maker's normal engraver so each ring was laser engraved, and called it 100% legit.",
+      "source": "broadcast transcript ids 47, 118-123"
+    },
+    {
+      "fact": "The Old Man said they already had $200,000 worth of Super Bowl rings in the case that Rick refused to sell.",
+      "source": "broadcast transcript id 174"
+    },
+    {
+      "fact": "A 2025 Market Realist article also reports Rick paid $21,000 for a 2004 Patriots ring appraised at $30,000 to $35,000.",
+      "source": "https://marketrealist.com/what-was-the-value-of-a-2004-patriots-super-bowl-ring-on-pawn-stars/"
+    }
+  ],
+  "rate": "1 USD = 1,400 KRW (same as hendrix_strat)"
+}

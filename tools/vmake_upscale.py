@@ -126,6 +126,26 @@ def body_text(page):
         return ""
 
 
+def close_promo(page):
+    """광고 팝업(ant-modal)이 버튼을 가리면 닫는다. 결제·업그레이드 버튼은 누르지 않는다."""
+    for _ in range(3):
+        try:
+            wrap = page.locator(".ant-modal-wrap:visible")
+            if not wrap.count():
+                return
+            btn = page.locator(".ant-modal-wrap:visible .ant-modal-close, .ant-modal-wrap:visible [class*=close]").first
+            if btn.count():
+                btn.click(timeout=3000, force=True)
+            else:
+                page.keyboard.press("Escape")
+            page.wait_for_timeout(1000)
+        except Exception:
+            try:
+                page.keyboard.press("Escape")
+            except Exception:
+                pass
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--login", action="store_true", help="로그인 전용: 창에서 로그인 후 창을 닫으면 저장됨")
@@ -156,6 +176,7 @@ def main():
         page.goto(EDITOR, wait_until="domcontentloaded")
         page.wait_for_timeout(4000)
 
+        close_promo(page)
         # 쿠키: 꼭 필요한 것만
         try:
             if page.get_by_text("Manage Cookies").count():
@@ -195,6 +216,7 @@ def main():
         card = label.locator("xpath=ancestor::div[contains(concat(' ', @class), ' task-card--')][1]")
         card.scroll_into_view_if_needed()
         page.wait_for_timeout(3000)
+        close_promo(page)
         shot(page, dbg, "01_uploaded")
 
         res_label = "4K" if a.res == "4k" else "8K"

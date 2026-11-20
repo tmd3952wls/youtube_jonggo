@@ -1,0 +1,35 @@
+{
+ "text": "다이아몬드만 124개 박힌 역대급 반지",
+ "words": [
+  {
+   "word": "다이아몬드만",
+   "start": 0.04,
+   "end": 0.645,
+   "aligned": true
+  },
+  {
+   "word": "124개",
+   "start": 0.665,
+   "end": 1.31,
+   "aligned": true
+  },
+  {
+   "word": "박힌",
+   "start": 1.37,
+   "end": 1.592,
+   "aligned": true
+  },
+  {
+   "word": "역대급",
+   "start": 1.652,
+   "end": 1.975,
+   "aligned": true
+  },
+  {
+   "word": "반지",
+   "start": 2.096,
+   "end": 2.358,
+   "aligned": true
+  }
+ ]
+}

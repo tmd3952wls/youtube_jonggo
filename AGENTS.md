@@ -17,7 +17,7 @@
 ## 3. 대본·자막·음성·효과음 황금 규칙
 - 작업 폴더: `60SEC_YOUTUBE_AUTO_SHORT/jobs/<작업명>/`
 - **제작 완료 주제 목록 (절대 중복 금지)**:
-  `rolex_gmt`, `silver_hoard`, `mario_nes`, `vhs_trio`, `double_eagle`, `jordan_sneakers`, `pawn_auto`, `charizard_cards`, `apple1_computer`, `stradivarius_violin`, `faberge_spider`, `taj_mahal_treasure`, `hendrix_strat`, `superman_suit`
+  `rolex_gmt`, `silver_hoard`, `mario_nes`, `vhs_trio`, `double_eagle`, `jordan_sneakers`, `pawn_auto`, `charizard_cards`, `apple1_computer`, `stradivarius_violin`, `faberge_spider`, `taj_mahal_treasure`, `hendrix_strat`, `superman_suit`, `patriots_ring`
 - **총 영상 길이**: 반드시 **45~57초** 사이로 맞춘다 (권장 타깃 **50~53초**).
 - **자막·음성 빈틈 제로 규칙**:
   - 처음(`0.00초`)부터 끝까지 **자막 사이 빈틈이 단 0.01초도 생기지 않게** 이전 자막 끝과 다음 자막 시작을 빈틈없이 이어 붙인다(화면에서 자막이 잠깐이라도 사라지거나 깜빡이면 안 됨).

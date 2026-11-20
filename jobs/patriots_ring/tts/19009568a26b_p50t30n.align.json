@@ -1,0 +1,29 @@
+{
+ "text": "하지만 아버지는 뒷목을 잡았는데",
+ "words": [
+  {
+   "word": "하지만",
+   "start": 0.02,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "아버지는",
+   "start": 0.322,
+   "end": 0.685,
+   "aligned": true
+  },
+  {
+   "word": "뒷목을",
+   "start": 0.766,
+   "end": 1.108,
+   "aligned": true
+  },
+  {
+   "word": "잡았는데",
+   "start": 1.169,
+   "end": 1.632,
+   "aligned": true
+  }
+ ]
+}

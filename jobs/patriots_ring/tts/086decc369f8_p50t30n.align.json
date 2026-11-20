@@ -1,0 +1,35 @@
+{
+ "text": "결국 전문가까지 불러 확인해 보는데",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.02,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "전문가까지",
+   "start": 0.403,
+   "end": 1.047,
+   "aligned": true
+  },
+  {
+   "word": "불러",
+   "start": 1.148,
+   "end": 1.349,
+   "aligned": true
+  },
+  {
+   "word": "확인해",
+   "start": 1.41,
+   "end": 1.671,
+   "aligned": true
+  },
+  {
+   "word": "보는데",
+   "start": 1.772,
+   "end": 2.054,
+   "aligned": true
+  }
+ ]
+}

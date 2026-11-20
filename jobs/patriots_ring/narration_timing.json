@@ -1,0 +1,128 @@
+[
+  {
+    "text": "큼지막한 반지 하나를",
+    "start": 0.0,
+    "end": 1.077,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.567
+  },
+  {
+    "text": "들고 전당포에 온 남자",
+    "start": 1.077,
+    "end": 2.567,
+    "method": "whisperx",
+    "prop_start": 1.222,
+    "seg_start": 0.0,
+    "seg_end": 2.567
+  },
+  {
+    "text": "무려 슈퍼볼",
+    "start": 2.567,
+    "end": 3.205,
+    "method": "whisperx",
+    "prop_start": 2.567,
+    "seg_start": 2.567,
+    "seg_end": 4.206
+  },
+  {
+    "text": "우승 반지라는데",
+    "start": 3.205,
+    "end": 4.206,
+    "method": "whisperx",
+    "prop_start": 3.72,
+    "seg_start": 2.567,
+    "seg_end": 4.206
+  },
+  {
+    "text": "다이아몬드만 124개",
+    "start": 9.955,
+    "end": 11.275,
+    "method": "whisperx",
+    "prop_start": 9.955,
+    "seg_start": 9.955,
+    "seg_end": 12.433
+  },
+  {
+    "text": "박힌 역대급 반지",
+    "start": 11.275,
+    "end": 12.433,
+    "method": "whisperx",
+    "prop_start": 11.608,
+    "seg_start": 9.955,
+    "seg_end": 12.433
+  },
+  {
+    "text": "결국 전문가까지",
+    "start": 18.336,
+    "end": 19.434,
+    "method": "whisperx",
+    "prop_start": 18.336,
+    "seg_start": 18.336,
+    "seg_end": 20.67
+  },
+  {
+    "text": "불러 확인해 보는데",
+    "start": 19.434,
+    "end": 20.67,
+    "method": "whisperx",
+    "prop_start": 19.366,
+    "seg_start": 18.336,
+    "seg_end": 20.67
+  },
+  {
+    "text": "결국 2,940만원에",
+    "start": 44.183,
+    "end": 45.566,
+    "method": "whisperx",
+    "prop_start": 44.183,
+    "seg_start": 44.183,
+    "seg_end": 46.25
+  },
+  {
+    "text": "거래 성사",
+    "start": 45.566,
+    "end": 46.25,
+    "method": "whisperx",
+    "prop_start": 45.887,
+    "seg_start": 44.183,
+    "seg_end": 46.25
+  },
+  {
+    "text": "하지만 아버지는",
+    "start": 46.25,
+    "end": 46.966,
+    "method": "whisperx",
+    "prop_start": 46.25,
+    "seg_start": 46.25,
+    "seg_end": 48.05
+  },
+  {
+    "text": "뒷목을 잡았는데",
+    "start": 46.966,
+    "end": 48.05,
+    "method": "whisperx",
+    "prop_start": 47.137,
+    "seg_start": 46.25,
+    "seg_end": 48.05
+  },
+  {
+    "text": "릭이 안 파는 반지만 벌써",
+    "start": 49.35,
+    "end": 50.85,
+    "method": "whisperx",
+    "prop_start": 49.35,
+    "seg_start": 49.35,
+    "seg_end": 50.85
+  },
+  {
+    "text": "2억8천만원어치였다고…",
+    "start": 50.85,
+    "end": 52.55,
+    "method": "whisperx",
+    "prop_start": 50.85,
+    "seg_start": 50.85,
+    "seg_end": 52.55
+  }
+]

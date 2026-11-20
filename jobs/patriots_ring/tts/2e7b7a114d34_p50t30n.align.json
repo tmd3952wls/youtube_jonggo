@@ -1,0 +1,29 @@
+{
+ "text": "결국 2,940만원에 거래 성사",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.02,
+   "end": 0.242,
+   "aligned": true
+  },
+  {
+   "word": "2,940만원에",
+   "start": 0.262,
+   "end": 1.353,
+   "aligned": true
+  },
+  {
+   "word": "거래",
+   "start": 1.433,
+   "end": 1.615,
+   "aligned": true
+  },
+  {
+   "word": "성사",
+   "start": 1.676,
+   "end": 1.898,
+   "aligned": true
+  }
+ ]
+}
