@@ -44,10 +44,11 @@
 ## 4. 자동 품질 게이트 검수 · 유튜브 비공개 업로드 · 깃허브 푸시
 1. `python make_short.py render "jobs/<작업명>"` 실행 시 자동으로 돌아가는 **`tools/qa_check.py`에서 `[자동 품질 검수 통과 9/9]`** 확인 + `tools/verify_sync.py` 싱크 확인.
 2. 자동 저장된 시각 검수 시트(`jobs/<작업명>/qa_big_cards.jpg`, `qa_transitions.jpg`)를 직접 눈으로 확인(경고가 1건이라도 있으면 발송 전 즉시 수정·재렌더).
-2-1. **Vmake 화질 업그레이드 (유튜브 업로드 직전)**: `python "60SEC_YOUTUBE_AUTO_SHORT/tools/vmake_upscale.py" --video jobs/<작업명>/final.mp4 --out jobs/<작업명>/final_4k.mp4` 실행 → QUALITY 모델 **4K**로 변환·다운로드 (이번 달 4K 무료 50건을 다 쓰면 자동으로 **8K**로 전환). 업그레이드된 영상을 `<한글이름>.mp4`로 저장해 유튜브에 올린다. 로그인은 전용 크롬 프로필(`.vmake_chrome`, 일반 크롬, '이전 상태로 다시 열기' 켜짐)에 유지된다. 크롬은 **화면 밖에 떠서 백그라운드로** 일하고, 로그인이 풀렸을 때만 창이 화면에 나타나니 `LOGIN_NEEDED`가 나오면 사용자에게 그 창에서 로그인만 부탁한다(`--login`으로 직접 꺼낼 수도 있음). **로그인이 풀리면(`LOGIN_NEEDED`) 다른 작업보다 먼저 사용자에게 바로 알린다.** 이 크롬은 모든 세션이 함께 쓰는 공용 창이므로(포트 9333) 끄거나 남의 탭을 닫지 않는다. 네이버 2단계 인증은 절대 끄지 않는다(끄면 SMTP 애플리케이션 비밀번호가 사라져 `send_mail.py`가 멈춤). 결제·업그레이드 화면이 뜨면 멈추고 사용자에게 알린다.
+2-1. **Vmake 화질 업그레이드 (유튜브 업로드 직전)**: `python "60SEC_YOUTUBE_AUTO_SHORT/tools/vmake_upscale.py" --video jobs/<작업명>/final.mp4 --out jobs/<작업명>/final_4k.mp4 --model fast` 실행 → **FAST 모델 4K**로 변환·다운로드 (보통 3~5분, 2160x3840 확인. `--model quality`로 바꿀 수 있음). 업그레이드된 영상을 `<한글이름>.mp4`로 저장해 유튜브에 올린다. 로그인은 전용 크롬 프로필(`.vmake_chrome`, 일반 크롬, '이전 상태로 다시 열기' 켜짐)에 유지된다. 크롬은 **화면 밖에 떠서 백그라운드로** 일하고, 로그인이 풀렸을 때만 창이 화면에 나타나니 `LOGIN_NEEDED`가 나오면 사용자에게 그 창에서 로그인만 부탁한다(`--login`으로 직접 꺼낼 수도 있음). **로그인이 풀리면(`LOGIN_NEEDED`) 다른 작업보다 먼저 사용자에게 바로 알린다.** 이 크롬은 모든 세션이 함께 쓰는 공용 창이므로(포트 9333) 끄거나 남의 탭을 닫지 않는다. 네이버 2단계 인증은 절대 끄지 않는다(끄면 SMTP 애플리케이션 비밀번호가 사라져 `send_mail.py`가 멈춤). 결제·업그레이드 화면이 뜨면 멈추고 사용자에게 알린다.
 3. `C:\Users\tmd39\Downloads\chatgpt 사진\<한글이름>.mp4`, `<한글이름>_업로드정보(제목·설명·태그).txt`, `<한글이름>_고정댓글.txt` 저장 후 `python "60SEC_YOUTUBE_AUTO_SHORT/tools/youtube_upload.py" --video "C:/Users/tmd39/Downloads/chatgpt 사진/<한글이름>.mp4" --name <한글이름> --privacy private`로 **유튜브에 비공개 업로드**한다 (`UPLOAD_DONE` 확인).
-   - **1일 1영상**: 매일 영상 1개를 만들어 **낮 12시~오후 3시 사이**에 비공개 업로드가 끝나도록 한다. 공개 전환은 사용자가 직접 한다.
-   - 유튜브 로그인은 전용 크롬(`.yt_chrome`, 포트 9346 — 1분랭킹 채널 크롬이 9346을 쓰므로 겹치면 안 됨)에 유지된다. `LOGIN_NEEDED`가 나오면 `login_youtube.bat` 창에서 사용자에게 로그인만 부탁한다.
+   - **1일 1영상**: 매일 **새벽 6시**에 제작을 시작해(예약 작업 `daily-pawn-short`) 완성되는 대로 바로 비공개 업로드한다. 공개 전환은 사용자가 직접 한다.
+   - **채널별 크롬 분리**: Vmake는 공용 크롬(`.vmake_chrome`, 포트 9333), 유튜브 업로드는 1분냠냠 전용 크롬(`.yt_chrome`)에서만 한다. `CHANNEL_MISMATCH`가 나오면 올리지 말고 멈춘다.
+   - 유튜브 로그인은 전용 크롬(`.yt_chrome`, 포트 9346 — 1분랭킹 채널 크롬이 9336을 쓰므로 겹치면 안 됨)에 유지된다. `LOGIN_NEEDED`가 나오면 `login_youtube.bat` 창에서 사용자에게 로그인만 부탁한다.
    - Vmake가 무료 횟수 소진·유료 벽·시간 초과로 4K를 못 만들면 결제하지 말고 **원본 화질(`final.mp4`)로 업로드**하고 그 사실을 보고한다.
    - 네이버 메일(`send_mail.py`, `naver_bigmail.py`)은 사용자가 따로 부탁할 때만 쓴다.
 4. 위 제작 완료 주제 목록에 새 `<작업명>`을 추가하고 `https://github.com/tmd3952wls/youtube_jonggo.git` (`jonggo/main`)에 커밋 및 푸시한다 (`.env` 및 영상·음성 파일 제외).

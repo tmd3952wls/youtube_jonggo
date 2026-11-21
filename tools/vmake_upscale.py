@@ -1,4 +1,4 @@
-"""Vmake 화질 업그레이드 자동화 (QUALITY 모델 4K → 4K 월 한도 초과 시 8K).
+"""Vmake 화질 업그레이드 자동화 (기본 FAST 모델 4K, --model 로 변경 → 4K 월 한도 초과 시 8K).
 
 사용법:
   python tools/vmake_upscale.py --video jobs/<작업명>/final.mp4 --out jobs/<작업명>/final_4k.mp4
@@ -126,6 +126,24 @@ def body_text(page):
         return ""
 
 
+def wait_in_downloads(stem, since, timeout=900):
+    """다운로드 폴더에서 이름이 stem 으로 시작하는 mp4 가 since 이후에 생겨 다 받아질 때까지 기다린다."""
+    dl_dir = Path.home() / "Downloads"
+    t0 = time.time()
+    last = {}
+    while time.time() - t0 < timeout:
+        cands = [f for f in dl_dir.glob(stem + "*.mp4") if f.stat().st_mtime >= since and f.stat().st_size > 1024]
+        partial = list(dl_dir.glob(stem + "*.crdownload"))
+        if cands and not partial:
+            f = max(cands, key=lambda x: x.stat().st_mtime)
+            sz = f.stat().st_size
+            if last.get(f) == sz:
+                return f
+            last[f] = sz
+        time.sleep(3)
+    return None
+
+
 def close_promo(page):
     """광고 팝업(ant-modal)이 버튼을 가리면 닫는다. 결제·업그레이드 버튼은 누르지 않는다."""
     for _ in range(3):
@@ -152,6 +170,7 @@ def main():
     ap.add_argument("--video")
     ap.add_argument("--out")
     ap.add_argument("--res", default="4k", choices=["4k", "8k"])
+    ap.add_argument("--model", default="fast", choices=["fast", "quality", "master"], help="Vmake 모델 (기본 Fast)")
     ap.add_argument("--dry", action="store_true")
     ap.add_argument("--fetch-label", help="이미 변환한 카드(업로드 파일 이름)에서 다운로드만 다시 받기")
     ap.add_argument("--timeout-min", type=float, default=30)
@@ -223,7 +242,7 @@ def main():
         if a.fetch_label:
             print("다운로드만 다시 받기:", uname, flush=True)
         else:
-            card.get_by_text("Quality", exact=True).first.click(timeout=60000)
+            card.get_by_text(a.model.capitalize(), exact=True).first.click(timeout=60000)
             page.wait_for_timeout(1500)
             res_label = "4K" if a.res == "4k" else "8K"
             try:
@@ -233,7 +252,7 @@ def main():
             page.wait_for_timeout(1500)
             shot(page, dbg, "02_settings")
             txt = body_text(page)
-            print("설정 완료: Quality /", res_label, flush=True)
+            print("설정 완료:", a.model.capitalize(), "/", res_label, flush=True)
             if a.dry:
                 print("DRY: 다운로드 직전에 멈춤"); page.wait_for_timeout(2000); page.close(); return
 
@@ -281,6 +300,15 @@ def main():
                     with page.expect_download(timeout=60000) as dl:
                         vis[-1].click()
                     dl.value.save_as(str(out))
+                    if not out.exists() or out.stat().st_size < 1024:
+                        # 크롬이 파일을 '다운로드' 폴더에 직접 저장해 save_as 가 빈 파일만 남기는 경우
+                        got = wait_in_downloads(Path(uname).stem, time.time() - 30)
+                        if got:
+                            import shutil as _sh
+                            if out.exists():
+                                out.unlink()
+                            _sh.move(str(got), str(out))
+                            print("다운로드 폴더에서 가져옴:", got.name, flush=True)
                     save_state(ctx)
                     d_src, d_out = probe_dur(video), probe_dur(out)
                     if abs(d_src - d_out) > 0.3:
