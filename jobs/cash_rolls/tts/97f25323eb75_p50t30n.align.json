@@ -1,0 +1,29 @@
+{
+ "text": "주행거리도 고작 3만1천 마일",
+ "words": [
+  {
+   "word": "주행거리도",
+   "start": 0.04,
+   "end": 0.466,
+   "aligned": true
+  },
+  {
+   "word": "고작",
+   "start": 0.547,
+   "end": 0.729,
+   "aligned": true
+  },
+  {
+   "word": "3만1천",
+   "start": 0.749,
+   "end": 1.053,
+   "aligned": true
+  },
+  {
+   "word": "마일",
+   "start": 1.073,
+   "end": 1.154,
+   "aligned": true
+  }
+ ]
+}

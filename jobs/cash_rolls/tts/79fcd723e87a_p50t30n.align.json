@@ -1,0 +1,41 @@
+{
+ "text": "작년 다른 캐시 롤스로이스가 6,930만원에 낙찰",
+ "words": [
+  {
+   "word": "작년",
+   "start": 0.06,
+   "end": 0.341,
+   "aligned": true
+  },
+  {
+   "word": "다른",
+   "start": 0.422,
+   "end": 0.602,
+   "aligned": true
+  },
+  {
+   "word": "캐시",
+   "start": 0.683,
+   "end": 0.884,
+   "aligned": true
+  },
+  {
+   "word": "롤스로이스가",
+   "start": 0.944,
+   "end": 1.566,
+   "aligned": true
+  },
+  {
+   "word": "6,930만원에",
+   "start": 1.606,
+   "end": 2.711,
+   "aligned": true
+  },
+  {
+   "word": "낙찰",
+   "start": 2.771,
+   "end": 2.952,
+   "aligned": true
+  }
+ ]
+}

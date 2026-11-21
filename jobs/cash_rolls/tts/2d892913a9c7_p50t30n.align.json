@@ -1,0 +1,35 @@
+{
+ "text": "방송국이 조니 캐시에게 선물한 차라는데",
+ "words": [
+  {
+   "word": "방송국이",
+   "start": 0.04,
+   "end": 0.522,
+   "aligned": true
+  },
+  {
+   "word": "조니",
+   "start": 0.582,
+   "end": 0.782,
+   "aligned": true
+  },
+  {
+   "word": "캐시에게",
+   "start": 0.863,
+   "end": 1.224,
+   "aligned": true
+  },
+  {
+   "word": "선물한",
+   "start": 1.284,
+   "end": 1.585,
+   "aligned": true
+  },
+  {
+   "word": "차라는데",
+   "start": 1.665,
+   "end": 2.026,
+   "aligned": true
+  }
+ ]
+}

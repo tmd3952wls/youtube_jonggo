@@ -243,6 +243,11 @@ def main():
                 print("버튼 안내:", info, flush=True)
             except Exception:
                 info = ""
+            if re.search(r"upgrade your vmake plan", info, re.I):
+                # 무료 횟수를 다 썼다. Apply 를 누르면 30분을 기다려도 5초 미리보기만 나온다.
+                shot(page, dbg, "paid_wall")
+                print("PAID_WALL: 무료 횟수 소진 — 결제 없이는 변환 불가. 원본 화질(final.mp4)로 올리세요.", flush=True)
+                sys.exit(9)
             m = re.search(r"remaining free uses:\s*(\d+)", info, re.I)
             if res_label == "4K" and m and int(m.group(1)) == 0:
                 print("LIMIT_4K: 이번 달 4K 무료 횟수 0 → 8K로 전환", flush=True)

@@ -1,0 +1,41 @@
+{
+ "text": "이 차가 결국 얼마에 팔렸는지는 고정댓글에",
+ "words": [
+  {
+   "word": "이",
+   "start": 0.02,
+   "end": 0.08,
+   "aligned": true
+  },
+  {
+   "word": "차가",
+   "start": 0.141,
+   "end": 0.322,
+   "aligned": true
+  },
+  {
+   "word": "결국",
+   "start": 0.382,
+   "end": 0.623,
+   "aligned": true
+  },
+  {
+   "word": "얼마에",
+   "start": 0.683,
+   "end": 0.945,
+   "aligned": true
+  },
+  {
+   "word": "팔렸는지는",
+   "start": 1.005,
+   "end": 1.689,
+   "aligned": true
+  },
+  {
+   "word": "고정댓글에",
+   "start": 1.789,
+   "end": 2.312,
+   "aligned": true
+  }
+ ]
+}

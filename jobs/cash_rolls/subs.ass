@@ -1,0 +1,92 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,카페24 아네모네,128,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+Style: Narr,카페24 아네모네,88,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Dial,카페24 아네모네,84,&H001AE8FF,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Tag,카페24 아네모네,70,&H00FFE035,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,7,0,7,40,40,525,1
+Style: Credit,카페24 아네모네,30,&H009A9A9A,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:51.27,Title,,0,0,0,,{\pos(540,208)\fs128\c&H001AE8FF\3c&H001AE8FF\bord0\shad3\4c&H000000&\4a&H40&}조니 캐시 롤스로이스
+Dialogue: 1,0:00:00.00,0:00:51.27,Title,,0,0,0,,{\pos(540,341)\fs115\c&H00FFFFFF\3c&H00FFFFFF\bord0\shad3\4c&H000000&\4a&H40&}4억9천만원 불렀다가?!
+Dialogue: 20,0:00:00.00,0:00:51.27,Credit,,0,0,0,,{\an8\pos(540,1507)\fs40\1c&HFFFFFF&\alpha&HB3&\bord0\shad0\blur0.5}1분냠냠
+Dialogue: 3,0:00:00.00,0:00:01.22,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}조니 캐시 롤스로이스로
+Dialogue: 5,0:00:00.00,0:00:01.22,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}조니 캐시 롤스로이스로
+Dialogue: 3,0:00:01.22,0:00:01.97,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}4억9천만원
+Dialogue: 5,0:00:01.22,0:00:01.97,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs98}4억9천만원
+Dialogue: 3,0:00:01.97,0:00:02.57,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}부른 남자
+Dialogue: 5,0:00:01.97,0:00:02.57,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}부른 남자
+Dialogue: 3,0:00:02.57,0:00:03.15,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}무슨 차예요?
+Dialogue: 5,0:00:02.57,0:00:03.15,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}무슨 차예요?
+Dialogue: 3,0:00:03.15,0:00:05.33,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}1970년식 {\1c&H000000&\fs76}롤스로이스{\1c&H000000&\fs76}요
+Dialogue: 5,0:00:03.15,0:00:05.33,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}1970년식 {\1c&HFFF23D&\fs76}롤스로이스{\1c&HFFFFFF&\fs76}요
+Dialogue: 3,0:00:05.33,0:00:06.44,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}아빠는 차 사시면 안 돼요
+Dialogue: 5,0:00:05.33,0:00:06.44,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}아빠는 차 사시면 안 돼요
+Dialogue: 3,0:00:06.44,0:00:07.06,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}왜?
+Dialogue: 5,0:00:06.44,0:00:07.06,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}왜?
+Dialogue: 3,0:00:07.06,0:00:08.21,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}너무 {\1c&H000000&\fs76}흥분{\1c&H000000&\fs76}하시잖아요
+Dialogue: 5,0:00:07.06,0:00:08.21,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}너무 {\1c&H4E3BFF&\fs76}흥분{\1c&HFFFFFF&\fs76}하시잖아요
+Dialogue: 3,0:00:08.21,0:00:09.45,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}방송국이 {\1c&H000000&\fs76}조니 캐시{\1c&H000000&\fs76}에게
+Dialogue: 5,0:00:08.21,0:00:09.45,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}방송국이 {\1c&HFFF23D&\fs76}조니 캐시{\1c&HFFFFFF&\fs76}에게
+Dialogue: 3,0:00:09.45,0:00:10.48,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}선물한 차라는데
+Dialogue: 5,0:00:09.45,0:00:10.48,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}선물한 차라는데
+Dialogue: 3,0:00:10.48,0:00:11.17,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}이분이 조니
+Dialogue: 5,0:00:10.48,0:00:11.17,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}이분이 조니
+Dialogue: 3,0:00:11.17,0:00:12.44,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}캐시 {\1c&H000000&\fs76}드러머{\1c&H000000&\fs76}예요
+Dialogue: 5,0:00:11.17,0:00:12.44,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}캐시 {\1c&HFFF23D&\fs76}드러머{\1c&HFFFFFF&\fs76}예요
+Dialogue: 3,0:00:12.44,0:00:14.23,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}얼마 원해요?
+Dialogue: 5,0:00:12.44,0:00:14.23,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}얼마 원해요?
+Dialogue: 3,0:00:14.23,0:00:15.61,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}4억9천만원{\1c&H000000&\fs98}!
+Dialogue: 5,0:00:14.23,0:00:15.61,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs98}4억9천만원{\1c&HFFFFFF&\fs98}!
+Dialogue: 3,0:00:15.61,0:00:16.51,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}그 돈이면 {\1c&H000000&\fs76}새 차{\1c&H000000&\fs76} 사요
+Dialogue: 5,0:00:15.61,0:00:16.51,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}그 돈이면 {\1c&HFFF23D&\fs76}새 차{\1c&HFFFFFF&\fs76} 사요
+Dialogue: 3,0:00:16.51,0:00:17.88,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}조니 캐시{\1c&H000000&\fs76} 차는\N아니잖아요
+Dialogue: 5,0:00:16.51,0:00:17.88,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFF23D&\fs76}조니 캐시{\1c&HFFFFFF&\fs76} 차는\N아니잖아요
+Dialogue: 3,0:00:17.88,0:00:18.77,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}결국 클래식카
+Dialogue: 5,0:00:17.88,0:00:18.77,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}결국 클래식카
+Dialogue: 3,0:00:18.77,0:00:20.04,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}전문가를 불렀는데
+Dialogue: 5,0:00:18.77,0:00:20.04,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}전문가를 불렀는데
+Dialogue: 3,0:00:20.04,0:00:21.84,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}손 하나 안 댄 {\1c&H000000&\fs76}원조{\1c&H000000&\fs76}예요
+Dialogue: 5,0:00:20.04,0:00:21.84,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}손 하나 안 댄 {\1c&HFFF23D&\fs76}원조{\1c&HFFFFFF&\fs76}예요
+Dialogue: 3,0:00:21.84,0:00:23.63,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}주행거리도 고작\N{\1c&H000000&\fs76}3만1천 마일
+Dialogue: 5,0:00:21.84,0:00:23.63,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}주행거리도 고작\N{\1c&HFFF23D&\fs76}3만1천 마일
+Dialogue: 3,0:00:23.63,0:00:25.46,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}이거 사면 얼마 받아?
+Dialogue: 5,0:00:23.63,0:00:25.46,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}이거 사면 얼마 받아?
+Dialogue: 3,0:00:25.46,0:00:27.01,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}작년 다른 캐시\N롤스로이스가
+Dialogue: 5,0:00:25.46,0:00:27.01,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}작년 다른 캐시\N롤스로이스가
+Dialogue: 3,0:00:27.01,0:00:28.63,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}6,930만원{\1c&H000000&\fs76}에 낙찰
+Dialogue: 5,0:00:27.01,0:00:28.63,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs76}6,930만원{\1c&HFFFFFF&\fs76}에 낙찰
+Dialogue: 3,0:00:28.63,0:00:30.69,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}7천만원{\1c&H000000&\fs98} 선이에요
+Dialogue: 5,0:00:28.63,0:00:30.69,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs98}7천만원{\1c&HFFFFFF&\fs98} 선이에요
+Dialogue: 3,0:00:30.69,0:00:32.88,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}캐시 차가 {\1c&H000000&\fs76}아니었어요
+Dialogue: 5,0:00:30.69,0:00:32.88,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}캐시 차가 {\1c&H4E3BFF&\fs76}아니었어요
+Dialogue: 3,0:00:32.88,0:00:34.59,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}본 적도{\1c&H000000&\fs76} 없는 차라고요
+Dialogue: 5,0:00:32.88,0:00:34.59,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H4E3BFF&\fs76}본 적도{\1c&HFFFFFF&\fs76} 없는 차라고요
+Dialogue: 3,0:00:34.59,0:00:36.06,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}마지노선이 얼마예요?
+Dialogue: 5,0:00:34.59,0:00:36.06,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}마지노선이 얼마예요?
+Dialogue: 3,0:00:36.06,0:00:37.74,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}7천만원{\1c&H000000&\fs76}이면 바로 사요
+Dialogue: 5,0:00:36.06,0:00:37.74,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs76}7천만원{\1c&HFFFFFF&\fs76}이면 바로 사요
+Dialogue: 3,0:00:37.74,0:00:39.39,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs98}어림도 없죠
+Dialogue: 5,0:00:37.74,0:00:39.39,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\fscx86\fscy86\t(0,115,\fscx106\fscy106)\t(115,200,\fscx100\fscy100)\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H4E3BFF&\fs98}어림도 없죠
+Dialogue: 3,0:00:39.39,0:00:41.49,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}2억8천만원{\1c&H000000&\fs76}\N밑으론 안 돼요
+Dialogue: 5,0:00:39.39,0:00:41.49,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&H23FF2C&\fs76}2억8천만원{\1c&HFFFFFF&\fs76}\N밑으론 안 돼요
+Dialogue: 3,0:00:41.49,0:00:42.90,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}거래는 {\1c&H000000&\fs76}안 되겠네요
+Dialogue: 5,0:00:41.49,0:00:42.90,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}거래는 {\1c&H4E3BFF&\fs76}안 되겠네요
+Dialogue: 3,0:00:42.90,0:00:45.05,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}경매{\1c&H000000&\fs76}에 내놓을게요
+Dialogue: 5,0:00:42.90,0:00:45.05,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFF23D&\fs76}경매{\1c&HFFFFFF&\fs76}에 내놓을게요
+Dialogue: 3,0:00:45.05,0:00:46.99,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}조니 캐시 팬이라면
+Dialogue: 5,0:00:45.05,0:00:46.99,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}조니 캐시 팬이라면
+Dialogue: 3,0:00:46.99,0:00:48.57,Dial,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}제값{\1c&H000000&\fs76} 쳐주겠죠
+Dialogue: 5,0:00:46.99,0:00:48.57,Dial,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFF23D&\fs76}제값{\1c&HFFFFFF&\fs76} 쳐주겠죠
+Dialogue: 3,0:00:48.57,0:00:49.52,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}이 차가 결국 얼마에
+Dialogue: 5,0:00:48.57,0:00:49.52,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}이 차가 결국 얼마에
+Dialogue: 3,0:00:49.52,0:00:51.27,Narr,,0,0,0,,{\an2\pos(544,1439)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H50&\blur6.0\t(0,70,\alpha&H1A&\blur5)}{\1c&H000000&\fs76}팔렸는지는 고정댓글에
+Dialogue: 5,0:00:49.52,0:00:51.27,Narr,,0,0,0,,{\an2\pos(540,1435)\fnBM JUA\b0\bord3.0\3c&H000000&\shad0\alpha&H28&\blur6.0\t(0,70,\alpha&H00&\blur0.4)}{\1c&HFFFFFF&\fs76}팔렸는지는 고정댓글에

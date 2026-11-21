@@ -200,8 +200,10 @@ def run_auto(job: str, voice: str = "vibrant_baritone"):
         # 3) '텍스트에서 음성으로' 탭 → '활기찬 바리톤' 검색 → 카드 선택 → '음성 생성'
         _click(_find_windows(), 1555, 54, wait=1.8)
         _click(_find_windows(), 1536, 92, wait=0.6)
-        _type_text(main_win, "활기찬 바리톤", wait=2.8)
-        _click(_find_windows(), 1383, 206, wait=3.5)
+        _type_text(main_win, "활기찬 바리톤", wait=5.0)
+        # 캡컷 9.8부터 카드 선택이 적용되기까지 오래 걸린다. 짧게 기다리면
+        # 기본 목소리(오픈 마이크)로 만들어져 harvest 가 0개를 가져온다.
+        _click(_find_windows(), 1383, 206, wait=10.0)
         _click(_find_windows(), 1862, 670, wait=3.0)
 
         # 4) 생성 완료 폴링 (최대 45초)

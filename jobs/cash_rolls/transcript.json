@@ -1,0 +1,902 @@
+[
+  {
+    "id": 0,
+    "start": 0.18,
+    "end": 2.44,
+    "text": "I got a car, I think you'll be interested in."
+  },
+  {
+    "id": 1,
+    "start": 2.44,
+    "end": 3.64,
+    "text": "What kind of car?"
+  },
+  {
+    "id": 2,
+    "start": 3.64,
+    "end": 7.14,
+    "text": "1970 Rolls-Royce Silver Shadow."
+  },
+  {
+    "id": 3,
+    "start": 7.14,
+    "end": 8.14,
+    "text": "Oh, that sounds cool."
+  },
+  {
+    "id": 4,
+    "start": 8.14,
+    "end": 9.48,
+    "text": "Let's go check it out."
+  },
+  {
+    "id": 5,
+    "start": 9.48,
+    "end": 10.58,
+    "text": "You sit right there."
+  },
+  {
+    "id": 6,
+    "start": 10.58,
+    "end": 11.98,
+    "text": "You're not allowed to buy cars."
+  },
+  {
+    "id": 7,
+    "start": 11.98,
+    "end": 13.58,
+    "text": "Why not?"
+  },
+  {
+    "id": 8,
+    "start": 13.58,
+    "end": 16.02,
+    "text": "Because you get too excited."
+  },
+  {
+    "id": 9,
+    "start": 16.02,
+    "end": 17.72,
+    "text": "Can you pull out my warehouse?"
+  },
+  {
+    "id": 10,
+    "start": 17.72,
+    "end": 21.23,
+    "text": "There's no other product in the world"
+  },
+  {
+    "id": 11,
+    "start": 21.23,
+    "end": 23.59,
+    "text": "that says luxury like a Rolls-Royce."
+  },
+  {
+    "id": 12,
+    "start": 23.59,
+    "end": 25.99,
+    "text": "I mean, these cars today cost more than a house."
+  },
+  {
+    "id": 13,
+    "start": 25.99,
+    "end": 27.87,
+    "text": "The price tag might seem crazy,"
+  },
+  {
+    "id": 14,
+    "start": 27.87,
+    "end": 29.31,
+    "text": "but people have always paid it,"
+  },
+  {
+    "id": 15,
+    "start": 29.31,
+    "end": 30.83,
+    "text": "and they always will."
+  },
+  {
+    "id": 16,
+    "start": 30.83,
+    "end": 34.85,
+    "text": "That's a beautiful thing about a Rolls-Royce"
+  },
+  {
+    "id": 17,
+    "start": 35.43,
+    "end": 37.43,
+    "text": "You know when you see a Rolls-Royce, you know it's a Rolls-Royce"
+  },
+  {
+    "id": 18,
+    "start": 38.11,
+    "end": 41.84,
+    "text": "This is cool. It's a beautiful car"
+  },
+  {
+    "id": 19,
+    "start": 42.4,
+    "end": 50.64,
+    "text": "Yes, it is gentlemen. I'd like you to meet W. S. Holland. How's it going? Good to see you. Hey, I brought WS here for the provenance for this car"
+  },
+  {
+    "id": 20,
+    "start": 50.66,
+    "end": 57.42,
+    "text": "What provenance this car was purchased by ABC television as a gift"
+  },
+  {
+    "id": 21,
+    "start": 57.42,
+    "end": 65.18,
+    "text": "The Johnny Cash, as a result of the success of the Johnny Cash show in 1969."
+  },
+  {
+    "id": 22,
+    "start": 65.18,
+    "end": 66.18,
+    "text": "This belonged to Johnny Cash."
+  },
+  {
+    "id": 23,
+    "start": 66.18,
+    "end": 68.18,
+    "text": "This belonged to Johnny Cash."
+  },
+  {
+    "id": 24,
+    "start": 68.18,
+    "end": 69.18,
+    "text": "The man in black."
+  },
+  {
+    "id": 25,
+    "start": 69.18,
+    "end": 70.18,
+    "text": "The man in black."
+  },
+  {
+    "id": 26,
+    "start": 70.18,
+    "end": 72.18,
+    "text": "And this gentleman here was Johnny Cash's drummer."
+  },
+  {
+    "id": 27,
+    "start": 72.18,
+    "end": 74.18,
+    "text": "All right, I'm impressed."
+  },
+  {
+    "id": 28,
+    "start": 74.18,
+    "end": 79.18,
+    "text": "My connection with Johnny Cash goes back a long time."
+  },
+  {
+    "id": 29,
+    "start": 79.18,
+    "end": 83.18,
+    "text": "In 1960, he called me to go with him just for two weeks."
+  },
+  {
+    "id": 30,
+    "start": 83.18,
+    "end": 86.18,
+    "text": "And it lasted almost 40 years."
+  },
+  {
+    "id": 31,
+    "start": 86.18,
+    "end": 88.52,
+    "text": "And what's the dollar figure you're looking for?"
+  },
+  {
+    "id": 32,
+    "start": 88.52,
+    "end": 90.52,
+    "text": "$350,000."
+  },
+  {
+    "id": 33,
+    "start": 90.52,
+    "end": 92.02,
+    "text": "Ooh."
+  },
+  {
+    "id": 34,
+    "start": 92.02,
+    "end": 93.82,
+    "text": "Ha-ha-ha-ha-ha-ha."
+  },
+  {
+    "id": 35,
+    "start": 93.82,
+    "end": 95.62,
+    "text": "You can buy a new one for that."
+  },
+  {
+    "id": 36,
+    "start": 95.62,
+    "end": 98.86,
+    "text": "But it wouldn't be Johnny Cash's car."
+  },
+  {
+    "id": 37,
+    "start": 98.86,
+    "end": 101.46,
+    "text": "I happen to believe that I've got the premier"
+  },
+  {
+    "id": 38,
+    "start": 101.46,
+    "end": 103.94,
+    "text": "collectible of Johnny Cash in the world."
+  },
+  {
+    "id": 39,
+    "start": 103.94,
+    "end": 107.04,
+    "text": "Let me call up a buddy of mine."
+  },
+  {
+    "id": 40,
+    "start": 107.04,
+    "end": 109.18,
+    "text": "Uh, he deals in, like, celebrity cars"
+  },
+  {
+    "id": 41,
+    "start": 109.18,
+    "end": 110.38,
+    "text": "and stuff like this."
+  },
+  {
+    "id": 42,
+    "start": 110.38,
+    "end": 111.62,
+    "text": "Let me get him down here."
+  },
+  {
+    "id": 43,
+    "start": 111.62,
+    "end": 113.92,
+    "text": "Who knows what you can get?"
+  },
+  {
+    "id": 44,
+    "start": 113.92,
+    "end": 115.18,
+    "text": "No problem."
+  },
+  {
+    "id": 45,
+    "start": 115.18,
+    "end": 117.36,
+    "text": "I don't doubt that this is Johnny Cash's car."
+  },
+  {
+    "id": 46,
+    "start": 117.36,
+    "end": 119.36,
+    "text": "But when someone walks through the door"
+  },
+  {
+    "id": 47,
+    "start": 119.36,
+    "end": 120.86,
+    "text": "asking for this kind of money,"
+  },
+  {
+    "id": 48,
+    "start": 120.86,
+    "end": 123.36,
+    "text": "I'd be stupid not to get a second opinion,"
+  },
+  {
+    "id": 49,
+    "start": 123.36,
+    "end": 126.36,
+    "text": "especially since it's belong to the man in black."
+  },
+  {
+    "id": 50,
+    "start": 126.36,
+    "end": 128.36,
+    "text": "A name like that will add value."
+  },
+  {
+    "id": 51,
+    "start": 128.36,
+    "end": 130.36,
+    "text": "I'm just not sure how much."
+  },
+  {
+    "id": 52,
+    "start": 130.36,
+    "end": 132.36,
+    "text": "Steve, this is Steve."
+  },
+  {
+    "id": 53,
+    "start": 132.36,
+    "end": 134.36,
+    "text": "Good to meet you, Steve. I'm Steve, too."
+  },
+  {
+    "id": 54,
+    "start": 134.36,
+    "end": 136.36,
+    "text": "Nice to meet you, sir."
+  },
+  {
+    "id": 55,
+    "start": 136.36,
+    "end": 137.36,
+    "text": "And there's no one I trust more"
+  },
+  {
+    "id": 56,
+    "start": 137.36,
+    "end": 140.36,
+    "text": "when it comes to classic cars than my buddy Steve."
+  },
+  {
+    "id": 57,
+    "start": 140.36,
+    "end": 141.36,
+    "text": "Who's it?"
+  },
+  {
+    "id": 58,
+    "start": 141.36,
+    "end": 143.36,
+    "text": "Wow, Johnny Cash's Rolls-Royce, huh?"
+  },
+  {
+    "id": 59,
+    "start": 143.36,
+    "end": 145.36,
+    "text": "Doesn't get much cooler than that."
+  },
+  {
+    "id": 60,
+    "start": 145.36,
+    "end": 146.74,
+    "text": "much cooler than that."
+  },
+  {
+    "id": 61,
+    "start": 146.74,
+    "end": 148.12,
+    "text": "Yeah, this is nice."
+  },
+  {
+    "id": 62,
+    "start": 148.12,
+    "end": 151.4,
+    "text": "Rolls Royce always represented the higher echelon."
+  },
+  {
+    "id": 63,
+    "start": 151.4,
+    "end": 154.28,
+    "text": "Even back in the 20s, the 70s, and even today,"
+  },
+  {
+    "id": 64,
+    "start": 154.28,
+    "end": 157.52,
+    "text": "I think the same type of guy drives a Rolls Royce."
+  },
+  {
+    "id": 65,
+    "start": 157.52,
+    "end": 158.76,
+    "text": "Can we pop the bonnet?"
+  },
+  {
+    "id": 66,
+    "start": 158.76,
+    "end": 160.88,
+    "text": "Absolutely."
+  },
+  {
+    "id": 67,
+    "start": 160.88,
+    "end": 164.14,
+    "text": "I love saying that, don't you?"
+  },
+  {
+    "id": 68,
+    "start": 164.14,
+    "end": 165.1,
+    "text": "Wow."
+  },
+  {
+    "id": 69,
+    "start": 165.1,
+    "end": 166.94,
+    "text": "I mean, the first thing I can tell is this motor's never"
+  },
+  {
+    "id": 70,
+    "start": 166.94,
+    "end": 168.62,
+    "text": "been out of this car."
+  },
+  {
+    "id": 71,
+    "start": 168.62,
+    "end": 170.5,
+    "text": "Definitely looks like a survivor under here."
+  },
+  {
+    "id": 72,
+    "start": 170.5,
+    "end": 176.06,
+    "text": "It's an amazing condition for its age."
+  },
+  {
+    "id": 73,
+    "start": 176.06,
+    "end": 178.06,
+    "text": "Wow, all original leather."
+  },
+  {
+    "id": 74,
+    "start": 178.06,
+    "end": 179.58,
+    "text": "This was top of the line stuff."
+  },
+  {
+    "id": 75,
+    "start": 179.58,
+    "end": 183.58,
+    "text": "As a way we can drive it to see how it runs and performs and all that?"
+  },
+  {
+    "id": 76,
+    "start": 183.58,
+    "end": 186.58,
+    "text": "Uh, sure. Uh, carefully."
+  },
+  {
+    "id": 77,
+    "start": 186.58,
+    "end": 187.58,
+    "text": "I'm driving."
+  },
+  {
+    "id": 78,
+    "start": 187.58,
+    "end": 188.58,
+    "text": "All right, shotgun."
+  },
+  {
+    "id": 79,
+    "start": 188.58,
+    "end": 192.58,
+    "text": "I love Johnny Cash, and to be driving his Rolls-Royce is pretty amazing."
+  },
+  {
+    "id": 80,
+    "start": 192.58,
+    "end": 195.58,
+    "text": "I'll try not to drive it into a ring of fire."
+  },
+  {
+    "id": 81,
+    "start": 195.58,
+    "end": 197.58,
+    "text": "I'm sorry. I should have said that."
+  },
+  {
+    "id": 82,
+    "start": 197.58,
+    "end": 205.28,
+    "text": "I gotta admit, I mean, this thing really drives well for a 1970 car."
+  },
+  {
+    "id": 83,
+    "start": 205.28,
+    "end": 207.28,
+    "text": "31,000 original miles."
+  },
+  {
+    "id": 84,
+    "start": 207.28,
+    "end": 210.28,
+    "text": "All right, well, you guys have fun talking about the whole car thing."
+  },
+  {
+    "id": 85,
+    "start": 210.28,
+    "end": 212.32,
+    "text": "the whole car thing, I got things to do, all right?"
+  },
+  {
+    "id": 86,
+    "start": 212.32,
+    "end": 213.32,
+    "text": "All right, all right."
+  },
+  {
+    "id": 87,
+    "start": 213.32,
+    "end": 214.32,
+    "text": "Put the damn window down."
+  },
+  {
+    "id": 88,
+    "start": 214.32,
+    "end": 215.32,
+    "text": "Put the lamp."
+  },
+  {
+    "id": 89,
+    "start": 215.32,
+    "end": 216.32,
+    "text": "You know, I am not driving right now."
+  },
+  {
+    "id": 90,
+    "start": 216.32,
+    "end": 217.32,
+    "text": "I can't hear you."
+  },
+  {
+    "id": 91,
+    "start": 217.32,
+    "end": 218.32,
+    "text": "That's right."
+  },
+  {
+    "id": 92,
+    "start": 218.32,
+    "end": 221.48,
+    "text": "I mean, the headliner, this mohair or whatever this is, is an amazing condition."
+  },
+  {
+    "id": 93,
+    "start": 221.48,
+    "end": 226.08,
+    "text": "I know on the new Rolls Royce's, you can order cash beer headliners, lambswool, warmets."
+  },
+  {
+    "id": 94,
+    "start": 226.08,
+    "end": 227.08,
+    "text": "Excuse me, driver."
+  },
+  {
+    "id": 95,
+    "start": 227.08,
+    "end": 228.08,
+    "text": "Can you keep it down a little bit?"
+  },
+  {
+    "id": 96,
+    "start": 228.08,
+    "end": 229.08,
+    "text": "Oh, thanks."
+  },
+  {
+    "id": 97,
+    "start": 229.08,
+    "end": 230.08,
+    "text": "I appreciate it."
+  },
+  {
+    "id": 98,
+    "start": 230.08,
+    "end": 231.08,
+    "text": "Thank you."
+  },
+  {
+    "id": 99,
+    "start": 231.08,
+    "end": 232.08,
+    "text": "Put the window down."
+  },
+  {
+    "id": 100,
+    "start": 232.08,
+    "end": 233.08,
+    "text": "I can't hear you."
+  },
+  {
+    "id": 101,
+    "start": 233.08,
+    "end": 235.16,
+    "text": "For a 1970 car, it felt pretty solid."
+  },
+  {
+    "id": 102,
+    "start": 235.16,
+    "end": 236.44,
+    "text": "It felt like a tank, actually."
+  },
+  {
+    "id": 103,
+    "start": 236.44,
+    "end": 237.44,
+    "text": "It really did."
+  },
+  {
+    "id": 104,
+    "start": 237.44,
+    "end": 239.12,
+    "text": "It was a pretty cool car."
+  },
+  {
+    "id": 105,
+    "start": 239.12,
+    "end": 240.12,
+    "text": "I'll tell you what."
+  },
+  {
+    "id": 106,
+    "start": 240.12,
+    "end": 242.12,
+    "text": "It drove really good. I gotta give you that."
+  },
+  {
+    "id": 107,
+    "start": 242.12,
+    "end": 245.12,
+    "text": "If I buy this off him, how much thing I can get out of it?"
+  },
+  {
+    "id": 108,
+    "start": 245.12,
+    "end": 247.12,
+    "text": "Of course, Johnny Cash owned this car,"
+  },
+  {
+    "id": 109,
+    "start": 247.12,
+    "end": 250.12,
+    "text": "so, you know, we're talking about kind of a big push there in the hype,"
+  },
+  {
+    "id": 110,
+    "start": 250.12,
+    "end": 252.12,
+    "text": "but I don't know if you know about this."
+  },
+  {
+    "id": 111,
+    "start": 252.12,
+    "end": 256.12,
+    "text": "Last year, another 1970 Rolls Royce owned by Johnny Cash"
+  },
+  {
+    "id": 112,
+    "start": 256.12,
+    "end": 261.12,
+    "text": "went through auction for $49,500."
+  },
+  {
+    "id": 113,
+    "start": 261.12,
+    "end": 263.12,
+    "text": "We have to take that into account,"
+  },
+  {
+    "id": 114,
+    "start": 263.12,
+    "end": 268.12,
+    "text": "so I've got to put it about that same area at $50,000."
+  },
+  {
+    "id": 115,
+    "start": 268.12,
+    "end": 273.8,
+    "text": "The car you're talking about was a maroon limousine longer car"
+  },
+  {
+    "id": 116,
+    "start": 273.8,
+    "end": 275.4,
+    "text": "than this."
+  },
+  {
+    "id": 117,
+    "start": 275.4,
+    "end": 278.16,
+    "text": "Johnny Cash never owned the car."
+  },
+  {
+    "id": 118,
+    "start": 278.16,
+    "end": 280.4,
+    "text": "Johnny Cash never saw the car."
+  },
+  {
+    "id": 119,
+    "start": 280.4,
+    "end": 282.84,
+    "text": "Hey, well, the fact is that the people, if it was in an auction"
+  },
+  {
+    "id": 120,
+    "start": 282.84,
+    "end": 285.68,
+    "text": "and everyone at the auction believed it was Johnny Cash's,"
+  },
+  {
+    "id": 121,
+    "start": 285.68,
+    "end": 287.32,
+    "text": "that's what a Johnny Cash car would be worth."
+  },
+  {
+    "id": 122,
+    "start": 287.32,
+    "end": 288.08,
+    "text": "Sure."
+  },
+  {
+    "id": 123,
+    "start": 288.08,
+    "end": 291.29,
+    "text": "OK."
+  },
+  {
+    "id": 124,
+    "start": 291.29,
+    "end": 291.81,
+    "text": "Thanks, Steve."
+  },
+  {
+    "id": 125,
+    "start": 291.81,
+    "end": 292.81,
+    "text": "Hey, my pleasure."
+  },
+  {
+    "id": 126,
+    "start": 292.81,
+    "end": 293.21,
+    "text": "OK."
+  },
+  {
+    "id": 127,
+    "start": 293.21,
+    "end": 294.41,
+    "text": "And it was a pleasure meeting you."
+  },
+  {
+    "id": 128,
+    "start": 294.41,
+    "end": 295.13,
+    "text": "Hey, my pleasure."
+  },
+  {
+    "id": 129,
+    "start": 295.13,
+    "end": 295.57,
+    "text": "It really was."
+  },
+  {
+    "id": 130,
+    "start": 295.57,
+    "end": 297.61,
+    "text": "Thank you, gentlemen, very much."
+  },
+  {
+    "id": 131,
+    "start": 297.61,
+    "end": 299.93,
+    "text": "Well, that's disappointing."
+  },
+  {
+    "id": 132,
+    "start": 299.93,
+    "end": 302.45,
+    "text": "I mean, when you said $350, I had my doubts."
+  },
+  {
+    "id": 133,
+    "start": 302.45,
+    "end": 303.97,
+    "text": "That's why I called him in there."
+  },
+  {
+    "id": 134,
+    "start": 303.97,
+    "end": 306.09,
+    "text": "Someone who was going to purchase this car"
+  },
+  {
+    "id": 135,
+    "start": 306.09,
+    "end": 308.17,
+    "text": "is going to be a high-end collector."
+  },
+  {
+    "id": 136,
+    "start": 308.17,
+    "end": 310.77,
+    "text": "Tell me, what's your bottom dollar on the car?"
+  },
+  {
+    "id": 137,
+    "start": 310.77,
+    "end": 312.41,
+    "text": "Oh."
+  },
+  {
+    "id": 138,
+    "start": 312.41,
+    "end": 315.05,
+    "text": "Because if you say $50,000, I'll buy it."
+  },
+  {
+    "id": 139,
+    "start": 315.05,
+    "end": 316.81,
+    "text": "Well, no, that's not going to happen."
+  },
+  {
+    "id": 140,
+    "start": 316.81,
+    "end": 320.61,
+    "text": "I don't think I could take less than $200,000 for this car."
+  },
+  {
+    "id": 141,
+    "start": 320.61,
+    "end": 322.57,
+    "text": "Well, obviously, you're not going to make a deal,"
+  },
+  {
+    "id": 142,
+    "start": 322.57,
+    "end": 325.21,
+    "text": "but it's been a pleasure."
+  },
+  {
+    "id": 143,
+    "start": 325.21,
+    "end": 326.25,
+    "text": "It has been a pleasure."
+  },
+  {
+    "id": 144,
+    "start": 326.25,
+    "end": 327.41,
+    "text": "And it's been an honor, sir."
+  },
+  {
+    "id": 145,
+    "start": 327.41,
+    "end": 328.41,
+    "text": "It's been my honor."
+  },
+  {
+    "id": 146,
+    "start": 328.41,
+    "end": 329.17,
+    "text": "My honor."
+  },
+  {
+    "id": 147,
+    "start": 329.17,
+    "end": 331.61,
+    "text": "we are probably going to take a two auction,"
+  },
+  {
+    "id": 148,
+    "start": 331.61,
+    "end": 333.85,
+    "text": "where a collector of Johnny Cash"
+  },
+  {
+    "id": 149,
+    "start": 333.85,
+    "end": 335.61,
+    "text": "will pay a fair price for this car."
+  }
+]

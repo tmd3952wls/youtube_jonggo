@@ -1,6 +1,6 @@
 """YouTube Studio '1분냠냠' 채널 비공개(Private) 자동 업로드 도구.
 
-- 전용 크롬 프로필(.yt_chrome, 원격 포트 9336)을 사용하여 Vmake 및 다른 채널 세션과 분리 유지한다.
+- 전용 크롬 프로필(.yt_chrome, 원격 포트 9346 — 1분랭킹 채널 크롬이 9346을 쓰므로 겹치면 안 됨)을 사용하여 Vmake 및 다른 채널 세션과 분리 유지한다.
 - 300MB+ 4K 영상도 전송 제한이 없도록 CDP DOM.setFileInputFiles 로 로컬 경로를 직접 지정한다.
 - 채널이 여러 개일 경우 목표 채널명(기본: '1분냠냠')을 자동 선택하거나 확인한다.
 
@@ -26,7 +26,7 @@ SWITCHER_URL = "https://www.youtube.com/channel_switcher"
 
 CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 YT_CHROME_PROFILE = ROOT / ".yt_chrome"
-CDP_PORT = 9336
+CDP_PORT = 9346
 HIDE_POS = (-32000, -32000)
 SHOW_POS = (80, 40)
 

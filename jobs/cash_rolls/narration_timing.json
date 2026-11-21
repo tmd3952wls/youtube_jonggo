@@ -1,0 +1,110 @@
+[
+  {
+    "text": "조니 캐시 롤스로이스로",
+    "start": 0.0,
+    "end": 1.22,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.567
+  },
+  {
+    "text": "4억9천만원",
+    "start": 1.22,
+    "end": 1.966,
+    "method": "whisperx",
+    "prop_start": 0.854,
+    "seg_start": 0.0,
+    "seg_end": 2.567
+  },
+  {
+    "text": "부른 남자",
+    "start": 1.966,
+    "end": 2.567,
+    "method": "whisperx",
+    "prop_start": 2.205,
+    "seg_start": 0.0,
+    "seg_end": 2.567
+  },
+  {
+    "text": "방송국이 조니 캐시에게",
+    "start": 8.211,
+    "end": 9.445,
+    "method": "whisperx",
+    "prop_start": 8.211,
+    "seg_start": 8.211,
+    "seg_end": 10.478
+  },
+  {
+    "text": "선물한 차라는데",
+    "start": 9.445,
+    "end": 10.478,
+    "method": "whisperx",
+    "prop_start": 9.792,
+    "seg_start": 8.211,
+    "seg_end": 10.478
+  },
+  {
+    "text": "결국 클래식카",
+    "start": 17.878,
+    "end": 18.771,
+    "method": "whisperx",
+    "prop_start": 17.878,
+    "seg_start": 17.878,
+    "seg_end": 20.045
+  },
+  {
+    "text": "전문가를 불렀는데",
+    "start": 18.771,
+    "end": 20.045,
+    "method": "whisperx",
+    "prop_start": 18.835,
+    "seg_start": 17.878,
+    "seg_end": 20.045
+  },
+  {
+    "text": "주행거리도 고작 3만1천 마일",
+    "start": 21.845,
+    "end": 23.626,
+    "method": "whisperx",
+    "prop_start": 21.845,
+    "seg_start": 21.845,
+    "seg_end": 23.626
+  },
+  {
+    "text": "작년 다른 캐시 롤스로이스가",
+    "start": 25.459,
+    "end": 27.015,
+    "method": "whisperx",
+    "prop_start": 25.459,
+    "seg_start": 25.459,
+    "seg_end": 28.626
+  },
+  {
+    "text": "6,930만원에 낙찰",
+    "start": 27.015,
+    "end": 28.626,
+    "method": "whisperx",
+    "prop_start": 26.21,
+    "seg_start": 25.459,
+    "seg_end": 28.626
+  },
+  {
+    "text": "이 차가 결국 얼마에",
+    "start": 48.569,
+    "end": 49.524,
+    "method": "whisperx",
+    "prop_start": 48.569,
+    "seg_start": 48.569,
+    "seg_end": 51.302
+  },
+  {
+    "text": "팔렸는지는 고정댓글에",
+    "start": 49.524,
+    "end": 51.302,
+    "method": "whisperx",
+    "prop_start": 49.805,
+    "seg_start": 48.569,
+    "seg_end": 51.302
+  }
+]

@@ -1,0 +1,41 @@
+{
+ "text": "조니 캐시 롤스로이스로 4억9천만원 부른 남자",
+ "words": [
+  {
+   "word": "조니",
+   "start": 0.04,
+   "end": 0.242,
+   "aligned": true
+  },
+  {
+   "word": "캐시",
+   "start": 0.323,
+   "end": 0.544,
+   "aligned": true
+  },
+  {
+   "word": "롤스로이스로",
+   "start": 0.605,
+   "end": 1.169,
+   "aligned": true
+  },
+  {
+   "word": "4억9천만원",
+   "start": 1.27,
+   "end": 1.936,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 2.016,
+   "end": 2.157,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 2.218,
+   "end": 2.42,
+   "aligned": true
+  }
+ ]
+}

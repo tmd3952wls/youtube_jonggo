@@ -1,0 +1,29 @@
+{
+ "text": "결국 클래식카 전문가를 불렀는데",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.02,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "클래식카",
+   "start": 0.422,
+   "end": 0.883,
+   "aligned": true
+  },
+  {
+   "word": "전문가를",
+   "start": 0.943,
+   "end": 1.425,
+   "aligned": true
+  },
+  {
+   "word": "불렀는데",
+   "start": 1.506,
+   "end": 1.967,
+   "aligned": true
+  }
+ ]
+}
