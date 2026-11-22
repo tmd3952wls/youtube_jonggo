@@ -52,7 +52,10 @@ def main():
         # (말하는 사람이 아닌 듣는 사람 얼굴처럼 정지에 가까운 화면: 시간차 0 위치의 오차가 최솟값과 거의 같다)
         flat = (sorted(errs)[min(3, len(errs) - 1)] - errs[k]) < 0.6 or (errs[M] - errs[k]) < 1.5
         ok = abs(lag) <= 1 / FPS + 1e-6
-        tag = "OK" if ok else ("판단 불가(화면 움직임 거의 없음)" if flat else "어긋남")
+        # 화면 효과(천천히 밀기·확대)가 걸린 조각은 같은 시각이어도 그림이 조금 달라 최솟값 자체가 크다.
+        # 이런 조각은 시간차를 믿을 수 없다 (다른 구간을 통째로 넣은 경우는 qa_check 의 [입모양 싱크] 항목이 잡는다).
+        blurry = errs[k] > 12.0
+        tag = "OK" if ok else ("판단 불가(화면 움직임 거의 없음)" if flat else ("판단 불가(화면 효과로 비교 어려움)" if blurry else "어긋남"))
         bad += tag == "어긋남"
         rows.append((m["seg"], m["out_a"], d, lag, errs[k], tag))
     for r in rows:

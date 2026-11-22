@@ -6,7 +6,7 @@
     "method": "whisperx",
     "prop_start": 0.0,
     "seg_start": 0.0,
-    "seg_end": 2.867
+    "seg_end": 2.8
   },
   {
     "text": "홈런 방망이로",
@@ -15,87 +15,87 @@
     "method": "whisperx",
     "prop_start": 0.663,
     "seg_start": 0.0,
-    "seg_end": 2.867
+    "seg_end": 2.8
   },
   {
     "text": "28억원 부른 남자",
     "start": 1.578,
-    "end": 2.867,
+    "end": 2.8,
     "method": "whisperx",
     "prop_start": 1.179,
     "seg_start": 0.0,
-    "seg_end": 2.867
+    "seg_end": 2.8
   },
   {
     "text": "진짜인지 사진을 찍어",
-    "start": 15.4,
-    "end": 16.595,
+    "start": 15.467,
+    "end": 16.662,
     "method": "whisperx",
-    "prop_start": 15.4,
-    "seg_start": 15.4,
-    "seg_end": 17.9
+    "prop_start": 15.467,
+    "seg_start": 15.467,
+    "seg_end": 17.967
   },
   {
     "text": "전문가를 찾아갔는데",
-    "start": 16.595,
-    "end": 17.9,
+    "start": 16.662,
+    "end": 17.967,
     "method": "whisperx",
-    "prop_start": 16.704,
-    "seg_start": 15.4,
-    "seg_end": 17.9
+    "prop_start": 16.771,
+    "seg_start": 15.467,
+    "seg_end": 17.967
   },
   {
     "text": "그런데 손잡이",
-    "start": 22.3,
-    "end": 23.059,
+    "start": 22.367,
+    "end": 23.126,
     "method": "whisperx",
-    "prop_start": 22.3,
-    "seg_start": 22.3,
-    "seg_end": 24.133
+    "prop_start": 22.367,
+    "seg_start": 22.367,
+    "seg_end": 24.2
   },
   {
     "text": "쪽 글씨를 보더니",
-    "start": 23.059,
-    "end": 24.133,
+    "start": 23.126,
+    "end": 24.2,
     "method": "whisperx",
-    "prop_start": 23.106,
-    "seg_start": 22.3,
-    "seg_end": 24.133
+    "prop_start": 23.172,
+    "seg_start": 22.367,
+    "seg_end": 24.2
   },
   {
     "text": "날짜까지 너무",
-    "start": 27.9,
-    "end": 28.813,
+    "start": 27.933,
+    "end": 28.846,
     "method": "whisperx",
-    "prop_start": 27.9,
-    "seg_start": 27.9,
-    "seg_end": 29.933
+    "prop_start": 27.933,
+    "seg_start": 27.933,
+    "seg_end": 29.967
   },
   {
     "text": "또박또박 쓰여 있고",
-    "start": 28.813,
-    "end": 29.933,
+    "start": 28.846,
+    "end": 29.967,
     "method": "whisperx",
-    "prop_start": 28.734,
-    "seg_start": 27.9,
-    "seg_end": 29.933
+    "prop_start": 28.768,
+    "seg_start": 27.933,
+    "seg_end": 29.967
   },
   {
     "text": "28억원 부른 방망이,",
-    "start": 42.2,
-    "end": 43.537,
+    "start": 42.167,
+    "end": 43.504,
     "method": "whisperx",
-    "prop_start": 42.2,
-    "seg_start": 42.2,
-    "seg_end": 45.167
+    "prop_start": 42.167,
+    "seg_start": 42.167,
+    "seg_end": 45.133
   },
   {
     "text": "진짜 값은 수십만원",
-    "start": 43.537,
-    "end": 45.167,
+    "start": 43.504,
+    "end": 45.133,
     "method": "whisperx",
-    "prop_start": 43.751,
-    "seg_start": 42.2,
-    "seg_end": 45.167
+    "prop_start": 43.718,
+    "seg_start": 42.167,
+    "seg_end": 45.133
   }
 ]

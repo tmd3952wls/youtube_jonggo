@@ -409,6 +409,10 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
                     a_ = c + F1
                 if b_ - 0.06 < c < b_ + 0.06:
                     b_ = c - F1
+        if kk == "speech":
+            # 조각 길이를 프레임(1/30초) 배수로 맞춤 → 화면 프레임 수와 소리 길이가 정확히 같아져
+            # 조각마다 소리 끝에 0~33ms 무음이 끼거나 화면이 밀리는 일이 없다 (입모양 싱크, 2026-11-22)
+            b_ = a_ + max(2, round((b_ - a_) * 30)) / 30
         if b_ - a_ > 0.05:
             snapped.append((a_, b_, kk, xf))
     shots = snapped or shots
@@ -465,6 +469,18 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
             fit = fit_all or (seg_kind == "clip" or cfg["face"].get("fit_narration", False)) and \
                 cfg["face"].get("fit_wide", True) and \
                 (face is None or face[3] < cfg["face"].get("wide_face_h", 0.28))
+        # 구도 직접 지정(plan.json "framing"): 자동 얼굴 인식이 놓친 장면을 사람이 본 대로 잡는다.
+        # [{"from": 원본초, "to": 원본초, "cx": 0~1, "cy": 0~1, "h": 0~1(원본 높이 대비 자를 높이)}]
+        mid_ = (va + vb) / 2
+        for fr_ in cfg.get("_framing", []):
+            if float(fr_["from"]) <= mid_ <= float(fr_["to"]):
+                h_ = min(ih * float(fr_.get("h", 0.78)), ih, iw * VH / W)
+                w_ = h_ * W / VH
+                x_ = max(0.0, min(iw - w_, float(fr_.get("cx", 0.5)) * iw - w_ / 2))
+                y_ = max(0.0, min(ih - h_, float(fr_.get("cy", 0.5)) * ih - h_ / 2))
+                x, y, w, h = int(x_) // 2 * 2, int(y_) // 2 * 2, int(w_) // 2 * 2, int(h_) // 2 * 2
+                fit, face = False, None
+                break
         prev_crop, prev_fit = (x, y, w, h), fit
         inputs += ["-ss", f"{va:.3f}", "-t", f"{vb - va:.3f}", "-i", str(src)]
         vk, nin = nin, nin + 1
@@ -592,7 +608,8 @@ def build_segments(job: Path, plan, cfg):
                                     "stream=width,height", "-of", "csv=p=0", src]).strip().split(",")[:2])
     cuts = detect_cuts(src)
     ensure_vocals(job, cfg)
-    cfg = {**cfg, "layout": {**cfg["layout"], "src_w": iw, "src_h": ih}, "_cuts": cuts}
+    cfg = {**cfg, "layout": {**cfg["layout"], "src_w": iw, "src_h": ih}, "_cuts": cuts,
+           "_framing": plan.get("framing", [])}
     seg_dir = job / "segments"
     seg_dir.mkdir(exist_ok=True)
     R = cfg["render"]
@@ -1092,6 +1109,15 @@ def render(job: Path, cfg):
         f"\n고정댓글:\n{plan.get('pinned_comment', '')}\n",
         encoding="utf-8")
     write_json(job / "timeline.json", [{"kind": s["kind"], "dur": round(s["dur"], 2)} for s in segs])
+    # 구도 검토용 기록: 원본에서 온 모든 화면 조각의 원본 구간과 자른 영역 (tools/framing_sheet.py 가 그림으로 보여 줌)
+    _t0, _acc = [], 0.0
+    for sg in segs:
+        _t0.append(_acc)
+        _acc += sg["dur"]
+    write_json(job / "shots_map.json", [
+        {"seg": k, "kind": sg["kind"], "src_a": round(m["src_a"], 3), "src_b": round(m["src_b"], 3),
+         "out_a": round(_t0[k] + m["out_a"], 3), "out_b": round(_t0[k] + m["out_b"], 3), "crop": m.get("crop")}
+        for k, sg in enumerate(segs) for m in sg["map"] if not m.get("ext") and m.get("kind") != "ramp"])
     # 입모양 싱크 기록: 대사 조각마다 소리 원본 구간(src)과 화면 원본 구간(v)을 남김 → qa_check 가 어긋남을 잡는다
     write_json(job / "sync_map.json", [
         {"seg": k, "src_a": round(m["src_a"], 3), "src_b": round(m["src_b"], 3), "v_a": m.get("v_a"), "v_b": m.get("v_b"),
