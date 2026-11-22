@@ -158,6 +158,18 @@ def run_qa(job: Path) -> bool:
     if not (job / "source_vocals.wav").exists():
         issues.append("[배경음악 분리 누락] source_vocals.wav 파일이 없습니다.")
 
+    # 9-1. 입모양 싱크: 대사 조각의 화면 원본 구간이 소리 원본 구간과 같아야 함 (화면만 늘리거나 다른 구간을 넣으면 어긋남)
+    sm_p = job / "sync_map.json"
+    if sm_p.exists():
+        import json as _json
+        off = [m for m in _json.loads(sm_p.read_text(encoding="utf-8"))
+               if m.get("v_a") is not None and (abs(m["v_a"] - m["src_a"]) > 0.05 or abs(m["v_b"] - m["src_b"]) > 0.05)]
+        if off:
+            issues.append("[입모양 싱크] 화면과 소리의 원본 시각이 다른 대사 조각 "
+                          + ", ".join(f"{m['out_a']:.1f}s(소리 {m['src_a']:.2f}~{m['src_b']:.2f} / 화면 {m['v_a']:.2f}~{m['v_b']:.2f})" for m in off[:6]))
+    else:
+        issues.append("[입모양 싱크] sync_map.json 이 없습니다 (다시 렌더하세요).")
+
     # 시각 검수용 이미지 저장 (qa_big_cards.jpg, qa_transitions.jpg)
     if big_times and w > 0 and h > 0:
         bcols = min(len(big_times), 5)
@@ -191,7 +203,7 @@ def run_qa(job: Path) -> bool:
     cap.release()
 
     if not issues:
-        print(f"  [자동 품질 검수 통과 9/9] 길이 {dur:.1f}초 | 자막 {len(events)}장(빈틈 0초) | 강조자막 {len(big_times)}장(전원 1줄) | 원화 표기 OK | 오디오 공백 0건")
+        print(f"  [자동 품질 검수 통과 9/9] 길이 {dur:.1f}초 | 자막 {len(events)}장(빈틈 0초) | 강조자막 {len(big_times)}장(전원 1줄) | 원화 표기 OK | 오디오 공백 0건 | 입모양 싱크 OK")
         print(f"  [시각 검수 시트] {job / 'qa_big_cards.jpg'} , {job / 'qa_transitions.jpg'}")
         return True
 

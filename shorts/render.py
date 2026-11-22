@@ -375,7 +375,9 @@ def split_shots(a, b, cuts, ws, R):
         shots.pop(0)
     while len(shots) > 1 and shots[-1][1] - shots[-1][0] < 0.35 and talk(*shots[-1]) <= 0.10:
         shots.pop()
-    if len(shots) > 1 and any(y - x < 0.55 for x, y in shots):
+    # lip_sync_strict(기본 켬): 컷을 넘는 조각을 하나로 합치면 화면만 늘려 넣게 되어 입모양이 어긋난다
+    # → 원본 방송 컷 그대로 조각을 나눠 화면·소리를 같은 원본 시각으로 재생한다 (2026-11-22 사용자 지적).
+    if not R.get("lip_sync_strict", True) and len(shots) > 1 and any(y - x < 0.55 for x, y in shots):
         aa, bb = shots[0][0], shots[-1][1]
         best_span = max(shots, key=lambda p: p[1] - p[0])
         if best_span[1] - best_span[0] >= max(0.50, (bb - aa) * 0.58):
@@ -430,7 +432,7 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
             t += d
             continue
         va, vb = a, b
-        if seg_kind == "clip" and kind == "speech":
+        if seg_kind == "clip" and kind == "speech" and not cfg["render"].get("lip_sync_strict", True):
             inner_cuts = [c for c in cuts if a + 0.05 < c < b - 0.05]
             if inner_cuts:
                 spans = list(zip([a] + inner_cuts, inner_cuts + [b]))
@@ -504,7 +506,9 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
             s = W / w
             fo = ((face[0] * iw - x) * s, (face[1] * ih - y) * s + L["title_h"],
                   face[2] * iw * s, face[3] * ih * s)
-        mapping.append({"src_a": a, "src_b": b, "out_a": t, "out_b": t + d, "face_out": fo})
+        mapping.append({"src_a": a, "src_b": b, "out_a": t, "out_b": t + d, "face_out": fo,
+                        "v_a": round(va, 3), "v_b": round(vb, 3), "kind": kind,
+                        "crop": None if fit else [int(x), int(y), int(w), int(h)]})
         t += d
     fc.append("".join(f"[v{k}][a{k}]" for k in range(n)) + f"concat=n={n}:v=1:a=1[vc][ac]")
     dim = float(cfg["render"].get("narration_dim", 1.0))
@@ -519,6 +523,17 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
     ffmpeg(*inputs, "-filter_complex", ";".join(fc), "-map", "[v]", "-map", "[a]",
            "-t", f"{t:.3f}", *ENC, f)
     return mapping
+
+
+def video_dur(path):
+    """구간 파일의 '화면' 길이(초). 소리 길이가 화면보다 몇 ms 길면 파일 길이(format)가 더 길게 나와,
+    그 값으로 이어 붙이면 구간마다 소리·자막이 화면보다 조금씩 밀린다(끝에서 0.1초) → 화면 길이를 기준으로 쓴다."""
+    out = run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=duration",
+               "-of", "default=nw=1:nk=1", path]).strip()
+    try:
+        return float(out)
+    except ValueError:
+        return duration(path)
 
 
 def smooth_clip_shots(shots, cuts, ws, src_dur, R):
@@ -641,7 +656,7 @@ def build_segments(job: Path, plan, cfg):
             info = {"kind": "narration", "tts": str(wav), "tts_dur": duration(wav), "seg": s,
                     "map": mapping, "gain_db": round(g, 1)}
         info["file"] = f
-        info["dur"] = duration(f)
+        info["dur"] = video_dur(f)
         out.append(info)
     save_faces(job, fcache)
     return out, tr
@@ -988,7 +1003,7 @@ def render(job: Path, cfg):
     for k, sg in enumerate(segs):
         a_in += ["-i", str(sg["file"])]
         a_fc.append(f"[{k}:a]aresample=48000,aformat=channel_layouts=stereo,apad,"
-                    f"atrim=duration={duration(sg['file']):.6f},asetpts=N/SR/TB[a{k}]")
+                    f"atrim=duration={video_dur(sg['file']):.6f},asetpts=N/SR/TB[a{k}]")
     a_fc.append("".join(f"[a{k}]" for k in range(len(segs))) + f"concat=n={len(segs)}:v=0:a=1[a]")
     aonly = job / "segments" / "_audio.wav"
     ffmpeg(*a_in, "-filter_complex", ";".join(a_fc), "-map", "[a]", "-c:a", "pcm_s16le", aonly)
@@ -1077,4 +1092,9 @@ def render(job: Path, cfg):
         f"\n고정댓글:\n{plan.get('pinned_comment', '')}\n",
         encoding="utf-8")
     write_json(job / "timeline.json", [{"kind": s["kind"], "dur": round(s["dur"], 2)} for s in segs])
+    # 입모양 싱크 기록: 대사 조각마다 소리 원본 구간(src)과 화면 원본 구간(v)을 남김 → qa_check 가 어긋남을 잡는다
+    write_json(job / "sync_map.json", [
+        {"seg": k, "src_a": round(m["src_a"], 3), "src_b": round(m["src_b"], 3), "v_a": m.get("v_a"), "v_b": m.get("v_b"),
+         "out_a": round(m["out_a"], 3), "crop": m.get("crop")}
+        for k, sg in enumerate(segs) if sg["kind"] == "clip" for m in sg["map"] if m.get("kind") == "speech"])
     return out, total

@@ -43,6 +43,7 @@
 
 ## 4. 자동 품질 게이트 검수 · 유튜브 비공개 업로드 · 깃허브 푸시
 1. `python make_short.py render "jobs/<작업명>"` 실행 시 자동으로 돌아가는 **`tools/qa_check.py`에서 `[자동 품질 검수 통과 9/9]`** 확인 + `tools/verify_sync.py` 싱크 확인.
+   - **입모양 싱크 (필수, 2026-11-22 사용자 지적)**: 대사 화면은 반드시 소리와 **같은 원본 시각**의 화면이어야 한다. 화면만 늘리거나 다른 구간을 끼워 넣지 않는다(`config.json` → `render.lip_sync_strict` 기본 켬, 끄지 않는다). 렌더 뒤 `python tools/lipsync_check.py jobs/<작업명>`을 돌려 `어긋남 0개`를 확인한다. 검수 출력에 `입모양 싱크 OK`가 없거나 `[입모양 싱크]` 경고가 있으면 업로드하지 않는다.
 2. 자동 저장된 시각 검수 시트(`jobs/<작업명>/qa_big_cards.jpg`, `qa_transitions.jpg`)를 직접 눈으로 확인(경고가 1건이라도 있으면 발송 전 즉시 수정·재렌더).
 2-1. **Vmake 화질 업그레이드 (유튜브 업로드 직전)**: `python "60SEC_YOUTUBE_AUTO_SHORT/tools/vmake_upscale.py" --video jobs/<작업명>/final.mp4 --out jobs/<작업명>/final_4k.mp4 --model fast` 실행 → **FAST 모델 4K**로 변환·다운로드 (보통 3~5분, 2160x3840 확인. `--model quality`로 바꿀 수 있음). 업그레이드된 영상을 `<한글이름>.mp4`로 저장해 유튜브에 올린다. 로그인은 전용 크롬 프로필(`.vmake_chrome`, 일반 크롬, '이전 상태로 다시 열기' 켜짐)에 유지된다. 크롬은 **화면 밖에 떠서 백그라운드로** 일하고, 로그인이 풀렸을 때만 창이 화면에 나타나니 `LOGIN_NEEDED`가 나오면 사용자에게 그 창에서 로그인만 부탁한다(`--login`으로 직접 꺼낼 수도 있음). **로그인이 풀리면(`LOGIN_NEEDED`) 다른 작업보다 먼저 사용자에게 바로 알린다.** 이 크롬은 모든 세션이 함께 쓰는 공용 창이므로(포트 9333) 끄거나 남의 탭을 닫지 않는다. 네이버 2단계 인증은 절대 끄지 않는다(끄면 SMTP 애플리케이션 비밀번호가 사라져 `send_mail.py`가 멈춤). 결제·업그레이드 화면이 뜨면 멈추고 사용자에게 알린다.
 3. `C:\Users\tmd39\Downloads\chatgpt 사진\<한글이름>.mp4`, `<한글이름>_업로드정보(제목·설명·태그).txt`, `<한글이름>_고정댓글.txt` 저장 후 `python "60SEC_YOUTUBE_AUTO_SHORT/tools/youtube_upload.py" --video "C:/Users/tmd39/Downloads/chatgpt 사진/<한글이름>.mp4" --name <한글이름> --privacy private`로 **유튜브에 비공개 업로드**한다 (`UPLOAD_DONE` 확인).
