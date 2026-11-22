@@ -1,0 +1,29 @@
+{
+ "text": "숨겨진 시리얼 번호를 찾는데",
+ "words": [
+  {
+   "word": "숨겨진",
+   "start": 0.081,
+   "end": 0.464,
+   "aligned": true
+  },
+  {
+   "word": "시리얼",
+   "start": 0.565,
+   "end": 0.847,
+   "aligned": true
+  },
+  {
+   "word": "번호를",
+   "start": 0.928,
+   "end": 1.19,
+   "aligned": true
+  },
+  {
+   "word": "찾는데",
+   "start": 1.251,
+   "end": 1.594,
+   "aligned": true
+  }
+ ]
+}

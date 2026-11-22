@@ -1,0 +1,92 @@
+[
+  {
+    "text": "버펄로 빌 권총으로",
+    "start": 0.0,
+    "end": 1.217,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.667
+  },
+  {
+    "text": "2,100만원 부른 남자",
+    "start": 1.217,
+    "end": 2.667,
+    "method": "whisperx",
+    "prop_start": 0.743,
+    "seg_start": 0.0,
+    "seg_end": 2.667
+  },
+  {
+    "text": "결국 총기 전문가를 불렀는데",
+    "start": 14.1,
+    "end": 15.8,
+    "method": "whisperx",
+    "prop_start": 14.1,
+    "seg_start": 14.1,
+    "seg_end": 15.8
+  },
+  {
+    "text": "숨겨진 시리얼",
+    "start": 18.467,
+    "end": 19.345,
+    "method": "whisperx",
+    "prop_start": 18.467,
+    "seg_start": 18.467,
+    "seg_end": 20.233
+  },
+  {
+    "text": "번호를 찾는데",
+    "start": 19.345,
+    "end": 20.233,
+    "method": "whisperx",
+    "prop_start": 19.344,
+    "seg_start": 18.467,
+    "seg_end": 20.233
+  },
+  {
+    "text": "그런데 손잡이",
+    "start": 23.4,
+    "end": 24.136,
+    "method": "whisperx",
+    "prop_start": 23.4,
+    "seg_start": 23.4,
+    "seg_end": 25.167
+  },
+  {
+    "text": "밑 번호를 보더니",
+    "start": 24.136,
+    "end": 25.167,
+    "method": "whisperx",
+    "prop_start": 24.176,
+    "seg_start": 23.4,
+    "seg_end": 25.167
+  },
+  {
+    "text": "이에 코리가 흥정을 시작하는데",
+    "start": 34.067,
+    "end": 35.7,
+    "method": "whisperx",
+    "prop_start": 34.067,
+    "seg_start": 34.067,
+    "seg_end": 35.7
+  },
+  {
+    "text": "2,100만원에 판 권총,",
+    "start": 46.1,
+    "end": 47.598,
+    "method": "whisperx",
+    "prop_start": 46.1,
+    "seg_start": 46.1,
+    "seg_end": 49.3
+  },
+  {
+    "text": "감정가는 3,500만원",
+    "start": 47.598,
+    "end": 49.3,
+    "method": "whisperx",
+    "prop_start": 47.702,
+    "seg_start": 46.1,
+    "seg_end": 49.3
+  }
+]

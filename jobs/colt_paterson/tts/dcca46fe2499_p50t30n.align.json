@@ -1,0 +1,41 @@
+{
+ "text": "버펄로 빌 권총으로 2,100만원 부른 남자",
+ "words": [
+  {
+   "word": "버펄로",
+   "start": 0.04,
+   "end": 0.382,
+   "aligned": true
+  },
+  {
+   "word": "빌",
+   "start": 0.463,
+   "end": 0.543,
+   "aligned": true
+  },
+  {
+   "word": "권총으로",
+   "start": 0.624,
+   "end": 1.106,
+   "aligned": true
+  },
+  {
+   "word": "2,100만원",
+   "start": 1.267,
+   "end": 1.971,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 2.052,
+   "end": 2.192,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 2.273,
+   "end": 2.474,
+   "aligned": true
+  }
+ ]
+}

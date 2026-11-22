@@ -1,0 +1,35 @@
+{
+ "text": "그런데 손잡이 밑 번호를 보더니",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.02,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "손잡이",
+   "start": 0.383,
+   "end": 0.726,
+   "aligned": true
+  },
+  {
+   "word": "밑",
+   "start": 0.786,
+   "end": 0.867,
+   "aligned": true
+  },
+  {
+   "word": "번호를",
+   "start": 0.948,
+   "end": 1.21,
+   "aligned": true
+  },
+  {
+   "word": "보더니",
+   "start": 1.291,
+   "end": 1.553,
+   "aligned": true
+  }
+ ]
+}

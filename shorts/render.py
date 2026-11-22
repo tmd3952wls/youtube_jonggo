@@ -482,7 +482,9 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
                 fit, face = False, None
                 break
         prev_crop, prev_fit = (x, y, w, h), fit
-        inputs += ["-ss", f"{va:.3f}", "-t", f"{vb - va:.3f}", "-i", str(src)]
+        # 시작 시각을 4ms 앞당겨 찾음: 컷+1프레임(예 20.6667초)을 '20.667'로 반올림하면 그 프레임을 건너뛰고
+        # fps 필터가 다음 프레임을 한 장 더 복제해 채움 → 조각마다 화면이 1프레임씩 밀려 입모양이 누적으로 어긋났음 (2026-11-23)
+        inputs += ["-ss", f"{max(0.0, va - 0.004):.3f}", "-t", f"{vb - va:.3f}", "-i", str(src)]
         vk, nin = nin, nin + 1
         if asrc or abs((vb - va) - (b - a)) > 0.01:  # 대사 소리는 [a,b] 원본 실시간 그대로 유지
             inputs += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(asrc or src)]
@@ -497,7 +499,8 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
                       f"atrim=duration={d:.3f},asetpts=PTS-STARTPTS[a{k}]")
         else:
             d = b - a
-            v_stretch = f"setpts=(PTS-STARTPTS)*{d / (vb - va):.5f}," if abs((vb - va) - d) > 0.01 else ""
+            # 늘리지 않을 때도 PTS-STARTPTS 로 첫 프레임을 0초에 둠 → fps 필터가 첫 프레임을 복제해 화면이 1프레임 밀리는 일 방지 (2026-11-23)
+            v_stretch = f"setpts=(PTS-STARTPTS)*{d / (vb - va):.5f}," if abs((vb - va) - d) > 0.01 else "setpts=PTS-STARTPTS,"
             if fit and cfg["face"].get("fit_fill", "blur") == "cover916":
                 # 2026-11-17 사용자 결정: 원본을 9:16 화면 전체(세로 1920)에 꽉 차게 먼저 올리고,
                 # 그 위아래를 제목 칸·아래 검정 칸이 덮는다 → 영상 칸에는 화면 정중앙이 얼굴 장면만큼 크게 보임

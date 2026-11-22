@@ -1,0 +1,29 @@
+{
+ "text": "결국 총기 전문가를 불렀는데",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.02,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "총기",
+   "start": 0.301,
+   "end": 0.522,
+   "aligned": true
+  },
+  {
+   "word": "전문가를",
+   "start": 0.582,
+   "end": 0.984,
+   "aligned": true
+  },
+  {
+   "word": "불렀는데",
+   "start": 1.064,
+   "end": 1.486,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "text": "2,100만원에 판 권총, 감정가는 3,500만원",
+ "words": [
+  {
+   "word": "2,100만원에",
+   "start": 0.241,
+   "end": 0.844,
+   "aligned": true
+  },
+  {
+   "word": "판",
+   "start": 0.925,
+   "end": 1.166,
+   "aligned": true
+  },
+  {
+   "word": "권총,",
+   "start": 1.186,
+   "end": 1.407,
+   "aligned": true
+  },
+  {
+   "word": "감정가는",
+   "start": 1.548,
+   "end": 2.01,
+   "aligned": true
+  },
+  {
+   "word": "3,500만원",
+   "start": 2.03,
+   "end": 2.473,
+   "aligned": true
+  }
+ ]
+}
