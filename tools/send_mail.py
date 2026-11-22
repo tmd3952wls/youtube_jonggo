@@ -29,8 +29,10 @@ def env(key):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--job", required=True)
-    ap.add_argument("--video", required=True)
+    ap.add_argument("--job")
+    ap.add_argument("--video")
+    ap.add_argument("--comment-only", action="store_true", help="영상 첨부 없이 고정댓글만 보낸다")
+    ap.add_argument("--url", default="", help="유튜브 영상 주소 (고정댓글 메일 본문에 표시)")
     ap.add_argument("--name", required=True, help="txt 파일 앞 한글 이름 (예: 페이퍼박스)")
     ap.add_argument("--prefix", default="[1분냠냠]", help="메일 제목 앞머리")
     a = ap.parse_args()
@@ -43,11 +45,20 @@ def main():
     pinned = (TXT_DIR / f"{a.name}_고정댓글.txt").read_text(encoding="utf-8").strip()
     title = next((l.split(":", 1)[1].strip() for l in info.splitlines() if l.startswith("제목:")), a.name)
 
-    video = ROOT / "jobs" / a.job / a.video
     msg = EmailMessage()
     msg["From"] = addr
     msg["To"] = addr
-    msg["Subject"] = f"{a.prefix} {title}"
+    msg["Subject"] = f"{a.prefix} {title}" + (" (고정댓글)" if a.comment_only else "")
+    if a.comment_only:
+        msg.set_content((f"영상: {a.url}\n\n" if a.url else "") + "■ 고정댓글 (아래를 그대로 복사해 붙여넣기)\n" + "─" * 30 + "\n" + pinned + "\n")
+        with smtplib.SMTP_SSL("smtp.naver.com", 465, context=ssl.create_default_context(), timeout=300) as s:
+            s.login(user, pw)
+            s.send_message(msg)
+        print(f"보냄(고정댓글만): {addr} ← '{msg['Subject']}'")
+        return
+    if not a.job or not a.video:
+        ap.error("--job 과 --video 가 필요합니다 (고정댓글만 보내려면 --comment-only)")
+    video = ROOT / "jobs" / a.job / a.video
     msg.set_content(
         "■ 업로드 정보 (제목·설명·태그)\n" + "─" * 30 + "\n" + info
         + "\n\n\n■ 고정댓글\n" + "─" * 30 + "\n" + pinned + "\n"

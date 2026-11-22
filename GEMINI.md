@@ -3,7 +3,7 @@
 ## 1. 소통 및 진행 원칙
 - **무조건 쉬운 한국어로만** 소통한다 (영어 전문용어 남발 금지).
 - 사용자에게 일일이 옵션을 묻지 말고, 에이전트가 조회수 높은 레전드 에피소드와 최적의 연출을 직접 결정해서 **처음부터 끝까지 한 번에 완성**한다.
-- 완성본은 채팅방에 올리지 말고 **`tools/qa_check.py` 9대 검수 통과 + 시각 검수 확인 후 `60SEC_YOUTUBE_AUTO_SHORT/tools/youtube_upload.py`로 유튜브 채널 '1분냠냠'에 비공개로 바로 업로드**한다. (네이버 메일 발송은 2026-11-21부터 하지 않는다 — 사용자가 따로 부탁할 때만 보낸다.)
+- 완성본은 채팅방에 올리지 말고 **`tools/qa_check.py` 9대 검수 통과 + 시각 검수 확인 후 `60SEC_YOUTUBE_AUTO_SHORT/tools/youtube_upload.py`로 유튜브 채널 '1분냠냠'에 비공개로 바로 업로드**한다. (영상 파일은 메일로 보내지 않는다. 단, **고정댓글은 업로드 직후 항상 네이버 메일로 보낸다** — 사용자가 유튜브에 직접 붙여 넣는다.)
 
 ## 2. 내레이션 음성 (필수 고정)
 - 내레이션 음성은 무조건 **캡컷(CapCut)의 `'활기찬 바리톤'` 1.1배속**(`config.json` → `"provider": "capcut"`, `"voice": "vibrant_baritone"`)만 사용한다. 다른 TTS로 임의 변경 금지.
@@ -50,5 +50,6 @@
    - **채널별 크롬 분리**: Vmake는 공용 크롬(`.vmake_chrome`, 포트 9333), 유튜브 업로드는 1분냠냠 전용 크롬(`.yt_chrome`)에서만 한다. `CHANNEL_MISMATCH`가 나오면 올리지 말고 멈춘다.
    - 유튜브 로그인은 전용 크롬(`.yt_chrome`, 포트 9346 — 1분랭킹 채널 크롬이 9336을 쓰므로 겹치면 안 됨)에 유지된다. `LOGIN_NEEDED`가 나오면 `login_youtube.bat` 창에서 사용자에게 로그인만 부탁한다.
    - Vmake가 무료 횟수 소진·유료 벽·시간 초과로 4K를 못 만들면 결제하지 말고 **원본 화질(`final.mp4`)로 업로드**하고 그 사실을 보고한다.
-   - 네이버 메일(`send_mail.py`, `naver_bigmail.py`)은 사용자가 따로 부탁할 때만 쓴다.
+   - **고정댓글 메일 (필수)**: 업로드가 끝나면 바로 `python "60SEC_YOUTUBE_AUTO_SHORT/tools/send_mail.py" --name <한글이름> --comment-only --url <유튜브 주소>`로 고정댓글을 네이버 메일(내게쓰기)로 보낸다. 빠뜨리면 안 된다.
+   - 영상 파일을 메일로 보내는 것(`send_mail.py --job --video`, `naver_bigmail.py`)은 사용자가 따로 부탁할 때만 한다.
 4. 위 제작 완료 주제 목록에 새 `<작업명>`을 추가하고 `https://github.com/tmd3952wls/youtube_jonggo.git` (`jonggo/main`)에 커밋 및 푸시한다 (`.env` 및 영상·음성 파일 제외).
