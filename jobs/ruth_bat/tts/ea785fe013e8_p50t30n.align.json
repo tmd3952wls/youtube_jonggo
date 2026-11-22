@@ -1,0 +1,53 @@
+{
+ "text": "베이브 루스 예고 홈런 방망이로 28억원 부른 남자",
+ "words": [
+  {
+   "word": "베이브",
+   "start": 0.04,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "루스",
+   "start": 0.322,
+   "end": 0.543,
+   "aligned": true
+  },
+  {
+   "word": "예고",
+   "start": 0.583,
+   "end": 0.764,
+   "aligned": true
+  },
+  {
+   "word": "홈런",
+   "start": 0.824,
+   "end": 1.065,
+   "aligned": true
+  },
+  {
+   "word": "방망이로",
+   "start": 1.166,
+   "end": 1.588,
+   "aligned": true
+  },
+  {
+   "word": "28억원",
+   "start": 1.628,
+   "end": 2.13,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 2.211,
+   "end": 2.392,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 2.452,
+   "end": 2.673,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "text": "날짜까지 너무 또박또박 쓰여 있고",
+ "words": [
+  {
+   "word": "날짜까지",
+   "start": 0.06,
+   "end": 0.602,
+   "aligned": true
+  },
+  {
+   "word": "너무",
+   "start": 0.662,
+   "end": 0.863,
+   "aligned": true
+  },
+  {
+   "word": "또박또박",
+   "start": 0.963,
+   "end": 1.364,
+   "aligned": true
+  },
+  {
+   "word": "쓰여",
+   "start": 1.525,
+   "end": 1.645,
+   "aligned": true
+  },
+  {
+   "word": "있고",
+   "start": 1.685,
+   "end": 1.886,
+   "aligned": true
+  }
+ ]
+}

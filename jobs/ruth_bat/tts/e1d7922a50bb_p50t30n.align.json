@@ -1,0 +1,35 @@
+{
+ "text": "그런데 손잡이 쪽 글씨를 보더니",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.02,
+   "end": 0.283,
+   "aligned": true
+  },
+  {
+   "word": "손잡이",
+   "start": 0.344,
+   "end": 0.708,
+   "aligned": true
+  },
+  {
+   "word": "쪽",
+   "start": 0.809,
+   "end": 0.89,
+   "aligned": true
+  },
+  {
+   "word": "글씨를",
+   "start": 0.971,
+   "end": 1.295,
+   "aligned": true
+  },
+  {
+   "word": "보더니",
+   "start": 1.376,
+   "end": 1.659,
+   "aligned": true
+  }
+ ]
+}

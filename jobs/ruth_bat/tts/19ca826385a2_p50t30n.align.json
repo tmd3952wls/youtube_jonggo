@@ -1,0 +1,41 @@
+{
+ "text": "28억원 부른 방망이, 진짜 값은 수십만원",
+ "words": [
+  {
+   "word": "28억원",
+   "start": 0.241,
+   "end": 0.502,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 0.603,
+   "end": 0.744,
+   "aligned": true
+  },
+  {
+   "word": "방망이,",
+   "start": 0.824,
+   "end": 1.206,
+   "aligned": true
+  },
+  {
+   "word": "진짜",
+   "start": 1.387,
+   "end": 1.708,
+   "aligned": true
+  },
+  {
+   "word": "값은",
+   "start": 1.789,
+   "end": 2.07,
+   "aligned": true
+  },
+  {
+   "word": "수십만원",
+   "start": 2.15,
+   "end": 2.552,
+   "aligned": true
+  }
+ ]
+}

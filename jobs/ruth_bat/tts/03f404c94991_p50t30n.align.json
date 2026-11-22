@@ -1,0 +1,35 @@
+{
+ "text": "진짜인지 사진을 찍어 전문가를 찾아갔는데",
+ "words": [
+  {
+   "word": "진짜인지",
+   "start": 0.04,
+   "end": 0.562,
+   "aligned": true
+  },
+  {
+   "word": "사진을",
+   "start": 0.622,
+   "end": 0.883,
+   "aligned": true
+  },
+  {
+   "word": "찍어",
+   "start": 0.984,
+   "end": 1.185,
+   "aligned": true
+  },
+  {
+   "word": "전문가를",
+   "start": 1.245,
+   "end": 1.727,
+   "aligned": true
+  },
+  {
+   "word": "찾아갔는데",
+   "start": 1.787,
+   "end": 2.309,
+   "aligned": true
+  }
+ ]
+}

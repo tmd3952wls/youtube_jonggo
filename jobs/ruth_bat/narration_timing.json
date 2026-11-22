@@ -1,0 +1,101 @@
+[
+  {
+    "text": "베이브 루스 예고",
+    "start": 0.0,
+    "end": 0.774,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.874
+  },
+  {
+    "text": "홈런 방망이로",
+    "start": 0.774,
+    "end": 1.578,
+    "method": "whisperx",
+    "prop_start": 0.663,
+    "seg_start": 0.0,
+    "seg_end": 2.874
+  },
+  {
+    "text": "28억원 부른 남자",
+    "start": 1.578,
+    "end": 2.874,
+    "method": "whisperx",
+    "prop_start": 1.179,
+    "seg_start": 0.0,
+    "seg_end": 2.874
+  },
+  {
+    "text": "진짜인지 사진을 찍어",
+    "start": 15.654,
+    "end": 16.849,
+    "method": "whisperx",
+    "prop_start": 15.654,
+    "seg_start": 15.654,
+    "seg_end": 18.154
+  },
+  {
+    "text": "전문가를 찾아갔는데",
+    "start": 16.849,
+    "end": 18.154,
+    "method": "whisperx",
+    "prop_start": 16.959,
+    "seg_start": 15.654,
+    "seg_end": 18.154
+  },
+  {
+    "text": "그런데 손잡이",
+    "start": 22.554,
+    "end": 23.313,
+    "method": "whisperx",
+    "prop_start": 22.554,
+    "seg_start": 22.554,
+    "seg_end": 24.395
+  },
+  {
+    "text": "쪽 글씨를 보더니",
+    "start": 23.313,
+    "end": 24.395,
+    "method": "whisperx",
+    "prop_start": 23.36,
+    "seg_start": 22.554,
+    "seg_end": 24.395
+  },
+  {
+    "text": "날짜까지 너무",
+    "start": 28.162,
+    "end": 29.075,
+    "method": "whisperx",
+    "prop_start": 28.162,
+    "seg_start": 28.162,
+    "seg_end": 30.195
+  },
+  {
+    "text": "또박또박 쓰여 있고",
+    "start": 29.075,
+    "end": 30.195,
+    "method": "whisperx",
+    "prop_start": 28.996,
+    "seg_start": 28.162,
+    "seg_end": 30.195
+  },
+  {
+    "text": "28억원 부른 방망이,",
+    "start": 42.992,
+    "end": 44.329,
+    "method": "whisperx",
+    "prop_start": 42.992,
+    "seg_start": 42.992,
+    "seg_end": 45.958
+  },
+  {
+    "text": "진짜 값은 수십만원",
+    "start": 44.329,
+    "end": 45.958,
+    "method": "whisperx",
+    "prop_start": 44.543,
+    "seg_start": 42.992,
+    "seg_end": 45.958
+  }
+]

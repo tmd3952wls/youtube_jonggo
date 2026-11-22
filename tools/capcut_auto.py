@@ -148,12 +148,76 @@ def _type_text(hwnd, text, wait=2.5):
     time.sleep(wait)
 
 
-def run_auto(job: str, voice: str = "vibrant_baritone"):
-    need = CV.missing(job, voice)
-    if not need:
-        print(f"모든 문장 음성이 이미 캐시되어 있습니다 ({job}, {voice}).")
-        return
+# ── 실제 마우스·키보드 입력 (캡컷 9.8부터 검색창은 창 메시지로 보낸 글자를 받지 않는다) ──
+class _KI(ctypes.Structure):
+    _fields_ = [("wVk", ctypes.c_ushort), ("wScan", ctypes.c_ushort), ("dwFlags", ctypes.c_ulong),
+                ("time", ctypes.c_ulong), ("dwExtraInfo", ctypes.c_void_p)]
 
+
+class _MI(ctypes.Structure):
+    _fields_ = [("dx", ctypes.c_long), ("dy", ctypes.c_long), ("mouseData", ctypes.c_ulong),
+                ("dwFlags", ctypes.c_ulong), ("time", ctypes.c_ulong), ("dwExtraInfo", ctypes.c_void_p)]
+
+
+class _IU(ctypes.Union):
+    _fields_ = [("ki", _KI), ("mi", _MI)]
+
+
+class _INPUT(ctypes.Structure):
+    _fields_ = [("type", ctypes.c_ulong), ("u", _IU)]
+
+
+def _send_key(vk=0, scan=0, flags=0):
+    inp = _INPUT(type=1)
+    inp.u.ki = _KI(vk, scan, flags, 0, None)
+    user32.SendInput(1, ctypes.byref(inp), ctypes.sizeof(_INPUT))
+
+
+def _force_foreground(hwnd):
+    user32.keybd_event(0x12, 0, 0, 0)
+    user32.SetForegroundWindow(hwnd)
+    user32.keybd_event(0x12, 0, 2, 0)
+    time.sleep(0.4)
+
+
+def _real_click(hwnd, sx, sy, wait=0.8):
+    _force_foreground(hwnd)
+    user32.SetCursorPos(int(sx), int(sy))
+    time.sleep(0.15)
+    user32.mouse_event(0x0002, 0, 0, 0, 0)
+    time.sleep(0.06)
+    user32.mouse_event(0x0004, 0, 0, 0, 0)
+    time.sleep(wait)
+
+
+def _real_type(hwnd, text, wait=5.0):
+    """포커스가 있는 입력칸에 유니코드 글자를 그대로 넣고 Enter 를 누른다."""
+    _force_foreground(hwnd)
+    for ch in text:
+        _send_key(scan=ord(ch), flags=0x0004)
+        _send_key(scan=ord(ch), flags=0x0004 | 0x0002)
+        time.sleep(0.04)
+    time.sleep(0.3)
+    _send_key(vk=0x0D)
+    _send_key(vk=0x0D, flags=0x0002)
+    time.sleep(wait)
+
+
+def _close_popups():
+    """캡컷이 띄우는 작은 창(안내·광고·툴팁)을 닫고 가장 큰 창(본 창)을 돌려준다."""
+    wins = _find_windows()
+    main_win = max(wins, key=lambda x: x[5] * x[6])[0]
+    for w in wins:
+        if w[0] != main_win:
+            user32.PostMessageW(w[0], WM_CLOSE, 0, 0)
+    time.sleep(0.8)
+    user32.ShowWindow(main_win, 3)
+    time.sleep(0.8)
+    return main_win
+
+
+def _attempt(job: str, voice: str) -> bool:
+    """캡컷을 한 번 열어 음성 생성을 시도한다. 원하는 목소리로 다 만들어졌으면 True."""
     subprocess.run(["taskkill", "/F", "/IM", "CapCut.exe"], capture_output=True)
     time.sleep(1.5)
 
@@ -167,7 +231,7 @@ def run_auto(job: str, voice: str = "vibrant_baritone"):
     env["QSG_RHI_BACKEND"] = "opengl"
     env["QT_OPENGL"] = "software"
     proc = subprocess.Popen([_resolve_capcut_exe()], env=env)
-    print(f"CapCut 실행됨 (PID={proc.pid}), 홈 화면 대기 중...")
+    print(f"CapCut 실행됨 (PID={proc.pid}), 홈 화면 대기 중...", flush=True)
     for _ in range(40):
         time.sleep(1.0)
         if any(w[5] > 400 and w[6] > 300 for w in _find_windows()):
@@ -175,44 +239,34 @@ def run_auto(job: str, voice: str = "vibrant_baritone"):
     time.sleep(3.5)
 
     try:
-        wins = _find_windows()
-        main_win = max(wins, key=lambda x: x[5] * x[6])[0]
-        for w in wins:
-            if w[0] != main_win:
-                user32.PostMessageW(w[0], WM_CLOSE, 0, 0)
-        user32.ShowWindow(main_win, 3)
-        time.sleep(1.2)
+        _close_popups()
 
         # 1) 첫 번째 프로젝트 열기 및 편집기 팝업창 닫기
         _click(_find_windows(), 308, 740, wait=7.5)
-        wins = _find_windows()
-        main_win = max(wins, key=lambda x: x[5] * x[6])[0]
-        for w in wins:
-            if w[0] != main_win:
-                user32.PostMessageW(w[0], WM_CLOSE, 0, 0)
-        time.sleep(1.0)
-        user32.ShowWindow(main_win, 3)
-        time.sleep(1.0)
+        main_win = _close_popups()
 
         # 2) 타임라인 텍스트 전체 드래그 선택
         _drag(_find_windows(), 1650, 825, 195, 760, steps=25, wait=1.0)
 
         # 3) '텍스트에서 음성으로' 탭 → '활기찬 바리톤' 검색 → 카드 선택 → '음성 생성'
-        _click(_find_windows(), 1555, 54, wait=1.8)
-        _click(_find_windows(), 1536, 92, wait=0.6)
-        _type_text(main_win, "활기찬 바리톤", wait=5.0)
-        # 캡컷 9.8부터 카드 선택이 적용되기까지 오래 걸린다. 짧게 기다리면
-        # 기본 목소리(오픈 마이크)로 만들어져 harvest 가 0개를 가져온다.
+        _click(_find_windows(), 1555, 54, wait=3.5)
+        main_win = _close_popups()
+        # 캡컷 9.8: 검색칸은 창 메시지로 보낸 글자를 받지 않고, 패널이 열린 직후의
+        # 첫 클릭은 포커스를 못 잡는다 → 실제 마우스로 두 번 누르고 실제 키보드로 넣는다.
+        _real_click(main_win, 1620, 101, wait=1.0)
+        _real_click(main_win, 1620, 101, wait=1.0)
+        _real_type(main_win, "활기찬 바리톤", wait=5.0)
+        # 카드 선택이 적용되기까지 오래 걸린다. 짧게 기다리면 기본 목소리로 만들어진다.
         _click(_find_windows(), 1383, 206, wait=10.0)
         _click(_find_windows(), 1862, 670, wait=3.0)
 
-        # 4) 생성 완료 폴링 (최대 45초)
-        for _ in range(45):
+        # 4) 생성 완료 폴링 (최대 60초)
+        for _ in range(60):
             try:
                 d = json.loads(draft_json.read_text(encoding="utf-8"))
                 cnt = len(d.get("materials", {}).get("audios", []))
                 if cnt >= want_cnt:
-                    print(f"CapCut 음성 생성 완료: {cnt}/{want_cnt}개")
+                    print(f"CapCut 음성 생성 완료: {cnt}/{want_cnt}개", flush=True)
                     break
             except Exception:
                 pass
@@ -225,6 +279,21 @@ def run_auto(job: str, voice: str = "vibrant_baritone"):
         proc.terminate()
 
     CV.harvest(job, voice)
+    return not CV.missing(job, voice)
+
+
+def run_auto(job: str, voice: str = "vibrant_baritone", tries: int = 3):
+    if not CV.missing(job, voice):
+        print(f"모든 문장 음성이 이미 캐시되어 있습니다 ({job}, {voice}).")
+        return
+    for n in range(1, tries + 1):
+        print(f"── 캡컷 음성 생성 시도 {n}/{tries}", flush=True)
+        if _attempt(job, voice):
+            print("VOICE_OK: 모든 문장 음성 완성", flush=True)
+            return
+    left = CV.missing(job, voice)
+    print(f"VOICE_FAIL: {tries}번 시도했지만 음성 {len(left)}개를 못 만들었습니다 (다른 목소리로 생성됐거나 생성 실패).")
+    sys.exit(3)
 
 
 if __name__ == "__main__":
