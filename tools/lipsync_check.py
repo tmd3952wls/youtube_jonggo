@@ -32,6 +32,11 @@ def main():
     job = Path(sys.argv[1]).resolve()
     sm = json.loads((job / "sync_map.json").read_text(encoding="utf-8"))
     M = 15
+    # 대사 구간에는 조립 때 '천천히 확대'(transition.clip_drift)가 걸린다 → 원본 쪽도 같은 배율로 가운데를 잘라 비교
+    # (안 그러면 구간 뒤쪽 조각일수록 그림이 달라져 시간차를 잘못 잼, 2026-11-24)
+    cfg = json.loads((job.parents[1] / "config.json").read_text(encoding="utf-8"))
+    drift = float(cfg.get("transition", {}).get("clip_drift", 0) or 0)
+    seg_len = {}
     rows, bad, skipped = [], 0, 0
     for m in sm:
         d = m["src_b"] - m["src_a"]
@@ -40,7 +45,17 @@ def main():
             continue
         seg = job / "segments" / f"{m['seg']:02d}.mp4"
         o = frames(seg, m["out_a"], d)
-        s = frames(job / "source.mp4", m["src_a"] - M / FPS, d + 2 * M / FPS, crop=m["crop"])
+        crop = m["crop"]
+        if drift:
+            if seg not in seg_len:
+                seg_len[seg] = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                                                     "-of", "csv=p=0", str(seg)], capture_output=True, text=True).stdout or 0)
+            L = seg_len[seg] or 1.0
+            z = 1 + drift * (m["out_a"] + min(d, 20 / FPS) / 2) / L
+            x, y, w, h = crop
+            w2, h2 = int(w / z) // 2 * 2, int(h / z) // 2 * 2
+            crop = [x + (w - w2) // 2, y + (h - h2) // 2, w2, h2]
+        s = frames(job / "source.mp4", m["src_a"] - M / FPS, d + 2 * M / FPS, crop=crop)
         n = min(len(o), 20)
         if n < 4 or len(s) < n + 2 * M - 2:
             skipped += 1

@@ -1,0 +1,35 @@
+{
+ "text": "독립선언서 원본으로 28억원 부른 남자",
+ "words": [
+  {
+   "word": "독립선언서",
+   "start": 0.02,
+   "end": 0.682,
+   "aligned": true
+  },
+  {
+   "word": "원본으로",
+   "start": 0.742,
+   "end": 1.123,
+   "aligned": true
+  },
+  {
+   "word": "28억원",
+   "start": 1.143,
+   "end": 1.705,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 1.785,
+   "end": 1.925,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 2.006,
+   "end": 2.226,
+   "aligned": true
+  }
+ ]
+}

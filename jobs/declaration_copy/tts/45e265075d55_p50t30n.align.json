@@ -1,0 +1,29 @@
+{
+ "text": "릭은 문서 전문가를 부르는데",
+ "words": [
+  {
+   "word": "릭은",
+   "start": 0.041,
+   "end": 0.223,
+   "aligned": true
+  },
+  {
+   "word": "문서",
+   "start": 0.305,
+   "end": 0.528,
+   "aligned": true
+  },
+  {
+   "word": "전문가를",
+   "start": 0.569,
+   "end": 1.056,
+   "aligned": true
+  },
+  {
+   "word": "부르는데",
+   "start": 1.137,
+   "end": 1.462,
+   "aligned": true
+  }
+ ]
+}

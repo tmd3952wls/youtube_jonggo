@@ -1,0 +1,41 @@
+{
+ "text": "독립 소식을 알리려 벽에 붙인 벽보인데",
+ "words": [
+  {
+   "word": "독립",
+   "start": 0.02,
+   "end": 0.221,
+   "aligned": true
+  },
+  {
+   "word": "소식을",
+   "start": 0.301,
+   "end": 0.562,
+   "aligned": true
+  },
+  {
+   "word": "알리려",
+   "start": 0.623,
+   "end": 0.944,
+   "aligned": true
+  },
+  {
+   "word": "벽에",
+   "start": 1.024,
+   "end": 1.225,
+   "aligned": true
+  },
+  {
+   "word": "붙인",
+   "start": 1.285,
+   "end": 1.486,
+   "aligned": true
+  },
+  {
+   "word": "벽보인데",
+   "start": 1.567,
+   "end": 2.049,
+   "aligned": true
+  }
+ ]
+}

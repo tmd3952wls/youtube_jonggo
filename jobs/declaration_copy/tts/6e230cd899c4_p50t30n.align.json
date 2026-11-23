@@ -1,0 +1,35 @@
+{
+ "text": "20억3천만원에 산 독립선언서, 경매가는 28억원",
+ "words": [
+  {
+   "word": "20억3천만원에",
+   "start": 0.221,
+   "end": 1.047,
+   "aligned": true
+  },
+  {
+   "word": "산",
+   "start": 1.107,
+   "end": 1.208,
+   "aligned": true
+  },
+  {
+   "word": "독립선언서,",
+   "start": 1.289,
+   "end": 2.013,
+   "aligned": true
+  },
+  {
+   "word": "경매가는",
+   "start": 2.174,
+   "end": 2.658,
+   "aligned": true
+  },
+  {
+   "word": "28억원",
+   "start": 2.678,
+   "end": 2.96,
+   "aligned": true
+  }
+ ]
+}
