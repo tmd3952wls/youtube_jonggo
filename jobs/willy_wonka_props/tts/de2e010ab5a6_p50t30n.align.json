@@ -1,0 +1,41 @@
+{
+ "text": "황금알에 골든 티켓, 웡카 초콜릿까지 나오는데",
+ "words": [
+  {
+   "word": "황금알에",
+   "start": 0.02,
+   "end": 0.543,
+   "aligned": true
+  },
+  {
+   "word": "골든",
+   "start": 0.623,
+   "end": 0.864,
+   "aligned": true
+  },
+  {
+   "word": "티켓,",
+   "start": 0.945,
+   "end": 1.246,
+   "aligned": true
+  },
+  {
+   "word": "웡카",
+   "start": 1.468,
+   "end": 1.789,
+   "aligned": true
+  },
+  {
+   "word": "초콜릿까지",
+   "start": 1.87,
+   "end": 2.432,
+   "aligned": true
+  },
+  {
+   "word": "나오는데",
+   "start": 2.473,
+   "end": 2.835,
+   "aligned": true
+  }
+ ]
+}

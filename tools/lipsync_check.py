@@ -40,6 +40,9 @@ def main():
     rows, bad, skipped = [], 0, 0
     for m in sm:
         d = m["src_b"] - m["src_a"]
+        # 원본 맨 앞(0.5초 안) 조각은 앞쪽 비교 범위가 0초 밑으로 내려가 ffmpeg 가 0초로 당겨 버림
+        # → 시간차가 거짓으로 밀려 나옴 (2026-11-25, 0.41초 시작 조각이 -0.067초로 잘못 잡힘). 범위를 줄인다.
+        M = max(2, min(15, int(m["src_a"] * FPS)))
         if d < 0.3 or not m.get("crop"):
             skipped += 1
             continue

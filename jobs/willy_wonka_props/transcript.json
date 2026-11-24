@@ -1,0 +1,572 @@
+[
+  {
+    "id": 0,
+    "start": 0.0,
+    "end": 3.34,
+    "text": "A little bird told me you had some Willy Wonka stuff."
+  },
+  {
+    "id": 1,
+    "start": 3.34,
+    "end": 6.18,
+    "text": "Yes, some props from the original film."
+  },
+  {
+    "id": 2,
+    "start": 6.18,
+    "end": 7.28,
+    "text": "Why are you a fan?"
+  },
+  {
+    "id": 3,
+    "start": 7.28,
+    "end": 9.04,
+    "text": "Yeah, the Gene Wilder Wonka."
+  },
+  {
+    "id": 4,
+    "start": 9.04,
+    "end": 10.34,
+    "text": "Okay, I'll tell you what."
+  },
+  {
+    "id": 5,
+    "start": 10.34,
+    "end": 15.12,
+    "text": "Make a wish, count to three, and I'll be right back."
+  },
+  {
+    "id": 6,
+    "start": 15.12,
+    "end": 16.76,
+    "text": "I have this Willy Wonka collection."
+  },
+  {
+    "id": 7,
+    "start": 16.76,
+    "end": 21.96,
+    "text": "Five pieces, five props from this original 1971 film"
+  },
+  {
+    "id": 8,
+    "start": 21.96,
+    "end": 24.8,
+    "text": "that I know Rick will flip over."
+  },
+  {
+    "id": 9,
+    "start": 24.8,
+    "end": 26.8,
+    "text": "The asking price for the Willy Wonka collection"
+  },
+  {
+    "id": 10,
+    "start": 26.8,
+    "end": 30.6,
+    "text": "His collection is $725,000."
+  },
+  {
+    "id": 11,
+    "start": 30.64,
+    "end": 34.04,
+    "text": "If he wants one thing, he's gonna have to pay up."
+  },
+  {
+    "id": 12,
+    "start": 34.08,
+    "end": 35.44,
+    "text": "Voila."
+  },
+  {
+    "id": 13,
+    "start": 35.48,
+    "end": 36.64,
+    "text": "Wow."
+  },
+  {
+    "id": 14,
+    "start": 36.68,
+    "end": 37.88,
+    "text": "Is that the hat?"
+  },
+  {
+    "id": 15,
+    "start": 37.92,
+    "end": 40.88,
+    "text": "This is the original hat that Gene Wilder wore"
+  },
+  {
+    "id": 16,
+    "start": 40.92,
+    "end": 43.48,
+    "text": "in the original film."
+  },
+  {
+    "id": 17,
+    "start": 43.52,
+    "end": 45.92,
+    "text": "Is that insane?"
+  },
+  {
+    "id": 18,
+    "start": 45.96,
+    "end": 47.56,
+    "text": "I just have to do this?"
+  },
+  {
+    "id": 19,
+    "start": 47.6,
+    "end": 48.96,
+    "text": "Looking pretty stylish."
+  },
+  {
+    "id": 20,
+    "start": 49.0,
+    "end": 52.36,
+    "text": "Ha-ha-ha-ha-ha-ha-ha."
+  },
+  {
+    "id": 21,
+    "start": 52.4,
+    "end": 54.6,
+    "text": "He had a small head. He did."
+  },
+  {
+    "id": 22,
+    "start": 54.6,
+    "end": 57.54,
+    "text": "All right, I might have a fat head."
+  },
+  {
+    "id": 23,
+    "start": 57.54,
+    "end": 60.48,
+    "text": "This is the golden egg."
+  },
+  {
+    "id": 24,
+    "start": 60.48,
+    "end": 62.14,
+    "text": "It's heavy."
+  },
+  {
+    "id": 25,
+    "start": 62.14,
+    "end": 64.18,
+    "text": "Okay."
+  },
+  {
+    "id": 26,
+    "start": 64.18,
+    "end": 65.88,
+    "text": "And a golden ticket."
+  },
+  {
+    "id": 27,
+    "start": 65.88,
+    "end": 70.08,
+    "text": "A genuine screen-used golden ticket."
+  },
+  {
+    "id": 28,
+    "start": 70.08,
+    "end": 74.31,
+    "text": "And to boot, Wonka bars."
+  },
+  {
+    "id": 29,
+    "start": 74.31,
+    "end": 75.51,
+    "text": "Those ones, were they used on the set?"
+  },
+  {
+    "id": 30,
+    "start": 75.51,
+    "end": 76.61,
+    "text": "Yeah."
+  },
+  {
+    "id": 31,
+    "start": 76.61,
+    "end": 79.15,
+    "text": "And they still haven't melted."
+  },
+  {
+    "id": 32,
+    "start": 79.15,
+    "end": 80.91,
+    "text": "Well, they're crops made of wood."
+  },
+  {
+    "id": 33,
+    "start": 80.91,
+    "end": 82.31,
+    "text": "Yeah."
+  },
+  {
+    "id": 34,
+    "start": 82.31,
+    "end": 83.71,
+    "text": "So where'd you get all this stuff?"
+  },
+  {
+    "id": 35,
+    "start": 83.71,
+    "end": 84.95,
+    "text": "We bought it at auction."
+  },
+  {
+    "id": 36,
+    "start": 84.95,
+    "end": 87.29,
+    "text": "And the one big thing is that you want to make sure,"
+  },
+  {
+    "id": 37,
+    "start": 87.33,
+    "end": 88.89,
+    "text": "obviously, it's authentic."
+  },
+  {
+    "id": 38,
+    "start": 88.93,
+    "end": 90.43,
+    "text": "And even with the photo matches,"
+  },
+  {
+    "id": 39,
+    "start": 90.47,
+    "end": 92.83,
+    "text": "we wanted to know the lineage and where it came from."
+  },
+  {
+    "id": 40,
+    "start": 92.87,
+    "end": 95.23,
+    "text": "The crazy thing is that each one of these pieces,"
+  },
+  {
+    "id": 41,
+    "start": 95.27,
+    "end": 97.63,
+    "text": "these props, came from Julie Dawn Cole,"
+  },
+  {
+    "id": 42,
+    "start": 97.67,
+    "end": 98.77,
+    "text": "who played Veruca Salt."
+  },
+  {
+    "id": 43,
+    "start": 98.81,
+    "end": 101.77,
+    "text": "So what better can you get than from her?"
+  },
+  {
+    "id": 44,
+    "start": 101.81,
+    "end": 103.07,
+    "text": "That's amazing."
+  },
+  {
+    "id": 45,
+    "start": 103.11,
+    "end": 105.05,
+    "text": "And what is that?"
+  },
+  {
+    "id": 46,
+    "start": 105.07,
+    "end": 108.12,
+    "text": "What would you want it to be?"
+  },
+  {
+    "id": 47,
+    "start": 108.16,
+    "end": 110.56,
+    "text": "Oh, my God."
+  },
+  {
+    "id": 48,
+    "start": 110.6,
+    "end": 112.8,
+    "text": "That's the real deal?"
+  },
+  {
+    "id": 49,
+    "start": 112.82,
+    "end": 115.9,
+    "text": "I don't know, is it?"
+  },
+  {
+    "id": 50,
+    "start": 115.9,
+    "end": 118.4,
+    "text": "Is it the everlasting gobstopper?"
+  },
+  {
+    "id": 51,
+    "start": 118.44,
+    "end": 119.24,
+    "text": "Yeah."
+  },
+  {
+    "id": 52,
+    "start": 119.28,
+    "end": 120.64,
+    "text": "That's the real deal?"
+  },
+  {
+    "id": 53,
+    "start": 120.68,
+    "end": 122.64,
+    "text": "I'm even getting chills holding it."
+  },
+  {
+    "id": 54,
+    "start": 122.68,
+    "end": 130.44,
+    "text": "It's like the Hope Diamond."
+  },
+  {
+    "id": 55,
+    "start": 130.48,
+    "end": 132.04,
+    "text": "Talk about being speechless."
+  },
+  {
+    "id": 56,
+    "start": 132.08,
+    "end": 133.14,
+    "text": "Yeah, that's like the Holy Grail."
+  },
+  {
+    "id": 57,
+    "start": 133.18,
+    "end": 136.92,
+    "text": "When I was seven years old, that's the one thing I remember"
+  },
+  {
+    "id": 58,
+    "start": 136.94,
+    "end": 139.12,
+    "text": "was the everlasting gobstopper."
+  },
+  {
+    "id": 59,
+    "start": 139.16,
+    "end": 142.12,
+    "text": "It just sounded like the most amazing thing in the world,"
+  },
+  {
+    "id": 60,
+    "start": 142.16,
+    "end": 144.92,
+    "text": "with all the different flavors, and it lasts forever."
+  },
+  {
+    "id": 61,
+    "start": 144.96,
+    "end": 146.76,
+    "text": "Yes."
+  },
+  {
+    "id": 62,
+    "start": 146.8,
+    "end": 148.76,
+    "text": "Yeah, that was the centerpiece of the whole film."
+  },
+  {
+    "id": 63,
+    "start": 148.76,
+    "end": 155.4,
+    "text": "Yeah, Slugworth came to Charlie and you know told him he'd give him a bunch of money if he stole the everlasting gob stopper"
+  },
+  {
+    "id": 64,
+    "start": 155.4,
+    "end": 159.4,
+    "text": "Yeah, and at the end Charlie turned around and just gave it back to Willy Wonka"
+  },
+  {
+    "id": 65,
+    "start": 159.4,
+    "end": 164.92,
+    "text": "And that's when the Willy Wonka gave the factory. Yes, it's crazy too because the movie was a flop and"
+  },
+  {
+    "id": 66,
+    "start": 165.56,
+    "end": 168.12,
+    "text": "Then the 80s came out and video came out"
+  },
+  {
+    "id": 67,
+    "start": 168.12,
+    "end": 173.54,
+    "text": "It just turned into like the greatest thing ever like a cult classic. It's still popular to this day"
+  },
+  {
+    "id": 68,
+    "start": 173.64,
+    "end": 175.64,
+    "text": "So how much you want for the gob stopper?"
+  },
+  {
+    "id": 69,
+    "start": 177.64,
+    "end": 179.64,
+    "text": "gosh"
+  },
+  {
+    "id": 70,
+    "start": 179.64,
+    "end": 188.64,
+    "text": "That is the centerpiece of the film which if we sell that that's definitely breaking up the aesthetics of the whole collection so"
+  },
+  {
+    "id": 71,
+    "start": 188.64,
+    "end": 195.64,
+    "text": "I'm gonna give you one price and that's that I gotta stick with a hundred thousand dollars for the gobstopper"
+  },
+  {
+    "id": 72,
+    "start": 195.64,
+    "end": 203.8,
+    "text": "Might be a crazy price for the everlasting gobstopper but let's face it it's the everlasting gobstopper"
+  },
+  {
+    "id": 73,
+    "start": 203.8,
+    "end": 207.8,
+    "text": "It is literally in my mind the greatest movie prop ever"
+  },
+  {
+    "id": 74,
+    "start": 207.8,
+    "end": 210.8,
+    "text": "It was your favorite film"
+  },
+  {
+    "id": 75,
+    "start": 210.8,
+    "end": 221.62,
+    "text": "If you throw in a Wonka bar that means that I'd literally be giving you a Wonka bar and that's breaking up the set though"
+  },
+  {
+    "id": 76,
+    "start": 221.86,
+    "end": 226.8,
+    "text": "It's not really a set. They were just it's just wonka bars. I mean they're like but"
+  },
+  {
+    "id": 77,
+    "start": 228.12,
+    "end": 229.62,
+    "text": "I'll tell you what"
+  },
+  {
+    "id": 78,
+    "start": 229.62,
+    "end": 236.48,
+    "text": "Do I would give you a one Wonka bar and I'd give you the everlasting God stopper for a hundred and fifteen thousand"
+  },
+  {
+    "id": 79,
+    "start": 236.9,
+    "end": 238.9,
+    "text": "But you can do it for a hundred thousand"
+  },
+  {
+    "id": 80,
+    "start": 238.9,
+    "end": 240.4,
+    "text": "No."
+  },
+  {
+    "id": 81,
+    "start": 240.44,
+    "end": 244.81,
+    "text": "All right, so $105,000, and I get a Wonka Bar."
+  },
+  {
+    "id": 82,
+    "start": 244.85,
+    "end": 250.55,
+    "text": "I'm gonna miss that everlasting gobstopper."
+  },
+  {
+    "id": 83,
+    "start": 250.59,
+    "end": 251.55,
+    "text": "Sweet!"
+  },
+  {
+    "id": 84,
+    "start": 251.59,
+    "end": 252.99,
+    "text": "You got a deal."
+  },
+  {
+    "id": 85,
+    "start": 253.03,
+    "end": 255.99,
+    "text": "It's like the fountain of youth."
+  },
+  {
+    "id": 86,
+    "start": 256.03,
+    "end": 257.99,
+    "text": "I'm seven years old again."
+  },
+  {
+    "id": 87,
+    "start": 258.03,
+    "end": 261.11,
+    "text": "I mean, these are crazy pricey,"
+  },
+  {
+    "id": 88,
+    "start": 261.15,
+    "end": 263.11,
+    "text": "but putting these things in the shop"
+  },
+  {
+    "id": 89,
+    "start": 263.15,
+    "end": 265.31,
+    "text": "will bring people in my shop."
+  },
+  {
+    "id": 90,
+    "start": 265.35,
+    "end": 267.11,
+    "text": "They're in amazing condition."
+  },
+  {
+    "id": 91,
+    "start": 267.15,
+    "end": 269.35,
+    "text": "They have all the provenance in the world."
+  },
+  {
+    "id": 92,
+    "start": 269.39,
+    "end": 271.15,
+    "text": "They're 100% legit."
+  },
+  {
+    "id": 93,
+    "start": 271.19,
+    "end": 272.59,
+    "text": "They are wanted,"
+  },
+  {
+    "id": 94,
+    "start": 272.59,
+    "end": 275.93,
+    "text": "and these collectors pay insane money."
+  }
+]

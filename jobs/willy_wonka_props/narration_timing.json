@@ -1,0 +1,101 @@
+[
+  {
+    "text": "윌리 웡카 영화 소품으로",
+    "start": 0.0,
+    "end": 1.322,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.467
+  },
+  {
+    "text": "10억원대 부른 남자",
+    "start": 1.322,
+    "end": 2.467,
+    "method": "whisperx",
+    "prop_start": 0.865,
+    "seg_start": 0.0,
+    "seg_end": 2.467
+  },
+  {
+    "text": "황금알에 골든",
+    "start": 16.5,
+    "end": 17.395,
+    "method": "whisperx",
+    "prop_start": 16.5,
+    "seg_start": 16.5,
+    "seg_end": 19.5
+  },
+  {
+    "text": "티켓, 웡카",
+    "start": 17.395,
+    "end": 18.32,
+    "method": "whisperx",
+    "prop_start": 17.418,
+    "seg_start": 16.5,
+    "seg_end": 19.5
+  },
+  {
+    "text": "초콜릿까지 나오는데",
+    "start": 18.32,
+    "end": 19.5,
+    "method": "whisperx",
+    "prop_start": 18.204,
+    "seg_start": 16.5,
+    "seg_end": 19.5
+  },
+  {
+    "text": "마지막으로 작은",
+    "start": 26.4,
+    "end": 27.277,
+    "method": "whisperx",
+    "prop_start": 26.4,
+    "seg_start": 26.4,
+    "seg_end": 28.5
+  },
+  {
+    "text": "상자 하나를 꺼내는데",
+    "start": 27.277,
+    "end": 28.5,
+    "method": "whisperx",
+    "prop_start": 27.291,
+    "seg_start": 26.4,
+    "seg_end": 28.5
+  },
+  {
+    "text": "이에 릭이 흥정을",
+    "start": 35.767,
+    "end": 36.665,
+    "method": "whisperx",
+    "prop_start": 35.767,
+    "seg_start": 35.767,
+    "seg_end": 37.433
+  },
+  {
+    "text": "시작하는데",
+    "start": 36.665,
+    "end": 37.433,
+    "method": "whisperx",
+    "prop_start": 36.829,
+    "seg_start": 35.767,
+    "seg_end": 37.433
+  },
+  {
+    "text": "1억4,700만원에 산",
+    "start": 48.233,
+    "end": 49.646,
+    "method": "whisperx",
+    "prop_start": 48.233,
+    "seg_start": 48.233,
+    "seg_end": 51.067
+  },
+  {
+    "text": "영원히 안 녹는 사탕",
+    "start": 49.646,
+    "end": 51.067,
+    "method": "whisperx",
+    "prop_start": 49.943,
+    "seg_start": 48.233,
+    "seg_end": 51.067
+  }
+]

@@ -1,0 +1,41 @@
+{
+ "text": "1억4,700만원에 산 영원히 안 녹는 사탕",
+ "words": [
+  {
+   "word": "1억4,700만원에",
+   "start": 0.06,
+   "end": 1.162,
+   "aligned": true
+  },
+  {
+   "word": "산",
+   "start": 1.262,
+   "end": 1.383,
+   "aligned": true
+  },
+  {
+   "word": "영원히",
+   "start": 1.463,
+   "end": 1.783,
+   "aligned": true
+  },
+  {
+   "word": "안",
+   "start": 1.844,
+   "end": 1.924,
+   "aligned": true
+  },
+  {
+   "word": "녹는",
+   "start": 1.984,
+   "end": 2.204,
+   "aligned": true
+  },
+  {
+   "word": "사탕",
+   "start": 2.264,
+   "end": 2.445,
+   "aligned": true
+  }
+ ]
+}
