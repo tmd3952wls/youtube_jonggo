@@ -55,3 +55,4 @@
    - **고정댓글 메일 (필수)**: 업로드가 끝나면 바로 `python "60SEC_YOUTUBE_AUTO_SHORT/tools/send_mail.py" --name <한글이름> --comment-only --url <유튜브 주소>`로 고정댓글을 네이버 메일(내게쓰기)로 보낸다. 빠뜨리면 안 된다.
    - 영상 파일을 메일로 보내는 것(`send_mail.py --job --video`, `naver_bigmail.py`)은 사용자가 따로 부탁할 때만 한다.
 4. 위 제작 완료 주제 목록에 새 `<작업명>`을 추가하고 `https://github.com/tmd3952wls/youtube_jonggo.git` (`jonggo/main`)에 커밋 및 푸시한다 (`.env` 및 영상·음성 파일 제외).
+5. **3일 지난 영상·소재 자동 정리 (2026-11-24 사용자 요청)**: 매 작업 마지막에 `python "60SEC_YOUTUBE_AUTO_SHORT/tools/cleanup_old.py" --apply`를 돌려, 3일 넘게 손대지 않은 작업의 영상·소리·그림·중간 파일과 `Downloads\chatgpt 사진`의 해당 영상·글 파일, Vmake가 `Downloads`에 남긴 4K 사본을 지운다. 대본 등 글자 파일(`plan.json`, `transcript*.json`, `research.json`)과 `_`로 시작하는 폴더는 남긴다. **유튜브에 올린 영상은 절대 지우지 않는다.**
