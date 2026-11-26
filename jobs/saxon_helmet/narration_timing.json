@@ -1,0 +1,119 @@
+[
+  {
+    "text": "녹슨 쇠 투구로",
+    "start": 0.0,
+    "end": 0.798,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.033
+  },
+  {
+    "text": "105만원 부른 남자",
+    "start": 0.798,
+    "end": 2.033,
+    "method": "whisperx",
+    "prop_start": 0.505,
+    "seg_start": 0.0,
+    "seg_end": 2.033
+  },
+  {
+    "text": "유품 정리 세일에서",
+    "start": 7.667,
+    "end": 8.706,
+    "method": "whisperx",
+    "prop_start": 7.667,
+    "seg_start": 7.667,
+    "seg_end": 9.533
+  },
+  {
+    "text": "건진 투구인데",
+    "start": 8.706,
+    "end": 9.533,
+    "method": "whisperx",
+    "prop_start": 8.758,
+    "seg_start": 7.667,
+    "seg_end": 9.533
+  },
+  {
+    "text": "이에 첨리가 전문가를 불러오는데",
+    "start": 13.767,
+    "end": 15.5,
+    "method": "whisperx",
+    "prop_start": 13.767,
+    "seg_start": 13.767,
+    "seg_end": 15.5
+  },
+  {
+    "text": "X선 검사로",
+    "start": 17.3,
+    "end": 18.178,
+    "method": "whisperx",
+    "prop_start": 17.3,
+    "seg_start": 17.3,
+    "seg_end": 19.267
+  },
+  {
+    "text": "성분까지 확인하자",
+    "start": 18.178,
+    "end": 19.267,
+    "method": "whisperx",
+    "prop_start": 18.091,
+    "seg_start": 17.3,
+    "seg_end": 19.267
+  },
+  {
+    "text": "이에 첨리가 흥정을 시작하는데",
+    "start": 28.833,
+    "end": 30.5,
+    "method": "whisperx",
+    "prop_start": 28.833,
+    "seg_start": 28.833,
+    "seg_end": 30.5
+  },
+  {
+    "text": "105만원 부른",
+    "start": 43.167,
+    "end": 44.001,
+    "method": "whisperx",
+    "prop_start": 43.167,
+    "seg_start": 43.167,
+    "seg_end": 46.167
+  },
+  {
+    "text": "투구, 결국",
+    "start": 44.001,
+    "end": 44.925,
+    "method": "whisperx",
+    "prop_start": 43.856,
+    "seg_start": 43.167,
+    "seg_end": 46.167
+  },
+  {
+    "text": "1,400만원에 팔렸다",
+    "start": 44.925,
+    "end": 46.181,
+    "method": "whisperx",
+    "prop_start": 44.372,
+    "seg_start": 43.167,
+    "seg_end": 46.167
+  },
+  {
+    "text": "더 자세한 뒷이야기는",
+    "start": 46.167,
+    "end": 47.431,
+    "method": "whisperx",
+    "prop_start": 46.167,
+    "seg_start": 46.167,
+    "seg_end": 48.4
+  },
+  {
+    "text": "고정댓글에",
+    "start": 47.431,
+    "end": 48.4,
+    "method": "whisperx",
+    "prop_start": 47.056,
+    "seg_start": 46.167,
+    "seg_end": 48.4
+  }
+]

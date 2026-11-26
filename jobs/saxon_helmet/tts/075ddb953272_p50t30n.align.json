@@ -1,0 +1,35 @@
+{
+ "text": "유품 정리 세일에서 건진 투구인데",
+ "words": [
+  {
+   "word": "유품",
+   "start": 0.02,
+   "end": 0.323,
+   "aligned": true
+  },
+  {
+   "word": "정리",
+   "start": 0.424,
+   "end": 0.645,
+   "aligned": true
+  },
+  {
+   "word": "세일에서",
+   "start": 0.726,
+   "end": 1.029,
+   "aligned": true
+  },
+  {
+   "word": "건진",
+   "start": 1.089,
+   "end": 1.311,
+   "aligned": true
+  },
+  {
+   "word": "투구인데",
+   "start": 1.392,
+   "end": 1.735,
+   "aligned": true
+  }
+ ]
+}

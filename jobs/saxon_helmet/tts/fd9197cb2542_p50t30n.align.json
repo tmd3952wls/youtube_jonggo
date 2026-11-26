@@ -1,0 +1,41 @@
+{
+ "text": "105만원 부른 투구, 결국 1,400만원에 팔렸다",
+ "words": [
+  {
+   "word": "105만원",
+   "start": 0.1,
+   "end": 0.563,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 0.643,
+   "end": 0.764,
+   "aligned": true
+  },
+  {
+   "word": "투구,",
+   "start": 0.884,
+   "end": 1.145,
+   "aligned": true
+  },
+  {
+   "word": "결국",
+   "start": 1.326,
+   "end": 1.788,
+   "aligned": true
+  },
+  {
+   "word": "1,400만원에",
+   "start": 1.808,
+   "end": 2.451,
+   "aligned": true
+  },
+  {
+   "word": "팔렸다",
+   "start": 2.532,
+   "end": 3.014,
+   "aligned": true
+  }
+ ]
+}

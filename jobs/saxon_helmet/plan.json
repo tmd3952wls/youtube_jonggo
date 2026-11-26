@@ -1,0 +1,366 @@
+{
+  "title_lines": [
+    {
+      "text": "미식축구 헬멧 같던",
+      "color": "yellow"
+    },
+    {
+      "text": "투구의 소름돋는 정체",
+      "color": "white"
+    }
+  ],
+  "credit": "",
+  "pinned_comment": "+ \"저도 소름 돋았어요\" 전문가 따라 소름 돋는 첨리, 근데 표정은 105만원에 못 산 아쉬움 가득 😂\n\n그런데 이 투구, 방송 뒤 이야기는 어떻게 됐을까요?\n\n손님 케빈은 누나와 함께 간 유품 정리 세일에서 이 투구를 발견했어요 🪖\n전직 미식축구 선수라 그런지\n처음엔 '1800년대 옛날 미식축구 헬멧' 같다고 생각했대요.\n\n그래서 희망가는 고작 750달러(약 105만원)!\n첨리조차 \"750달러(약 105만 원)인지 7.5달러(약 1만 원)인지 7천 달러(약 980만 원)인지 모르겠다\"고 할 정도였죠.\n\n그런데 전문가 밥 닷지가 보자마자 분위기가 바뀌어요 🔍\n- 진짜 앵글로색슨 시대 쇠 투구로 보이고\n- 쇠는 보통 1,500년을 못 버티고 가루가 되는데\n- 산소가 적은 늪이나 강바닥에 있어서 살아남았을 거래요\n화면 설명으로는 '슈팡겐헬름', 독일어로 '쇠띠 투구'라는 종류예요.\n\nX선 성분 검사기로 쏴 보니 철 99.76%에 구리·아연·크롬이 조금.\n1,500년 전 만들던 방식 그대로의 탄소강이었어요.\n전문가는 \"백만 개 중 하나\"라며 소름 돋았다고 했죠.\n\n흥정은 이렇게 흘러갔어요 🤝\n감정가 1만5천 달러(약 2,100만원)\n첨리 첫 제안 7,500달러(약 1,050만원) → 손님 거절\n손님 1만1천 달러(약 1,540만원)\n첨리 9,500달러(약 1,330만원)\n손님 1만 달러(약 1,400만원) → 첨리 \"콜!\"\n\n희망가 105만원짜리 투구가 1,400만원이 됐으니\n손님은 13배 넘게 더 받은 셈이에요.\n첨리도 감정가보다 700만원 싸게 샀으니 서로 남는 장사였죠.\n\n결론: 내가 아는 물건이랑 닮았다고 해서, 그 물건이라는 법은 없다.\n\n(※ 이 투구가 방송 뒤 다시 팔렸는지는 확인된 기록을 찾지 못했어요. 방송 내용과 Looper·Market Realist 기사 기준이에요. 1달러(약 1만 원) = 1,400원으로 계산했어요.)\n\n여러분이라면 105만원 불렀다가 1,400만원 받으면 어떤 기분일까요?\n\nP.S. 케빈 씨, 다음 세일에선 미식축구 헬멧처럼 생긴 건 일단 다 사 오세요 🏈",
+  "upload": {
+    "title": "105만원 부른 녹슨 투구, 정체가 1,500년 전 유물?!",
+    "description": "유품 정리 세일에서 산 미식축구 헬멧 같은 쇠 투구가 전당포에! X선 검사로 밝혀진 소름돋는 정체와 흥정 결과는...? #전당포사나이들 #첨리 #앵글로색슨 #유물 #쇼츠",
+    "tags": [
+      "전당포사나이들",
+      "Pawn Stars",
+      "첨리",
+      "앵글로색슨",
+      "투구",
+      "유물",
+      "골동품",
+      "레전드감정"
+    ]
+  },
+  "segments": [
+    {
+      "type": "narration",
+      "text": "녹슨 쇠 투구로 [big:yellow:105만원] 부른 남자",
+      "broll_t": 46.3,
+      "sfx": "impact/085_둥(큰북소리)",
+      "broll_id": 0
+    },
+    {
+      "type": "clip",
+      "from_id": 7,
+      "to_id": 8,
+      "subs": [
+        "@손님 옛날 [cyan:미식축구 헬멧] 같았죠",
+        "@손님 1800년대 거요"
+      ],
+      "sfx": "caption/310_핑거 스냅(딱)",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 11,
+      "to_id": 12,
+      "subs": [
+        "@첨리 [cyan:매그니토]가 된 기분",
+        "@첨리 이제 내 생각 못 읽어요"
+      ],
+      "sfx": null,
+      "mark": false,
+      "drop_end_words": 1
+    },
+    {
+      "type": "narration",
+      "text": "유품 정리 세일에서 건진 투구인데",
+      "broll_t": 9.9,
+      "sfx": "whoosh/053_샤스륵 효과음",
+      "ext": [
+        {
+          "file": "ext/36408.mp4",
+          "t": 3.0,
+          "dur": 1.2
+        }
+      ],
+      "broll_id": 0
+    },
+    {
+      "type": "clip",
+      "from_id": 19,
+      "to_id": 19,
+      "subs": [
+        "@손님 [yellow:105만원]에 팔고 싶어요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 33,
+      "to_id": 33,
+      "subs": [
+        "@첨리 [yellow:105만원]짜리인지 몰라요"
+      ],
+      "sfx": "question/015_띠동띠동(물음표)",
+      "mark": false,
+      "drop_end_words": 1
+    },
+    {
+      "type": "narration",
+      "text": "이에 첨리가 전문가를 불러오는데",
+      "broll_t": 123.2,
+      "sfx": "whoosh/573_Whoosh(Transition)",
+      "broll_id": 0
+    },
+    {
+      "type": "clip",
+      "from_id": 61,
+      "to_id": 61,
+      "subs": [
+        "@전문가 쇠가 [cyan:1,500년] 버티긴 힘든데"
+      ],
+      "sfx": "surprise/375_Shocked4",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "X선 검사로 성분까지 확인하자",
+      "broll_t": 180.8,
+      "sfx": "pop/037_카툰 팝",
+      "ext": [
+        {
+          "file": "ext/17087.mp4",
+          "t": 0.5,
+          "dur": 1.2
+        }
+      ],
+      "broll_id": 0
+    },
+    {
+      "type": "clip",
+      "from_id": 81,
+      "to_id": 81,
+      "subs": [
+        "{big} @전문가 [red:백만분의 일]"
+      ],
+      "sfx": "ding/185_Ting",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 83,
+      "to_id": 83,
+      "subs": [
+        "@전문가 저 [pink:소름] 돋았어요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 86,
+      "to_id": 86,
+      "subs": [
+        "@첨리 저도 소름 돋았어요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 88,
+      "to_id": 88,
+      "subs": [
+        "@전문가 [cyan:박물관]에 갈 물건이죠"
+      ],
+      "sfx": null,
+      "mark": false,
+      "drop_end_words": 7
+    },
+    {
+      "type": "clip",
+      "from_id": 92,
+      "to_id": 92,
+      "skip_words": 3,
+      "subs": [
+        "@첨리 그래서 얼마짜리예요?"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 93,
+      "to_id": 94,
+      "subs": [
+        "@전문가 꽤 나가요",
+        "{big} @전문가 [yellow:2,100만원]"
+      ],
+      "sfx": "ding/201_코인5",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 97,
+      "to_id": 97,
+      "subs": [
+        "@첨리 [red:105만원]에 살 걸 그랬네"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "이에 첨리가 흥정을 시작하는데",
+      "broll_t": 244.1,
+      "sfx": "whoosh/352_후윽",
+      "ext": [
+        {
+          "file": "ext/36759.mp4",
+          "t": 2.0,
+          "dur": 1.2
+        }
+      ],
+      "broll_id": 0
+    },
+    {
+      "type": "clip",
+      "from_id": 106,
+      "to_id": 106,
+      "skip_words": 6,
+      "subs": [
+        "{big} @첨리 [green:1,050만원]?"
+      ],
+      "sfx": "cash/010_철컥띵 (캐셔)",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 107,
+      "to_id": 107,
+      "subs": [
+        "@손님 그건 [red:어림도 없죠]"
+      ],
+      "sfx": "fail/019_삐삑 (오답 -짧은)",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 109,
+      "to_id": 109,
+      "subs": [
+        "@손님 [yellow:2,100만원]부터 가죠"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 111,
+      "to_id": 111,
+      "subs": [
+        "@첨리 그 돈은 [red:못 드려요]"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 114,
+      "to_id": 114,
+      "subs": [
+        "@손님 [yellow:1,540만원]은요?"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 123,
+      "to_id": 123,
+      "subs": [
+        "{big} @첨리 [green:1,330만원] // @첨리 그래야 저도 남죠"
+      ],
+      "sfx": "ding/001_띵",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 127,
+      "to_id": 127,
+      "subs": [
+        "@손님 [yellow:1,400만원] 쏴요!"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 130,
+      "to_id": 130,
+      "subs": [
+        "@첨리 [green:1,400만원]에 콜!"
+      ],
+      "sfx": "success/341_짜잔_금관악기",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "105만원 부른 투구, 결국 [yellow:1,400만원]에 팔렸다",
+      "broll_t": 311.9,
+      "sfx": null,
+      "broll_id": 0
+    },
+    {
+      "type": "narration",
+      "text": "더 자세한 뒷이야기는 [yellow:고정댓글]에",
+      "broll_t": 168.2,
+      "sfx": null,
+      "broll_id": 0
+    }
+  ],
+  "framing": [
+    {
+      "from": 15.8,
+      "to": 17.9,
+      "cx": 0.74,
+      "cy": 0.4,
+      "h": 0.78
+    },
+    {
+      "from": 144.6,
+      "to": 146.9,
+      "cx": 0.66,
+      "cy": 0.42,
+      "h": 0.78
+    },
+    {
+      "from": 198.3,
+      "to": 199.9,
+      "cx": 0.62,
+      "cy": 0.42,
+      "h": 0.78
+    },
+    {
+      "from": 201.2,
+      "to": 204.0,
+      "cx": 0.78,
+      "cy": 0.42,
+      "h": 0.78
+    },
+    {
+      "from": 209.7,
+      "to": 212.8,
+      "cx": 0.42,
+      "cy": 0.42,
+      "h": 0.78
+    },
+    {
+      "from": 223.4,
+      "to": 225.1,
+      "cx": 0.7,
+      "cy": 0.45,
+      "h": 0.78
+    },
+    {
+      "from": 226.1,
+      "to": 228.2,
+      "cx": 0.7,
+      "cy": 0.45,
+      "h": 0.78
+    },
+    {
+      "from": 305.1,
+      "to": 307.6,
+      "cx": 0.25,
+      "cy": 0.42,
+      "h": 0.78
+    }
+  ]
+}

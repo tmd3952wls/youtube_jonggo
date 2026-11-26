@@ -1,0 +1,836 @@
+[
+  {
+    "id": 0,
+    "start": 3.57,
+    "end": 5.01,
+    "text": "Hey, how you doing?"
+  },
+  {
+    "id": 1,
+    "start": 5.01,
+    "end": 6.17,
+    "text": "Well, how's it going?"
+  },
+  {
+    "id": 2,
+    "start": 6.17,
+    "end": 7.69,
+    "text": "Pretty good. What can I do for you?"
+  },
+  {
+    "id": 3,
+    "start": 7.69,
+    "end": 9.93,
+    "text": "Just came in to sell my helmet here."
+  },
+  {
+    "id": 4,
+    "start": 9.93,
+    "end": 11.13,
+    "text": "How did you get this?"
+  },
+  {
+    "id": 5,
+    "start": 11.13,
+    "end": 13.49,
+    "text": "So we were at an estate sale, me and my sister."
+  },
+  {
+    "id": 6,
+    "start": 13.49,
+    "end": 15.89,
+    "text": "And I came across and thought it was super cool."
+  },
+  {
+    "id": 7,
+    "start": 15.89,
+    "end": 17.89,
+    "text": "It reminded me of an old football helmet,"
+  },
+  {
+    "id": 8,
+    "start": 17.89,
+    "end": 19.33,
+    "text": "you know, from like the 1800s."
+  },
+  {
+    "id": 9,
+    "start": 19.33,
+    "end": 20.85,
+    "text": "Are you a football player or something?"
+  },
+  {
+    "id": 10,
+    "start": 20.85,
+    "end": 23.49,
+    "text": "Yeah, used to be."
+  },
+  {
+    "id": 11,
+    "start": 23.49,
+    "end": 25.57,
+    "text": "I feel like Magneto."
+  },
+  {
+    "id": 12,
+    "start": 25.57,
+    "end": 29.46,
+    "text": "Xavier won't get anything from me."
+  },
+  {
+    "id": 13,
+    "start": 29.46,
+    "end": 30.78,
+    "text": "I'm here at the pawn shop today"
+  },
+  {
+    "id": 14,
+    "start": 30.78,
+    "end": 33.14,
+    "text": "to try and sell my iron helmet."
+  },
+  {
+    "id": 15,
+    "start": 33.14,
+    "end": 34.84,
+    "text": "It's really, really old-looking,"
+  },
+  {
+    "id": 16,
+    "start": 34.84,
+    "end": 37.32,
+    "text": "and kind of thought it'd just be something cool to have."
+  },
+  {
+    "id": 17,
+    "start": 37.32,
+    "end": 38.8,
+    "text": "I've done a little bit of research on it,"
+  },
+  {
+    "id": 18,
+    "start": 38.8,
+    "end": 40.68,
+    "text": "and I'm hoping to sell the helmet today"
+  },
+  {
+    "id": 19,
+    "start": 40.68,
+    "end": 43.36,
+    "text": "here for about $750."
+  },
+  {
+    "id": 20,
+    "start": 43.36,
+    "end": 45.08,
+    "text": "Man, this thing is sexy."
+  },
+  {
+    "id": 21,
+    "start": 45.08,
+    "end": 46.92,
+    "text": "I'm by far no expert on these,"
+  },
+  {
+    "id": 22,
+    "start": 46.92,
+    "end": 50.04,
+    "text": "but it looks like the craftsmanship of the time,"
+  },
+  {
+    "id": 23,
+    "start": 50.04,
+    "end": 52.56,
+    "text": "from the 6th, 7th, 8th century, you know?"
+  },
+  {
+    "id": 24,
+    "start": 52.56,
+    "end": 54.28,
+    "text": "They obviously didn't have the same type of tools"
+  },
+  {
+    "id": 25,
+    "start": 54.28,
+    "end": 56.44,
+    "text": "we had for precision cutting and stuff today,"
+  },
+  {
+    "id": 26,
+    "start": 56.44,
+    "end": 59.84,
+    "text": "so it just looks really, really cool."
+  },
+  {
+    "id": 27,
+    "start": 59.84,
+    "end": 61.6,
+    "text": "It's an Anglo-Saxon helmet,"
+  },
+  {
+    "id": 28,
+    "start": 61.6,
+    "end": 67.12,
+    "text": "They would have been warned by you know all kinds of people even the Vikings would have wore something similar like this I"
+  },
+  {
+    "id": 29,
+    "start": 68.6,
+    "end": 74.82,
+    "text": "Think this man out of iron. I'm pretty buff so it doesn't seem very heavy, but I mean probably weighs"
+  },
+  {
+    "id": 30,
+    "start": 75.32,
+    "end": 80.16,
+    "text": "What about five to eight pounds? Maybe I'm thinking yeah, if you're getting an arrow shot at your head"
+  },
+  {
+    "id": 31,
+    "start": 80.16,
+    "end": 84.16,
+    "text": "I'd rather have this than a piece of wood there, right? Yeah, this is gonna protect you a lot more"
+  },
+  {
+    "id": 32,
+    "start": 84.68,
+    "end": 88.08,
+    "text": "How much are you looking to get? I want to get 750 for it"
+  },
+  {
+    "id": 33,
+    "start": 88.08,
+    "end": 94.96,
+    "text": "Honestly, I don't know if it's worth $750, $7.50,"
+  },
+  {
+    "id": 34,
+    "start": 94.96,
+    "end": 96.68,
+    "text": "or $7,000."
+  },
+  {
+    "id": 35,
+    "start": 96.68,
+    "end": 98.84,
+    "text": "I really have no idea."
+  },
+  {
+    "id": 36,
+    "start": 98.84,
+    "end": 101.92,
+    "text": "If it's real, it could be worth more than that."
+  },
+  {
+    "id": 37,
+    "start": 101.92,
+    "end": 104.28,
+    "text": "I'd like to have my guy come down, test it,"
+  },
+  {
+    "id": 38,
+    "start": 104.28,
+    "end": 106.4,
+    "text": "see if it's from the period, and maybe we'll"
+  },
+  {
+    "id": 39,
+    "start": 106.4,
+    "end": 107.56,
+    "text": "be able to make a deal."
+  },
+  {
+    "id": 40,
+    "start": 107.56,
+    "end": 108.48,
+    "text": "Awesome. Sounds great."
+  },
+  {
+    "id": 41,
+    "start": 108.48,
+    "end": 109.08,
+    "text": "All right."
+  },
+  {
+    "id": 42,
+    "start": 109.08,
+    "end": 110.4,
+    "text": "Find something to buy just in case you"
+  },
+  {
+    "id": 43,
+    "start": 110.4,
+    "end": 111.36,
+    "text": "get some money from this."
+  },
+  {
+    "id": 44,
+    "start": 111.36,
+    "end": 111.76,
+    "text": "Appreciate it."
+  },
+  {
+    "id": 45,
+    "start": 111.76,
+    "end": 112.28,
+    "text": "Thank you."
+  },
+  {
+    "id": 46,
+    "start": 112.28,
+    "end": 113.36,
+    "text": "I'm really excited for an expert"
+  },
+  {
+    "id": 47,
+    "start": 113.36,
+    "end": 114.76,
+    "text": "to come in and take a look at it."
+  },
+  {
+    "id": 48,
+    "start": 114.76,
+    "end": 116.12,
+    "text": "I'm hoping you can authenticate it"
+  },
+  {
+    "id": 49,
+    "start": 116.12,
+    "end": 118.16,
+    "text": "so I can get exactly what I want."
+  },
+  {
+    "id": 50,
+    "start": 118.16,
+    "end": 119.28,
+    "text": "Hey, Bob, how you doing?"
+  },
+  {
+    "id": 51,
+    "start": 119.28,
+    "end": 120.32,
+    "text": "John Lee, how you doing, bud?"
+  },
+  {
+    "id": 52,
+    "start": 120.32,
+    "end": 122.32,
+    "text": "Oh, whoa, it wasn't me."
+  },
+  {
+    "id": 53,
+    "start": 122.32,
+    "end": 123.92,
+    "text": "Take a step back."
+  },
+  {
+    "id": 54,
+    "start": 123.92,
+    "end": 125.96,
+    "text": "So that's what you called me down for."
+  },
+  {
+    "id": 55,
+    "start": 125.96,
+    "end": 128.36,
+    "text": "I thought you said you had a sexy helmet."
+  },
+  {
+    "id": 56,
+    "start": 128.36,
+    "end": 131.96,
+    "text": "Oh, well, it was on me, so it was sexy for quite a few minutes."
+  },
+  {
+    "id": 57,
+    "start": 131.96,
+    "end": 133.68,
+    "text": "No, it's not a sexy helmet."
+  },
+  {
+    "id": 58,
+    "start": 133.68,
+    "end": 139.32,
+    "text": "What you've got appears to be an authentic Anglo-Saxon"
+  },
+  {
+    "id": 59,
+    "start": 139.32,
+    "end": 141.6,
+    "text": "helmet, but a fine one."
+  },
+  {
+    "id": 60,
+    "start": 141.6,
+    "end": 144.76,
+    "text": "In this condition, you just don't find them."
+  },
+  {
+    "id": 61,
+    "start": 144.76,
+    "end": 147.2,
+    "text": "Iron doesn't last for 1,500 years."
+  },
+  {
+    "id": 62,
+    "start": 147.2,
+    "end": 150.48,
+    "text": "When you find them, they're usually powder."
+  },
+  {
+    "id": 63,
+    "start": 150.48,
+    "end": 154.8,
+    "text": "So my guess, this wouldn't have been found in the ground."
+  },
+  {
+    "id": 64,
+    "start": 154.8,
+    "end": 158.56,
+    "text": "It would have either been in a bog or possibly a river."
+  },
+  {
+    "id": 65,
+    "start": 158.56,
+    "end": 161.08,
+    "text": "Some place where there wasn't a whole lot of oxygen"
+  },
+  {
+    "id": 66,
+    "start": 161.08,
+    "end": 164.12,
+    "text": "that could get to it to have it deteriorate."
+  },
+  {
+    "id": 67,
+    "start": 164.12,
+    "end": 166.56,
+    "text": "What do you got to do to test it out and make sure it's real?"
+  },
+  {
+    "id": 68,
+    "start": 166.56,
+    "end": 167.48,
+    "text": "Test a little gun."
+  },
+  {
+    "id": 69,
+    "start": 167.48,
+    "end": 169.96,
+    "text": "We'll shoot a little beam of X-ray into it."
+  },
+  {
+    "id": 70,
+    "start": 169.96,
+    "end": 171.84,
+    "text": "If everything goes right, the X-RF"
+  },
+  {
+    "id": 71,
+    "start": 171.84,
+    "end": 174.12,
+    "text": "is going to show me the metals it's made out of."
+  },
+  {
+    "id": 72,
+    "start": 174.12,
+    "end": 176.62,
+    "text": "And that will tell me if there's carbon steel,"
+  },
+  {
+    "id": 73,
+    "start": 176.62,
+    "end": 179.92,
+    "text": "which is how it would have been made 1,500 years ago."
+  },
+  {
+    "id": 74,
+    "start": 179.92,
+    "end": 186.04,
+    "text": "So let's take a look at it."
+  },
+  {
+    "id": 75,
+    "start": 186.04,
+    "end": 190.08,
+    "text": "So it's made 99.76% iron."
+  },
+  {
+    "id": 76,
+    "start": 190.08,
+    "end": 193.32,
+    "text": "And then traces of copper, zinc, chromium."
+  },
+  {
+    "id": 77,
+    "start": 193.32,
+    "end": 194.48,
+    "text": "This is carbon steel."
+  },
+  {
+    "id": 78,
+    "start": 194.48,
+    "end": 196.56,
+    "text": "So this is what it should be made out of."
+  },
+  {
+    "id": 79,
+    "start": 196.56,
+    "end": 197.36,
+    "text": "OK."
+  },
+  {
+    "id": 80,
+    "start": 197.36,
+    "end": 198.48,
+    "text": "It's official."
+  },
+  {
+    "id": 81,
+    "start": 198.48,
+    "end": 200.16,
+    "text": "It's a one in a million."
+  },
+  {
+    "id": 82,
+    "start": 200.16,
+    "end": 201.64,
+    "text": "I mean, it's that rare."
+  },
+  {
+    "id": 83,
+    "start": 201.64,
+    "end": 202.56,
+    "text": "I've got goosebumps."
+  },
+  {
+    "id": 84,
+    "start": 202.56,
+    "end": 203.84,
+    "text": "I just don't see these things."
+  },
+  {
+    "id": 85,
+    "start": 203.84,
+    "end": 204.76,
+    "text": "I mean, this is just."
+  },
+  {
+    "id": 86,
+    "start": 204.76,
+    "end": 207.48,
+    "text": "Well, I got goosebumps now, too."
+  },
+  {
+    "id": 87,
+    "start": 207.48,
+    "end": 210.0,
+    "text": "What kind of person would collect something like this?"
+  },
+  {
+    "id": 88,
+    "start": 210.0,
+    "end": 213.64,
+    "text": "It's a museum piece or somebody who is a refined collector"
+  },
+  {
+    "id": 89,
+    "start": 213.64,
+    "end": 215.44,
+    "text": "and wants to show off that, man, I've"
+  },
+  {
+    "id": 90,
+    "start": 215.44,
+    "end": 217.56,
+    "text": "got something that nobody else has."
+  },
+  {
+    "id": 91,
+    "start": 217.56,
+    "end": 219.56,
+    "text": "It's very desirable."
+  },
+  {
+    "id": 92,
+    "start": 219.56,
+    "end": 224.12,
+    "text": "All right, and the most important question, what's it worth?"
+  },
+  {
+    "id": 93,
+    "start": 224.12,
+    "end": 226.64,
+    "text": "A lot."
+  },
+  {
+    "id": 94,
+    "start": 226.64,
+    "end": 229.24,
+    "text": "$15,000."
+  },
+  {
+    "id": 95,
+    "start": 229.24,
+    "end": 230.48,
+    "text": "$15,000."
+  },
+  {
+    "id": 96,
+    "start": 230.48,
+    "end": 232.8,
+    "text": "$15,000."
+  },
+  {
+    "id": 97,
+    "start": 232.8,
+    "end": 234.3,
+    "text": "Now I'm sad I didn't buy it for $750."
+  },
+  {
+    "id": 98,
+    "start": 234.72,
+    "end": 235.88,
+    "text": "Shouldn't have called me."
+  },
+  {
+    "id": 99,
+    "start": 235.88,
+    "end": 237.32,
+    "text": "Well, I appreciate you coming in."
+  },
+  {
+    "id": 100,
+    "start": 237.32,
+    "end": 238.16,
+    "text": "My pleasure."
+  },
+  {
+    "id": 101,
+    "start": 238.16,
+    "end": 240.44,
+    "text": "If I make a sale, I'll give you a call and it's, you know,"
+  },
+  {
+    "id": 102,
+    "start": 240.44,
+    "end": 243.35,
+    "text": "see you later."
+  },
+  {
+    "id": 103,
+    "start": 243.35,
+    "end": 244.31,
+    "text": "All right."
+  },
+  {
+    "id": 104,
+    "start": 244.31,
+    "end": 246.71,
+    "text": "He said it's worth about 15,000."
+  },
+  {
+    "id": 105,
+    "start": 246.71,
+    "end": 249.51,
+    "text": "It's a small market, but it is desirable."
+  },
+  {
+    "id": 106,
+    "start": 249.51,
+    "end": 253.99,
+    "text": "Would you be able to take 7,500?"
+  },
+  {
+    "id": 107,
+    "start": 253.99,
+    "end": 256.59,
+    "text": "No, I couldn't do 7,500."
+  },
+  {
+    "id": 108,
+    "start": 256.59,
+    "end": 258.27,
+    "text": "The expert said a 15,000."
+  },
+  {
+    "id": 109,
+    "start": 258.27,
+    "end": 260.51,
+    "text": "So I think we'll start at 15,000."
+  },
+  {
+    "id": 110,
+    "start": 260.51,
+    "end": 261.79,
+    "text": "It's one in a million fund."
+  },
+  {
+    "id": 111,
+    "start": 261.79,
+    "end": 263.71,
+    "text": "I'm not going to be able to pay you 15,000 for it."
+  },
+  {
+    "id": 112,
+    "start": 263.71,
+    "end": 265.79,
+    "text": "You got to give me some room in here."
+  },
+  {
+    "id": 113,
+    "start": 265.79,
+    "end": 267.99,
+    "text": "Give me a good number that you'd be happy with."
+  },
+  {
+    "id": 114,
+    "start": 267.99,
+    "end": 270.87,
+    "text": "How about $11,000?"
+  },
+  {
+    "id": 115,
+    "start": 270.87,
+    "end": 273.71,
+    "text": "$11,000 is a lot better than $15,000,"
+  },
+  {
+    "id": 116,
+    "start": 273.71,
+    "end": 277.75,
+    "text": "but still more than I want to pay."
+  },
+  {
+    "id": 117,
+    "start": 277.75,
+    "end": 279.67,
+    "text": "$95,000."
+  },
+  {
+    "id": 118,
+    "start": 279.67,
+    "end": 282.59,
+    "text": "Can you come up a little bit more than $95,000?"
+  },
+  {
+    "id": 119,
+    "start": 282.59,
+    "end": 283.55,
+    "text": "I know."
+  },
+  {
+    "id": 120,
+    "start": 283.55,
+    "end": 285.83,
+    "text": "He was just telling you the rarity of it"
+  },
+  {
+    "id": 121,
+    "start": 285.83,
+    "end": 287.67,
+    "text": "and the condition it's in."
+  },
+  {
+    "id": 122,
+    "start": 287.67,
+    "end": 288.39,
+    "text": "I really can."
+  },
+  {
+    "id": 123,
+    "start": 288.39,
+    "end": 291.71,
+    "text": "$9,500 leads me a good amount of room."
+  },
+  {
+    "id": 124,
+    "start": 291.71,
+    "end": 293.19,
+    "text": "And I have to sell it."
+  },
+  {
+    "id": 125,
+    "start": 293.19,
+    "end": 294.15,
+    "text": "It could stay here for a year."
+  },
+  {
+    "id": 126,
+    "start": 294.15,
+    "end": 296.99,
+    "text": "It could stay here for two days."
+  },
+  {
+    "id": 127,
+    "start": 296.99,
+    "end": 299.71,
+    "text": "$10,000?"
+  },
+  {
+    "id": 128,
+    "start": 299.71,
+    "end": 302.87,
+    "text": "10 big ones."
+  },
+  {
+    "id": 129,
+    "start": 302.87,
+    "end": 305.47,
+    "text": "I'm not going to let it walk over $500."
+  },
+  {
+    "id": 130,
+    "start": 305.47,
+    "end": 307.67,
+    "text": "So for $10,000, you have a deal."
+  },
+  {
+    "id": 131,
+    "start": 307.67,
+    "end": 308.95,
+    "text": "$10,000?"
+  },
+  {
+    "id": 132,
+    "start": 308.95,
+    "end": 309.85,
+    "text": "It's yours."
+  },
+  {
+    "id": 133,
+    "start": 309.85,
+    "end": 310.75,
+    "text": "Pleasure."
+  },
+  {
+    "id": 134,
+    "start": 310.75,
+    "end": 311.83,
+    "text": "I'll meet you over at the counter."
+  },
+  {
+    "id": 135,
+    "start": 311.83,
+    "end": 312.75,
+    "text": "I'm in shock."
+  },
+  {
+    "id": 136,
+    "start": 312.75,
+    "end": 314.27,
+    "text": "I had no ideals worth that much."
+  },
+  {
+    "id": 137,
+    "start": 314.27,
+    "end": 317.07,
+    "text": "I can't believe I'm leaving here today with $10,000."
+  },
+  {
+    "id": 138,
+    "start": 317.07,
+    "end": 319.15,
+    "text": "Just blows my mind."
+  }
+]

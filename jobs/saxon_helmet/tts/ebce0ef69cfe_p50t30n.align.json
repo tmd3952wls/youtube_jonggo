@@ -1,0 +1,29 @@
+{
+ "text": "X선 검사로 성분까지 확인하자",
+ "words": [
+  {
+   "word": "X선",
+   "start": 0.02,
+   "end": 0.424,
+   "aligned": true
+  },
+  {
+   "word": "검사로",
+   "start": 0.484,
+   "end": 0.888,
+   "aligned": true
+  },
+  {
+   "word": "성분까지",
+   "start": 0.928,
+   "end": 1.433,
+   "aligned": true
+  },
+  {
+   "word": "확인하자",
+   "start": 1.473,
+   "end": 1.836,
+   "aligned": true
+  }
+ ]
+}

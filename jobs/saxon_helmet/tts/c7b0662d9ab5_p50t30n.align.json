@@ -1,0 +1,41 @@
+{
+ "text": "녹슨 쇠 투구로 105만원 부른 남자",
+ "words": [
+  {
+   "word": "녹슨",
+   "start": 0.02,
+   "end": 0.283,
+   "aligned": true
+  },
+  {
+   "word": "쇠",
+   "start": 0.343,
+   "end": 0.464,
+   "aligned": true
+  },
+  {
+   "word": "투구로",
+   "start": 0.545,
+   "end": 0.767,
+   "aligned": true
+  },
+  {
+   "word": "105만원",
+   "start": 0.848,
+   "end": 1.393,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 1.474,
+   "end": 1.615,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 1.675,
+   "end": 1.877,
+   "aligned": true
+  }
+ ]
+}

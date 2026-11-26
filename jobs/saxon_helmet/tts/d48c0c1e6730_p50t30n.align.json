@@ -1,0 +1,29 @@
+{
+ "text": "이에 첨리가 전문가를 불러오는데",
+ "words": [
+  {
+   "word": "이에",
+   "start": 0.04,
+   "end": 0.161,
+   "aligned": true
+  },
+  {
+   "word": "첨리가",
+   "start": 0.221,
+   "end": 0.542,
+   "aligned": true
+  },
+  {
+   "word": "전문가를",
+   "start": 0.603,
+   "end": 0.984,
+   "aligned": true
+  },
+  {
+   "word": "불러오는데",
+   "start": 1.065,
+   "end": 1.487,
+   "aligned": true
+  }
+ ]
+}
