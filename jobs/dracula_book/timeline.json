@@ -29,7 +29,7 @@
   },
   {
     "kind": "clip",
-    "dur": 3.4
+    "dur": 1.77
   },
   {
     "kind": "clip",
@@ -77,6 +77,10 @@
   },
   {
     "kind": "narration",
-    "dur": 3.53
+    "dur": 3.33
+  },
+  {
+    "kind": "narration",
+    "dur": 2.27
   }
 ]

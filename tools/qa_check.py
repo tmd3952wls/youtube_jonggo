@@ -154,6 +154,10 @@ def run_qa(job: Path) -> bool:
         if segs and segs[-1].get("type") == "narration" and segs[-1].get("sfx") is not None:
             issues.append(f"[마무리 효과음 위반] 마지막 내레이션의 sfx는 반드시 null이어야 함 (현재: {segs[-1].get('sfx')})")
 
+    # 7-1. 마무리 자막: 영상 맨 끝 해설은 고정댓글의 뒷이야기를 안내해야 함 (2026-11-26 사용자 지적 — 매 영상 필수)
+    if segs and not (segs[-1].get("type") == "narration" and "고정댓글" in str(segs[-1].get("text", ""))):
+        issues.append("[마무리 고정댓글 안내 누락] 마지막 해설 자막에 '고정댓글' 안내가 없습니다 (예: \"더 자세한 뒷이야기는 고정댓글에\").")
+
     # 8. 원본 배경음악 제거(source_vocals.wav) 확인
     if not (job / "source_vocals.wav").exists():
         issues.append("[배경음악 분리 누락] source_vocals.wav 파일이 없습니다.")

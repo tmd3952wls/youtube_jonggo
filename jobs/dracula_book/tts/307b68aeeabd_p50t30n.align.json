@@ -1,0 +1,29 @@
+{
+ "text": "더 자세한 뒷이야기는 고정댓글에",
+ "words": [
+  {
+   "word": "더",
+   "start": 0.02,
+   "end": 0.121,
+   "aligned": true
+  },
+  {
+   "word": "자세한",
+   "start": 0.202,
+   "end": 0.566,
+   "aligned": true
+  },
+  {
+   "word": "뒷이야기는",
+   "start": 0.647,
+   "end": 1.213,
+   "aligned": true
+  },
+  {
+   "word": "고정댓글에",
+   "start": 1.314,
+   "end": 1.879,
+   "aligned": true
+  }
+ ]
+}

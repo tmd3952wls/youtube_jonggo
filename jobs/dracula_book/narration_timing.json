@@ -46,47 +46,65 @@
   },
   {
     "text": "이에 릭이 흥정을",
-    "start": 36.233,
-    "end": 37.131,
+    "start": 34.6,
+    "end": 35.498,
     "method": "whisperx",
-    "prop_start": 36.233,
-    "seg_start": 36.233,
-    "seg_end": 37.9
+    "prop_start": 34.6,
+    "seg_start": 34.6,
+    "seg_end": 36.267
   },
   {
     "text": "시작하는데",
-    "start": 37.131,
-    "end": 37.9,
+    "start": 35.498,
+    "end": 36.267,
     "method": "whisperx",
-    "prop_start": 37.296,
-    "seg_start": 36.233,
-    "seg_end": 37.9
+    "prop_start": 35.663,
+    "seg_start": 34.6,
+    "seg_end": 36.267
   },
   {
     "text": "감정가 8,400만원",
-    "start": 47.4,
-    "end": 48.752,
+    "start": 45.767,
+    "end": 47.119,
     "method": "whisperx",
-    "prop_start": 47.4,
-    "seg_start": 47.4,
-    "seg_end": 50.933
+    "prop_start": 45.767,
+    "seg_start": 45.767,
+    "seg_end": 49.1
   },
   {
     "text": "드라큘라 초판,",
-    "start": 48.752,
-    "end": 49.674,
+    "start": 47.119,
+    "end": 48.041,
     "method": "whisperx",
-    "prop_start": 49.236,
-    "seg_start": 47.4,
-    "seg_end": 50.933
+    "prop_start": 47.603,
+    "seg_start": 45.767,
+    "seg_end": 49.1
   },
   {
     "text": "결국 거래 불발",
-    "start": 49.674,
-    "end": 50.933,
+    "start": 48.041,
+    "end": 49.1,
     "method": "whisperx",
-    "prop_start": 49.971,
-    "seg_start": 47.4,
-    "seg_end": 50.933
+    "prop_start": 48.337,
+    "seg_start": 45.767,
+    "seg_end": 49.1
+  },
+  {
+    "text": "더 자세한 뒷이야기는",
+    "start": 49.1,
+    "end": 50.364,
+    "method": "whisperx",
+    "prop_start": 49.1,
+    "seg_start": 49.1,
+    "seg_end": 51.367
+  },
+  {
+    "text": "고정댓글에",
+    "start": 50.364,
+    "end": 51.367,
+    "method": "whisperx",
+    "prop_start": 49.989,
+    "seg_start": 49.1,
+    "seg_end": 51.367
   }
 ]
