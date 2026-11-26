@@ -1,0 +1,758 @@
+[
+  {
+    "id": 0,
+    "start": 0.21,
+    "end": 1.21,
+    "text": "Hello."
+  },
+  {
+    "id": 1,
+    "start": 1.21,
+    "end": 2.21,
+    "text": "Hi."
+  },
+  {
+    "id": 2,
+    "start": 2.21,
+    "end": 3.21,
+    "text": "I understand you're the book expert."
+  },
+  {
+    "id": 3,
+    "start": 3.21,
+    "end": 4.21,
+    "text": "Yes, you are."
+  },
+  {
+    "id": 4,
+    "start": 4.21,
+    "end": 5.21,
+    "text": "And I brought you a book."
+  },
+  {
+    "id": 5,
+    "start": 5.21,
+    "end": 6.21,
+    "text": "Oh, you have a book for me."
+  },
+  {
+    "id": 6,
+    "start": 6.21,
+    "end": 9.21,
+    "text": "If this is what I think it is, I'm very excited."
+  },
+  {
+    "id": 7,
+    "start": 9.21,
+    "end": 13.21,
+    "text": "It is a first edition, first printing of Dracula."
+  },
+  {
+    "id": 8,
+    "start": 13.21,
+    "end": 15.21,
+    "text": "This book is so iconic."
+  },
+  {
+    "id": 9,
+    "start": 15.21,
+    "end": 18.21,
+    "text": "Dracula was written by Brahms Stoker, published in 1897."
+  },
+  {
+    "id": 10,
+    "start": 18.21,
+    "end": 20.21,
+    "text": "How did you come across this book?"
+  },
+  {
+    "id": 11,
+    "start": 20.21,
+    "end": 24.21,
+    "text": "I had read it a zillion times and fallen in love with it."
+  },
+  {
+    "id": 12,
+    "start": 24.21,
+    "end": 27.21,
+    "text": "So I went looking for it to find a first edition,"
+  },
+  {
+    "id": 13,
+    "start": 27.21,
+    "end": 31.21,
+    "text": "and it took a long time, and I found it."
+  },
+  {
+    "id": 14,
+    "start": 31.21,
+    "end": 35.21,
+    "text": "This book has a clamshell box that was created for it later."
+  },
+  {
+    "id": 15,
+    "start": 35.21,
+    "end": 37.21,
+    "text": "I call it his casket."
+  },
+  {
+    "id": 16,
+    "start": 37.21,
+    "end": 40.21,
+    "text": "Because of the red velvet."
+  },
+  {
+    "id": 17,
+    "start": 40.21,
+    "end": 42.21,
+    "text": "It's part of the beauty."
+  },
+  {
+    "id": 18,
+    "start": 42.21,
+    "end": 46.21,
+    "text": "This book is so interesting because you have this vampire figure"
+  },
+  {
+    "id": 19,
+    "start": 46.21,
+    "end": 49.21,
+    "text": "essentially coming into high society in England,"
+  },
+  {
+    "id": 20,
+    "start": 49.21,
+    "end": 52.21,
+    "text": "and it's all told through these second-hand accounts"
+  },
+  {
+    "id": 21,
+    "start": 52.21,
+    "end": 55.21,
+    "text": "through these letters and these diary entries,"
+  },
+  {
+    "id": 22,
+    "start": 55.21,
+    "end": 59.01,
+    "text": "And it does give you this sense of growing horror"
+  },
+  {
+    "id": 23,
+    "start": 59.01,
+    "end": 61.57,
+    "text": "that comes with not knowing what this monster is"
+  },
+  {
+    "id": 24,
+    "start": 61.57,
+    "end": 62.61,
+    "text": "that you're facing."
+  },
+  {
+    "id": 25,
+    "start": 62.61,
+    "end": 64.25,
+    "text": "This was not the first vampire book,"
+  },
+  {
+    "id": 26,
+    "start": 64.25,
+    "end": 67.81,
+    "text": "but it is the biggest vampire book unquestionably."
+  },
+  {
+    "id": 27,
+    "start": 67.81,
+    "end": 69.77,
+    "text": "So you mentioned this is a first edition."
+  },
+  {
+    "id": 28,
+    "start": 69.77,
+    "end": 72.37,
+    "text": "In this era, there are a few different printings"
+  },
+  {
+    "id": 29,
+    "start": 72.37,
+    "end": 74.21,
+    "text": "on the first edition."
+  },
+  {
+    "id": 30,
+    "start": 74.21,
+    "end": 76.25,
+    "text": "However, in the collectible world,"
+  },
+  {
+    "id": 31,
+    "start": 76.25,
+    "end": 80.33,
+    "text": "the first printing of the first edition has that premium."
+  },
+  {
+    "id": 32,
+    "start": 80.33,
+    "end": 81.57,
+    "text": "The second and the third printing"
+  },
+  {
+    "id": 33,
+    "start": 81.57,
+    "end": 82.97,
+    "text": "are not considered the same."
+  },
+  {
+    "id": 34,
+    "start": 82.97,
+    "end": 86.05,
+    "text": "they will not have the same amount of marketplace value."
+  },
+  {
+    "id": 35,
+    "start": 86.05,
+    "end": 86.55,
+    "text": "OK."
+  },
+  {
+    "id": 36,
+    "start": 86.55,
+    "end": 89.71,
+    "text": "And so to determine whether it's the first edition,"
+  },
+  {
+    "id": 37,
+    "start": 89.71,
+    "end": 93.59,
+    "text": "the true first printing, is an absence of something."
+  },
+  {
+    "id": 38,
+    "start": 93.59,
+    "end": 94.71,
+    "text": "We go to the back here."
+  },
+  {
+    "id": 39,
+    "start": 94.71,
+    "end": 96.31,
+    "text": "And in the second and the third printing,"
+  },
+  {
+    "id": 40,
+    "start": 96.31,
+    "end": 99.51,
+    "text": "publishers would add their own advertisements"
+  },
+  {
+    "id": 41,
+    "start": 99.51,
+    "end": 102.47,
+    "text": "to the end of the book when the copies were bound."
+  },
+  {
+    "id": 42,
+    "start": 102.47,
+    "end": 104.15,
+    "text": "It would be a catalog of what other books"
+  },
+  {
+    "id": 43,
+    "start": 104.15,
+    "end": 105.63,
+    "text": "they were offering for sale."
+  },
+  {
+    "id": 44,
+    "start": 105.63,
+    "end": 108.39,
+    "text": "OK, so we end here on page 390."
+  },
+  {
+    "id": 45,
+    "start": 108.39,
+    "end": 109.47,
+    "text": "And then we have a blank."
+  },
+  {
+    "id": 46,
+    "start": 109.47,
+    "end": 113.41,
+    "text": "there is no bookseller ad at the end of this."
+  },
+  {
+    "id": 47,
+    "start": 113.41,
+    "end": 115.91,
+    "text": "That is actually what we're looking for."
+  },
+  {
+    "id": 48,
+    "start": 117.13,
+    "end": 119.69,
+    "text": "True first edition, first printing copies"
+  },
+  {
+    "id": 49,
+    "start": 119.69,
+    "end": 121.49,
+    "text": "are incredibly rare."
+  },
+  {
+    "id": 50,
+    "start": 121.49,
+    "end": 122.73,
+    "text": "What are you looking to do with it?"
+  },
+  {
+    "id": 51,
+    "start": 122.73,
+    "end": 126.17,
+    "text": "I'm looking to sell it for $49,000."
+  },
+  {
+    "id": 52,
+    "start": 126.17,
+    "end": 128.73,
+    "text": "That was a very specific number, I love it."
+  },
+  {
+    "id": 53,
+    "start": 128.73,
+    "end": 130.69,
+    "text": "This is such an iconic book."
+  },
+  {
+    "id": 54,
+    "start": 130.69,
+    "end": 132.85,
+    "text": "I know that one of the guys is gonna wanna see this,"
+  },
+  {
+    "id": 55,
+    "start": 132.85,
+    "end": 134.65,
+    "text": "so I'm gonna go back and get one of them."
+  },
+  {
+    "id": 56,
+    "start": 134.65,
+    "end": 139.62,
+    "text": "Okay."
+  },
+  {
+    "id": 57,
+    "start": 139.62,
+    "end": 140.7,
+    "text": "How are you doing?"
+  },
+  {
+    "id": 58,
+    "start": 140.7,
+    "end": 141.66,
+    "text": "Hi, how are you?"
+  },
+  {
+    "id": 59,
+    "start": 141.66,
+    "end": 145.66,
+    "text": "I'm doing great, and tell me that's the first edition."
+  },
+  {
+    "id": 60,
+    "start": 145.66,
+    "end": 147.26,
+    "text": "A true first edition,"
+  },
+  {
+    "id": 61,
+    "start": 147.26,
+    "end": 151.78,
+    "text": "the first edition first printing the very first batch."
+  },
+  {
+    "id": 62,
+    "start": 151.78,
+    "end": 153.66,
+    "text": "I'm amazed you have a first edition,"
+  },
+  {
+    "id": 63,
+    "start": 153.66,
+    "end": 155.98,
+    "text": "because there's only a couple thousand that he's made."
+  },
+  {
+    "id": 64,
+    "start": 155.98,
+    "end": 157.42,
+    "text": "We don't know definitively,"
+  },
+  {
+    "id": 65,
+    "start": 157.42,
+    "end": 160.38,
+    "text": "but there were probably around 3,000 copies."
+  },
+  {
+    "id": 66,
+    "start": 160.38,
+    "end": 161.58,
+    "text": "Was this his first book?"
+  },
+  {
+    "id": 67,
+    "start": 161.58,
+    "end": 162.82,
+    "text": "This wasn't his first book."
+  },
+  {
+    "id": 68,
+    "start": 162.82,
+    "end": 165.5,
+    "text": "In fact, he had been published as a novelist before this,"
+  },
+  {
+    "id": 69,
+    "start": 165.5,
+    "end": 166.86,
+    "text": "and he was pretty well ensconced"
+  },
+  {
+    "id": 70,
+    "start": 166.86,
+    "end": 169.5,
+    "text": "in the London theater scene where he was better known."
+  },
+  {
+    "id": 71,
+    "start": 169.5,
+    "end": 171.26,
+    "text": "And then that's actually what leads"
+  },
+  {
+    "id": 72,
+    "start": 171.26,
+    "end": 173.82,
+    "text": "to seeing Dracula in theater adaptations"
+  },
+  {
+    "id": 73,
+    "start": 173.82,
+    "end": 176.38,
+    "text": "and really taking off and becoming the image"
+  },
+  {
+    "id": 74,
+    "start": 176.38,
+    "end": 178.54,
+    "text": "of what we know of as the vampire."
+  },
+  {
+    "id": 75,
+    "start": 178.54,
+    "end": 181.42,
+    "text": "How many vampire movies and vampire books"
+  },
+  {
+    "id": 76,
+    "start": 181.42,
+    "end": 182.58,
+    "text": "have came out since this one?"
+  },
+  {
+    "id": 77,
+    "start": 182.58,
+    "end": 185.95,
+    "text": "I mean, this started it all."
+  },
+  {
+    "id": 78,
+    "start": 185.95,
+    "end": 188.07,
+    "text": "So for this book, is this great condition?"
+  },
+  {
+    "id": 79,
+    "start": 188.07,
+    "end": 189.83,
+    "text": "It has a few condition issues."
+  },
+  {
+    "id": 80,
+    "start": 189.83,
+    "end": 191.63,
+    "text": "This is the original cloth."
+  },
+  {
+    "id": 81,
+    "start": 191.63,
+    "end": 194.19,
+    "text": "It has a little bit of the lettering, has faded."
+  },
+  {
+    "id": 82,
+    "start": 194.19,
+    "end": 196.15,
+    "text": "You can see too, one of the main things"
+  },
+  {
+    "id": 83,
+    "start": 196.15,
+    "end": 197.35,
+    "text": "when you're looking at it,"
+  },
+  {
+    "id": 84,
+    "start": 197.35,
+    "end": 199.51,
+    "text": "it's got this toning to the spine,"
+  },
+  {
+    "id": 85,
+    "start": 199.51,
+    "end": 201.43,
+    "text": "which you get when you have it on your shelf."
+  },
+  {
+    "id": 86,
+    "start": 201.43,
+    "end": 203.53,
+    "text": "This is the only part that gets exposed to the sun,"
+  },
+  {
+    "id": 87,
+    "start": 203.53,
+    "end": 205.29,
+    "text": "so it's kind of like the book got sunburned."
+  },
+  {
+    "id": 88,
+    "start": 205.29,
+    "end": 207.37,
+    "text": "Dracula gets damaged by sunlight."
+  },
+  {
+    "id": 89,
+    "start": 207.37,
+    "end": 209.97,
+    "text": "Dracula doesn't like the sun."
+  },
+  {
+    "id": 90,
+    "start": 209.97,
+    "end": 212.25,
+    "text": "No more sun for Dracula, that's why he has a coffin."
+  },
+  {
+    "id": 91,
+    "start": 212.25,
+    "end": 214.01,
+    "text": "We keep him in the coffin now."
+  },
+  {
+    "id": 92,
+    "start": 214.01,
+    "end": 215.41,
+    "text": "All right."
+  },
+  {
+    "id": 93,
+    "start": 215.41,
+    "end": 217.65,
+    "text": "What would it sell for?"
+  },
+  {
+    "id": 94,
+    "start": 217.65,
+    "end": 219.69,
+    "text": "This book is incredibly collectible."
+  },
+  {
+    "id": 95,
+    "start": 219.69,
+    "end": 220.93,
+    "text": "It has everything you want."
+  },
+  {
+    "id": 96,
+    "start": 220.93,
+    "end": 222.09,
+    "text": "It is a classic work."
+  },
+  {
+    "id": 97,
+    "start": 222.09,
+    "end": 222.89,
+    "text": "Everyone knows it."
+  },
+  {
+    "id": 98,
+    "start": 222.89,
+    "end": 225.49,
+    "text": "The impact is immeasurable."
+  },
+  {
+    "id": 99,
+    "start": 225.49,
+    "end": 227.61,
+    "text": "And it's quite scarce on the marketplace today."
+  },
+  {
+    "id": 100,
+    "start": 227.61,
+    "end": 230.65,
+    "text": "So this particular copy, based on the condition,"
+  },
+  {
+    "id": 101,
+    "start": 230.65,
+    "end": 233.35,
+    "text": "I would put at $60,000."
+  },
+  {
+    "id": 102,
+    "start": 233.35,
+    "end": 235.07,
+    "text": "$60,000?"
+  },
+  {
+    "id": 103,
+    "start": 235.07,
+    "end": 236.11,
+    "text": "Yes."
+  },
+  {
+    "id": 104,
+    "start": 236.11,
+    "end": 237.55,
+    "text": "OK."
+  },
+  {
+    "id": 105,
+    "start": 237.55,
+    "end": 238.79,
+    "text": "All the stuff we make a deal."
+  },
+  {
+    "id": 106,
+    "start": 238.79,
+    "end": 239.79,
+    "text": "OK."
+  },
+  {
+    "id": 107,
+    "start": 239.79,
+    "end": 240.59,
+    "text": "All right."
+  },
+  {
+    "id": 108,
+    "start": 240.59,
+    "end": 241.55,
+    "text": "OK."
+  },
+  {
+    "id": 109,
+    "start": 241.55,
+    "end": 242.47,
+    "text": "What do you want for it?"
+  },
+  {
+    "id": 110,
+    "start": 242.47,
+    "end": 246.43,
+    "text": "I'd like to see $49,000."
+  },
+  {
+    "id": 111,
+    "start": 246.43,
+    "end": 248.83,
+    "text": "You know, it would be amazing if someone came in next week"
+  },
+  {
+    "id": 112,
+    "start": 248.83,
+    "end": 250.59,
+    "text": "and paid me $60,000 for it."
+  },
+  {
+    "id": 113,
+    "start": 250.59,
+    "end": 252.67,
+    "text": "Probably not going to happen."
+  },
+  {
+    "id": 114,
+    "start": 252.67,
+    "end": 255.35,
+    "text": "I mean, I would give you $30,000 for it."
+  },
+  {
+    "id": 115,
+    "start": 255.35,
+    "end": 256.83,
+    "text": "$45,000?"
+  },
+  {
+    "id": 116,
+    "start": 256.83,
+    "end": 259.07,
+    "text": "It's going to sit around for a year or two."
+  },
+  {
+    "id": 117,
+    "start": 259.07,
+    "end": 262.23,
+    "text": "I'll go 35 on it, that's the best I can do."
+  },
+  {
+    "id": 118,
+    "start": 262.23,
+    "end": 264.23,
+    "text": "I don't think I can let it go for that."
+  },
+  {
+    "id": 119,
+    "start": 264.23,
+    "end": 266.71,
+    "text": "All right, if you change your mind, come back and see me."
+  },
+  {
+    "id": 120,
+    "start": 266.71,
+    "end": 267.63,
+    "text": "Keep it out of sunlight,"
+  },
+  {
+    "id": 121,
+    "start": 267.63,
+    "end": 270.15,
+    "text": "we know it can just suddenly burst into flames."
+  },
+  {
+    "id": 122,
+    "start": 270.15,
+    "end": 270.99,
+    "text": "True, true."
+  },
+  {
+    "id": 123,
+    "start": 270.99,
+    "end": 271.83,
+    "text": "Thanks for coming in."
+  },
+  {
+    "id": 124,
+    "start": 271.83,
+    "end": 272.67,
+    "text": "Thank you, thank you."
+  },
+  {
+    "id": 125,
+    "start": 272.67,
+    "end": 273.51,
+    "text": "Bye bye."
+  }
+]

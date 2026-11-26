@@ -416,8 +416,18 @@ def register(folder, meta):
         return "목록 파일이 없어 등록을 건너뜀 (CapCut 을 켜면 폴더를 찾아 보여 줄 수 있음)"
     data = json.loads(rm.read_text(encoding="utf-8"))
     store = data.setdefault("all_draft_store", [])
-    if any(e.get("draft_fold_path") == folder.as_posix() for e in store):
-        return "이미 등록됨"
+    old = [e for e in store if e.get("draft_fold_path") == folder.as_posix()]
+    if old:
+        # 이미 등록된 프로젝트를 다시 만든 경우: 수정 시각을 지금으로 바꾸고 목록 맨 앞으로 옮긴다.
+        # (그대로 두면 그 뒤에 생긴 다른 프로젝트가 목록 첫 칸을 차지해, 자동 도구가 엉뚱한 프로젝트를 연다 — 2026-11-26)
+        e = old[0]
+        e.update({"draft_id": meta["draft_id"], "tm_draft_create": meta["tm_draft_create"],
+                  "tm_draft_modified": meta["tm_draft_modified"], "tm_duration": meta["tm_duration"],
+                  "tm_draft_removed": 0, "draft_is_invisible": False})
+        store.remove(e)
+        store.insert(0, e)
+        rm.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        return "이미 등록됨 → 수정 시각을 지금으로 바꿔 목록 맨 앞으로 옮김"
     bak = rm.with_name(f"root_meta_info.json.bak-shorts-{int(time.time())}")
     shutil.copy2(rm, bak)
     tpl = copy.deepcopy(store[0]) if store else {}

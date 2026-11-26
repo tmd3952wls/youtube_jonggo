@@ -1,0 +1,47 @@
+{
+ "text": "감정가 8,400만원 드라큘라 초판, 결국 거래 불발",
+ "words": [
+  {
+   "word": "감정가",
+   "start": 0.04,
+   "end": 0.421,
+   "aligned": true
+  },
+  {
+   "word": "8,400만원",
+   "start": 0.761,
+   "end": 1.322,
+   "aligned": true
+  },
+  {
+   "word": "드라큘라",
+   "start": 1.402,
+   "end": 1.803,
+   "aligned": true
+  },
+  {
+   "word": "초판,",
+   "start": 1.883,
+   "end": 2.184,
+   "aligned": true
+  },
+  {
+   "word": "결국",
+   "start": 2.324,
+   "end": 2.584,
+   "aligned": true
+  },
+  {
+   "word": "거래",
+   "start": 2.664,
+   "end": 2.865,
+   "aligned": true
+  },
+  {
+   "word": "불발",
+   "start": 2.965,
+   "end": 3.125,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "text": "드라큘라 초판으로",
+    "start": 0.0,
+    "end": 0.897,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.6
+  },
+  {
+    "text": "6,860만원 부른 여자",
+    "start": 0.897,
+    "end": 2.6,
+    "method": "whisperx",
+    "prop_start": 0.663,
+    "seg_start": 0.0,
+    "seg_end": 2.6
+  },
+  {
+    "text": "2쇄부터는 책 맨 뒤에",
+    "start": 7.867,
+    "end": 9.15,
+    "method": "whisperx",
+    "prop_start": 7.867,
+    "seg_start": 7.867,
+    "seg_end": 10.067
+  },
+  {
+    "text": "광고가 붙는데",
+    "start": 9.15,
+    "end": 10.067,
+    "method": "whisperx",
+    "prop_start": 9.257,
+    "seg_start": 7.867,
+    "seg_end": 10.067
+  },
+  {
+    "text": "이에 릭까지 불러오는데",
+    "start": 18.333,
+    "end": 19.633,
+    "method": "whisperx",
+    "prop_start": 18.333,
+    "seg_start": 18.333,
+    "seg_end": 19.633
+  },
+  {
+    "text": "이에 릭이 흥정을",
+    "start": 36.233,
+    "end": 37.131,
+    "method": "whisperx",
+    "prop_start": 36.233,
+    "seg_start": 36.233,
+    "seg_end": 37.9
+  },
+  {
+    "text": "시작하는데",
+    "start": 37.131,
+    "end": 37.9,
+    "method": "whisperx",
+    "prop_start": 37.296,
+    "seg_start": 36.233,
+    "seg_end": 37.9
+  },
+  {
+    "text": "감정가 8,400만원",
+    "start": 47.4,
+    "end": 48.752,
+    "method": "whisperx",
+    "prop_start": 47.4,
+    "seg_start": 47.4,
+    "seg_end": 50.933
+  },
+  {
+    "text": "드라큘라 초판,",
+    "start": 48.752,
+    "end": 49.674,
+    "method": "whisperx",
+    "prop_start": 49.236,
+    "seg_start": 47.4,
+    "seg_end": 50.933
+  },
+  {
+    "text": "결국 거래 불발",
+    "start": 49.674,
+    "end": 50.933,
+    "method": "whisperx",
+    "prop_start": 49.971,
+    "seg_start": 47.4,
+    "seg_end": 50.933
+  }
+]

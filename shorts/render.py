@@ -409,6 +409,11 @@ def render_shots(src, shots, cfg, fcache, f, kind, audio_gain_db, tts=None, tts_
                     a_ = c + F1
                 if b_ - 0.06 < c < b_ + 0.06:
                     b_ = c - F1
+        sf_ = cfg.get("_src_fps")
+        if kk == "speech" and sf_:
+            # 조각 시작을 원본 프레임 경계에 맞춤: 원본이 24fps 면 탐색이 다음 프레임(최대 42ms 뒤)부터 잡혀
+            # 화면만 소리보다 앞서게 된다 → 소리도 같은 프레임 시각에서 시작시켜 차이를 없앤다 (2026-11-26)
+            a_ = round(a_ * sf_) / sf_
         if kk == "speech":
             # 조각 길이를 프레임(1/30초) 배수로 맞춤 → 화면 프레임 수와 소리 길이가 정확히 같아져
             # 조각마다 소리 끝에 0~33ms 무음이 끼거나 화면이 밀리는 일이 없다 (입모양 싱크, 2026-11-22)
@@ -555,6 +560,15 @@ def video_dur(path):
         return duration(path)
 
 
+def _src_fps(src):
+    try:
+        n, d = run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate",
+                    "-of", "default=nw=1:nk=1", src]).strip().split("/")
+        return float(n) / float(d)
+    except Exception:
+        return None
+
+
 def smooth_clip_shots(shots, cuts, ws, src_dur, R):
     """대사 클립 조각 경계를 고치되, 숨쉬는 무음 구간이 다시 끼어들거나 앞뒤 무음이 패딩되지 않게 유지한다."""
     talk = lambda x, y: sum(max(0.0, min(y, w["e"]) - max(x, w["s"])) for w in ws)
@@ -612,7 +626,7 @@ def build_segments(job: Path, plan, cfg):
     cuts = detect_cuts(src)
     ensure_vocals(job, cfg)
     cfg = {**cfg, "layout": {**cfg["layout"], "src_w": iw, "src_h": ih}, "_cuts": cuts,
-           "_framing": plan.get("framing", [])}
+           "_framing": plan.get("framing", []), "_src_fps": _src_fps(src)}
     seg_dir = job / "segments"
     seg_dir.mkdir(exist_ok=True)
     R = cfg["render"]

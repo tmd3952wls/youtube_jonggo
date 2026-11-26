@@ -1,0 +1,23 @@
+{
+ "text": "이에 릭까지 불러오는데",
+ "words": [
+  {
+   "word": "이에",
+   "start": 0.0,
+   "end": 0.224,
+   "aligned": true
+  },
+  {
+   "word": "릭까지",
+   "start": 0.265,
+   "end": 0.672,
+   "aligned": true
+  },
+  {
+   "word": "불러오는데",
+   "start": 0.733,
+   "end": 1.16,
+   "aligned": true
+  }
+ ]
+}

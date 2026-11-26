@@ -173,11 +173,43 @@ def _send_key(vk=0, scan=0, flags=0):
     user32.SendInput(1, ctypes.byref(inp), ctypes.sizeof(_INPUT))
 
 
+def _dismiss_error_dialogs():
+    """'○○.exe - 응용 프로그램 오류' 같은 윈도우 오류 알림 창을 닫는다.
+    이 창이 떠 있으면 키보드 입력을 가로채 캡컷 검색칸에 글자가 안 들어간다 (2026-11-26 확인)."""
+    WNDENUMPROC = ctypes.WINFUNCTYPE(ctypes.c_bool, ctypes.c_void_p, ctypes.c_void_p)
+    hit = []
+
+    def cb(h, _):
+        if user32.IsWindowVisible(h):
+            t = ctypes.create_unicode_buffer(256)
+            user32.GetWindowTextW(h, t, 256)
+            c = ctypes.create_unicode_buffer(64)
+            user32.GetClassNameW(h, c, 64)
+            if c.value == "#32770" and ("응용 프로그램 오류" in t.value or "Application Error" in t.value):
+                hit.append((h, t.value))
+        return True
+
+    user32.EnumWindows(WNDENUMPROC(cb), 0)
+    for h, t in hit:
+        print(f"  오류 알림 창 닫음: {t}", flush=True)
+        user32.PostMessageW(h, WM_CLOSE, 0, 0)
+    if hit:
+        time.sleep(0.8)
+
+
 def _force_foreground(hwnd):
+    _dismiss_error_dialogs()
+    # 다른 '항상 위' 창(채팅 창 등)이 캡컷 위를 덮으면 실제 마우스 클릭이 그 창에 찍힌다
+    # → 작업하는 동안 캡컷을 맨 위로 올려 둔다 (끝나면 _release_topmost 로 되돌림).
+    user32.SetWindowPos(ctypes.c_void_p(hwnd), ctypes.c_void_p(-1), 0, 0, 0, 0, 0x0001 | 0x0002)
     user32.keybd_event(0x12, 0, 0, 0)
     user32.SetForegroundWindow(hwnd)
     user32.keybd_event(0x12, 0, 2, 0)
     time.sleep(0.4)
+
+
+def _release_topmost(hwnd):
+    user32.SetWindowPos(ctypes.c_void_p(hwnd), ctypes.c_void_p(-2), 0, 0, 0, 0, 0x0001 | 0x0002 | 0x0010)
 
 
 def _real_click(hwnd, sx, sy, wait=0.8):
@@ -274,6 +306,7 @@ def _attempt(job: str, voice: str) -> bool:
         time.sleep(1.5)
     finally:
         for w in _find_windows():
+            _release_topmost(w[0])
             user32.PostMessageW(w[0], WM_CLOSE, 0, 0)
         time.sleep(1.5)
         proc.terminate()

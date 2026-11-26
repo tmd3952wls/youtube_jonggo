@@ -1,0 +1,35 @@
+{
+ "text": "드라큘라 초판으로 6,860만원 부른 여자",
+ "words": [
+  {
+   "word": "드라큘라",
+   "start": 0.02,
+   "end": 0.443,
+   "aligned": true
+  },
+  {
+   "word": "초판으로",
+   "start": 0.504,
+   "end": 0.927,
+   "aligned": true
+  },
+  {
+   "word": "6,860만원",
+   "start": 0.947,
+   "end": 1.894,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 1.995,
+   "end": 2.156,
+   "aligned": true
+  },
+  {
+   "word": "여자",
+   "start": 2.236,
+   "end": 2.438,
+   "aligned": true
+  }
+ ]
+}
