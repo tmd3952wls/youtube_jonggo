@@ -1,0 +1,128 @@
+[
+  {
+    "text": "거대한 알 하나로",
+    "start": 0.0,
+    "end": 0.775,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.267
+  },
+  {
+    "text": "350만원 부른 여자",
+    "start": 0.775,
+    "end": 2.267,
+    "method": "whisperx",
+    "prop_start": 0.62,
+    "seg_start": 0.0,
+    "seg_end": 2.267
+  },
+  {
+    "text": "마다가스카르에 살다",
+    "start": 7.333,
+    "end": 8.35,
+    "method": "whisperx",
+    "prop_start": 7.333,
+    "seg_start": 7.333,
+    "seg_end": 9.6
+  },
+  {
+    "text": "멸종된 새의 알인데",
+    "start": 8.35,
+    "end": 9.6,
+    "method": "whisperx",
+    "prop_start": 8.461,
+    "seg_start": 7.333,
+    "seg_end": 9.6
+  },
+  {
+    "text": "고생물학자가",
+    "start": 13.733,
+    "end": 14.474,
+    "method": "whisperx",
+    "prop_start": 13.733,
+    "seg_start": 13.733,
+    "seg_end": 15.433
+  },
+  {
+    "text": "보자마자 하는 말",
+    "start": 14.474,
+    "end": 15.433,
+    "method": "whisperx",
+    "prop_start": 14.415,
+    "seg_start": 13.733,
+    "seg_end": 15.433
+  },
+  {
+    "text": "렌즈로 껍데기",
+    "start": 19.167,
+    "end": 19.963,
+    "method": "whisperx",
+    "prop_start": 19.167,
+    "seg_start": 19.167,
+    "seg_end": 20.967
+  },
+  {
+    "text": "무늬까지 확인하자",
+    "start": 19.963,
+    "end": 20.967,
+    "method": "whisperx",
+    "prop_start": 19.951,
+    "seg_start": 19.167,
+    "seg_end": 20.967
+  },
+  {
+    "text": "다만 여러 알 조각을 이어 붙인",
+    "start": 24.767,
+    "end": 26.23,
+    "method": "whisperx",
+    "prop_start": 24.767,
+    "seg_start": 24.767,
+    "seg_end": 27.233
+  },
+  {
+    "text": "거라 아쉽다는데",
+    "start": 26.23,
+    "end": 27.233,
+    "method": "whisperx",
+    "prop_start": 25.485,
+    "seg_start": 24.767,
+    "seg_end": 27.233
+  },
+  {
+    "text": "350만원 부른 알, 결국",
+    "start": 41.933,
+    "end": 43.434,
+    "method": "whisperx",
+    "prop_start": 41.933,
+    "seg_start": 41.933,
+    "seg_end": 45.067
+  },
+  {
+    "text": "392만원에 팔렸다",
+    "start": 43.434,
+    "end": 45.067,
+    "method": "whisperx",
+    "prop_start": 43.258,
+    "seg_start": 41.933,
+    "seg_end": 45.067
+  },
+  {
+    "text": "더 자세한 뒷이야기는",
+    "start": 45.067,
+    "end": 46.331,
+    "method": "whisperx",
+    "prop_start": 45.067,
+    "seg_start": 45.067,
+    "seg_end": 47.3
+  },
+  {
+    "text": "고정댓글에",
+    "start": 46.331,
+    "end": 47.3,
+    "method": "whisperx",
+    "prop_start": 45.956,
+    "seg_start": 45.067,
+    "seg_end": 47.3
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "company": "Elephant bird egg (composite, fossil eggshell), seller Diana",
+  "product": "Pawn Stars clip 'RARE FOSSIL EGG is Very Old & Very Valuable (Season 17)' (YouTube id Tk1px0VYkts, Pawn Stars official channel, Season 17 'Million Dollar Deal'). Rick buys; paleontologist Andre Lujan (Executive Director, Tour Through Time) appraises $5,900; deal $2,800.",
+  "facts": [
+    {"fact": "Rick jokes 'You must own really large chickens'; seller: no chickens; it's an elephant bird egg.", "source": "broadcast transcript ids 0-3"},
+    {"fact": "Seller sells fossils and natural history items; had the egg 15 years; hopes for $2,500 (on-screen tag $2,500).", "source": "broadcast transcript ids 5-12, 39"},
+    {"fact": "On-screen captions: extinct since the 17th century, native to Madagascar; largest eggs laid by any vertebrate including dinosaurs; fewer than 40 intact eggs in public collections; 2013 one sold for over $100,000 at a London auction.", "source": "broadcast on-screen text ~27-35s, 64-82s, 145-149s, 176-182s"},
+    {"fact": "Egg is pieced together from several eggs' shells.", "source": "broadcast transcript ids 27-32, 83-84"},
+    {"fact": "Rick: no idea if $2,500 is good or if it's even eggshell; calls paleontologist friend ('egg-spert').", "source": "broadcast transcript ids 40-50"},
+    {"fact": "Expert: rare and often faked (porcelain); elephant birds up to 10 feet tall, 1,600 pounds.", "source": "broadcast transcript ids 55-65"},
+    {"fact": "Lens on surface shows long grooves expected of elephant bird; actual elephant bird egg, composite; abrasions where pieces were ground into place affect value.", "source": "broadcast transcript ids 74-91"},
+    {"fact": "Appraisal $5,900. Rick: 'I like your paleontologist.'", "source": "broadcast transcript ids 93-95"},
+    {"fact": "Negotiation: seller now wants $3,000; Rick offers $2,800 (more than asked); seller asks $3,000 again; Rick: offering more than you were asking; $2,800 best; deal at $2,800.", "source": "broadcast transcript ids 99-114; on-screen tags"},
+    {"fact": "Seller: more than I came in for, so I'm happy.", "source": "broadcast transcript id 119"}
+  ],
+  "krw_rate": 1400
+}

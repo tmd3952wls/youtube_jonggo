@@ -1,0 +1,41 @@
+{
+ "text": "거대한 알 하나로 350만원 부른 여자",
+ "words": [
+  {
+   "word": "거대한",
+   "start": 0.04,
+   "end": 0.322,
+   "aligned": true
+  },
+  {
+   "word": "알",
+   "start": 0.382,
+   "end": 0.483,
+   "aligned": true
+  },
+  {
+   "word": "하나로",
+   "start": 0.503,
+   "end": 0.804,
+   "aligned": true
+  },
+  {
+   "word": "350만원",
+   "start": 0.825,
+   "end": 1.629,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 1.709,
+   "end": 1.85,
+   "aligned": true
+  },
+  {
+   "word": "여자",
+   "start": 1.911,
+   "end": 2.092,
+   "aligned": true
+  }
+ ]
+}

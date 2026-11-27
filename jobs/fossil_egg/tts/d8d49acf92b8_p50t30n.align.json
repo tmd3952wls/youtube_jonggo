@@ -1,0 +1,53 @@
+{
+ "text": "다만 여러 알 조각을 이어 붙인 거라 아쉽다는데",
+ "words": [
+  {
+   "word": "다만",
+   "start": 0.02,
+   "end": 0.202,
+   "aligned": true
+  },
+  {
+   "word": "여러",
+   "start": 0.262,
+   "end": 0.585,
+   "aligned": true
+  },
+  {
+   "word": "알",
+   "start": 0.605,
+   "end": 0.625,
+   "aligned": true
+  },
+  {
+   "word": "조각을",
+   "start": 0.686,
+   "end": 0.968,
+   "aligned": true
+  },
+  {
+   "word": "이어",
+   "start": 1.009,
+   "end": 1.17,
+   "aligned": true
+  },
+  {
+   "word": "붙인",
+   "start": 1.271,
+   "end": 1.473,
+   "aligned": true
+  },
+  {
+   "word": "거라",
+   "start": 1.513,
+   "end": 1.634,
+   "aligned": true
+  },
+  {
+   "word": "아쉽다는데",
+   "start": 1.695,
+   "end": 2.28,
+   "aligned": true
+  }
+ ]
+}

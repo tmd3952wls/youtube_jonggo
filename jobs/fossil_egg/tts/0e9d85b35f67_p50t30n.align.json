@@ -1,0 +1,29 @@
+{
+ "text": "고생물학자가 보자마자 하는 말",
+ "words": [
+  {
+   "word": "고생물학자가",
+   "start": 0.041,
+   "end": 0.71,
+   "aligned": true
+  },
+  {
+   "word": "보자마자",
+   "start": 0.791,
+   "end": 1.237,
+   "aligned": true
+  },
+  {
+   "word": "하는",
+   "start": 1.297,
+   "end": 1.439,
+   "aligned": true
+  },
+  {
+   "word": "말",
+   "start": 1.541,
+   "end": 1.561,
+   "aligned": true
+  }
+ ]
+}

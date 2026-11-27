@@ -1,0 +1,355 @@
+{
+  "title_lines": [
+    {
+      "text": "닭이 낳은 줄 알았던",
+      "color": "yellow"
+    },
+    {
+      "text": "거대한 알의 정체",
+      "color": "white"
+    }
+  ],
+  "credit": "",
+  "pinned_comment": "+ \"이 전문가 마음에 드네\" 감정가 듣자마자 손님 편 된 전문가에게 투덜대는 릭 😂\n\n그런데 이 거대한 알, 방송 뒤 이야기는 어떻게 됐을까요?\n\n손님 다이애나는 화석과 자연사 물건을 파는 일을 하는 분이에요 🦴\n이 알은 사업용으로 사 두고 15년이나 갖고 있었대요.\n이제 다른 사람도 즐길 때가 됐다며 전당포에 들고 왔죠.\n\n정체는 '코끼리새' 알 🥚\n코끼리새는 마다가스카르에 살다가 1600년대에 멸종된 새예요.\n전설 속 코끼리를 낚아채는 새에서 이름을 따왔대요.\n방송 설명으로는 공룡까지 통틀어 등뼈동물이 낳은 알 중 가장 큰 알이고,\n멀쩡한 알은 세계 공공 소장품을 다 합쳐도 40개가 안 된대요.\n2013년 런던 경매에선 하나가 10만 달러(약 1억4,000만원) 넘게 팔렸고요.\n\n고생물학자 안드레 루한이 와서 한 말 🔍\n- 키 3m, 몸무게 약 725kg까지 자라던 새라 알도 거대하다\n- 비싸고 귀해서 도자기로 만든 가짜가 많다\n- 렌즈로 보니 코끼리새 알 특유의 긴 홈이 보인다 → 진짜!\n- 다만 여러 알 조각을 이어 붙였고, 안 맞는 조각을 갈아서 끼운 자국이 값을 깎는다\n\n흥정은 이렇게 흘러갔어요 🤝\n감정가 5,900달러(약 826만원)\n손님 처음 희망가 2,500달러(약 350만원)\n감정가 듣고 \"이젠 3,000달러(약 420만원) 생각해요\"\n릭 2,800달러(약 392만원) → 손님이 부른 처음 값보다 더 준 셈!\n손님 \"3,000달러(약 420만원)는 안 될까요?\"\n릭 \"2,800달러(약 392만 원)가 최선이에요\" → 거래 성사\n\n손님은 처음 생각보다 42만원 더 받았고,\n릭은 감정가보다 434만원 싸게 샀어요.\n릭 말대로 사는 사람이 아주 적은 '이상한 시장'이라 팔리기까지 오래 걸릴 수 있거든요.\n\n결론: 전문가 한마디가 손님 기대치를 올려도, 마지막 숫자는 결국 릭이 정한다.\n\n(※ 이 알이 방송 뒤 다시 팔렸는지는 확인된 기록을 찾지 못했어요. 방송 내용과 화면 설명 기준이에요. 1달러(약 1만 원) = 1,400원으로 계산했어요.)\n\n여러분이라면 350만원 부르고 392만원 받으면 만족하실 건가요, 826만원 생각나서 아쉬울 건가요?\n\nP.S. 릭이 처음 던진 \"닭이 엄청 크신가 봐요?\" 농담, 사실 반은 맞았어요. 진짜 '거대한 새' 알이었으니까요 🐔",
+  "upload": {
+    "title": "350만원 부른 거대한 알, 정체가 멸종된 새의 알?!",
+    "description": "닭이 낳았다기엔 너무 큰 알이 전당포에! 가짜가 많다는 코끼리새 알의 진짜 정체와 흥정 결과는...? #전당포사나이들 #릭해리슨 #코끼리새 #화석 #쇼츠",
+    "tags": [
+      "전당포사나이들",
+      "Pawn Stars",
+      "릭해리슨",
+      "코끼리새",
+      "화석",
+      "알",
+      "골동품",
+      "레전드감정"
+    ]
+  },
+  "segments": [
+    {
+      "type": "narration",
+      "text": "거대한 알 하나로 [big:yellow:350만원] 부른 여자",
+      "broll_t": 20.7,
+      "sfx": "impact/085_둥(큰북소리)",
+      "broll_id": 0
+    },
+    {
+      "type": "clip",
+      "from_id": 0,
+      "to_id": 0,
+      "subs": [
+        "@릭 닭이 [cyan:엄청 크신가] 봐요?"
+      ],
+      "sfx": "caption/310_핑거 스냅(딱)",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 1,
+      "to_id": 1,
+      "subs": [
+        "@손님 닭 같은 거 없어요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 3,
+      "to_id": 3,
+      "subs": [
+        "@손님 [cyan:코끼리새] 알이에요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "마다가스카르에 살다 멸종된 새의 알인데",
+      "broll_t": 37.9,
+      "sfx": "whoosh/053_샤스륵 효과음",
+      "ext": [
+        {
+          "file": "ext/24297.mp4",
+          "t": 2.0,
+          "dur": 1.2
+        }
+      ],
+      "broll_id": 0
+    },
+    {
+      "type": "clip",
+      "from_id": 39,
+      "to_id": 39,
+      "subs": [
+        "@손님 [yellow:350만원] 받고 싶어요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 45,
+      "to_id": 45,
+      "subs": [
+        "@릭 [cyan:고생물학자] 친구가 있어요"
+      ],
+      "sfx": "question/015_띠동띠동(물음표)",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 50,
+      "to_id": 50,
+      "skip_words": 2,
+      "subs": [
+        "{big} @릭 [cyan:알 박사] 호출!"
+      ],
+      "sfx": "whoosh/573_Whoosh(Transition)",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "고생물학자가 보자마자 하는 말",
+      "broll_t": 124.7,
+      "sfx": "pop/037_카툰 팝",
+      "ext": [
+        {
+          "file": "ext/45129.mp4",
+          "t": 3.0,
+          "dur": 1.2
+        }
+      ],
+      "broll_id": 0
+    },
+    {
+      "type": "clip",
+      "from_id": 56,
+      "to_id": 56,
+      "subs": [
+        "@전문가 [red:가짜]도 많은 물건이에요"
+      ],
+      "sfx": "surprise/375_Shocked4",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 71,
+      "to_id": 71,
+      "skip_words": 2,
+      "subs": [
+        "@릭 그래서 [yellow:진짜]예요?"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 72,
+      "to_id": 72,
+      "drop_end_words": 1,
+      "subs": [
+        "@전문가 진짜 같은데 더 봐야 해요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "렌즈로 껍데기 무늬까지 확인하자",
+      "broll_t": 158.0,
+      "sfx": "whoosh/352_후윽",
+      "ext": [
+        {
+          "file": "ext/45131.mp4",
+          "t": 5.0,
+          "dur": 1.2
+        }
+      ],
+      "broll_id": 0
+    },
+    {
+      "type": "clip",
+      "from_id": 81,
+      "to_id": 81,
+      "subs": [
+        "@릭 진짜 [cyan:코끼리새 알]이네요?"
+      ],
+      "sfx": null,
+      "mark": false,
+      "skip_words": 2
+    },
+    {
+      "type": "clip",
+      "from_id": 82,
+      "to_id": 82,
+      "subs": [
+        "{big} @전문가 [green:진짜 맞아요]"
+      ],
+      "sfx": "ding/185_Ting",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "다만 여러 알 조각을 이어 붙인 거라 아쉽다는데",
+      "broll_t": 184.0,
+      "sfx": "fail/019_삐삑 (오답 -짧은)",
+      "broll_id": 0
+    },
+    {
+      "type": "clip",
+      "from_id": 92,
+      "to_id": 92,
+      "skip_words": 7,
+      "subs": [
+        "@릭 [yellow:코끼리만큼] 큰돈 되나요?"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 94,
+      "to_id": 94,
+      "drop_end_words": 7,
+      "subs": [
+        "{big} @전문가 [yellow:826만원]"
+      ],
+      "sfx": "ding/201_코인5",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 95,
+      "to_id": 95,
+      "subs": [
+        "@릭 이 전문가 [pink:마음에 드네]"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 99,
+      "to_id": 99,
+      "skip_words": 3,
+      "subs": [
+        "@릭 [yellow:350만원] 원하셨죠?"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 100,
+      "to_id": 100,
+      "subs": [
+        "@손님 이젠 [yellow:420만원] 생각해요"
+      ],
+      "sfx": "cash/010_철컥띵 (캐셔)",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 104,
+      "to_id": 104,
+      "subs": [
+        "{big} @릭 [green:392만원] 드리죠"
+      ],
+      "sfx": "ding/001_띵",
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 106,
+      "to_id": 106,
+      "subs": [
+        "@손님 [yellow:420만원]은 안 될까요?"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 107,
+      "to_id": 107,
+      "subs": [
+        "@릭 [red:부른 값보다] 더 드리는 거예요"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 109,
+      "to_id": 109,
+      "subs": [
+        "@손님 전문가 때문에 [pink:기대]가 커졌죠"
+      ],
+      "sfx": null,
+      "mark": false
+    },
+    {
+      "type": "clip",
+      "from_id": 119,
+      "to_id": 119,
+      "drop_end_words": 3,
+      "subs": [
+        "@손님 생각보다 [yellow:더 받았어요]"
+      ],
+      "sfx": "success/341_짜잔_금관악기",
+      "mark": false
+    },
+    {
+      "type": "narration",
+      "text": "350만원 부른 알, 결국 [yellow:392만원]에 팔렸다",
+      "broll_t": 94.9,
+      "sfx": null,
+      "broll_id": 0
+    },
+    {
+      "type": "narration",
+      "text": "더 자세한 뒷이야기는 [yellow:고정댓글]에",
+      "broll_t": 82.4,
+      "sfx": null,
+      "broll_id": 0
+    }
+  ],
+  "framing": [
+    {
+      "from": 3.1,
+      "to": 7.3,
+      "cx": 0.6,
+      "cy": 0.4,
+      "h": 0.78
+    },
+    {
+      "from": 20.6,
+      "to": 23.1,
+      "cx": 0.27,
+      "cy": 0.5,
+      "h": 1.0
+    },
+    {
+      "from": 98.2,
+      "to": 101.7,
+      "cx": 0.66,
+      "cy": 0.4,
+      "h": 0.78
+    },
+    {
+      "from": 149.6,
+      "to": 151.2,
+      "cx": 0.55,
+      "cy": 0.35,
+      "h": 0.78
+    },
+    {
+      "from": 206.8,
+      "to": 209.6,
+      "cx": 0.82,
+      "cy": 0.38,
+      "h": 0.82
+    }
+  ]
+}

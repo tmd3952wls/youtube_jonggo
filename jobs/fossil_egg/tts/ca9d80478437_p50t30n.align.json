@@ -1,0 +1,41 @@
+{
+ "text": "350만원 부른 알, 결국 392만원에 팔렸다",
+ "words": [
+  {
+   "word": "350만원",
+   "start": 0.201,
+   "end": 0.705,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 0.785,
+   "end": 0.926,
+   "aligned": true
+  },
+  {
+   "word": "알,",
+   "start": 1.007,
+   "end": 1.108,
+   "aligned": true
+  },
+  {
+   "word": "결국",
+   "start": 1.289,
+   "end": 1.531,
+   "aligned": true
+  },
+  {
+   "word": "392만원에",
+   "start": 1.551,
+   "end": 2.558,
+   "aligned": true
+  },
+  {
+   "word": "팔렸다",
+   "start": 2.618,
+   "end": 3.122,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "text": "마다가스카르에 살다 멸종된 새의 알인데",
+ "words": [
+  {
+   "word": "마다가스카르에",
+   "start": 0.02,
+   "end": 0.705,
+   "aligned": true
+  },
+  {
+   "word": "살다",
+   "start": 0.765,
+   "end": 1.007,
+   "aligned": true
+  },
+  {
+   "word": "멸종된",
+   "start": 1.067,
+   "end": 1.49,
+   "aligned": true
+  },
+  {
+   "word": "새의",
+   "start": 1.591,
+   "end": 1.772,
+   "aligned": true
+  },
+  {
+   "word": "알인데",
+   "start": 1.813,
+   "end": 2.095,
+   "aligned": true
+  }
+ ]
+}

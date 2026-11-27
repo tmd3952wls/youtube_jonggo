@@ -1,0 +1,29 @@
+{
+ "text": "렌즈로 껍데기 무늬까지 확인하자",
+ "words": [
+  {
+   "word": "렌즈로",
+   "start": 0.04,
+   "end": 0.362,
+   "aligned": true
+  },
+  {
+   "word": "껍데기",
+   "start": 0.443,
+   "end": 0.765,
+   "aligned": true
+  },
+  {
+   "word": "무늬까지",
+   "start": 0.846,
+   "end": 1.248,
+   "aligned": true
+  },
+  {
+   "word": "확인하자",
+   "start": 1.288,
+   "end": 1.671,
+   "aligned": true
+  }
+ ]
+}
